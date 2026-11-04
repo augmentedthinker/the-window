@@ -1,0 +1,403 @@
+{
+  "format": "agent-home-video-editor-v1",
+  "title": "The River Keeps the Time · Timmy first cut",
+  "audio": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/audio/take-a-listen.mp4",
+  "audioName": "The River Keeps the Time · Take A",
+  "frame": "landscape",
+  "scenes": [
+    {
+      "id": "47a6c138-0feb-49f9-8eee-adbf126b3e63",
+      "name": "The stopped bird",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png",
+      "duration": 4.666667,
+      "motion": "in",
+      "fadeIn": 0.6
+    },
+    {
+      "id": "732de4a4-a8b2-43df-8455-650c196588f7",
+      "name": "The repair",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 4.666667,
+      "motion": "left"
+    },
+    {
+      "id": "e9174573-d230-48bb-bd57-6d602660ff95",
+      "name": "The stopped bird",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png",
+      "duration": 4.666667,
+      "motion": "out"
+    },
+    {
+      "id": "9949e08c-b6e2-4e3a-af8d-83762b8c6ab2",
+      "name": "The repair",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 4.666667,
+      "motion": "right"
+    },
+    {
+      "id": "1035cf4c-abcc-4991-a305-217409df1965",
+      "name": "The stopped bird",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png",
+      "duration": 4.666667,
+      "motion": "in"
+    },
+    {
+      "id": "bf4cd921-3392-44e0-bdfc-666450ee8233",
+      "name": "The repair",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 4.666667,
+      "motion": "left"
+    },
+    {
+      "id": "777ac0c7-4548-497f-8cd2-9ab0dadb270f",
+      "name": "Receiver",
+      "duration": 5,
+      "motion": "still",
+      "mediaType": "video",
+      "video": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/receiver-28.mp4",
+      "sourceStart": 0
+    },
+    {
+      "id": "b02cfb4f-5d8d-4a3d-8180-2d7cc149991e",
+      "name": "Wind the mechanism",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 5.0,
+      "motion": "out"
+    },
+    {
+      "id": "8eeba1d2-99a2-4882-be41-ae0662505ee8",
+      "name": "Carved spectrum",
+      "duration": 5,
+      "motion": "still",
+      "image": "projects/born-with-my-eyes-open/abstract-visuals/bars.png"
+    },
+    {
+      "id": "b300e27f-2a99-4aa6-98a9-39de3d930053",
+      "name": "The workshop",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png",
+      "duration": 4.5,
+      "motion": "right"
+    },
+    {
+      "id": "7117786d-2228-4965-899b-35b30fd456f9",
+      "name": "Wind the mechanism",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 4.5,
+      "motion": "in"
+    },
+    {
+      "id": "18796a62-d4aa-47ce-8f56-2dcaaa89461f",
+      "name": "Receiver returns",
+      "duration": 5,
+      "motion": "still",
+      "mediaType": "video",
+      "video": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/receiver-52.mp4",
+      "sourceStart": 0
+    },
+    {
+      "id": "253777cf-70c3-46a6-8e42-7378783bc42c",
+      "name": "The workshop",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png",
+      "duration": 4.5,
+      "motion": "left"
+    },
+    {
+      "id": "833d38cd-dd52-49b3-ae07-dcb674bbd491",
+      "name": "Wind the mechanism",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png",
+      "duration": 4.5,
+      "motion": "out"
+    },
+    {
+      "id": "c56a868c-3523-49c4-98a9-0987d80c2582",
+      "name": "Waveform",
+      "duration": 5,
+      "motion": "still",
+      "image": "projects/born-with-my-eyes-open/abstract-visuals/wave.png"
+    },
+    {
+      "id": "a2c9e3d2-1210-4977-b17e-c4260bedbbb3",
+      "name": "Carry the bird to the river",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/03-river.png",
+      "duration": 5.0,
+      "motion": "right"
+    },
+    {
+      "id": "a10f9478-b63a-4cdd-94f2-988f7571a6b3",
+      "name": "River responds",
+      "duration": 5,
+      "motion": "still",
+      "mediaType": "video",
+      "video": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-76.mp4",
+      "sourceStart": 0
+    },
+    {
+      "id": "7ac94d3b-0104-4c19-9860-197eaa7e5670",
+      "name": "Carry the bird to the river",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/03-river.png",
+      "duration": 4.5,
+      "motion": "in"
+    },
+    {
+      "id": "aece463e-e0f0-45bf-9483-ccb565e150bc",
+      "name": "Carry the bird to the river",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/03-river.png",
+      "duration": 4.5,
+      "motion": "left"
+    },
+    {
+      "id": "a201d5aa-60ae-4e57-9fa3-fe25903b6881",
+      "name": "Signal rings",
+      "duration": 5,
+      "motion": "still",
+      "image": "projects/born-with-my-eyes-open/abstract-visuals/rings.png"
+    },
+    {
+      "id": "28c38293-8abb-4c7b-a813-d4d2010cb825",
+      "name": "Carry the bird to the river",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/03-river.png",
+      "duration": 4.5,
+      "motion": "out"
+    },
+    {
+      "id": "5394eab9-100c-4f2a-a666-4faae684d310",
+      "name": "Open hands at the water",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png",
+      "duration": 4.5,
+      "motion": "right"
+    },
+    {
+      "id": "046326b2-cf1e-4ec4-bcfd-66a1c903e8c9",
+      "name": "Water and open hands",
+      "duration": 5,
+      "motion": "still",
+      "mediaType": "video",
+      "video": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-104.mp4",
+      "sourceStart": 0
+    },
+    {
+      "id": "ca01be26-67ee-41e5-ae59-5ab2c4cb46d7",
+      "name": "Open hands at the water",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png",
+      "duration": 4.5,
+      "motion": "in"
+    },
+    {
+      "id": "424a458c-ece6-406b-aaa1-b7a67f258213",
+      "name": "Open hands at the water",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png",
+      "duration": 4.5,
+      "motion": "left"
+    },
+    {
+      "id": "81217d65-8ab2-4420-af8c-f438712e0845",
+      "name": "Waveform returns",
+      "duration": 5,
+      "motion": "still",
+      "image": "projects/born-with-my-eyes-open/abstract-visuals/wave.png"
+    },
+    {
+      "id": "22e723bd-b518-4b02-8f1b-d6e891550dd8",
+      "name": "Open hands at the water",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png",
+      "duration": 4.5,
+      "motion": "out"
+    },
+    {
+      "id": "90761e6b-0fad-479a-87ee-d7ce810e4912",
+      "name": "Open hands at the water",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png",
+      "duration": 4.5,
+      "motion": "right"
+    },
+    {
+      "id": "ff0e402f-029a-4596-90f3-5a6a08b80ca1",
+      "name": "Water answers",
+      "duration": 5,
+      "motion": "still",
+      "mediaType": "video",
+      "video": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-132.mp4",
+      "sourceStart": 0
+    },
+    {
+      "id": "c6f2a5da-5a98-4f6f-8ce0-bf37bdaff07a",
+      "name": "The bird takes flight",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-flight.png",
+      "duration": 4.0,
+      "motion": "in"
+    },
+    {
+      "id": "34ecff01-0ee7-446b-91c7-b10f330797a4",
+      "name": "The bird takes flight",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-flight.png",
+      "duration": 4.0,
+      "motion": "left"
+    },
+    {
+      "id": "ed6dbdec-b817-46fc-adcb-09a5be6a15e8",
+      "name": "Rings at release",
+      "duration": 5,
+      "motion": "still",
+      "image": "projects/born-with-my-eyes-open/abstract-visuals/rings.png"
+    },
+    {
+      "id": "56d559fa-4f11-4619-9403-01f32a938bc3",
+      "name": "The bird takes flight",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-flight.png",
+      "duration": 5.0,
+      "motion": "out"
+    },
+    {
+      "id": "73d5485d-9c27-4573-9f04-8875c76430f9",
+      "name": "The bird takes flight",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-flight.png",
+      "duration": 5.0,
+      "motion": "right"
+    },
+    {
+      "id": "eafbe0fd-3f1e-4dbc-8e08-1685014e9ee2",
+      "name": "The empty workbench at morning",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/05-empty.png",
+      "duration": 5.0,
+      "motion": "in"
+    },
+    {
+      "id": "729b7a9a-db33-418d-82a9-aa4da462b317",
+      "name": "The empty workbench at morning",
+      "image": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/05-empty.png",
+      "duration": 5.0,
+      "motion": "left",
+      "fadeOut": 0.8
+    }
+  ],
+  "assets": [
+    {
+      "name": "The workshop",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/01-workbench.png"
+    },
+    {
+      "name": "Wind the mechanism",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/02-repair.png"
+    },
+    {
+      "name": "Receiver",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/receiver-28.mp4"
+    },
+    {
+      "name": "Carved spectrum",
+      "path": "projects/born-with-my-eyes-open/abstract-visuals/bars.png"
+    },
+    {
+      "name": "Receiver returns",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/receiver-52.mp4"
+    },
+    {
+      "name": "Waveform returns",
+      "path": "projects/born-with-my-eyes-open/abstract-visuals/wave.png"
+    },
+    {
+      "name": "Carry the bird to the river",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/03-river.png"
+    },
+    {
+      "name": "River responds",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-76.mp4"
+    },
+    {
+      "name": "Rings at release",
+      "path": "projects/born-with-my-eyes-open/abstract-visuals/rings.png"
+    },
+    {
+      "name": "Open hands at the water",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-hands.png"
+    },
+    {
+      "name": "Water and open hands",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-104.mp4"
+    },
+    {
+      "name": "Water answers",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/water-132.mp4"
+    },
+    {
+      "name": "The bird takes flight",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/04-flight.png"
+    },
+    {
+      "name": "The empty workbench at morning",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/art/05-empty.png"
+    }
+  ],
+  "storyboard": [
+    {
+      "id": "4af918ae-4eeb-4314-811a-06a272b84d0a",
+      "name": "A stopped bird",
+      "start": 0,
+      "duration": 24,
+      "text": "Discover the bird and its repair. Measured opening changes, not confirmed musical phrases."
+    },
+    {
+      "id": "d29dbe92-8481-4994-8bcf-a56081fe6ddc",
+      "name": "Finding a rhythm",
+      "start": 24,
+      "duration": 40,
+      "text": "The workbench and receiver answer the music; a winding action leads toward the river."
+    },
+    {
+      "id": "cd3adf39-a511-415e-9af0-9acbc34acd0e",
+      "name": "The journey",
+      "start": 64,
+      "duration": 40,
+      "text": "The watchmaker carries the bird to the water; moving waveforms and ripples reflect the mixed recording."
+    },
+    {
+      "id": "873323c9-14aa-42bd-a4c5-57581c20fc61",
+      "name": "A moment of release",
+      "start": 104,
+      "duration": 33,
+      "text": "The bird rests in open hands. Measured level drops at 124–132; verify by listening."
+    },
+    {
+      "id": "e41c38cf-9350-4bfb-9fda-065d406860a8",
+      "name": "Flight",
+      "start": 137,
+      "duration": 21,
+      "text": "The bird rises as the scene opens. The level rise is not proof of a climax."
+    },
+    {
+      "id": "98ee4680-c251-4c0b-9a94-97bd01c0e6b7",
+      "name": "What remains",
+      "start": 158,
+      "duration": 12,
+      "text": "Morning returns to the empty workbench; hold through the whole ending."
+    }
+  ],
+  "effects": [
+    {
+      "id": "47b4915e-3089-4ab7-9638-238f3660ce00",
+      "name": "Motion and sound",
+      "start": 0,
+      "duration": 170,
+      "text": "Stills carry applied camera movement. The 28, 52, 76, 104 and 132 second environmental clips are baked to Take A and must not move without regeneration. Live abstract editor presets follow song time."
+    }
+  ],
+  "finishing": [
+    {
+      "id": "970f7ede-aa49-4fcc-a0b1-5389acddc22e",
+      "name": "Opening and ending",
+      "start": 0,
+      "duration": 170,
+      "text": "Opening and ending fades are applied; other cuts are direct. Review the complete ending by ear."
+    }
+  ],
+  "references": [
+    {
+      "name": "Creative brief",
+      "path": "projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/brief.md"
+    },
+    {
+      "name": "Evidence and cues",
+      "path": "projects/music-studio/analysis/bbbe22dca148f970d1c6a5e480d9b2e9f9c83816ae393a67e76d3e52ed2de92c/editorial.md"
+    }
+  ]
+}
