@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "createdAt": "2026-11-03T18:01:10.335251+00:00",
+  "schemaVersion": "1.0",
+  "cacheKey": "6fe04e9ab76bc648b403cef8aac3435a3ba390eec8adc69c38f2d1a0921fc519",
+  "sourceSha256": "5b10a77dae54f36e85b9b2e575294c9712d49a177ad3d610b1c62ea6429fc242",
+  "analyzerSha256": "c40855dec9ca43fb71cc914669c2c270b17450f846116a2bc5242d88f6e9688c",
+  "config": {
+    "fps": 24,
+    "sampleRate": 24000,
+    "fft": 2048,
+    "bands": 32,
+    "rhythm": true,
+    "bpmRange": [
+      65,
+      170
+    ]
+  },
+  "source": {
+    "path": "/home/gagekappes/agent-home/projects/music-studio/jungle-future/audio/take-a-listen.mp4",
+    "sha256": "5b10a77dae54f36e85b9b2e575294c9712d49a177ad3d610b1c62ea6429fc242",
+    "bytes": 4396241,
+    "codec": "aac",
+    "channels": 2,
+    "sampleRate": "48000",
+    "sourceStart": 0,
+    "transform": "First audio stream decoded to mono float32 at 24kHz; no trim, speed change or added gain."
+  },
+  "python": "3.13.5",
+  "numpy": "2.2.4",
+  "ffmpegVersion": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "elapsedSeconds": 4.117,
+  "peakRssKiB": 477088,
+  "modelDownloads": 0,
+  "providerCalls": 0,
+  "outputs": {
+    "features.json": "efd7f94d175d31b31f94f5a805fe10c13d65e89b6084480a458cd6da708d86ef",
+    "analysis.json": "7156fe6711f96499d21c59699c48602ed37fdf61a41621a45e7a42bbdaaf011b"
+  }
+}

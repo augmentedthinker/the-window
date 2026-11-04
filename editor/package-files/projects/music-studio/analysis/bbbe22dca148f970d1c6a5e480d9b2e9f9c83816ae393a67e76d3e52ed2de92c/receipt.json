@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "createdAt": "2026-11-03T23:46:28.713353+00:00",
+  "schemaVersion": "1.0",
+  "cacheKey": "f6f2fb7c21bc160a0f8e7bef6d40a7f5b9815331aaa4aa8d8c97ab4b1c853aa3",
+  "sourceSha256": "bbbe22dca148f970d1c6a5e480d9b2e9f9c83816ae393a67e76d3e52ed2de92c",
+  "analyzerSha256": "c40855dec9ca43fb71cc914669c2c270b17450f846116a2bc5242d88f6e9688c",
+  "config": {
+    "fps": 24,
+    "sampleRate": 24000,
+    "fft": 2048,
+    "bands": 32,
+    "rhythm": true,
+    "bpmRange": [
+      65,
+      170
+    ]
+  },
+  "source": {
+    "path": "/home/gagekappes/agent-home/projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/audio/take-a-listen.mp4",
+    "sha256": "bbbe22dca148f970d1c6a5e480d9b2e9f9c83816ae393a67e76d3e52ed2de92c",
+    "bytes": 4200586,
+    "codec": "aac",
+    "channels": 2,
+    "sampleRate": "48000",
+    "sourceStart": 0,
+    "transform": "First audio stream decoded to mono float32 at 24kHz; no trim, speed change or added gain."
+  },
+  "python": "3.13.5",
+  "numpy": "2.2.4",
+  "ffmpegVersion": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "elapsedSeconds": 4.355,
+  "peakRssKiB": 85684,
+  "modelDownloads": 0,
+  "providerCalls": 0,
+  "outputs": {
+    "features.json": "34c80078ba7ffa16c24adb03d62dc17d547f79d248d763b86fb98ea10fc08105",
+    "analysis.json": "1c6184d545d67bf9300b9e1621a1236f81e8e823e846eda12c430f56060e53ac"
+  }
+}
