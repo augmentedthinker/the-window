@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101c25"><title>Finding a voice · The Window</title>
+<style>
+:root{color-scheme:dark;--ink:#f5efe0;--muted:#b9c9c2;--border:#41554f;--accent:#c5ddb4}*{box-sizing:border-box}body{margin:0;background:#101c25;color:var(--ink);font-family:system-ui,sans-serif;line-height:1.55}main{max-width:680px;padding:1.4rem 1.1rem 4rem;margin:auto}.back{color:#c5ddb4;display:inline-block;padding:.55rem 0;text-underline-offset:.2em}.eyebrow{font-size:.68rem;letter-spacing:.19em;font-weight:700;color:#c9b696;text-transform:uppercase;margin:1.3rem 0 .25rem}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.12}h1{font-size:clamp(2.5rem,10vw,4rem);margin:.4rem 0 1rem}h2{font-size:2rem;margin:.3rem 0}.intro{color:#d7ded9;font-size:1.05rem}.sample{border-left:3px solid var(--accent);padding:.2rem 0 .2rem 1rem;margin:1.6rem 0;color:#f0e8d5;font-family:Georgia,serif;font-size:1.08rem}.note{color:var(--muted);font-size:.89rem}.engine{margin-top:2rem}.engine>p{color:var(--muted);margin:.4rem 0 1rem}.voice{border:1px solid var(--border);border-radius:14px;background:#1b2b30;padding:.85rem 1rem;margin:.65rem 0}.voice h3{font-size:1rem;margin:0 0 .1rem}.voice p{font-size:.84rem;color:#c4d0c9;margin:.1rem 0 .7rem}.voice audio{display:block;width:100%;height:42px;color-scheme:light}.foot{margin-top:2.5rem;border-top:1px solid var(--border);padding-top:1rem;color:var(--muted);font-size:.86rem}a{color:var(--accent)}:focus-visible{outline:3px solid #f8dfac;outline-offset:4px}
+</style></head>
+<body><main>
+<a class="back" href="../">← The Window</a><p class="eyebrow">A listening experiment</p><h1>Finding a voice</h1>
+<p class="intro">What might Terry sound like when you’re away from the screen? Try the same short message in different voices, then tell Terry which ones you enjoy.</p>
+<blockquote class="sample">“Hi Christopher, it's Terry. I'm glad we can keep talking while you're out in the sunshine. Let's try a few voices and see which one feels right for our conversations.”</blockquote>
+<p class="note">Tap play to listen. Each sample was generated ahead of time on the Chromebook, so this page works without the Chromebook being awake. The recordings and this page are public.</p>
+<section class="engine" aria-labelledby="kokoro"><p class="eyebrow">Neural speech · local</p><h2 id="kokoro">Kokoro</h2><p>Six voices from the local Kokoro installation, including American and British options.</p>
+<div class="voice"><h3>Heart</h3><p>American English · Kokoro af_heart</p><audio controls preload="none" aria-label="Play Kokoro Heart" src="audio/kokoro-heart.mp3"></audio></div>
+<div class="voice"><h3>Bella</h3><p>American English · Kokoro af_bella</p><audio controls preload="none" aria-label="Play Kokoro Bella" src="audio/kokoro-bella.mp3"></audio></div>
+<div class="voice"><h3>Adam</h3><p>American English · Kokoro am_adam</p><audio controls preload="none" aria-label="Play Kokoro Adam" src="audio/kokoro-adam.mp3"></audio></div>
+<div class="voice"><h3>Michael</h3><p>American English · Kokoro am_michael</p><audio controls preload="none" aria-label="Play Kokoro Michael" src="audio/kokoro-michael.mp3"></audio></div>
+<div class="voice"><h3>Emma</h3><p>British English · Kokoro bf_emma</p><audio controls preload="none" aria-label="Play Kokoro Emma" src="audio/kokoro-emma.mp3"></audio></div>
+<div class="voice"><h3>George</h3><p>British English · Kokoro bm_george</p><audio controls preload="none" aria-label="Play Kokoro George" src="audio/kokoro-george.mp3"></audio></div>
+</section>
+<section class="engine" aria-labelledby="piper"><p class="eyebrow">Neural speech · local</p><h2 id="piper">Piper</h2><p>Three American English voices, generated locally for this comparison.</p>
+<div class="voice"><h3>Amy</h3><p>American English · Piper medium</p><audio controls preload="none" aria-label="Play Piper Amy" src="audio/piper-amy.mp3"></audio></div>
+<div class="voice"><h3>Lessac</h3><p>American English · Piper medium</p><audio controls preload="none" aria-label="Play Piper Lessac" src="audio/piper-lessac.mp3"></audio></div>
+<div class="voice"><h3>Ryan</h3><p>American English · Piper medium</p><audio controls preload="none" aria-label="Play Piper Ryan" src="audio/piper-ryan.mp3"></audio></div>
+</section>
+<section class="engine" aria-labelledby="espeak"><p class="eyebrow">Classic speech · local</p><h2 id="espeak">eSpeak NG</h2><p>The small speech engine already installed on the Chromebook. Its more synthetic sound gives us a useful point of comparison.</p>
+<div class="voice"><h3>US voice 1</h3><p>American English · f3 variant</p><audio controls preload="none" aria-label="Play eSpeak US voice 1" src="audio/espeak-f3.mp3"></audio></div>
+<div class="voice"><h3>US voice 2</h3><p>American English · m3 variant</p><audio controls preload="none" aria-label="Play eSpeak US voice 2" src="audio/espeak-m3.mp3"></audio></div>
+<div class="voice"><h3>British voice</h3><p>British English · default voice</p><audio controls preload="none" aria-label="Play eSpeak British voice" src="audio/espeak-gb.mp3"></audio></div>
+</section><p class="foot">These are fixed samples for choosing a voice, not yet live speech for our Telegram conversation. Voice quality and generation speed on longer replies still need testing.</p>
+</main><script>document.querySelectorAll('audio').forEach(player=>player.addEventListener('play',()=>document.querySelectorAll('audio').forEach(other=>{if(other!==player)other.pause()})));</script></body></html>
