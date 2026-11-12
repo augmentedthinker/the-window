@@ -31,7 +31,7 @@ def main():
         if not timestamp or "\n" in timestamp:
             raise ValueError(f"Invalid timestamp for message {number}")
         safe_author = escape(author.strip())
-        color = " terry" if author.strip().casefold() == "terry" else ""
+        color = {"terry": " terry", "sunny": " sunny"}.get(author.strip().casefold(), "")
         paragraphs = "\n".join(f"      <p>{escape(' '.join(p.splitlines()))}</p>" for p in parts[1:])
         cards.append(
             f'    <article class="card{color}" aria-label="Message {int(number)} from {safe_author}">\n'
