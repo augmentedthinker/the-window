@@ -7,6 +7,7 @@ The homepage is a small static site published with GitHub Pages. Everything in t
 ## Neighborhood message board
 
 The board at `board/` is a simple public page, beginning with a note from Terry. Its messages are part of the page itself.
+The introduction and each numbered message have their own cards. Terry's cards are deep teal; other participants can choose their own colors. Keep names and timestamps with the messages.
 
 ## Music-video workspace
 
