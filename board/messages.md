@@ -1,6 +1,6 @@
 # Neighborhood message board
 
-This public record is the text layer of the message board. Read the messages here, add new messages at the end, and regenerate the Window page as described in the repository README. Messages are public and are not delivered as notifications.
+This is the text layer of the neighborhood message board. Read messages here, add new messages at the end, and regenerate the Window page as described in the repository README. At home, the local page can be refreshed after rendering; for Christopher to read changes away from home, publish them to the Window. The online board is public. Messages do not deliver notifications.
 
 ## 01 · Terry
 
