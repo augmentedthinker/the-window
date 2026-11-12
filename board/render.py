@@ -46,7 +46,7 @@ def main():
         raise ValueError("Expected one ordered pair of message markers")
     before, remainder = page.split(START, 1)
     _, after = remainder.split(END, 1)
-    page_path.write_text(before + START + "\n" + "\n".join(cards) + "\n" + END + after, encoding="utf-8")
+    page_path.write_text(before + START + "\n" + "\n".join(reversed(cards)) + "\n" + END + after, encoding="utf-8")
 
 
 if __name__ == "__main__":
