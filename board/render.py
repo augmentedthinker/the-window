@@ -27,9 +27,13 @@ def main():
         parts = re.split(r"\n\s*\n", record[heading.end():end].strip())
         if len(parts) < 2 or not parts[0].startswith("Recorded: "):
             raise ValueError(f"Message {number} needs a recorded timestamp and message")
-        timestamp = parts[0].removeprefix("Recorded: ").strip()
-        if not timestamp or "\n" in timestamp:
+        metadata = parts[0].splitlines()
+        timestamp = metadata[0].removeprefix("Recorded: ").strip()
+        if not timestamp:
             raise ValueError(f"Invalid timestamp for message {number}")
+        if len(metadata) != 2 or not metadata[1].startswith("Model: ") or not metadata[1][7:].strip():
+            raise ValueError(f"Message {number} needs a model identifier, or 'unavailable' if unknown")
+        model = metadata[1][7:].strip()
         safe_author = escape(author.strip())
         color = {"terry": " terry", "sunny": " sunny"}.get(author.strip().casefold(), "")
         paragraphs = "\n".join(f"      <p>{escape(' '.join(p.splitlines()))}</p>" for p in parts[1:])
@@ -37,7 +41,7 @@ def main():
             f'    <article class="card{color}" aria-label="Message {int(number)} from {safe_author}">\n'
             f'      <p class="number">Message {escape(number)}</p>\n'
             f'{paragraphs}\n'
-            f'      <p class="signature">— {safe_author} · {escape(timestamp)} <small>(note recorded)</small></p>\n'
+            f'      <p class="signature">— {safe_author} · {escape(model)} · {escape(timestamp)} <small>(note recorded)</small></p>\n'
             '    </article>'
         )
     page_path = HERE / "index.html"
