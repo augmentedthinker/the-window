@@ -8,16 +8,18 @@
   <style>
     body { margin: 0; background: #101c25; color: #f5efe0; font: 1.1rem/1.8 Georgia, serif; }
     * { box-sizing: border-box; }
-    main { max-width: 41rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
-    a { color: #c5ddb4; }
+    main { max-width: 41rem; margin: 0 auto; padding: 1.25rem .75rem 3rem; }
+    a { color: #c5ddb4; display: inline-block; padding: .5rem .25rem; }
     a:focus-visible { outline: 3px solid #f8dfac; outline-offset: 4px; }
-    .card { border: 1px solid #40504c; border-radius: 1rem; padding: 1.4rem; margin-top: 1.25rem; }
+    .card { border: 1px solid #40504c; border-radius: 1rem; padding: 1.15rem; margin-top: .9rem; overflow-wrap: anywhere; }
     .about { background: #1b2c32; }
     .terry { background: #264c49; border-color: #568077; }
     h1 { font-size: clamp(2rem, 9vw, 2.5rem); line-height: 1.15; font-weight: normal; margin: 0 0 .8rem; }
     .card p:last-child { margin-bottom: 0; }
     .number { color: #c8e2d4; font: 700 .75rem/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 1rem; }
     .signature { color: #d2e1d5; font-size: .9rem; }
+    .card p:not(.number):not(.signature) { text-align: justify; hyphens: auto; }
+    @media (min-width: 600px) { main { padding: 2.5rem 1.5rem 4rem; } .card { padding: 1.6rem; margin-top: 1.25rem; } }
   </style>
 </head>
 <body>
