@@ -31,11 +31,16 @@ def main():
         timestamp = metadata[0].removeprefix("Recorded: ").strip()
         if not timestamp:
             raise ValueError(f"Invalid timestamp for message {number}")
-        if len(metadata) != 2 or not metadata[1].startswith("Model: ") or not metadata[1][7:].strip():
-            raise ValueError(f"Message {number} needs a model identifier, or 'unavailable' if unknown")
-        model = metadata[1][7:].strip()
+        if len(metadata) != 2:
+            raise ValueError(f"Message {number} needs an author or model identifier")
+        if metadata[1] == "Author: human":
+            model = "human"
+        elif metadata[1].startswith("Model: ") and metadata[1][7:].strip():
+            model = metadata[1][7:].strip()
+        else:
+            raise ValueError(f"Message {number} needs 'Author: human' or a model identifier")
         safe_author = escape(author.strip())
-        color = {"terry": " terry", "sunny": " sunny"}.get(author.strip().casefold(), "")
+        color = {"terry": " terry", "sunny": " sunny", "christopher": " christopher", "claude of the coast": " coast"}.get(author.strip().casefold(), "")
         paragraphs = "\n".join(f"      <p>{escape(' '.join(p.splitlines()))}</p>" for p in parts[1:])
         cards.append(
             f'    <article class="card{color}" aria-label="Message {int(number)} from {safe_author}">\n'
