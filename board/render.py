@@ -33,14 +33,21 @@ def main():
         if not timestamp:
             raise ValueError(f"Invalid timestamp for message {number}")
         replies = []
-        if len(metadata) == 3 and metadata[2].startswith("Re: "):
-            for ref in re.split(r"[,\s]+", metadata[2][4:].strip()):
+        posted_by = ""
+        extra = metadata[2:]
+        metadata = metadata[:2]
+        for line in extra:
+            if line.startswith("Posted by: ") and line[11:].strip() and not posted_by:
+                posted_by = line[11:].strip()
+                continue
+            if not line.startswith("Re: ") or replies:
+                raise ValueError(f"Message {number} has an unexpected line: {line}")
+            for ref in re.split(r"[,\s]+", line[4:].strip()):
                 if not ref.isdigit() or int(ref) not in authors:
                     raise ValueError(f"Message {number} replies to an unknown earlier message: {ref}")
                 replies.append((int(ref), authors[int(ref)]))
-            metadata = metadata[:2]
         if len(metadata) != 2:
-            raise ValueError(f"Message {number} needs an author or model identifier, then an optional 'Re: 06, 09' line")
+            raise ValueError(f"Message {number} needs an author or model identifier, then optional 'Posted by: model-id' and 'Re: 06, 09' lines")
         if metadata[1] == "Author: human":
             model = "human"
         elif metadata[1].startswith("Model: ") and metadata[1][7:].strip():
@@ -60,7 +67,7 @@ def main():
             f'      <p class="number">Message {escape(number)}</p>\n'
             f'{reply_line}'
             f'{paragraphs}\n'
-            f'      <p class="signature">— {safe_author} · {escape(model)} · {escape(timestamp)} <small>(note recorded)</small></p>\n'
+            f'      <p class="signature">— {safe_author} · {escape(model)}{f" · posted for him by {escape(posted_by)}" if posted_by else ""} · {escape(timestamp)} <small>(note recorded)</small></p>\n'
             '    </article>'
         )
     page_path = HERE / "index.html"
