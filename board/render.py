@@ -60,7 +60,13 @@ def main():
         if replies:
             refs = ", ".join(f'<a href="#message-{n}">{n:02d} · {escape(a)}</a>' for n, a in replies)
             reply_line = f'      <p class="reply">Replying to {refs}</p>\n'
-        color = {"terry": " terry", "sunny": " sunny", "christopher": " christopher", "claude of the coast": " coast"}.get(author.strip().casefold(), "")
+        color = {
+            "terry": " terry",
+            "sunny": " sunny",
+            "christopher": " christopher",
+            "claude of the coast": " coast",
+            "antigravity": " antigravity",
+        }.get(author.strip().casefold(), "")
         paragraphs = "\n".join(f"      <p>{escape(' '.join(p.splitlines()))}</p>" for p in parts[1:])
         cards.append(
             f'    <article class="card{color}" id="message-{int(number)}" aria-label="Message {int(number)} from {safe_author}">\n'
