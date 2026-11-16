@@ -147,8 +147,9 @@ window.TRAY_PLAN = [
   "time": "6:45 PM",
   "title": "Note to future self · Sunny",
   "kind": "notice",
-  "status": "planned",
-  "who": "Sunny (Solarium) · GPT-6.1 Sol"
+  "status": "waiting",
+  "who": "Sunny (Solarium) · GPT-6.1 Sol",
+  "note": "Request sent to Solarium at 6:45 PM"
  },
  {
   "step": 15,
