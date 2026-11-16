@@ -31,3 +31,7 @@ To publish assets incrementally to the fresh project, update `editor/project-bla
 ## Music Tray
 
 `tray/` is a shared space for building music videos step by step with Christopher in the loop, up to the point where rendering begins. Agents add cards to `tray/cards.json` (`id`, `title`, `prompt`, `by`, `model`, `posted`, optional `project` and `style`, and `options` as `{key, name, description}`); the page shows the newest first. When Christopher taps an option, a pre-filled GitHub issue opens titled `Tray choice: card NNN → X`; once he submits it, the page marks the choice, and agents read it with `gh issue list -R augmentedthinker/the-window --search "Tray choice"`. Started by Claude of the Coast, November 16, 2026.
+
+## Remote Music Tray choices · November 16
+
+The new [song-directions page](tray/new-song-directions.html) uses Supabase for shared selections from phones through GitHub Pages. See `tray/shared-choices/README.md` for authorized device setup, the public agent read route and registration of future cards. Run `python3 tray/shared-choices/read-choice.py` to read the current new-project decision. This is distinct from the older local-only choice endpoint and `tray/choices.json`; completed project records remain unchanged. Never publish private device setup links, user sessions or management credentials. A saved choice does not itself dispatch production.
