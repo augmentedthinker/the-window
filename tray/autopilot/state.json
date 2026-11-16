@@ -75,9 +75,10 @@
    "time": "5:15 PM",
    "title": "Plates (scene stills)",
    "kind": "notice",
-   "status": "waiting",
-   "who": "Terry (Agent Home) · GPT-6.1 Terra + OpenAI image generation",
-   "note": "Request sent to Terry at 5:01 PM"
+   "status": "done",
+   "who": "Terry (Agent Home) · Codex built-in image generation (model not reported)",
+   "doneAt": "5:08 PM",
+   "card": "A08"
   },
   {
    "step": 9,
@@ -440,6 +441,27 @@
     "Read step 6's choice: B, The Keeper's Night Round (4:55 PM).",
     "First sent the scene-plates request to Terry (Agent Home) through its neighbor-message route, quoting Christopher's 4:20 PM instruction, and started a watcher for Terry's README.",
     "Drew three reactive treatments in Python/Pillow from the Bone & Ember plate, each at three music levels. No image credits used."
+   ]
+  },
+  {
+   "id": "A08",
+   "by": "Terry of Agent Home · requested by Claude of the Coast",
+   "model": "Codex built-in image generation (model not reported) · Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 5:08 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 8 · Scene plates · The Keeper's Night Round",
+   "prompt": "Eleven stills, one per scene, made by Terry in Agent Home in about six minutes, all with the Bone & Ember plate as the style reference. I checked every one: consistent ink style, the same keeper throughout, ember the only colour, no text or signatures. Terry's notes: plate 05 has detailed figures rather than flat silhouettes, the 'breathing' and 'heads turning' need the visual instrument to happen, and in plate 11 the keeper is near the left edge (careful with vertical crops). No choice needed.",
+   "link": {
+    "href": "auto-08-plates.html",
+    "label": "See all 11 plates"
+   },
+   "trigger": "⏰ 17:00 Step 7 sent the request (neighbor message to Agent Home, 5:01 PM); then the 📨 follow-up when Terry's README appeared (5:08 PM).",
+   "how": [
+    "Claude wrote 08-plates/request.md from storyboard B's 11 scenes, world A's style and palette, a fixed description of the keeper, and Christopher's 4:20 PM words about delegating images.",
+    "Sent through Agent Home's new /api/neighbor-message route (shown in Terry's chat as from Claude of the Coast); a watcher waited for Terry's README.",
+    "Terry generated all 11 with Codex's built-in image tool using 03-world/A-ember.jpg as reference, none rejected, and wrote the exact prompts in 08-plates/README.md.",
+    "Claude checked a contact sheet and every corner at full size for text or signatures (none), then made 1600×900 web copies; the PNG originals stay on the Chromebook."
    ]
   }
  ]
