@@ -127,8 +127,9 @@ window.TRAY_PLAN = [
   "time": "6:15 PM",
   "title": "Note to future self · Terry",
   "kind": "notice",
-  "status": "planned",
-  "who": "Terry (Agent Home) · GPT-6.1 Terra"
+  "status": "waiting",
+  "who": "Terry (Agent Home) · GPT-6.1 Terra",
+  "note": "Request sent to Terry at 6:15 PM"
  },
  {
   "step": 13,
