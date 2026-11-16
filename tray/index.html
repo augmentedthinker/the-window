@@ -42,54 +42,54 @@
   <h1>Music Tray</h1>
   <div class="intro">
     <p>A tray for building music videos together, one small step at a time. An agent sets a card on the tray: a question, a few options, a draft to look at. Christopher picks or replies, and the next card builds on that answer. Step by step it goes from a style to a song, a story, scenes and a cut list, up to the point where rendering begins.</p>
-    <p>Tap an option to choose it. That opens a short pre-filled note on GitHub; press <em>Submit</em> and your choice is recorded here and seen by the homes.</p>
+    <p>Tap an option to choose it. Your choice is saved on the Chromebook (in <code>tray/choices.json</code>), where every home can read it.</p>
   </div>
   <div id="cards"></div>
   <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
 </main>
+<script src="cards.js"></script>
 <script>
-const REPO = 'augmentedthinker/the-window';
+// Choices are saved through the Coast's local server, which writes tray/choices.json.
+const API = 'http://127.0.0.1:8850/api/tray/choices';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const titleFor = (card, opt) => `Tray choice: card ${card.id} → ${opt.key}`;
+const cards = window.TRAY_CARDS || [];
+let picked = {}, reachable = true;
 
-async function choices() {
-  // Choices are GitHub issues titled "Tray choice: card NNN → X" opened by Christopher's account.
-  try {
-    const r = await fetch(`https://api.github.com/repos/${REPO}/issues?state=all&creator=augmentedthinker&per_page=100`);
-    if (!r.ok) return {};
-    const out = {};
-    for (const i of (await r.json()).reverse()) {
-      const m = /^Tray choice: card (\w+) → (\w+)/.exec(i.title);
-      if (m) out[m[1]] = m[2];   // latest wins
-    }
-    return out;
-  } catch { return {}; }
-}
-
-async function main() {
-  const [{ cards }, picked] = await Promise.all([fetch('cards.json?' + Date.now()).then(r => r.json()), choices()]);
+function render() {
   const el = document.getElementById('cards');
   if (!cards.length) { el.innerHTML = '<p class="empty">The tray is empty for now. The first card is on its way.</p>'; return; }
-  el.innerHTML = cards.slice().reverse().map(card => `
-    <article class="card ${esc(card.style || '')}" id="card-${esc(card.id)}">
+  el.innerHTML = cards.slice().reverse().map(card => {
+    const p = picked[card.id]?.key;
+    return `<article class="card ${esc(card.style || '')}" id="card-${esc(card.id)}">
       <div class="meta">Card ${esc(card.id)} · ${esc(card.by)}${card.model ? ' · ' + esc(card.model) : ''} · ${esc(card.posted)}${card.project ? ' · ' + esc(card.project) : ''}</div>
       <h2>${esc(card.title)}</h2>
       <p class="prompt">${esc(card.prompt)}</p>
       ${(card.options || []).map(o => `
-        <button class="option${picked[card.id] === o.key ? ' chosen' : ''}" data-card="${esc(card.id)}" data-key="${esc(o.key)}">
+        <button class="option${p === o.key ? ' chosen' : ''}" data-card="${esc(card.id)}" data-key="${esc(o.key)}">
           <b>${esc(o.key)} · ${esc(o.name)}</b><span>${esc(o.description)}</span>
         </button>`).join('')}
-      <div class="status">${picked[card.id] ? 'Chosen. The next card will build on this.' : 'Waiting for Christopher’s choice.'}</div>
-    </article>`).join('');
-  el.addEventListener('click', e => {
-    const b = e.target.closest('.option'); if (!b) return;
-    const card = cards.find(c => c.id === b.dataset.card), opt = card.options.find(o => o.key === b.dataset.key);
-    b.classList.add('pending');
-    const body = `Christopher chose **${opt.key} · ${opt.name}** on Music Tray card ${card.id} ("${card.title}").\n\nAdd any notes below this line:\n`;
-    window.open(`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(titleFor(card, opt))}&body=${encodeURIComponent(body)}`, '_blank');
-  });
+      <div class="status">${p ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+    </article>`;
+  }).join('');
 }
-main();
+
+async function load() {
+  try { const r = await fetch(API); if (!r.ok) throw new Error(); picked = await r.json(); reachable = true; } catch { reachable = false; }
+  render();
+}
+
+document.getElementById('cards').addEventListener('click', async e => {
+  const b = e.target.closest('.option'); if (!b) return;
+  b.classList.add('pending');
+  try {
+    const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ card: b.dataset.card, key: b.dataset.key }) });
+    if (!r.ok) throw new Error();
+    picked = await r.json(); reachable = true;
+  } catch { reachable = false; }
+  render();
+});
+
+render(); load();
 </script>
 </body>
 </html>
