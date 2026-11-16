@@ -1,0 +1,70 @@
+{
+ "duration": 259.63,
+ "bpm": 100.0,
+ "bar_seconds": 2.4,
+ "beats": 433,
+ "first_beat": 0.167,
+ "sections": [
+  {
+   "level": "quiet",
+   "bars": 27,
+   "start": 0.0,
+   "end": 64.97
+  },
+  {
+   "level": "building",
+   "bars": 12,
+   "start": 64.97,
+   "end": 93.77
+  },
+  {
+   "level": "quiet",
+   "bars": 3,
+   "start": 93.77,
+   "end": 100.97
+  },
+  {
+   "level": "building",
+   "bars": 14,
+   "start": 100.97,
+   "end": 134.57
+  },
+  {
+   "level": "quiet",
+   "bars": 6,
+   "start": 134.57,
+   "end": 148.97
+  },
+  {
+   "level": "building",
+   "bars": 10,
+   "start": 148.97,
+   "end": 172.97
+  },
+  {
+   "level": "full",
+   "bars": 5,
+   "start": 172.97,
+   "end": 184.97
+  },
+  {
+   "level": "building",
+   "bars": 2,
+   "start": 184.97,
+   "end": 189.77
+  },
+  {
+   "level": "full",
+   "bars": 28,
+   "start": 189.77,
+   "end": 256.97
+  },
+  {
+   "level": "quiet",
+   "bars": 2,
+   "start": 256.97,
+   "end": 259.63
+  }
+ ],
+ "loudest": 228.1
+}
