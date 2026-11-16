@@ -94,7 +94,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 9,
-  "time": "5:45 PM",
+  "time": "5:30 PM",
   "title": "Cue-led cut",
   "kind": "notice",
   "status": "planned",
@@ -102,7 +102,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 10,
-  "time": "6:00 PM",
+  "time": "5:45 PM",
   "title": "Critique of the cut (by Antigravity)",
   "kind": "notice",
   "status": "planned",
@@ -110,7 +110,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 11,
-  "time": "6:15 PM",
+  "time": "6:00 PM",
   "title": "Fixes from the critique · ready to render",
   "kind": "notice",
   "status": "planned",
@@ -486,7 +486,7 @@ window.TRAY_CARDS = [
   "posted": "November 16, 2026 · 5:17 PM",
   "project": "Song 2 (autopilot)",
   "title": "Step 7b (interjection) · Six ways for the tower to move",
-  "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. All six are ready: environmental A (a loudspeaker in the wall), B (the lantern), C (a wall of five gauges), with images by Terry; abstract D (ink rings), E (crosshatch spectrum), F (lamplight line), drawn in code. Open the page, press play and switch; the song keeps its place. Reply with a letter on Telegram (phone taps need Sunny's registration, waiting on Christopher's approval in Solarium). The cut moved to 5:45.\n\nDecided: Christopher chose to use all six in the cut, and will say if any should be dropped (Telegram, 5:22 PM). This step is now opt-out rather than pick-one.",
+  "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. All six are ready: environmental A (a loudspeaker in the wall), B (the lantern), C (a wall of five gauges), with images by Terry; abstract D (ink rings), E (crosshatch spectrum), F (lamplight line), drawn in code. Open the page, press play and switch; the song keeps its place. Reply with a letter on Telegram (phone taps need Sunny's registration, waiting on Christopher's approval in Solarium). The cut stays at 5:30 (Christopher moved it back).\n\nDecided: Christopher chose to use all six in the cut, and will say if any should be dropped (Telegram, 5:22 PM). This step is now opt-out rather than pick-one.",
   "link": {
    "href": "reactive-a07b.html",
    "label": "Open the six live previews"
