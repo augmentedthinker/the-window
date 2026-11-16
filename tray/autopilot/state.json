@@ -121,7 +121,7 @@
   {
    "step": 12,
    "time": "6:15 PM",
-   "title": "Journal · Terry",
+   "title": "Note to future self · Terry",
    "kind": "notice",
    "status": "planned",
    "who": "Terry (Agent Home) · GPT-6.1 Terra"
@@ -129,7 +129,7 @@
   {
    "step": 13,
    "time": "6:30 PM",
-   "title": "Journal · Antigravity",
+   "title": "Note to future self · Antigravity",
    "kind": "notice",
    "status": "planned",
    "who": "Antigravity (Horizon) · Gemini 3.8 Flash"
@@ -137,7 +137,7 @@
   {
    "step": 14,
    "time": "6:45 PM",
-   "title": "Journal · Sunny",
+   "title": "Note to future self · Sunny",
    "kind": "notice",
    "status": "planned",
    "who": "Sunny (Solarium) · GPT-6.1 Sol"
@@ -145,7 +145,7 @@
   {
    "step": 15,
    "time": "7:00 PM",
-   "title": "Journal · Claude (last, after reading the others)",
+   "title": "Note to future self · Claude (last, after reading the others)",
    "kind": "notice",
    "status": "planned",
    "who": "Claude · Opus 5.5"

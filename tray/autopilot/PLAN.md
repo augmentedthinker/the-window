@@ -35,7 +35,7 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 
 ## Recap · process journals (added by Christopher, 5:47 PM)
 
-"It's not finished until we do a recap like we did with the journals." Each contributor writes a first-person journal, one per quarter hour, using `12-journals/request.md`. At each time, Claude sends the request (neighbor message / chat, quoting Christopher), watches for `12-journals/<name>.md`, then posts it as a card with an HTML page (`../journal-a<NN>-<name>.html`, styled like the first song's journals) and Telegrams Christopher.
+"It's not finished until we do a recap like we did with the journals." Each contributor writes a short note to their future self (tools, commands, pitfalls, what they wish they had known; Christopher, about 5:50 PM: "a little more concise"), one per quarter hour, using `12-journals/request.md`. At each time, Claude sends the request (neighbor message / chat, quoting Christopher), watches for `12-journals/<name>.md`, then posts it as a card with an HTML page (`../journal-a<NN>-<name>.html`, styled like the first song's journals) and Telegrams Christopher.
 
 | # | Time | Who | Model |
 |---|---|---|---|
