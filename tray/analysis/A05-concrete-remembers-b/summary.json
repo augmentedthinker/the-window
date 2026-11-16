@@ -1,0 +1,112 @@
+{
+ "duration": 229.1,
+ "bpm": 138.04,
+ "bar_seconds": 1.739,
+ "beats": 527,
+ "first_beat": 0.15,
+ "sections": [
+  {
+   "level": "quiet",
+   "bars": 29,
+   "start": 0.0,
+   "end": 50.57
+  },
+  {
+   "level": "building",
+   "bars": 2,
+   "start": 50.57,
+   "end": 54.05
+  },
+  {
+   "level": "quiet",
+   "bars": 12,
+   "start": 54.05,
+   "end": 74.91
+  },
+  {
+   "level": "building",
+   "bars": 20,
+   "start": 74.91,
+   "end": 109.68
+  },
+  {
+   "level": "full",
+   "bars": 5,
+   "start": 109.69,
+   "end": 118.38
+  },
+  {
+   "level": "quiet",
+   "bars": 2,
+   "start": 118.38,
+   "end": 121.86
+  },
+  {
+   "level": "building",
+   "bars": 5,
+   "start": 121.86,
+   "end": 130.55
+  },
+  {
+   "level": "full",
+   "bars": 4,
+   "start": 130.55,
+   "end": 137.5
+  },
+  {
+   "level": "building",
+   "bars": 3,
+   "start": 137.5,
+   "end": 142.72
+  },
+  {
+   "level": "full",
+   "bars": 8,
+   "start": 142.72,
+   "end": 156.63
+  },
+  {
+   "level": "building",
+   "bars": 8,
+   "start": 156.63,
+   "end": 170.54
+  },
+  {
+   "level": "full",
+   "bars": 2,
+   "start": 170.54,
+   "end": 174.02
+  },
+  {
+   "level": "building",
+   "bars": 2,
+   "start": 174.02,
+   "end": 177.5
+  },
+  {
+   "level": "full",
+   "bars": 2,
+   "start": 177.49,
+   "end": 180.97
+  },
+  {
+   "level": "building",
+   "bars": 2,
+   "start": 180.97,
+   "end": 184.45
+  },
+  {
+   "level": "full",
+   "bars": 18,
+   "start": 184.45,
+   "end": 215.75
+  },
+  {
+   "level": "building",
+   "bars": 8,
+   "start": 215.74,
+   "end": 229.1
+  }
+ ],
+ "loudest": 212.1
+}
