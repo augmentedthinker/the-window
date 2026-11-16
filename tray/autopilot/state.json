@@ -19,7 +19,7 @@
   {
    "step": 3,
    "time": "4:00 PM",
-   "title": "Artistic world",
+   "title": "Artistic world (three takes on Monolith's ink style)",
    "kind": "choice",
    "status": "planned"
   },
@@ -88,8 +88,8 @@
    "style": "coast",
    "posted": "November 16, 2026 · 3:35 PM",
    "project": "Song 2 (autopilot)",
-   "title": "Step 1 · Pick a musical style",
-   "prompt": "Three places for the new song to begin. Choose on your phone (the button below) or reply on Telegram with a letter. If nothing is chosen by 3:45, I'll pick the one I think is strongest and say so on the next card.",
+   "title": "Step 1 · Musical style — Christopher's own direction",
+   "prompt": "Christopher chose none of the three (via Telegram, 3:45 PM): \"something more like the musical style in Monolith, The Resonance Chamber or When the Wires Wake, with the artistic style of Monolith.\"\n\nSound: Dark industrial electronica and cinematic darksynth in the family of Monolith (Horizon), The Resonance Chamber (Horizon) and When the Wires Wake (Astra): a heavy half-time stride, saturated detuned analog sub-bass, dry crushing kick, cavernous snare, ticking metallic percussion, cold granular pads, and a low, intimate voice inside the machinery. Original melody and lyric; none of those recordings are used.\n\nArt: Monolith's look: monochrome architectural pen-and-ink, brutalist megastructures, cables and conduits as the performers, a small human figure for scale; charcoal, slate and bone paper with one restrained accent colour. New plates only; none of Monolith's art is used.\n\nTempo: about 138 BPM, felt as a 69 BPM half-time stride.\nSuno style line for step 4: dark industrial electronica, cinematic darksynth, 138 bpm half-time stride, saturated detuned analog sub-bass, dry crushing kick, cavernous snare, ticking metallic percussion, cold granular pads, low intimate baritone vocal, minor key, vast negative space, nocturnal",
    "link": {
     "href": "auto-01-style.html",
     "label": "Choose on the phone page"
@@ -97,17 +97,17 @@
    "options": [
     {
      "key": "A",
-     "name": "Desert Night Soul",
+     "name": "Desert Night Soul (not chosen)",
      "description": "Slow-burning cinematic desert blues: tremolo baritone guitar, frame drum and hand claps, upright bass, a smoky low female vocal; the last chorus opens into a wide, gospel-tinged group answer. Feeling: Heat leaving the sand after dark. Patient, a little dangerous, then warm. Tempo: about 72 BPM, half-time swing."
     },
     {
      "key": "B",
-     "name": "Harbor Lights City Pop",
+     "name": "Harbor Lights City Pop (not chosen)",
      "description": "Bright 1980s-style city pop: slap bass, Rhodes piano, glassy chorus guitar, short brass stabs, a light male–female duet trading lines and meeting on the hook. Feeling: A late ferry ride into a lit-up harbor, windows down, nothing urgent. Tempo: about 112 BPM, steady four-on-the-floor lift in the chorus."
     },
     {
      "key": "C",
-     "name": "Cathedral Breaks",
+     "name": "Cathedral Breaks (not chosen)",
      "description": "Starts as a still choir over an organ drone and bells, then drops into fast, liquid drum and bass: rolling breakbeats, deep sub, chopped choir phrases over the top. Feeling: Stone and stained glass suddenly running. Awe that turns into motion. Tempo: slow, free intro, then 172 BPM."
     }
    ],
@@ -116,8 +116,10 @@
     "Reviewed how Strings Across the Ice began (card 001: three styles) and kept clear of its aurora-fiddle synthwave and of the three directions removed earlier today.",
     "Wrote three contrasting directions — slow and smoky, bright and breezy, still then fast — each with a ready Suno style line (autopilot/01-style/directions.json).",
     "Built the phone page with autopilot/make-choice-page.py on Sunny's shared-choice backend (remote card directions-001, already registered).",
-    "No generation tools or free-tier credits used in this step."
-   ]
+    "No generation tools or free-tier credits used in this step.",
+    "3:45 PM: Christopher replied on Telegram choosing none of A–C and naming his own direction. Read Horizon's Monolith and Resonance Chamber pages and Astra's When the Wires Wake style notes (read-only) and wrote the direction above in my own words, with an original Suno style line."
+   ],
+   "chosenBy": "Christopher · his own direction"
   }
  ]
 }

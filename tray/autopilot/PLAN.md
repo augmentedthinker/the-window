@@ -15,13 +15,15 @@ Each step is fired by a timer (`systemd-run --user`, unit `tray-auto-HHMM`) that
 
 Free tiers only; credit tools and models on every card. One heavy job at a time; close any browser when done (see Coast CLAUDE.md on memory).
 
+**Step 1 was decided by Christopher, not from the options:** read `01-style/directions.json` → `decision.direction` (dark industrial electronica; Monolith's ink art) for the style, Suno line and art direction.
+
 ## The steps
 
 | # | Time | Step | Kind | Remote card id |
 |---|---|---|---|---|
 | 1 | 3:30 | **Musical style** — three distinct directions (genre, instruments, mood, a one-line Suno style prompt each) | choice | `directions-001` (registered) |
 | 2 | 3:45 | **Lyrics** — three hook/chorus/refrain drafts in the chosen style, then a full lyric for the chosen one at step 4 | choice | `step-02` |
-| 3 | 4:00 | **Artistic world** — three visual worlds, one Leonardo image + five-colour palette each (`image`, `palette` fields) | choice | `step-03` |
+| 3 | 4:00 | **Artistic world** — three takes within Monolith's monochrome architectural ink style (Christopher's choice at step 1), one Leonardo image + five-colour palette each (`image`, `palette` fields) | choice | `step-03` |
 | 4 | 4:15 | **Recording** — handed to **Antigravity in Horizon** (I can't reach Suno myself). See *Step 4 in detail* below | choice (A/B) | `step-04` |
 | 5 | 4:30 | **Song analysis, played back** — `../tools/analyze.sh` on the chosen take → `../analysis/A05-<slug>/`, link `player.html?song=…`; lyric timing only if Suno gives word timings | notice | — |
 | 6 | 4:45 | **Storyboard** — three story arcs across the song's sections, timed to the analysis cues | choice | `step-06` |

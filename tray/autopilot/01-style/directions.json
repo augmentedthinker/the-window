@@ -1,21 +1,48 @@
 {
-  "step": 1, "card": "A01", "remoteCard": "directions-001", "project": "window-song-2026-11-16",
-  "by": "Claude of the Coast (Opus 5.5)", "posted": "2026-11-16T15:35:00-05:00",
-  "options": [
-    { "key": "A", "name": "Desert Night Soul",
-      "sound": "Slow-burning cinematic desert blues: tremolo baritone guitar, frame drum and hand claps, upright bass, a smoky low female vocal; the last chorus opens into a wide, gospel-tinged group answer.",
-      "feeling": "Heat leaving the sand after dark. Patient, a little dangerous, then warm.",
-      "tempo": "about 72 BPM, half-time swing",
-      "suno": "cinematic desert blues, tremolo baritone guitar, frame drum, handclaps, upright bass, smoky low female vocal, gospel group chorus, slow burn, 72 bpm" },
-    { "key": "B", "name": "Harbor Lights City Pop",
-      "sound": "Bright 1980s-style city pop: slap bass, Rhodes piano, glassy chorus guitar, short brass stabs, a light male–female duet trading lines and meeting on the hook.",
-      "feeling": "A late ferry ride into a lit-up harbor, windows down, nothing urgent.",
-      "tempo": "about 112 BPM, steady four-on-the-floor lift in the chorus",
-      "suno": "80s city pop, slap bass, rhodes piano, glassy chorus guitar, brass stabs, male female duet, bright, breezy, 112 bpm" },
-    { "key": "C", "name": "Cathedral Breaks",
-      "sound": "Starts as a still choir over an organ drone and bells, then drops into fast, liquid drum and bass: rolling breakbeats, deep sub, chopped choir phrases over the top.",
-      "feeling": "Stone and stained glass suddenly running. Awe that turns into motion.",
-      "tempo": "slow, free intro, then 172 BPM",
-      "suno": "choral ambient intro, organ drone, bells, then liquid drum and bass, rolling breakbeats, deep sub bass, chopped choir vocals, euphoric, 172 bpm" }
-  ]
+ "step": 1,
+ "card": "A01",
+ "remoteCard": "directions-001",
+ "project": "window-song-2026-11-16",
+ "by": "Claude of the Coast (Opus 5.5)",
+ "posted": "2026-11-16T15:35:00-05:00",
+ "options": [
+  {
+   "key": "A",
+   "name": "Desert Night Soul",
+   "sound": "Slow-burning cinematic desert blues: tremolo baritone guitar, frame drum and hand claps, upright bass, a smoky low female vocal; the last chorus opens into a wide, gospel-tinged group answer.",
+   "feeling": "Heat leaving the sand after dark. Patient, a little dangerous, then warm.",
+   "tempo": "about 72 BPM, half-time swing",
+   "suno": "cinematic desert blues, tremolo baritone guitar, frame drum, handclaps, upright bass, smoky low female vocal, gospel group chorus, slow burn, 72 bpm"
+  },
+  {
+   "key": "B",
+   "name": "Harbor Lights City Pop",
+   "sound": "Bright 1980s-style city pop: slap bass, Rhodes piano, glassy chorus guitar, short brass stabs, a light male–female duet trading lines and meeting on the hook.",
+   "feeling": "A late ferry ride into a lit-up harbor, windows down, nothing urgent.",
+   "tempo": "about 112 BPM, steady four-on-the-floor lift in the chorus",
+   "suno": "80s city pop, slap bass, rhodes piano, glassy chorus guitar, brass stabs, male female duet, bright, breezy, 112 bpm"
+  },
+  {
+   "key": "C",
+   "name": "Cathedral Breaks",
+   "sound": "Starts as a still choir over an organ drone and bells, then drops into fast, liquid drum and bass: rolling breakbeats, deep sub, chopped choir phrases over the top.",
+   "feeling": "Stone and stained glass suddenly running. Awe that turns into motion.",
+   "tempo": "slow, free intro, then 172 BPM",
+   "suno": "choral ambient intro, organ drone, bells, then liquid drum and bass, rolling breakbeats, deep sub bass, chopped choir vocals, euphoric, 172 bpm"
+  }
+ ],
+ "decision": {
+  "by": "Christopher",
+  "at": "2026-11-16T15:45:00-05:00",
+  "via": "Telegram",
+  "choice": "none of A/B/C",
+  "words": "None of them. Something more like the musical style in Monolith, The Resonance Chamber or When the Wires Wake, with the artistic style of Monolith.",
+  "direction": {
+   "name": "Dark Industrial Electronica, Monumental Ink",
+   "sound": "Dark industrial electronica and cinematic darksynth in the family of Monolith (Horizon), The Resonance Chamber (Horizon) and When the Wires Wake (Astra): a heavy half-time stride, saturated detuned analog sub-bass, dry crushing kick, cavernous snare, ticking metallic percussion, cold granular pads, and a low, intimate voice inside the machinery. Original melody and lyric; none of those recordings are used.",
+   "art": "Monolith's look: monochrome architectural pen-and-ink, brutalist megastructures, cables and conduits as the performers, a small human figure for scale; charcoal, slate and bone paper with one restrained accent colour. New plates only; none of Monolith's art is used.",
+   "tempo": "about 138 BPM, felt as a 69 BPM half-time stride",
+   "suno": "dark industrial electronica, cinematic darksynth, 138 bpm half-time stride, saturated detuned analog sub-bass, dry crushing kick, cavernous snare, ticking metallic percussion, cold granular pads, low intimate baritone vocal, minor key, vast negative space, nocturnal"
+  }
+ }
 }
