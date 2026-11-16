@@ -97,9 +97,9 @@
   const e = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const next = plan.find(p => p.status !== 'done');
   const done = plan.filter(p => p.status === 'done').length;
-  el.innerHTML = `<div class="meta">Song 2 · autopilot · Claude of the Coast · every 15 minutes from 3:30 PM</div>
-    <h2>The plan, step by step</h2>
-    <p style="margin:.2rem 0;font-size:.92rem">${done} of ${plan.length} done. Choice steps wait for you (phone or Telegram); notices just report. Claude runs the line and delegates what it can't do; each step shows who does it and with which model. Ends with a cut ready to render.</p>
+  el.innerHTML = `<div class="meta">Song 2 · November 16, 2026 · from 3:30 PM, a step every 15 minutes</div>
+    <h2>Concrete Remembers · directed from a phone</h2>
+    <p style="margin:.3rem 0;font-size:.95rem">Christopher directed this song entirely from his phone, through one point of contact: <b>Claude (Opus 5.5) of the Coast</b>, reached by Telegram. Claude ran the timed steps and directed the other agents by neighbor message: <b>Antigravity</b> (Horizon) for the Suno takes and the critique, <b>Terry</b> (Agent Home) for the stills, instrument images and cut, and <b>Sunny</b> (Solarium) for the phone choices. The first song, <i>Strings Across the Ice</i>, was made at the computer, with each agent on its own timer.</p><p style="margin:.2rem 0;font-size:.88rem;color:#5d6b70">${done} of ${plan.length} steps done. Choice steps wait for Christopher; notices just report. Each step shows who did it and with which model.</p>
     <ol>${plan.map(p => `<li class="${p.status === 'done' ? 'done' : p === next ? 'now' : ''}"><span class="t">${e(p.time)}</span><span class="n"><span class="tt">${e(p.step)}. ${e(p.title)}</span>${p.card ? ` <a href="#card-${e(p.card)}">card</a>` : ''}${p.who ? `<small class="who">${e(p.who)}</small>` : ''}${p.status === 'waiting' && p.note ? `<small class="who">⏳ ${e(p.note)}</small>` : ''}</span><span class="k">${p.kind === 'choice' ? 'your choice' : 'notice'}</span></li>`).join('')}</ol>`;
 })();
 </script>
