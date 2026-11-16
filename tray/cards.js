@@ -9,7 +9,8 @@ window.TRAY_PLAN = [
   "kind": "choice",
   "status": "done",
   "doneAt": "3:37 PM",
-  "card": "A01"
+  "card": "A01",
+  "who": "Claude · Opus 5.5"
  },
  {
   "step": 2,
@@ -18,7 +19,8 @@ window.TRAY_PLAN = [
   "kind": "choice",
   "status": "done",
   "doneAt": "3:52 PM",
-  "card": "A02"
+  "card": "A02",
+  "who": "Claude · Opus 5.5"
  },
  {
   "step": 3,
@@ -27,7 +29,8 @@ window.TRAY_PLAN = [
   "kind": "choice",
   "status": "done",
   "doneAt": "4:10 PM",
-  "card": "A03"
+  "card": "A03",
+  "who": "Claude · Opus 5.5 + Leonardo (Lucid Origin, free)"
  },
  {
   "step": 4,
@@ -35,56 +38,64 @@ window.TRAY_PLAN = [
   "title": "Recording (Suno, two takes, made by Antigravity in Horizon)",
   "kind": "choice",
   "status": "waiting",
-  "note": "Full lyric and style sent to Horizon at 4:17 PM"
+  "note": "Full lyric and style sent to Horizon at 4:17 PM",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash + Suno (free)"
  },
  {
   "step": 5,
   "time": "4:30 PM",
   "title": "Song analysis, played back",
   "kind": "notice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5 (tray analysis tools)"
  },
  {
   "step": 6,
   "time": "4:45 PM",
   "title": "Storyboard",
   "kind": "choice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5"
  },
  {
   "step": 7,
   "time": "5:00 PM",
   "title": "Visual instrument",
   "kind": "choice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5 (code, no image credits)"
  },
  {
   "step": 8,
   "time": "5:15 PM",
   "title": "Plates (scene stills)",
   "kind": "notice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Terry (Agent Home) · GPT-6.1 Terra + OpenAI image generation"
  },
  {
   "step": 9,
   "time": "5:30 PM",
   "title": "Cue-led cut",
   "kind": "notice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5 (Coast video editor)"
  },
  {
   "step": 10,
   "time": "5:45 PM",
   "title": "Self-critique & fixes",
   "kind": "notice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5"
  },
  {
   "step": 11,
   "time": "6:00 PM",
   "title": "Pre-render cut · ready to render",
   "kind": "notice",
-  "status": "planned"
+  "status": "planned",
+  "who": "Claude · Opus 5.5"
  }
 ];
 window.TRAY_CARDS = [

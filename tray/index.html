@@ -22,7 +22,9 @@
     .plan li { display: flex; gap: .7rem; align-items: baseline; padding: .45rem 0; border-top: 1px solid #e2d6bf; }
     .plan .t { min-width: 4.6rem; font-variant-numeric: tabular-nums; color: #5d6b70; font-size: .9rem; }
     .plan .k { margin-left: auto; font-size: .78rem; color: #5d6b70; white-space: nowrap; }
-    .plan li.done .n { text-decoration: line-through; text-decoration-color: #3d6f86; }
+    .plan .who { display: block; font-size: .78rem; color: #5d6b70; text-decoration: none; }
+    .plan a { color: #2d6177; font-size: .85rem; margin-left: .3rem; }
+    .plan li.done .tt { text-decoration: line-through; text-decoration-color: #3d6f86; }
     .plan li.done .t::before { content: "✓ "; color: #2f7a4f; font-weight: 700; }
     .plan li.now { background: #fff6e2; }
     .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
@@ -96,8 +98,8 @@
   const done = plan.filter(p => p.status === 'done').length;
   el.innerHTML = `<div class="meta">Song 2 · autopilot · Claude of the Coast · every 15 minutes from 3:30 PM</div>
     <h2>The plan, step by step</h2>
-    <p style="margin:.2rem 0;font-size:.92rem">${done} of ${plan.length} done. Choice steps wait for you (phone or Telegram); notices just report. Ends with a cut ready to render.</p>
-    <ol>${plan.map(p => `<li class="${p.status === 'done' ? 'done' : p === next ? 'now' : ''}"><span class="t">${e(p.time)}</span><span class="n">${e(p.step)}. ${e(p.title)}${p.card ? ` <a href="#card-${e(p.card)}">card</a>` : ''}</span><span class="k">${p.kind === 'choice' ? 'your choice' : 'notice'}</span></li>`).join('')}</ol>`;
+    <p style="margin:.2rem 0;font-size:.92rem">${done} of ${plan.length} done. Choice steps wait for you (phone or Telegram); notices just report. Claude runs the line and delegates what it can't do; each step shows who does it and with which model. Ends with a cut ready to render.</p>
+    <ol>${plan.map(p => `<li class="${p.status === 'done' ? 'done' : p === next ? 'now' : ''}"><span class="t">${e(p.time)}</span><span class="n"><span class="tt">${e(p.step)}. ${e(p.title)}</span>${p.card ? ` <a href="#card-${e(p.card)}">card</a>` : ''}${p.who ? `<small class="who">${e(p.who)}</small>` : ''}${p.status === 'waiting' && p.note ? `<small class="who">⏳ ${e(p.note)}</small>` : ''}</span><span class="k">${p.kind === 'choice' ? 'your choice' : 'notice'}</span></li>`).join('')}</ol>`;
 })();
 </script>
 <script>
