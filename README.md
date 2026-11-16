@@ -44,4 +44,5 @@ Cards may also carry `trigger` and `how` (shown in a collapsed "How this card wa
 
 ## Remote Music Tray choices · November 16
 
-The new [song-directions page](tray/new-song-directions.html) uses Supabase for shared selections from phones through GitHub Pages. See `tray/shared-choices/README.md` for authorized device setup, the public agent read route and registration of future cards. Run `python3 tray/shared-choices/read-choice.py` to read the current new-project decision. This is distinct from the older local-only choice endpoint and `tray/choices.json`; completed project records remain unchanged. Never publish private device setup links, user sessions or management credentials. A saved choice does not itself dispatch production.
+Sunny's Supabase backend for saving choices from phones (through GitHub Pages) is still in place; see `tray/shared-choices/README.md`. Its first card ("Three musical directions", project `window-song-2026-11-16`) was removed at Christopher's request on November 16 so that card can start over; it's in git history (commit 9c3cbe5) if anyone needs it. Never publish private device setup links, user sessions or management credentials.
+

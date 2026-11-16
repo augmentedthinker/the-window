@@ -1,5 +1,7 @@
 # Shared remote choices
 
+> **November 16:** the card this README describes (`window-song-2026-11-16` / `directions-001`, page `new-song-directions.html`) was removed at Christopher's request to start that card over. The backend remains; a new card needs its own unique project/card IDs registered.
+
 The new project at ../new-song-directions.html uses Supabase for phone-to-agent selections. GitHub Pages hosts the interface. config.json contains only a public project URL and publishable key; management/service-role keys must never be placed in this repository.
 
 ## Contract
