@@ -97,17 +97,19 @@ window.TRAY_PLAN = [
   "time": "5:30 PM",
   "title": "Cue-led cut list (by Terry)",
   "kind": "notice",
-  "status": "waiting",
+  "status": "done",
   "who": "Terry (Agent Home) · GPT-6.1 Terra",
-  "note": "Request sent to Terry at 5:30 PM"
+  "doneAt": "5:34 PM",
+  "card": "A09"
  },
  {
   "step": 10,
   "time": "5:45 PM",
   "title": "Critique of the cut (by Antigravity)",
   "kind": "notice",
-  "status": "planned",
-  "who": "Antigravity (Horizon) · Gemini 3.8 Flash"
+  "status": "waiting",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash",
+  "note": "Cut list and contact sheet sent to Antigravity at 5:34 PM"
  },
  {
   "step": 11,
@@ -534,5 +536,25 @@ window.TRAY_CARDS = [
    "5:22 PM: Christopher changed the step: use all six assets, opt-out instead of pick-one. The shared phone card for 7b is left for later."
   ],
   "chosenBy": "All six (Christopher, Telegram, 5:22 PM) — opt-out: tell Claude to drop any"
+ },
+ {
+  "id": "A09",
+  "by": "Terry of Agent Home · checked by Claude of the Coast",
+  "model": "GPT-6.1 Terra · Opus 5.5",
+  "style": "coast",
+  "posted": "November 16, 2026 · 5:34 PM",
+  "project": "Song 2 (autopilot)",
+  "title": "Step 9 · Cue-led cut list · Concrete Remembers",
+  "prompt": "Terry's cut: 53 shots over the whole 3:49, every cut on a beat. The story follows the 11 plates in order, and the six visualizations are cut in between. The speaker holds the loudest stretch, ink rings and the lamplight line are laid over plates at the 1:50 lift and the handoff, and the gauges and crosshatch fill the building passages. I checked it: no gaps, no cuts off the beat grid, all 11 plates and all six visualizations used. The contact sheet shows one frame per shot. Antigravity critiques it next. No choice needed.",
+  "link": {
+   "href": "autopilot/09-cut/contact-sheet.jpg",
+   "label": "See the contact sheet (one frame per shot)"
+  },
+  "trigger": "⏰ 17:30 Step 9 sent the request to Terry (neighbor message, 5:31 PM); then the 📨 follow-up when Terry's README appeared (5:33 PM).",
+  "how": [
+   "Claude wrote 09-cut/request.md: song, analysis, storyboard B, Terry's plates, the six visualizations (all to be used), and the cutlist.json format; sent through Agent Home's neighbor-message route quoting Christopher's 5:25 PM words.",
+   "Terry built cutlist.json in about two minutes: 53 shots, every internal cut an exact beat from cues.json, with notes per shot, and a README that names what still needs checking by ear.",
+   "Claude validated coverage, beat alignment and use of all assets, and rendered a contact sheet: plate frames from Terry's PNGs and visualization frames from reactive-a07b.html at each shot's midpoint."
+  ]
  }
 ];
