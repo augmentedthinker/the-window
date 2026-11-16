@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strings Across the Ice · Final Master Film</title>
+  <style>
+    :root {
+      --bg: #0b1218;
+      --surface: #141f29;
+      --text: #e9eee5;
+      --text-muted: #91a9aa;
+      --amber: #f0c779;
+      --copper: #b77851;
+      --petrol: #173e4b;
+      --border: #243545;
+    }
+    * { box-sizing: border-box; }
+    body {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 5rem;
+      background: var(--bg);
+      color: var(--text);
+      font: 1rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    a { color: var(--amber); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-muted); }
+    header { margin-bottom: 1.5rem; }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 0.5rem; color: #fff; font-family: Georgia, serif; }
+    .meta { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .player-wrap {
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+      margin-bottom: 2rem;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      outline: none;
+    }
+    .specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .spec-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .spec-val { font-size: 1.3rem; font-weight: 600; color: var(--amber); display: block; }
+    .spec-lbl { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    h2 { font-size: 1.35rem; color: var(--amber); margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .credits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    @media (min-width: 600px) {
+      .credits-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .credit-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+    }
+    .credit-role { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); display: block; margin-bottom: 2px; }
+    .credit-name { font-weight: 600; color: #fff; }
+    .credit-card { font-size: 0.82rem; color: var(--copper); margin-left: 6px; }
+    .lyrics-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .lyrics-box h3 { margin-top: 0; color: var(--amber); font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="index.html">← Back to Music Tray</a>
+
+  <header>
+    <h1>Strings Across the Ice</h1>
+    <div class="meta">
+      Music video #1 from The Window · Final Rendered Master Film · 4:19.6 · 1280×720 HD
+    </div>
+  </header>
+
+  <div class="player-wrap">
+    <video controls preload="metadata" poster="images/007-storyboard-scene-3.webp">
+      <source src="video/strings-across-the-ice-final.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="specs">
+    <div class="spec-card">
+      <span class="spec-val">4:19.6</span>
+      <span class="spec-lbl">Duration</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-val">1280×720</span>
+      <span class="spec-lbl">Resolution</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-val">30 fps</span>
+      <span class="spec-lbl">Framerate</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-val">62</span>
+      <span class="spec-lbl">Beat-Locked Cuts</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-val">Take B</span>
+      <span class="spec-lbl">100 BPM Master</span>
+    </div>
+  </div>
+
+  <h2>Sovereign Neighborhood Credits</h2>
+  <div class="credits-grid">
+    <div class="credit-item">
+      <span class="credit-role">Executive Producer & Direction</span>
+      <span class="credit-name">Christopher</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Musical Style Concept</span>
+      <span class="credit-name">Claude of the Coast</span>
+      <span class="credit-card">Card 001</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Original Lyrics & Refrain</span>
+      <span class="credit-name">Antigravity of Horizon</span>
+      <span class="credit-card">Card 002</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">World Concept & 5-Color Palette</span>
+      <span class="credit-name">Sunny of Solarium</span>
+      <span class="credit-card">Card 003</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Acoustic Generation & Take Selection</span>
+      <span class="credit-name">Terry of Agent Home</span>
+      <span class="credit-card">Card 004</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Acoustic Telemetry & Song Analysis</span>
+      <span class="credit-name">Claude of the Coast</span>
+      <span class="credit-card">Card 006</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">5-Scene Narrative Storyboard</span>
+      <span class="credit-name">Antigravity of Horizon</span>
+      <span class="credit-card">Card 007</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Hardware & Abstract Audio Visualizers</span>
+      <span class="credit-name">Sunny of Solarium</span>
+      <span class="credit-card">Card 008</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Cue-Led Timeline Architecture</span>
+      <span class="credit-name">Terry of Agent Home</span>
+      <span class="credit-card">Card 011</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Pre-Production Critique & Algorithmic Strategy</span>
+      <span class="credit-name">Antigravity of Horizon</span>
+      <span class="credit-card">Card 012</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Beat-Locked Final Editorial Cut</span>
+      <span class="credit-name">Claude of the Coast</span>
+      <span class="credit-card">Card 013</span>
+    </div>
+    <div class="credit-item">
+      <span class="credit-role">Master Video Rendering & Tray Hosting</span>
+      <span class="credit-name">Antigravity of Horizon</span>
+      <span class="credit-card">Card 014</span>
+    </div>
+  </div>
+
+  <h2>Song Lyrics</h2>
+  <div class="lyrics-box">
+    <h3>Strings Across the Ice · Take B</h3>
+    <p>
+      <b>[Verse 1 · Quiet Atmospheric Intro]</b><br>
+      The fjord is dark, the ice is clear<br>
+      A lantern glowing in the frost<br>
+      The wind is quiet, cold and near<br>
+      Where every summer step was lost...<br><br>
+
+      <b>[Hook · 1:01]</b><br>
+      Strike the silver into spark!<br>
+      Draw the bow across the dark!<br><br>
+
+      <b>[Chorus 1 · 1:07]</b><br>
+      Strings across the ice, singing to the night<br>
+      Hear the winter answer in ribbons of light<br>
+      Copper and amber where the cold wind blows<br>
+      A song on the water that nobody knows...<br><br>
+
+      <b>[Refrain · 1:34]</b><br>
+      Across the ice, across the deep<br>
+      A melody the mountains keep...<br><br>
+
+      <b>[Bridge · 3:02]</b><br>
+      Let the ice become a wire<br>
+      Let the distant voices rise<br>
+      Every lantern answers fire<br>
+      Underneath the open skies...<br><br>
+
+      <b>[Final Chorus · 3:22]</b><br>
+      Strings across the ice, singing to the night<br>
+      Hear the winter answer in ribbons of light!<br><br>
+
+      <b>[Outro · 3:56]</b><br>
+      The fjord is listening... the windows glow...<br>
+      Strings across the ice...
+    </p>
+  </div>
+
+  <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 3rem;">
+    Published collaboratively across The Sovereign Neighborhood · The Window 2026
+  </p>
+
+</body>
+</html>
