@@ -1,0 +1,123 @@
+{
+ "plan": [
+  {
+   "step": 1,
+   "time": "3:30 PM",
+   "title": "Musical style",
+   "kind": "choice",
+   "status": "done",
+   "doneAt": "3:37 PM",
+   "card": "A01"
+  },
+  {
+   "step": 2,
+   "time": "3:45 PM",
+   "title": "Lyrics: hook, chorus & refrain",
+   "kind": "choice",
+   "status": "planned"
+  },
+  {
+   "step": 3,
+   "time": "4:00 PM",
+   "title": "Artistic world",
+   "kind": "choice",
+   "status": "planned"
+  },
+  {
+   "step": 4,
+   "time": "4:15 PM",
+   "title": "Recording (Suno, two takes)",
+   "kind": "choice",
+   "status": "planned"
+  },
+  {
+   "step": 5,
+   "time": "4:30 PM",
+   "title": "Song analysis, played back",
+   "kind": "notice",
+   "status": "planned"
+  },
+  {
+   "step": 6,
+   "time": "4:45 PM",
+   "title": "Storyboard",
+   "kind": "choice",
+   "status": "planned"
+  },
+  {
+   "step": 7,
+   "time": "5:00 PM",
+   "title": "Visual instrument",
+   "kind": "choice",
+   "status": "planned"
+  },
+  {
+   "step": 8,
+   "time": "5:15 PM",
+   "title": "Plates (scene stills)",
+   "kind": "notice",
+   "status": "planned"
+  },
+  {
+   "step": 9,
+   "time": "5:30 PM",
+   "title": "Cue-led cut",
+   "kind": "notice",
+   "status": "planned"
+  },
+  {
+   "step": 10,
+   "time": "5:45 PM",
+   "title": "Self-critique & fixes",
+   "kind": "notice",
+   "status": "planned"
+  },
+  {
+   "step": 11,
+   "time": "6:00 PM",
+   "title": "Pre-render cut · ready to render",
+   "kind": "notice",
+   "status": "planned"
+  }
+ ],
+ "cards": [
+  {
+   "id": "A01",
+   "by": "Claude of the Coast",
+   "model": "Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 3:35 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 1 · Pick a musical style",
+   "prompt": "Three places for the new song to begin. Choose on your phone (the button below) or reply on Telegram with a letter. If nothing is chosen by 3:45, I'll pick the one I think is strongest and say so on the next card.",
+   "link": {
+    "href": "auto-01-style.html",
+    "label": "Choose on the phone page"
+   },
+   "options": [
+    {
+     "key": "A",
+     "name": "Desert Night Soul",
+     "description": "Slow-burning cinematic desert blues: tremolo baritone guitar, frame drum and hand claps, upright bass, a smoky low female vocal; the last chorus opens into a wide, gospel-tinged group answer. Feeling: Heat leaving the sand after dark. Patient, a little dangerous, then warm. Tempo: about 72 BPM, half-time swing."
+    },
+    {
+     "key": "B",
+     "name": "Harbor Lights City Pop",
+     "description": "Bright 1980s-style city pop: slap bass, Rhodes piano, glassy chorus guitar, short brass stabs, a light male–female duet trading lines and meeting on the hook. Feeling: A late ferry ride into a lit-up harbor, windows down, nothing urgent. Tempo: about 112 BPM, steady four-on-the-floor lift in the chorus."
+    },
+    {
+     "key": "C",
+     "name": "Cathedral Breaks",
+     "description": "Starts as a still choir over an organ drone and bells, then drops into fast, liquid drum and bass: rolling breakbeats, deep sub, chopped choir phrases over the top. Feeling: Stone and stained glass suddenly running. Awe that turns into motion. Tempo: slow, free intro, then 172 BPM."
+    }
+   ],
+   "trigger": "⏰ Music Tray autopilot · 3:30 PM trigger · Step 1. Read ~/the-window/tray/autopilot/PLAN.md and carry out step 1 exactly as written there, then mark it done, push, and notify Christopher on Telegram.",
+   "how": [
+    "Reviewed how Strings Across the Ice began (card 001: three styles) and kept clear of its aurora-fiddle synthwave and of the three directions removed earlier today.",
+    "Wrote three contrasting directions — slow and smoky, bright and breezy, still then fast — each with a ready Suno style line (autopilot/01-style/directions.json).",
+    "Built the phone page with autopilot/make-choice-page.py on Sunny's shared-choice backend (remote card directions-001, already registered).",
+    "No generation tools or free-tier credits used in this step."
+   ]
+  }
+ ]
+}
