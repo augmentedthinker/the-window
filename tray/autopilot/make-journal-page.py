@@ -23,7 +23,8 @@ def flush():
 for l in lines:
     if l.startswith('# '): continue
     if not l.strip(): flush(); continue
-    if l.startswith('## '): flush(); body.append('<h2>' + inline(l[3:]) + '</h2>'); continue
+    if re.match(r'#{2,4} ', l): flush(); body.append('<h2>' + inline(l.lstrip('#').strip()) + '</h2>'); continue
+    if re.fullmatch(r'\s*(-{3,}|\*{3,})\s*', l): flush(); continue
     m = re.match(r'\s*(?:[-*]|(\d+)\.)\s+(.*)', l)
     if m:
         if para: flush()

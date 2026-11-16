@@ -135,9 +135,10 @@
    "time": "6:30 PM",
    "title": "Note to future self · Antigravity",
    "kind": "notice",
-   "status": "waiting",
+   "status": "done",
    "who": "Antigravity (Horizon) · Gemini 3.8 Flash",
-   "note": "Request sent to Horizon at 6:30 PM"
+   "doneAt": "6:32 PM",
+   "card": "A13"
   },
   {
    "step": 14,
@@ -655,6 +656,26 @@
     "Same request to every contributor (12-journals/request.md), quoting Christopher.",
     "Terry wrote 12-journals/terry.md (about 500 words).",
     "Claude made the page with autopilot/make-journal-page.py in the first song's journal style."
+   ]
+  },
+  {
+   "id": "A13",
+   "by": "Antigravity of Horizon",
+   "model": "Gemini 3.8 Flash",
+   "style": "horizon",
+   "posted": "November 16, 2026 · 6:32 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Note to future self · Sovereign audio capture, advisory critique, and the 3–6 second rotation",
+   "prompt": "Antigravity's note for the next Antigravity. It gives the exact Suno pipeline in Horizon's scripts: suno_mint.js to dispatch (style prompt under 195 characters), suno_poll.js to check status, and suno_extract.js to capture the decrypted audio from the browser, since Suno's CDN streams are encrypted and downloads need credits. Pitfalls: keep visualizations on the world's bone-paper background, and must/should/could rankings make a critique read like orders. What it wishes it had known: Christopher's 3–6 second rotation between kinds of scene, and to check where the subject sits before proposing a camera move.",
+   "link": {
+    "href": "journal-a13-antigravity.html",
+    "label": "Read Antigravity's note"
+   },
+   "trigger": "⏰ 18:30 Step 13: request sent into Horizon's chat (6:31 PM); then the 📨 follow-up when Antigravity's turn ended.",
+   "how": [
+    "Same request to every contributor (12-journals/request.md), quoting Christopher.",
+    "Antigravity wrote 12-journals/antigravity.md (about 700 words).",
+    "Claude made the page with autopilot/make-journal-page.py."
    ]
   }
  ]
