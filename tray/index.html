@@ -19,9 +19,16 @@
     .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
     .card.coast { border-top-color: #3d6f86; }
     .card.horizon { border-top-color: #e5b358; }
+    .card.solarium { border-top-color: #b57448; }
+    .card.terry { border-top-color: #27766e; }
+    .option .concept { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 7px; margin-top: .8rem; }
+    .option .palette { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .3rem; margin: .6rem 0; white-space: normal; }
+    .option .palette span { min-width: 0; margin: 0; text-align: center; font: .62rem/1.4 ui-monospace, monospace; }
+    .palette i { display: block; height: 1.7rem; border: 1px solid #7a8585; border-radius: 4px; margin-bottom: .2rem; }
+    @media (max-width: 360px) { .option .palette span { font-size: .54rem; } }
     .meta { font: .75rem/1.4 system-ui, sans-serif; color: #5c6b70; }
     .card h2 { font-weight: 400; font-size: 1.5rem; margin: .4rem 0 .5rem; }
-    .card .prompt { font: .98rem/1.6 system-ui, sans-serif; margin: 0 0 1rem; }
+    .card .prompt { font: .98rem/1.6 system-ui, sans-serif; margin: 0 0 1rem; white-space: pre-line; }
     .option { display: block; width: 100%; text-align: left; background: #fffaf0; color: inherit; border: 2px solid #d8ccb4; border-radius: 12px; padding: .9rem 1rem; margin: .6rem 0; font: inherit; cursor: pointer; }
     .option:hover { border-color: #3d6f86; }
     .card.horizon .option:hover { border-color: #e5b358; }
@@ -31,8 +38,18 @@
     .option.chosen { border-color: #1d2a30; background: #1d2a30; color: #f5efe0; }
     .option.chosen span { color: #d7ded9; }
     .option.chosen b::after { content: "  ✓ Christopher's choice"; font-weight: 600; color: #f8dfac; }
+    .take-audio { display: block; width: 100%; margin: -.2rem 0 1rem; }
     .option.pending b::after { content: "  … sending"; font-weight: 600; color: #3d6f86; }
     .status { font: .85rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .6rem; }
+    .fold > summary { list-style: none; cursor: pointer; position: relative; padding-right: 1.8rem; }
+    .fold > summary::-webkit-details-marker { display: none; }
+    .fold > summary::after { content: "▸"; position: absolute; right: .1rem; top: 50%; transform: translateY(-50%); color: #3d6f86; font-size: 1.2rem; transition: transform .15s; }
+    .fold[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
+    .fold > summary h2 { margin-bottom: .2rem; }
+    .fold .peek { font: 600 .85rem/1.4 system-ui, sans-serif; color: #3d6f86; }
+    .fold[open] .peek { display: none; }
+    .fold[open] > summary { margin-bottom: .6rem; }
+    .cardlink { display: block; text-align: center; background: #1d2a30; color: #f8dfac; border-radius: 12px; padding: .9rem 1rem; margin: 0 0 1rem; font: 700 1rem/1.3 system-ui, sans-serif; text-decoration: none; }
     .how { margin-top: 1rem; border-top: 1px solid #d8ccb4; padding-top: .7rem; font: .85rem/1.55 system-ui, sans-serif; color: #3c4a50; }
     .how summary { cursor: pointer; font-weight: 600; color: #3d6f86; }
     .card.horizon .how summary { color: #b88628; }
@@ -64,25 +81,54 @@ const API = 'http://127.0.0.1:8850/api/tray/choices';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cards = window.TRAY_CARDS || [];
 let picked = {}, reachable = true;
+const openCards = new Set();   // cards start folded; remember which ones Christopher opened
+function visual(o) {
+  const image = /^images\/[a-zA-Z0-9_-]+\.(webp|png|jpg)$/.test(o.image || '')
+    ? `<img class="concept" src="${esc(o.image)}" alt="${esc(o.imageAlt || o.name)}" loading="lazy" width="1000" height="1000">` : '';
+  const colors = (Array.isArray(o.palette) ? o.palette : []).filter(c => /^#[0-9a-f]{6}$/i.test(c.hex));
+  return image + (colors.length ? `<span class="palette" aria-label="Color palette">${colors.map(c => `<span title="${esc(c.name)}"><i style="background:${c.hex}" aria-hidden="true"></i>${esc(c.hex)}</span>`).join('')}</span>` : '');
+}
 
 function render() {
   const el = document.getElementById('cards');
   if (!cards.length) { el.innerHTML = '<p class="empty">The tray is empty for now. The first card is on its way.</p>'; return; }
   el.innerHTML = cards.slice().reverse().map(card => {
-    const p = picked[card.id]?.key;
+    const isMulti = !!card.multi;
+    let chosenText = '';
+    if (isMulti) {
+      const chosenCount = (card.options || []).filter(o => picked[`${card.id}_${o.key}`]?.key === 'on').length;
+      chosenText = chosenCount ? `✓ ${chosenCount} of ${card.options.length} scenes selected` : 'Multi-choice · tap images to toggle into cut';
+    } else {
+      const p = picked[card.id]?.key;
+      const chosen = p && (card.options || []).find(o => o.key === p);
+      chosenText = chosen ? `✓ Chosen: ${esc(chosen.key)} · ${esc(chosen.name)}` : (card.options || []).length ? 'Waiting for Christopher’s choice' : 'Finished step · no choice needed';
+    }
+
     return `<article class="card ${esc(card.style || '')}" id="card-${esc(card.id)}">
-      <div class="meta">Card ${esc(card.id)} · ${esc(card.by)}${card.model ? ' · ' + esc(card.model) : ''} · ${esc(card.posted)}${card.project ? ' · ' + esc(card.project) : ''}</div>
-      <h2>${esc(card.title)}</h2>
+      <details class="fold" data-card="${esc(card.id)}"${openCards.has(card.id) ? ' open' : ''}>
+      <summary>
+        <div class="meta">Card ${esc(card.id)} · ${esc(card.by)}${card.model ? ' · ' + esc(card.model) : ''} · ${esc(card.posted)}${card.project ? ' · ' + esc(card.project) : ''}</div>
+        <h2>${esc(card.title)}</h2>
+        <div class="peek">${chosenText}</div>
+      </summary>
       <p class="prompt">${esc(card.prompt)}</p>
-      ${(card.options || []).map(o => `
-        <button class="option${p === o.key ? ' chosen' : ''}" data-card="${esc(card.id)}" data-key="${esc(o.key)}">
-          <b>${esc(o.key)} · ${esc(o.name)}</b><span>${esc(o.description)}</span>
-        </button>`).join('')}
+      ${card.link && /^[\w./?=&-]+$/.test(card.link.href) ? `<a class="cardlink" href="${esc(card.link.href)}">${esc(card.link.label || 'Open')} →</a>` : ''}
+      ${(card.options || []).map(o => {
+        const isSelected = isMulti 
+          ? picked[`${card.id}_${o.key}`]?.key === 'on'
+          : picked[card.id]?.key === o.key;
+        const targetCard = isMulti ? `${card.id}_${o.key}` : card.id;
+        const targetKey = isMulti ? (isSelected ? 'off' : 'on') : o.key;
+        return `<button class="option${isSelected ? ' chosen' : ''}" aria-pressed="${isSelected}" data-card="${esc(targetCard)}" data-key="${esc(targetKey)}">
+          <b>${esc(o.key)} · ${esc(o.name)}</b>${visual(o)}<span>${esc(o.description)}</span>
+        </button>${/^audio\/[a-zA-Z0-9_-]+\.m4a$/.test(o.audio || '') ? `<audio class="take-audio" controls preload="none" src="${esc(o.audio)}" aria-label="Play ${esc(o.name)}"></audio>` : ''}`;
+      }).join('')}
       ${card.trigger || card.how ? `<details class="how"><summary>How this card was made</summary>
         ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
         ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
       </details>` : ''}
-      <div class="status">${p ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+      <div class="status">${!(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+      </details>
     </article>`;
   }).join('');
 }
@@ -91,6 +137,11 @@ async function load() {
   try { const r = await fetch(API); if (!r.ok) throw new Error(); picked = await r.json(); reachable = true; } catch { reachable = false; }
   render();
 }
+
+document.getElementById('cards').addEventListener('toggle', e => {
+  const f = e.target; if (!f.matches?.('.fold')) return;
+  f.open ? openCards.add(f.dataset.card) : openCards.delete(f.dataset.card);
+}, true);
 
 document.getElementById('cards').addEventListener('click', async e => {
   const b = e.target.closest('.option'); if (!b) return;
@@ -104,6 +155,9 @@ document.getElementById('cards').addEventListener('click', async e => {
 });
 
 render(); load();
+document.getElementById('cards').addEventListener('play', e => {
+  if (e.target.tagName === 'AUDIO') document.querySelectorAll('#cards audio').forEach(a => { if (a !== e.target) a.pause(); });
+}, true);
 </script>
 </body>
 </html>
