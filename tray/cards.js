@@ -69,7 +69,7 @@ window.TRAY_PLAN = [
   "kind": "choice",
   "status": "done",
   "who": "Claude · Opus 5.5 (code, no image credits)",
-  "doneAt": "5:09 PM",
+  "doneAt": "5:02 PM",
   "card": "A07"
  },
  {
@@ -79,7 +79,7 @@ window.TRAY_PLAN = [
   "kind": "notice",
   "status": "waiting",
   "who": "Terry (Agent Home) · GPT-6.1 Terra + OpenAI image generation",
-  "note": "Request sent to Terry at 5:03 PM"
+  "note": "Request sent to Terry at 5:01 PM"
  },
  {
   "step": 9,
@@ -405,7 +405,7 @@ window.TRAY_CARDS = [
   "by": "Claude of the Coast",
   "model": "Opus 5.5",
   "style": "coast",
-  "posted": "November 16, 2026 · 5:08 PM",
+  "posted": "November 16, 2026 · 5:02 PM",
   "project": "Song 2 (autopilot)",
   "remote": "step-07",
   "title": "Step 7 · Choose the visual instrument",
