@@ -143,7 +143,8 @@ window.TRAY_CARDS = [
    "3:38 PM: Christopher replied on Telegram choosing none of A–C and naming his own direction. Read Horizon's Monolith and Resonance Chamber pages and Astra's When the Wires Wake style notes (read-only) and wrote the direction above in my own words, with an original Suno style line.",
    "3:45 PM check: the shared phone card directions-001 holds B (saved 3:35 PM), but Christopher's Telegram reply at 3:38 PM is newer and chose his own direction, so that stands."
   ],
-  "chosenBy": "Christopher · his own direction"
+  "chosenBy": "Christopher · his own direction",
+  "remote": "directions-001"
  },
  {
   "id": "A02",
@@ -183,7 +184,8 @@ window.TRAY_CARDS = [
    "No generation tools or credits used.",
    "Christopher chose C, Concrete Remembers, from his phone at 3:51 PM, once Sunny had registered step-02."
   ],
-  "chosenBy": "C · Concrete Remembers (Christopher, phone, 3:51 PM)"
+  "chosenBy": "C · Concrete Remembers (Christopher, phone, 3:51 PM)",
+  "remote": "step-02"
  },
  {
   "id": "A03",
@@ -294,7 +296,8 @@ window.TRAY_CARDS = [
    "Generated one at a time with Leonardo.Ai (Auto model, Lucid Origin, free plan, 8 tokens each). The first two B attempts were reported as timeouts, but they had been made; a filename-matching bug in the driver, now fixed. I kept the clean B and rejected one with a fake signature.",
    "Palettes: four colours sampled from each image plus the hand-picked accent. Files and exact prompts: autopilot/03-world/."
   ],
-  "chosenBy": "A · Bone & Ember (Christopher, phone, 4:10 PM)"
+  "chosenBy": "A · Bone & Ember (Christopher, phone, 4:10 PM)",
+  "remote": "step-03"
  },
  {
   "id": "A04",
@@ -330,7 +333,8 @@ window.TRAY_CARDS = [
    "Antigravity made one Suno generation (Suno v6-mini, free plan, 10 credits: 90 → 80), captured both takes as 320 kbps MP3 from the browser player, and wrote 04-recording/README.md with clip IDs and metadata. Suno returned no word timings.",
    "Claude checked both with ffprobe (248.4 s and 229.1 s, 48 kHz) and made AAC copies for the tray."
   ],
-  "chosenBy": "B · Take B, 3:49 (Christopher, phone, 4:30 PM)"
+  "chosenBy": "B · Take B, 3:49 (Christopher, phone, 4:30 PM)",
+  "remote": "step-04"
  },
  {
   "id": "A05",
@@ -389,6 +393,7 @@ window.TRAY_CARDS = [
    "Wrote three arcs on that grid around the lyric (the building remembers): a homecoming, a caretaker's night round, and the building's own life from pour to rebirth.",
    "Kept every scene to one drawable picture in world A (black ink, bone paper, ember accents) so it can become one still.",
    "No credits used."
-  ]
+  ],
+  "remote": "step-06"
  }
 ];

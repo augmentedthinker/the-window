@@ -89,6 +89,7 @@
   <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
 </main>
 <script src="cards.js"></script>
+<script src="shared-choices/config.js"></script>
 <script>
 (() => {
   const plan = window.TRAY_PLAN || []; if (!plan.length) return;
@@ -156,7 +157,7 @@ function render() {
         ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
         ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
       </details>` : ''}
-      <div class="status">${card.audition ? 'Use Choose, Cross out or Reset inside each preview. Decisions save independently.' : !(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : card.chosenBy ? 'Decided. The next card builds on this.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+      <div class="status">${card.audition ? 'Use Choose, Cross out or Reset inside each preview. Decisions save independently.' : !(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : card.chosenBy ? 'Decided. The next card builds on this.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : card.remote ? 'Waiting for Christopher’s choice. Tap an option to choose (saves from the phone too).' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
       </details>
     </article>`;
   }).join('');
@@ -164,6 +165,7 @@ function render() {
 
 async function load() {
   try { const r = await fetch(API); if (!r.ok) throw new Error(); picked = await r.json(); reachable = true; } catch { reachable = false; }
+  await loadRemote();
   render();
 }
 
@@ -177,9 +179,34 @@ document.getElementById('cards').addEventListener('load', e => {
   if (e.target.matches?.('.audition-frame')) e.target.contentWindow?.postMessage({type:'tray-preview-measure'}, '*');
 }, true);
 
+
+// Shared phone choices (Sunny's Supabase backend) for cards with a `remote` card id.
+const SC = window.SHARED_CHOICES;
+const SESSION_KEY = 'window-chooser-session-v1';
+async function sbFetch(path, method = 'GET', body, token) {
+  const r = await fetch(SC.url + path, { method, headers: { apikey: SC.key, Authorization: 'Bearer ' + (token || SC.key), 'Content-Type': 'application/json' }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
+  const d = await r.json().catch(() => null); if (!r.ok) throw new Error(r.status); return d;
+}
+async function loadRemote() {
+  if (!SC) return;
+  const ids = cards.filter(c => c.remote).map(c => c.remote); if (!ids.length) return;
+  try {
+    const rows = await sbFetch(`/rest/v1/window_choices?project_id=eq.${SC.project}&card_id=in.(${ids.join(',')})&select=card_id,option_id`);
+    for (const row of rows) { const c = cards.find(c => c.remote === row.card_id); if (c) picked[c.id] = { key: row.option_id, remote: true }; }
+  } catch {}
+}
+async function saveRemote(card, key) {
+  let s; try { s = JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch {}
+  if (!s) { location.href = (card.link?.href || '') + '#option-' + key; return; }   // not signed in here: use the step's phone page
+  if (s.expires_at * 1000 < Date.now() + 60000) { s = await sbFetch('/auth/v1/token?grant_type=refresh_token', 'POST', { refresh_token: s.refresh_token }); localStorage.setItem(SESSION_KEY, JSON.stringify(s)); }
+  await sbFetch('/rest/v1/rpc/window_choose', 'POST', { p_project: SC.project, p_card: card.remote, p_option: key }, s.access_token);
+  await loadRemote();
+}
 document.getElementById('cards').addEventListener('click', async e => {
   const b = e.target.closest('.option'); if (!b) return;
   b.classList.add('pending');
+  const rc = cards.find(c => c.id === b.dataset.card && c.remote);
+  if (rc) { try { await saveRemote(rc, b.dataset.key); } catch { alert('Could not save the shared choice. Try the step page: ' + (rc.link?.href || '')); } render(); return; }
   try {
     const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ card: b.dataset.card, key: b.dataset.key }) });
     if (!r.ok) throw new Error();
