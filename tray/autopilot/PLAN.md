@@ -45,6 +45,8 @@ Christopher's instruction (November 16): Antigravity in Horizon makes the two Su
 
 **Step 5 note (4:28 PM):** I can't listen, so the take is Christopher's call. If step-04 has no choice at 4:30, Telegram a reminder and check again every few minutes until 4:45; only then pick (the take that's closer to the 2:40 brief, B) and say so on the card.
 
+**Step 7b (interjection, 5:13–5:22 PM):** six live visualizations, `../reactive-a07b.html` (environmental E1–E3 by Terry, abstract X1–X3 by Claude). Christopher chose **all six, opt-out**: the cut (step 9) uses every one of them somewhere, matched to the scenes, and drops any he names.
+
 ## Delegation · who does what
 
 Christopher's direction (4:20 PM): the Coast runs the line and sends out the work it can't do itself. Leonardo is finite (78 of 150 daily tokens left after step 3, about 9 images), so image-heavy work goes to neighbors.

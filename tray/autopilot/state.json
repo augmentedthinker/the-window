@@ -74,10 +74,11 @@
    "step": "7b",
    "time": "5:15 PM",
    "title": "Interjection · six live visualizations (3 environmental, 3 abstract)",
-   "kind": "choice",
-   "status": "waiting",
+   "kind": "notice",
+   "status": "done",
    "who": "Terry (Agent Home) · environmental images · Claude · Opus 5.5 · abstract renderers + live page",
-   "note": "All six previews ready; waiting for Christopher's choice"
+   "doneAt": "5:22 PM",
+   "card": "A07b"
   },
   {
    "step": 8,
@@ -483,7 +484,7 @@
    "posted": "November 16, 2026 · 5:17 PM",
    "project": "Song 2 (autopilot)",
    "title": "Step 7b (interjection) · Six ways for the tower to move",
-   "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. All six are ready: environmental A (a loudspeaker in the wall), B (the lantern), C (a wall of five gauges), with images by Terry; abstract D (ink rings), E (crosshatch spectrum), F (lamplight line), drawn in code. Open the page, press play and switch; the song keeps its place. Reply with a letter on Telegram (phone taps need Sunny's registration, waiting on Christopher's approval in Solarium). The cut moved to 5:45.",
+   "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. All six are ready: environmental A (a loudspeaker in the wall), B (the lantern), C (a wall of five gauges), with images by Terry; abstract D (ink rings), E (crosshatch spectrum), F (lamplight line), drawn in code. Open the page, press play and switch; the song keeps its place. Reply with a letter on Telegram (phone taps need Sunny's registration, waiting on Christopher's approval in Solarium). The cut moved to 5:45.\n\nDecided: Christopher chose to use all six in the cut, and will say if any should be dropped (Telegram, 5:22 PM). This step is now opt-out rather than pick-one.",
    "link": {
     "href": "reactive-a07b.html",
     "label": "Open the six live previews"
@@ -526,9 +527,10 @@
     "Built reactive-a07b.html: Take B with its saved analysis, one large canvas, six switchable treatments that keep the song's position.",
     "Drew the three abstract treatments in code from the analysis signals (bass, mid, rms, 32 bands, waveform, hits, beats).",
     "Moved the 5:30, 5:45 and 6:00 triggers 15 minutes later.",
-    "Terry delivered E1–E3 at about 5:16 PM with measured positions (env/README.md). Claude wrote env/regions.js from them, masks the baked-in gauge needles with fresh dials, pulses the speaker cone, and lights the lantern; checked all three at 2:30 into the song."
+    "Terry delivered E1–E3 at about 5:16 PM with measured positions (env/README.md). Claude wrote env/regions.js from them, masks the baked-in gauge needles with fresh dials, pulses the speaker cone, and lights the lantern; checked all three at 2:30 into the song.",
+    "5:22 PM: Christopher changed the step: use all six assets, opt-out instead of pick-one. The shared phone card for 7b is left for later."
    ],
-   "remote": "step-07b"
+   "chosenBy": "All six (Christopher, Telegram, 5:22 PM) — opt-out: tell Claude to drop any"
   }
  ]
 }
