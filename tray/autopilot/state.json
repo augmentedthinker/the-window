@@ -30,9 +30,10 @@
   {
    "step": 4,
    "time": "4:15 PM",
-   "title": "Recording (Suno, two takes)",
+   "title": "Recording (Suno, two takes, made by Antigravity in Horizon)",
    "kind": "choice",
-   "status": "planned"
+   "status": "waiting",
+   "note": "Full lyric and style sent to Horizon at 4:17 PM"
   },
   {
    "step": 5,
@@ -274,7 +275,8 @@
     "Wrote three ink-world prompts: stark bone and ember, rain and sodium wash, and white-line blueprint. All are monochrome architecture with one accent, and each shows the building holding traces of past people.",
     "Generated one at a time with Leonardo.Ai (Auto model, Lucid Origin, free plan, 8 tokens each). The first two B attempts were reported as timeouts, but they had been made; a filename-matching bug in the driver, now fixed. I kept the clean B and rejected one with a fake signature.",
     "Palettes: four colours sampled from each image plus the hand-picked accent. Files and exact prompts: autopilot/03-world/."
-   ]
+   ],
+   "chosenBy": "A · Bone & Ember (Christopher, phone, 4:10 PM)"
   }
  ]
 }
