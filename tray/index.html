@@ -18,19 +18,27 @@
     .intro p { margin: 0 0 .8rem; }
     .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
     .card.coast { border-top-color: #3d6f86; }
+    .card.horizon { border-top-color: #e5b358; }
     .meta { font: .75rem/1.4 system-ui, sans-serif; color: #5c6b70; }
     .card h2 { font-weight: 400; font-size: 1.5rem; margin: .4rem 0 .5rem; }
     .card .prompt { font: .98rem/1.6 system-ui, sans-serif; margin: 0 0 1rem; }
     .option { display: block; width: 100%; text-align: left; background: #fffaf0; color: inherit; border: 2px solid #d8ccb4; border-radius: 12px; padding: .9rem 1rem; margin: .6rem 0; font: inherit; cursor: pointer; }
     .option:hover { border-color: #3d6f86; }
+    .card.horizon .option:hover { border-color: #e5b358; }
     .option:focus-visible { outline: 3px solid #f8dfac; outline-offset: 2px; }
     .option b { display: block; font: 700 1.02rem/1.3 system-ui, sans-serif; }
-    .option span { display: block; font: .92rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .25rem; }
+    .option span { display: block; font: .92rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .25rem; white-space: pre-line; }
     .option.chosen { border-color: #1d2a30; background: #1d2a30; color: #f5efe0; }
     .option.chosen span { color: #d7ded9; }
     .option.chosen b::after { content: "  ✓ Christopher's choice"; font-weight: 600; color: #f8dfac; }
     .option.pending b::after { content: "  … sending"; font-weight: 600; color: #3d6f86; }
     .status { font: .85rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .6rem; }
+    .how { margin-top: 1rem; border-top: 1px solid #d8ccb4; padding-top: .7rem; font: .85rem/1.55 system-ui, sans-serif; color: #3c4a50; }
+    .how summary { cursor: pointer; font-weight: 600; color: #3d6f86; }
+    .how[open] { max-height: 26rem; overflow-y: auto; }
+    .how .label { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; margin: .8rem 0 .3rem; }
+    .how blockquote { margin: 0; padding: .6rem .8rem; background: #fffaf0; border-left: 3px solid #3d6f86; border-radius: 6px; font-family: ui-monospace, monospace; font-size: .8rem; word-break: break-word; }
+    .how ol { margin: 0; padding-left: 1.2rem; } .how li { margin: .35rem 0; word-break: break-word; }
     .empty { color: #9aa9a5; font: .95rem system-ui, sans-serif; margin-top: 2rem; }
     footer { color: #9aa9a5; font: .78rem/1.5 system-ui, sans-serif; margin-top: 2.5rem; text-align: center; }
   </style>
@@ -68,6 +76,10 @@ function render() {
         <button class="option${p === o.key ? ' chosen' : ''}" data-card="${esc(card.id)}" data-key="${esc(o.key)}">
           <b>${esc(o.key)} · ${esc(o.name)}</b><span>${esc(o.description)}</span>
         </button>`).join('')}
+      ${card.trigger || card.how ? `<details class="how"><summary>How this card was made</summary>
+        ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
+        ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
+      </details>` : ''}
       <div class="status">${p ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
     </article>`;
   }).join('');
