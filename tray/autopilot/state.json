@@ -23,7 +23,9 @@
    "time": "4:00 PM",
    "title": "Artistic world (three takes on Monolith's ink style)",
    "kind": "choice",
-   "status": "planned"
+   "status": "done",
+   "doneAt": "4:10 PM",
+   "card": "A03"
   },
   {
    "step": 4,
@@ -159,7 +161,119 @@
     "Read step 1's decision (Christopher's own direction) and the style notes of When the Wires Wake for vocal register: low, intimate, talk-sung, short lines, a hook that repeats.",
     "Wrote three original seeds around the ink world's megastructures — a keeper who holds it up, a descent through it, a building that remembers — avoiding the signal/wires imagery When the Wires Wake already used.",
     "Saved them as autopilot/02-lyrics/drafts.json and built the phone page with make-choice-page.py.",
-    "No generation tools or credits used."
+    "No generation tools or credits used.",
+    "Christopher chose C, Concrete Remembers, from his phone at 3:51 PM, once Sunny had registered step-02."
+   ],
+   "chosenBy": "C · Concrete Remembers (Christopher, phone, 3:51 PM)"
+  },
+  {
+   "id": "A03",
+   "by": "Claude of the Coast",
+   "model": "Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 4:09 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 3 · Choose the artistic world",
+   "prompt": "Three takes on Monolith's monochrome ink style, each drawn around 'the concrete remembers your weight'. Choose on the phone page (saves work now) or reply with a letter. If nothing's chosen by 4:15, I'll pick and say so (the lyric and style go to Suno then; the world matters from step 6).",
+   "link": {
+    "href": "auto-03-world.html",
+    "label": "Choose on the phone page"
+   },
+   "options": [
+    {
+     "key": "A",
+     "name": "Bone & Ember",
+     "description": "Dry, monumental halls drawn in black ink on bone paper. Footprints of everyone who ever walked here are pressed into the concrete floor; a few ember-orange lamps burn in doorways. Closest to Monolith's stark ink.",
+     "image": "images/a03-a.webp",
+     "imageAlt": "Ink drawing of vast brutalist concrete galleries, a lone figure on a pale floor marked with trails of old footprints, small ember-orange lamps in doorways.",
+     "palette": [
+      {
+       "name": "Ink",
+       "hex": "#1f1e1e"
+      },
+      {
+       "name": "Ash",
+       "hex": "#6e6960"
+      },
+      {
+       "name": "Bone",
+       "hex": "#e7e0cb"
+      },
+      {
+       "name": "Paper",
+       "hex": "#ede7d1"
+      },
+      {
+       "name": "Ember",
+       "hex": "#e8892c"
+      }
+     ]
+    },
+    {
+     "key": "B",
+     "name": "Rain & Sodium",
+     "description": "Ink with grey wash: it rains inside a colossal atrium, and the silhouettes of past residents still stand in the windows. One sodium-yellow doorway reflects in the flooded floor. Wetter, sadder, more cinematic.",
+     "image": "images/a03-b.webp",
+     "imageAlt": "Grey ink-wash drawing of rain inside a towering concrete atrium, faint figures in the windows, a figure with an umbrella before a yellow-lit doorway reflected in water.",
+     "palette": [
+      {
+       "name": "Graphite",
+       "hex": "#243037"
+      },
+      {
+       "name": "Slate",
+       "hex": "#4c6068"
+      },
+      {
+       "name": "Rain",
+       "hex": "#aeb7ae"
+      },
+      {
+       "name": "Mist",
+       "hex": "#d8d6c4"
+      },
+      {
+       "name": "Sodium",
+       "hex": "#e6c229"
+      }
+     ]
+    },
+    {
+     "key": "C",
+     "name": "Blueprint Negative",
+     "description": "The building as its own memory: white line on blue-black, a tower cut open in section, every room and stairwell still holding the people who lived there, a warm light at its heart. The most graphic and the most literal take on 'the concrete remembers'.",
+     "image": "images/a03-c.webp",
+     "imageAlt": "White-line drawing on dark blue paper of a tower cut open in section, many small figures in its rooms and stairwells, a warm glow at the centre.",
+     "palette": [
+      {
+       "name": "Night",
+       "hex": "#122130"
+      },
+      {
+       "name": "Indigo",
+       "hex": "#203344"
+      },
+      {
+       "name": "Line",
+       "hex": "#506271"
+      },
+      {
+       "name": "Chalk",
+       "hex": "#d9e1e8"
+      },
+      {
+       "name": "Lamp",
+       "hex": "#f4ead2"
+      }
+     ]
+    }
+   ],
+   "trigger": "⏰ Music Tray autopilot · 16:00 trigger · Step 3. Read ~/the-window/tray/autopilot/PLAN.md and carry out step 3 exactly as written there (read the previous choice first), then mark it done on the tray, push, and notify Christopher on Telegram.",
+   "how": [
+    "Read step 2's choice from the shared phone record: C, Concrete Remembers.",
+    "Wrote three ink-world prompts: stark bone and ember, rain and sodium wash, and white-line blueprint. All are monochrome architecture with one accent, and each shows the building holding traces of past people.",
+    "Generated one at a time with Leonardo.Ai (Auto model, Lucid Origin, free plan, 8 tokens each). The first two B attempts were reported as timeouts, but they had been made; a filename-matching bug in the driver, now fixed. I kept the clean B and rejected one with a fake signature.",
+    "Palettes: four colours sampled from each image plus the hand-picked accent. Files and exact prompts: autopilot/03-world/."
    ]
   }
  ]

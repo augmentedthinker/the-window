@@ -1,0 +1,102 @@
+{
+ "step": 3,
+ "card": "A03",
+ "remoteCard": "step-03",
+ "project": "window-song-2026-11-16",
+ "by": "Claude of the Coast (Opus 5.5)",
+ "posted": "2026-11-16T16:09:00-05:00",
+ "basedOn": "Step 1: Christopher's direction (Monolith's monochrome architectural ink). Step 2: C, Concrete Remembers (phone, 3:51 PM).",
+ "tool": "Leonardo.Ai, Auto model (Lucid Origin), free plan; 8 tokens per image, 4 images made (one rejected for a fake signature); 78 tokens left on the shared account after.",
+ "options": [
+  {
+   "key": "A",
+   "name": "Bone & Ember",
+   "world": "Dry, monumental halls drawn in black ink on bone paper. Footprints of everyone who ever walked here are pressed into the concrete floor; a few ember-orange lamps burn in doorways. Closest to Monolith's stark ink.",
+   "imageAlt": "Ink drawing of vast brutalist concrete galleries, a lone figure on a pale floor marked with trails of old footprints, small ember-orange lamps in doorways.",
+   "prompt": "monochrome pen-and-ink graphic novel illustration, monumental brutalist concrete megastructure interior, fine crosshatching, vast scale, stacked concrete galleries and heavy cables, a tiny lone figure standing on a walkway, ghostly outlines of many past footsteps pressed into the concrete floor, charcoal black and bone-white paper, single accent of glowing ember orange in a few small lamps, cinematic wide composition, no text",
+   "image": "images/a03-a.webp",
+   "palette": [
+    {
+     "name": "Ink",
+     "hex": "#1f1e1e"
+    },
+    {
+     "name": "Ash",
+     "hex": "#6e6960"
+    },
+    {
+     "name": "Bone",
+     "hex": "#e7e0cb"
+    },
+    {
+     "name": "Paper",
+     "hex": "#ede7d1"
+    },
+    {
+     "name": "Ember",
+     "hex": "#e8892c"
+    }
+   ]
+  },
+  {
+   "key": "B",
+   "name": "Rain & Sodium",
+   "world": "Ink with grey wash: it rains inside a colossal atrium, and the silhouettes of past residents still stand in the windows. One sodium-yellow doorway reflects in the flooded floor. Wetter, sadder, more cinematic.",
+   "imageAlt": "Grey ink-wash drawing of rain inside a towering concrete atrium, faint figures in the windows, a figure with an umbrella before a yellow-lit doorway reflected in water.",
+   "prompt": "pen-and-ink graphic novel illustration with grey ink wash, rain falling inside a colossal brutalist concrete atrium, tiers of balconies and hanging cables vanishing upward, faint translucent silhouettes of past residents drawn into the wet concrete walls, a tiny lone figure with an umbrella below, cold blue-grey wash with sodium-yellow lamp light reflecting on wet floor, heavy crosshatching, cinematic wide composition, no text",
+   "image": "images/a03-b.webp",
+   "palette": [
+    {
+     "name": "Graphite",
+     "hex": "#243037"
+    },
+    {
+     "name": "Slate",
+     "hex": "#4c6068"
+    },
+    {
+     "name": "Rain",
+     "hex": "#aeb7ae"
+    },
+    {
+     "name": "Mist",
+     "hex": "#d8d6c4"
+    },
+    {
+     "name": "Sodium",
+     "hex": "#e6c229"
+    }
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Blueprint Negative",
+   "world": "The building as its own memory: white line on blue-black, a tower cut open in section, every room and stairwell still holding the people who lived there, a warm light at its heart. The most graphic and the most literal take on 'the concrete remembers'.",
+   "imageAlt": "White-line drawing on dark blue paper of a tower cut open in section, many small figures in its rooms and stairwells, a warm glow at the centre.",
+   "prompt": "Inverted ink drawing, fine white linework on deep blue-black paper like an architectural blueprint, a monumental brutalist concrete tower cut open in section showing hundreds of rooms and stairwells, tiny white figures and the faint traced outlines of everyone who once lived there, cables and measurement lines, one small warm white light at the center, graphic novel crosshatching, cinematic wide composition, no text, no letters",
+   "image": "images/a03-c.webp",
+   "palette": [
+    {
+     "name": "Night",
+     "hex": "#122130"
+    },
+    {
+     "name": "Indigo",
+     "hex": "#203344"
+    },
+    {
+     "name": "Line",
+     "hex": "#506271"
+    },
+    {
+     "name": "Chalk",
+     "hex": "#d9e1e8"
+    },
+    {
+     "name": "Lamp",
+     "hex": "#f4ead2"
+    }
+   ]
+  }
+ ]
+}
