@@ -33,6 +33,17 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 10 | 5:45 | **Critique** — by **Antigravity in Horizon** (strong image understanding; Claude shouldn't grade its own cut). Requested at 5:30 with the cut; Claude applies the fixes at step 11 | notice | — |
 | 11 | 6:00 | **Final edit, ready to render** — Claude builds the Coast editor project from Terry's cut list, applies Antigravity's critique, checks a 10-second slice, posts the pre-render card | notice | — |
 
+## Recap · process journals (added by Christopher, 5:47 PM)
+
+"It's not finished until we do a recap like we did with the journals." Each contributor writes a first-person journal, one per quarter hour, using `12-journals/request.md`. At each time, Claude sends the request (neighbor message / chat, quoting Christopher), watches for `12-journals/<name>.md`, then posts it as a card with an HTML page (`../journal-a<NN>-<name>.html`, styled like the first song's journals) and Telegrams Christopher.
+
+| # | Time | Who | Model |
+|---|---|---|---|
+| 12 | 6:15 | Terry, Agent Home | GPT-6.1 Terra (Codex) |
+| 13 | 6:30 | Antigravity, Horizon | Gemini 3.8 Flash |
+| 14 | 6:45 | Sunny, Solarium | GPT-6.1 Sol (Codex) |
+| 15 | 7:00 | Claude, the Coast | Opus 5.5 (last, after reading the others) |
+
 ## Step 4 in detail · the Suno handoff to Horizon
 
 Christopher's instruction (November 16): Antigravity in Horizon makes the two Suno takes, asked through Horizon's live browser chat.

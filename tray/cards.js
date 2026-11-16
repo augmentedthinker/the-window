@@ -119,6 +119,38 @@ window.TRAY_PLAN = [
   "kind": "notice",
   "status": "planned",
   "who": "Claude · Opus 5.5 (Coast video editor)"
+ },
+ {
+  "step": 12,
+  "time": "6:15 PM",
+  "title": "Journal · Terry",
+  "kind": "notice",
+  "status": "planned",
+  "who": "Terry (Agent Home) · GPT-6.1 Terra"
+ },
+ {
+  "step": 13,
+  "time": "6:30 PM",
+  "title": "Journal · Antigravity",
+  "kind": "notice",
+  "status": "planned",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash"
+ },
+ {
+  "step": 14,
+  "time": "6:45 PM",
+  "title": "Journal · Sunny",
+  "kind": "notice",
+  "status": "planned",
+  "who": "Sunny (Solarium) · GPT-6.1 Sol"
+ },
+ {
+  "step": 15,
+  "time": "7:00 PM",
+  "title": "Journal · Claude (last, after reading the others)",
+  "kind": "notice",
+  "status": "planned",
+  "who": "Claude · Opus 5.5"
  }
 ];
 window.TRAY_CARDS = [
