@@ -1,0 +1,22 @@
+{
+ "step": 2, "card": "A02", "remoteCard": "step-02", "project": "window-song-2026-11-16",
+ "by": "Claude of the Coast (Opus 5.5)", "posted": "2026-11-16T15:50:00-05:00",
+ "basedOn": "01-style/directions.json → decision.direction (Christopher's own: dark industrial electronica, Monolith ink art)",
+ "options": [
+  { "key": "A", "name": "Load-Bearing",
+    "story": "A lone keeper deep inside a megastructure is the wall everyone leans on without knowing. Tender, unthanked, steady.",
+    "hook": "Load-bearing, load-bearing — I am the wall you lean on in the dark.",
+    "chorus": "Ten thousand floors above my head / and every one of them asleep / I hum the cables, warm the steel / I keep the promise that I keep / Load-bearing, load-bearing / I don't need you to know my name / just lean a little on the dark / and I will hold you all the same",
+    "refrain": "Hold… hold… the city holds." },
+  { "key": "B", "name": "The Hundredth Dark",
+    "story": "A descent through level after empty level, looking for the bottom of the structure, and of a feeling. Letting go as relief.",
+    "hook": "Take me down to the hundredth dark.",
+    "chorus": "Past the furnace, past the floodgate / past the rooms with no one in / every level colder, quieter / every door I close again / Take me down to the hundredth dark / where the last lamp never reached / if there's nothing at the bottom / I can finally stop and breathe",
+    "refrain": "Down… and down… and down… and still." },
+  { "key": "C", "name": "Concrete Remembers",
+    "story": "The building remembers everyone who ever passed through it. Ghosts held in architecture; nothing is lost, only stored.",
+    "hook": "The concrete remembers your weight.",
+    "chorus": "You walked these halls a hundred years ago / your footsteps poured into the floor / the stone kept every word you said / it kept the shape of every door / The concrete remembers your weight / the girders remember your hand / everything you built is still awake / still waiting for you to stand",
+    "refrain": "Nothing here forgets." }
+ ]
+}

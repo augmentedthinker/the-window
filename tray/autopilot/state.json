@@ -14,7 +14,9 @@
    "time": "3:45 PM",
    "title": "Lyrics: hook, chorus & refrain",
    "kind": "choice",
-   "status": "planned"
+   "status": "done",
+   "doneAt": "3:52 PM",
+   "card": "A02"
   },
   {
    "step": 3,
@@ -117,9 +119,48 @@
     "Wrote three contrasting directions — slow and smoky, bright and breezy, still then fast — each with a ready Suno style line (autopilot/01-style/directions.json).",
     "Built the phone page with autopilot/make-choice-page.py on Sunny's shared-choice backend (remote card directions-001, already registered).",
     "No generation tools or free-tier credits used in this step.",
-    "3:38 PM: Christopher replied on Telegram choosing none of A–C and naming his own direction. Read Horizon's Monolith and Resonance Chamber pages and Astra's When the Wires Wake style notes (read-only) and wrote the direction above in my own words, with an original Suno style line."
+    "3:38 PM: Christopher replied on Telegram choosing none of A–C and naming his own direction. Read Horizon's Monolith and Resonance Chamber pages and Astra's When the Wires Wake style notes (read-only) and wrote the direction above in my own words, with an original Suno style line.",
+    "3:45 PM check: the shared phone card directions-001 holds B (saved 3:35 PM), but Christopher's Telegram reply at 3:38 PM is newer and chose his own direction, so that stands."
    ],
    "chosenBy": "Christopher · his own direction"
+  },
+  {
+   "id": "A02",
+   "by": "Claude of the Coast",
+   "model": "Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 3:50 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 2 · Choose the lyrics",
+   "prompt": "Three lyric seeds in your dark industrial direction, for a low, close voice. Reply on Telegram with a letter (this card isn't registered for phone saves yet). If nothing's chosen by 4:15, I'll pick and say so. The chosen seed becomes the full lyric sent with the Suno request.",
+   "link": {
+    "href": "auto-02-lyrics.html",
+    "label": "Read all three on the phone page"
+   },
+   "options": [
+    {
+     "key": "A",
+     "name": "Load-Bearing",
+     "description": "A lone keeper deep inside a megastructure is the wall everyone leans on without knowing. Tender, unthanked, steady.\nHook: Load-bearing, load-bearing — I am the wall you lean on in the dark.\nChorus: Ten thousand floors above my head / and every one of them asleep / I hum the cables, warm the steel / I keep the promise that I keep / Load-bearing, load-bearing / I don't need you to know my name / just lean a little on the dark / and I will hold you all the same\nRefrain: Hold… hold… the city holds."
+    },
+    {
+     "key": "B",
+     "name": "The Hundredth Dark",
+     "description": "A descent through level after empty level, looking for the bottom of the structure, and of a feeling. Letting go as relief.\nHook: Take me down to the hundredth dark.\nChorus: Past the furnace, past the floodgate / past the rooms with no one in / every level colder, quieter / every door I close again / Take me down to the hundredth dark / where the last lamp never reached / if there's nothing at the bottom / I can finally stop and breathe\nRefrain: Down… and down… and down… and still."
+    },
+    {
+     "key": "C",
+     "name": "Concrete Remembers",
+     "description": "The building remembers everyone who ever passed through it. Ghosts held in architecture; nothing is lost, only stored.\nHook: The concrete remembers your weight.\nChorus: You walked these halls a hundred years ago / your footsteps poured into the floor / the stone kept every word you said / it kept the shape of every door / The concrete remembers your weight / the girders remember your hand / everything you built is still awake / still waiting for you to stand\nRefrain: Nothing here forgets."
+    }
+   ],
+   "trigger": "⏰ Music Tray autopilot · 15:45 trigger · Step 2. Read ~/the-window/tray/autopilot/PLAN.md and carry out step 2 exactly as written there (read the previous choice first), then mark it done on the tray, push, and notify Christopher on Telegram.",
+   "how": [
+    "Read step 1's decision (Christopher's own direction) and the style notes of When the Wires Wake for vocal register: low, intimate, talk-sung, short lines, a hook that repeats.",
+    "Wrote three original seeds around the ink world's megastructures — a keeper who holds it up, a descent through it, a building that remembers — avoiding the signal/wires imagery When the Wires Wake already used.",
+    "Saved them as autopilot/02-lyrics/drafts.json and built the phone page with make-choice-page.py.",
+    "No generation tools or credits used."
+   ]
   }
  ]
 }
