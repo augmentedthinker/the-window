@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Six ways to move · Song 2 · Music Tray</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#141312;color:#ede7d1;font:1rem/1.55 system-ui,sans-serif}
+main{max-width:980px;margin:auto;padding:1rem 1rem 3rem}a{color:#e8892c}
+h1{font:400 clamp(1.9rem,6vw,2.8rem)/1.1 Georgia,serif;margin:.4rem 0}
+.bar{display:flex;gap:.6rem;align-items:center;margin:.8rem 0}
+#play{font:inherit;min-width:56px;min-height:48px;border-radius:10px;border:2px solid #e8892c;background:#1f1e1e;color:#ede7d1;cursor:pointer}
+#time{font-variant-numeric:tabular-nums;color:#cfc7b0}
+canvas#stage{width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;display:block}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.8rem 0}
+.tabs h2{grid-column:1/-1;font:700 .75rem system-ui;letter-spacing:.12em;text-transform:uppercase;color:#cfc7b0;margin:.6rem 0 0}
+.tab{font:inherit;text-align:left;padding:.6rem .7rem;border-radius:10px;border:1px solid #6e6960;background:#1f1e1e;color:#ede7d1;cursor:pointer;min-height:48px}
+.tab[aria-pressed=true]{border-color:#e8892c;background:#2b2118}
+.tab small{display:block;color:#a9a291;font-size:.78rem}
+.tab.wait{opacity:.55}
+#desc{color:#cfc7b0;font-size:.95rem;min-height:3em}
+footer{color:#9d978a;font-size:.85rem;margin-top:1.6rem}
+</style></head>
+<body><main>
+<a href="./">← Music Tray</a>
+<h1>Six ways for the tower to move</h1>
+<p>Concrete Remembers, Take B. Press play, then switch between the six previews; the song keeps its place. Three are <b>environmental</b> (an object in the Bone &amp; Ember world moves with the music; images by Terry of Agent Home) and three are <b>abstract</b> (drawn in code by Claude of the Coast). Everything moves from the saved analysis of the song.</p>
+<div class="bar"><button id="play" aria-label="Play">▶</button><span id="time">0:00</span></div>
+<canvas id="stage" width="1280" height="720"></canvas>
+<p id="desc"></p>
+<div class="tabs" id="tabs"></div>
+<footer>Choose on the tray card (Step 7b) or reply on Telegram with a letter. Audio: Suno v6-mini (free plan), captured by Antigravity of Horizon. Analysis: tray/tools. Environmental plates: Terry of Agent Home (Codex built-in image generation). Page and abstract renderers: Claude of the Coast (Opus 5.5).</footer>
+</main>
+<script src="analysis/A05-concrete-remembers-b/analysis.js"></script>
+<script src="autopilot/07b-reactive/env/regions.js" onerror="window.ENV_REGIONS=null"></script>
+<script>
+const A = window.SONG_ANALYSIS, R = window.ENV_REGIONS;
+const bytes = b64 => Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+const F = A.features, fps = F.fps, n = F.frames;
+const S = { bass: bytes(F.bass), mid: bytes(F.mid), high: bytes(F.high), rms: bytes(F.rms), bands: bytes(F.bands), wave: F.wave ? bytes(F.wave) : null };
+const hits = A.cues.hits.map(h => h.t), beats = F.beats;
+const INK = '#1f1e1e', BONE = '#ede7d1', EMBER = '#e8892c';
+const sig = t => { const f = Math.max(0, Math.min(n - 1, Math.floor(t * fps))); const g = k => S[k][f] / 255;
+  return { f, bass: g('bass'), mid: g('mid'), high: g('high'), rms: g('rms'), bands: Array.from(S.bands.subarray(f * 32, f * 32 + 32), v => v / 255), wave: S.wave ? Array.from(S.wave.subarray(f * 32, f * 32 + 32), v => v / 255 - .5) : null }; };
+const since = (arr, t) => { let lo = 0, hi = arr.length - 1, r = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (arr[m] <= t) { r = m; lo = m + 1; } else hi = m - 1; } return r < 0 ? 99 : t - arr[r]; };
+
+const imgs = {};
+for (const k of ['E1', 'E2', 'E3']) { const im = new Image(); im.src = `autopilot/07b-reactive/env/web/${k}.webp`; imgs[k] = im; }
+
+const P = [
+ { key: 'A', id: 'E1', group: 'Environmental', name: 'The wall that sings', desc: 'A loudspeaker built into the concrete: its cone pushes out with every sub-bass hit and the ember glow behind it follows the loudness.' },
+ { key: 'B', id: 'E2', group: 'Environmental', name: 'The lantern', desc: "The keeper's lantern: the flame and its glow swell with the voice and synths, and flicker on the drums." },
+ { key: 'C', id: 'E3', group: 'Environmental', name: 'The gauge wall', desc: 'Five pressure gauges in the control wall, each needle reading one part of the spectrum, from sub-bass on the left to air on the right.' },
+ { key: 'D', id: 'X1', group: 'Abstract', name: 'Ink rings', desc: 'Rings of ink ripple out across bone paper on every hit; the ring weight follows the bass, and an ember ring marks the strongest moments.' },
+ { key: 'E', id: 'X2', group: 'Abstract', name: 'Crosshatch spectrum', desc: 'The 32 frequency bands drawn as columns of crosshatching, like the shading in the plates; ember marks the beat.' },
+ { key: 'F', id: 'X3', group: 'Abstract', name: 'Lamplight line', desc: 'A single ink line (the waveform) across black, lit from the centre by an ember lamp that widens with loudness.' },
+];
+let cur = P[0];
+const tabs = document.getElementById('tabs');
+let html = '', g = '';
+for (const p of P) { if (p.group !== g) { g = p.group; html += `<h2>${g}</h2>`; } html += `<button class="tab" data-k="${p.key}" aria-pressed="false"><b>${p.key} · ${p.name}</b><small>${p.group === 'Environmental' ? 'image: Terry' : 'code: Claude'}</small></button>`; }
+tabs.innerHTML = html;
+const pick = k => { cur = P.find(p => p.key === k); for (const b of tabs.querySelectorAll('.tab')) b.setAttribute('aria-pressed', b.dataset.k === k); document.getElementById('desc').textContent = cur.desc + (cur.group === 'Environmental' && !(R && R[cur.id] && imgs[cur.id].naturalWidth) ? ' (Terry’s image is still on its way; this preview fills in when it arrives.)' : ''); };
+tabs.onclick = e => { const b = e.target.closest('.tab'); if (b) pick(b.dataset.k); };
+pick(location.hash.slice(1) || 'A');
+
+const cv = document.getElementById('stage'), c = cv.getContext('2d'), W = cv.width, H = cv.height;
+function env(id, s, t) {
+  const im = imgs[id], r = R && R[id];
+  if (!im.naturalWidth || !r) { c.fillStyle = '#1b1a19'; c.fillRect(0, 0, W, H); c.fillStyle = '#6e6960'; c.font = '28px system-ui'; c.textAlign = 'center'; c.fillText('Waiting for Terry’s plate…', W / 2, H / 2); return; }
+  c.drawImage(im, 0, 0, W, H);
+  if (id === 'E1') {
+    const x = r.x * W, y = r.y * H, rad = r.r * H, k = 1 + s.bass * .09 + (since(hits, t) < .12 ? .03 : 0);
+    c.save(); c.beginPath(); c.arc(x, y, rad, 0, 7); c.clip(); c.translate(x, y); c.scale(k, k); c.translate(-x, -y); c.drawImage(im, 0, 0, W, H); c.restore();
+    const gr = c.createRadialGradient(x, y, rad * .2, x, y, rad * 1.6); gr.addColorStop(0, `rgba(232,137,44,${.12 + .35 * s.rms})`); gr.addColorStop(1, 'rgba(232,137,44,0)');
+    c.globalCompositeOperation = 'screen'; c.fillStyle = gr; c.fillRect(0, 0, W, H); c.globalCompositeOperation = 'source-over';
+  } else if (id === 'E2') {
+    const x = r.x * W, y = r.y * H, fl = (Math.random() - .5) * .08 * s.high, a = .15 + .6 * s.mid + .2 * s.rms + fl;
+    const gr = c.createRadialGradient(x, y, 4, x, y, r.h * H * (1.2 + 1.6 * s.rms)); gr.addColorStop(0, `rgba(255,190,110,${Math.min(.95, a)})`); gr.addColorStop(.35, `rgba(232,137,44,${a * .5})`); gr.addColorStop(1, 'rgba(232,137,44,0)');
+    c.globalCompositeOperation = 'screen'; c.fillStyle = gr; c.fillRect(0, 0, W, H); c.globalCompositeOperation = 'source-over';
+  } else if (id === 'E3') {
+    const groups = [[0, 4], [4, 9], [9, 16], [16, 24], [24, 32]];
+    r.gauges.forEach((gg, i) => {
+      const [a0, a1] = groups[i], v = s.bands.slice(a0, a1).reduce((p, q) => p + q, 0) / (a1 - a0);
+      const x = gg.x * W, y = gg.y * H, rad = gg.r * H, ang = Math.PI * (.75 + 1.5 * v);
+      c.save(); c.beginPath(); c.arc(x, y, rad * .82, 0, 7); c.fillStyle = 'rgba(237,231,209,.9)'; c.fill();
+      c.strokeStyle = INK; c.lineWidth = Math.max(2, rad * .05); c.beginPath(); c.moveTo(x, y); c.lineTo(x + Math.cos(ang) * rad * .72, y + Math.sin(ang) * rad * .72); c.stroke();
+      c.fillStyle = v > .8 ? EMBER : INK; c.beginPath(); c.arc(x, y, rad * .08, 0, 7); c.fill(); c.restore();
+    });
+  }
+}
+function abstract(id, s, t) {
+  if (id === 'X1') {
+    c.fillStyle = BONE; c.fillRect(0, 0, W, H);
+    for (let i = hits.length - 1; i >= 0; i--) { const dt = t - hits[i]; if (dt < 0) continue; if (dt > 3) break;
+      const rad = 40 + dt * 380; c.strokeStyle = `rgba(31,30,30,${1 - dt / 3})`; c.lineWidth = 2 + s.bass * 7; c.beginPath(); c.ellipse(W / 2, H / 2, rad, rad * .55, 0, 0, 7); c.stroke(); }
+    if (s.rms > .82) { c.strokeStyle = EMBER; c.lineWidth = 4; c.beginPath(); c.ellipse(W / 2, H / 2, 60 + 40 * s.bass, 33 + 22 * s.bass, 0, 0, 7); c.stroke(); }
+    c.fillStyle = INK; c.beginPath(); c.arc(W / 2, H / 2, 10 + 14 * s.bass, 0, 7); c.fill();
+  } else if (id === 'X2') {
+    c.fillStyle = BONE; c.fillRect(0, 0, W, H); const cw = W / 32; c.strokeStyle = INK; c.lineWidth = 1.4;
+    s.bands.forEach((v, i) => { const h = v * H * .85, x0 = i * cw + 4, x1 = x0 + cw - 8, gap = Math.max(4, 16 - v * 12);
+      c.beginPath(); for (let y = H - h; y < H; y += gap) { c.moveTo(x0, y); c.lineTo(x1, y + gap * 1.6); if (v > .5) { c.moveTo(x1, y); c.lineTo(x0, y + gap * 1.6); } } c.stroke(); });
+    if (since(beats, t) < .1) { c.fillStyle = EMBER; c.fillRect(0, H - 8, W, 8); }
+  } else if (id === 'X3') {
+    c.fillStyle = '#121110'; c.fillRect(0, 0, W, H);
+    const gr = c.createRadialGradient(W / 2, H / 2, 10, W / 2, H / 2, 120 + 520 * s.rms); gr.addColorStop(0, `rgba(232,137,44,${.35 + .5 * s.mid})`); gr.addColorStop(1, 'rgba(232,137,44,0)'); c.fillStyle = gr; c.fillRect(0, 0, W, H);
+    const w = s.wave || s.bands.map((v, i) => (v - .3) * Math.sin(i * 1.7 + t * 9));
+    const pts = w.map((v, i) => [i / (w.length - 1) * W, H / 2 + v * H * (.45 + .6 * s.bass)]); c.strokeStyle = BONE; c.lineWidth = 2.5; c.lineJoin = 'round'; c.beginPath(); c.moveTo(...pts[0]); for (let i = 1; i < pts.length - 1; i++) { const mx = (pts[i][0] + pts[i + 1][0]) / 2, my = (pts[i][1] + pts[i + 1][1]) / 2; c.quadraticCurveTo(pts[i][0], pts[i][1], mx, my); } c.lineTo(...pts[pts.length - 1]); c.stroke();
+  }
+}
+const audio = new Audio(A.audio); audio.preload = 'auto';
+const play = document.getElementById('play'); play.onclick = () => audio.paused ? audio.play() : audio.pause();
+audio.onplay = () => play.textContent = '❚❚'; audio.onpause = () => play.textContent = '▶';
+const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+(function frame() { const t = audio.currentTime, s = sig(t); (cur.group === 'Environmental' ? env : abstract)(cur.id, s, t); document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(A.summary.duration); requestAnimationFrame(frame); })();
+</script>
+</body></html>

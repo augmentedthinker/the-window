@@ -73,6 +73,15 @@ window.TRAY_PLAN = [
   "card": "A07"
  },
  {
+  "step": "7b",
+  "time": "5:15 PM",
+  "title": "Interjection · six live visualizations (3 environmental, 3 abstract)",
+  "kind": "choice",
+  "status": "waiting",
+  "who": "Terry (Agent Home) · environmental images · Claude · Opus 5.5 · abstract renderers + live page",
+  "note": "Christopher's addition at 5:13 PM; environmental plates requested from Terry"
+ },
+ {
   "step": 8,
   "time": "5:15 PM",
   "title": "Plates (scene stills)",
@@ -84,7 +93,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 9,
-  "time": "5:30 PM",
+  "time": "5:45 PM",
   "title": "Cue-led cut",
   "kind": "notice",
   "status": "planned",
@@ -92,7 +101,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 10,
-  "time": "5:45 PM",
+  "time": "6:00 PM",
   "title": "Critique of the cut (by Antigravity)",
   "kind": "notice",
   "status": "planned",
@@ -100,7 +109,7 @@ window.TRAY_PLAN = [
  },
  {
   "step": 11,
-  "time": "6:00 PM",
+  "time": "6:15 PM",
   "title": "Fixes from the critique · ready to render",
   "kind": "notice",
   "status": "planned",
@@ -442,8 +451,10 @@ window.TRAY_CARDS = [
   "how": [
    "Read step 6's choice: B, The Keeper's Night Round (4:55 PM).",
    "First sent the scene-plates request to Terry (Agent Home) through its neighbor-message route, quoting Christopher's 4:20 PM instruction, and started a watcher for Terry's README.",
-   "Drew three reactive treatments in Python/Pillow from the Bone & Ember plate, each at three music levels. No image credits used."
-  ]
+   "Drew three reactive treatments in Python/Pillow from the Bone & Ember plate, each at three music levels. No image credits used.",
+   "5:13 PM: Christopher pointed out these were stills, not the live audio-reactive previews the first song had. Replaced by interjection 7b: six live visualizations, three environmental (images by Terry) and three abstract (code)."
+  ],
+  "chosenBy": "Replaced by step 7b (Christopher asked for live, audio-reactive previews)"
  },
  {
   "id": "A08",
@@ -465,5 +476,59 @@ window.TRAY_CARDS = [
    "Terry generated all 11 with Codex's built-in image tool using 03-world/A-ember.jpg as reference, none rejected, and wrote the exact prompts in 08-plates/README.md.",
    "Claude checked a contact sheet and every corner at full size for text or signatures (none), then made 1600×900 web copies; the PNG originals stay on the Chromebook."
   ]
+ },
+ {
+  "id": "A07b",
+  "by": "Claude of the Coast · environmental images by Terry of Agent Home",
+  "model": "Opus 5.5 · Codex built-in image generation",
+  "style": "coast",
+  "posted": "November 16, 2026 · 5:17 PM",
+  "project": "Song 2 (autopilot)",
+  "title": "Step 7b (interjection) · Six ways for the tower to move",
+  "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. Three abstract ones are ready now (D ink rings, E crosshatch spectrum, F lamplight line). The three environmental ones (A a loudspeaker in the wall, B the lantern, C a wall of gauges) fill in when Terry's images arrive. Open the page, press play and switch between them; the song keeps its place. Choose with a letter on Telegram (or on this card once the six-option card is registered). The cut moved to 5:45 to make room.",
+  "link": {
+   "href": "reactive-a07b.html",
+   "label": "Open the six live previews"
+  },
+  "options": [
+   {
+    "key": "A",
+    "name": "The wall that sings (environmental)",
+    "description": "A loudspeaker built into the concrete pushes out with the sub-bass."
+   },
+   {
+    "key": "B",
+    "name": "The lantern (environmental)",
+    "description": "The keeper's flame and glow swell with the voice."
+   },
+   {
+    "key": "C",
+    "name": "The gauge wall (environmental)",
+    "description": "Five needles read the spectrum."
+   },
+   {
+    "key": "D",
+    "name": "Ink rings (abstract)",
+    "description": "Rings ripple across bone paper on every hit."
+   },
+   {
+    "key": "E",
+    "name": "Crosshatch spectrum (abstract)",
+    "description": "32 bands drawn as crosshatching; ember on the beat."
+   },
+   {
+    "key": "F",
+    "name": "Lamplight line (abstract)",
+    "description": "The waveform as one ink line, lit by an ember lamp."
+   }
+  ],
+  "trigger": "Christopher on Telegram, about 5:13 PM: \"just throw it into the stack as an amendment or addendum or interjection and do it now … six visualizations three environmental and three abstract … you could have Terry do it\".",
+  "how": [
+   "Asked Terry (neighbor message) for three front-on object plates in Bone & Ember, with measured positions of the moving parts: request in autopilot/07b-reactive/request-terry.md.",
+   "Built reactive-a07b.html: Take B with its saved analysis, one large canvas, six switchable treatments that keep the song's position.",
+   "Drew the three abstract treatments in code from the analysis signals (bass, mid, rms, 32 bands, waveform, hits, beats).",
+   "Moved the 5:30, 5:45 and 6:00 triggers 15 minutes later."
+  ],
+  "remote": "step-07b"
  }
 ];
