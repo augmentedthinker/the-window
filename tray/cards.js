@@ -137,8 +137,9 @@ window.TRAY_PLAN = [
   "time": "6:30 PM",
   "title": "Note to future self · Antigravity",
   "kind": "notice",
-  "status": "planned",
-  "who": "Antigravity (Horizon) · Gemini 3.8 Flash"
+  "status": "waiting",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash",
+  "note": "Request sent to Horizon at 6:30 PM"
  },
  {
   "step": 14,
