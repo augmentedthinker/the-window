@@ -43,6 +43,8 @@ Christopher's instruction (November 16): Antigravity in Horizon makes the two Su
 4. When the follow-up from `ask-horizon.sh` arrives in the Coast chat: check the files exist and play (ffprobe), post card A04 with both takes (`audio` on each option), the phone page, mark step 4 done, push, Telegram for the choice.
 5. If the takes aren't back by 4:30, step 5 waits: post a notice, Telegram it, and run the analysis when they land. Later steps shift by the same delay rather than run on missing audio.
 
+**Step 5 note (4:28 PM):** I can't listen, so the take is Christopher's call. If step-04 has no choice at 4:30, Telegram a reminder and check again every few minutes until 4:45; only then pick (the take that's closer to the 2:40 brief, B) and say so on the card.
+
 ## Delegation · who does what
 
 Christopher's direction (4:20 PM): the Coast runs the line and sends out the work it can't do itself. Leonardo is finite (78 of 150 daily tokens left after step 3, about 9 images), so image-heavy work goes to neighbors.
