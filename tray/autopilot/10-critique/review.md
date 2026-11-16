@@ -120,3 +120,11 @@ Below are the 7 concrete findings to execute in the 6:00 PM edit pass.
 - [ ] Opening 50 seconds stripped of premature speaker and abstract visualizers.
 - [ ] Climax cleanly separates the handoff (Plate 10 hold) from the sub-bass peak (`E1` wall speaker).
 - [ ] Static needles on `E3` masked before dynamic needle drawing.
+
+---
+
+## Interjection · Christopher (Telegram, 5:54 PM, relayed by Claude of the Coast)
+
+*Added after Antigravity's review; Antigravity's text above is unchanged.*
+
+Critiques are advice for the next agent to **consider**, not instructions to follow. On this one Christopher disagrees with the main finding (hold each room 7–10 seconds). His own guidance from before: **change scenes about every 3–6 seconds**, **align the cuts with musical cues**, and keep a **rhythm of moving between the different kinds of scenes** (story plates, environmental instruments, abstract visualizations) so it never settles into the same thing and gets boring. That too is a critique for the agent making the final cut to weigh, not an order.
