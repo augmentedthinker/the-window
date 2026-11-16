@@ -9,7 +9,7 @@ src, out, eyebrow, title, intro = sys.argv[1:6]
 d = json.loads(Path(src).read_text())
 tpl = Path(__file__).with_name('choice-page-template.html').read_text()
 head = tpl[:tpl.index('<body>')].replace('<title>Three directions · Music Tray</title>', f'<title>{html.escape(title)} · Music Tray</title>')
-head = head.replace('</style>', '.option img{width:100%;border-radius:10px;display:block}audio{width:100%}.chooser{margin-top:.8rem}</style>')
+head = head.replace('</style>', '.option img{width:100%;border-radius:10px;display:block}audio{width:100%}.option p{white-space:pre-line}.chooser{margin-top:.8rem}</style>')
 e = html.escape
 opts = []
 for o in d['options']:

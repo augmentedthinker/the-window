@@ -1,0 +1,200 @@
+{
+ "step": 6,
+ "card": "A06",
+ "remoteCard": "step-06",
+ "project": "window-song-2026-11-16",
+ "by": "Claude of the Coast (Opus 5.5)",
+ "posted": "2026-11-16T16:48:00-05:00",
+ "basedOn": "Take B analysis (A05): scene boundaries at the biggest changes 0:11, 0:31, 0:51, 1:13, 1:50, 2:02, 2:23, 2:37, 3:04, 3:36. World A, Bone & Ember. Lyric C.",
+ "options": [
+  {
+   "key": "A",
+   "name": "The Return",
+   "arc": "An older woman comes back to the empty tower she grew up in. As she climbs, the building's memory of everyone wakes in ember light, and at the end she leaves her own mark for whoever comes next.",
+   "scenes": "1. 0:00–0:11 · Black frame; the vast tower in ink against bone sky, one figure tiny at its foot.\n2. 0:11–0:31 · She steps inside: dust, galleries stacked into darkness, her footsteps the only sound.\n3. 0:31–0:51 · The first lift in the music: old footprints in the floor begin to glow ember under hers.\n4. 0:51–1:13 · The stairwell: as she climbs, faint ink figures of children run past her, a memory.\n5. 1:13–1:50 · The building's floors open up as the beat builds: corridors, kitchens, doorways, all faintly peopled.\n6. 1:50–2:02 · First full section: the whole atrium seen from below, every window an ember lamp.\n7. 2:02–2:23 · Quiet turn: she reaches her old apartment door; the coat hook still holds a coat's shape.\n8. 2:23–2:37 · She puts her hand against the wall; ink rings spread outward from her palm through the concrete.\n9. 2:37–3:04 · The bridge ('nothing here forgets'): stripped to line drawing, the tower in cross-section, all its lives at once.\n10. 3:04–3:36 · Final chorus: the whole megastructure glows from inside, cables and galleries alive, she stands at the top window.\n11. 3:36–3:49 · Outro: daylight; empty hall again, but one new handprint glows in the wall by the door.",
+   "sceneList": [
+    {
+     "n": 1,
+     "time": "0:00–0:11",
+     "picture": "Black frame; the vast tower in ink against bone sky, one figure tiny at its foot."
+    },
+    {
+     "n": 2,
+     "time": "0:11–0:31",
+     "picture": "She steps inside: dust, galleries stacked into darkness, her footsteps the only sound."
+    },
+    {
+     "n": 3,
+     "time": "0:31–0:51",
+     "picture": "The first lift in the music: old footprints in the floor begin to glow ember under hers."
+    },
+    {
+     "n": 4,
+     "time": "0:51–1:13",
+     "picture": "The stairwell: as she climbs, faint ink figures of children run past her, a memory."
+    },
+    {
+     "n": 5,
+     "time": "1:13–1:50",
+     "picture": "The building's floors open up as the beat builds: corridors, kitchens, doorways, all faintly peopled."
+    },
+    {
+     "n": 6,
+     "time": "1:50–2:02",
+     "picture": "First full section: the whole atrium seen from below, every window an ember lamp."
+    },
+    {
+     "n": 7,
+     "time": "2:02–2:23",
+     "picture": "Quiet turn: she reaches her old apartment door; the coat hook still holds a coat's shape."
+    },
+    {
+     "n": 8,
+     "time": "2:23–2:37",
+     "picture": "She puts her hand against the wall; ink rings spread outward from her palm through the concrete."
+    },
+    {
+     "n": 9,
+     "time": "2:37–3:04",
+     "picture": "The bridge ('nothing here forgets'): stripped to line drawing, the tower in cross-section, all its lives at once."
+    },
+    {
+     "n": 10,
+     "time": "3:04–3:36",
+     "picture": "Final chorus: the whole megastructure glows from inside, cables and galleries alive, she stands at the top window."
+    },
+    {
+     "n": 11,
+     "time": "3:36–3:49",
+     "picture": "Outro: daylight; empty hall again, but one new handprint glows in the wall by the door."
+    }
+   ]
+  },
+  {
+   "key": "B",
+   "name": "The Keeper's Night Round",
+   "arc": "The building's last caretaker walks the night round with a lamp. Each floor still holds its residents as frozen ink silhouettes; the structure itself seems to breathe with the bass. At the end he hands his lamp to a newcomer.",
+   "scenes": "1. 0:00–0:11 · A single ember lamp swinging in total darkness; the keeper's hand.\n2. 0:11–0:31 · He unlocks the lower gate; the colossal interior revealed by his small light.\n3. 0:31–0:51 · Lift: he walks a gallery; frozen ink silhouettes stand in every doorway, mid-gesture.\n4. 0:51–1:13 · Pumps and cable rooms: pipes and conduits drawn like veins, pulsing faintly on the beat.\n5. 1:13–1:50 · Building: the round climbs floor after floor, each with its frozen moment (a meal, an argument, a dance).\n6. 1:50–2:02 · Full: the megastructure 'breathes': galleries expand and contract with the sub-bass, the keeper braced on a walkway.\n7. 2:02–2:23 · Quiet: a broken elevator still waiting with its doors open; he holds the lamp up to it.\n8. 2:23–2:37 · Full again: the silhouettes turn their heads toward his light, all at once.\n9. 2:37–3:04 · Bridge: he sits on the roof edge, lamp beside him, the city of identical towers stretching away in ink.\n10. 3:04–3:36 · Final chorus: a young newcomer climbs the stair toward him; he hands over the lamp ('let me hold the next').\n11. 3:36–3:49 · Outro: the newcomer's lamp moving away down a gallery; the keeper fading into the wall like the others.",
+   "sceneList": [
+    {
+     "n": 1,
+     "time": "0:00–0:11",
+     "picture": "A single ember lamp swinging in total darkness; the keeper's hand."
+    },
+    {
+     "n": 2,
+     "time": "0:11–0:31",
+     "picture": "He unlocks the lower gate; the colossal interior revealed by his small light."
+    },
+    {
+     "n": 3,
+     "time": "0:31–0:51",
+     "picture": "Lift: he walks a gallery; frozen ink silhouettes stand in every doorway, mid-gesture."
+    },
+    {
+     "n": 4,
+     "time": "0:51–1:13",
+     "picture": "Pumps and cable rooms: pipes and conduits drawn like veins, pulsing faintly on the beat."
+    },
+    {
+     "n": 5,
+     "time": "1:13–1:50",
+     "picture": "Building: the round climbs floor after floor, each with its frozen moment (a meal, an argument, a dance)."
+    },
+    {
+     "n": 6,
+     "time": "1:50–2:02",
+     "picture": "Full: the megastructure 'breathes': galleries expand and contract with the sub-bass, the keeper braced on a walkway."
+    },
+    {
+     "n": 7,
+     "time": "2:02–2:23",
+     "picture": "Quiet: a broken elevator still waiting with its doors open; he holds the lamp up to it."
+    },
+    {
+     "n": 8,
+     "time": "2:23–2:37",
+     "picture": "Full again: the silhouettes turn their heads toward his light, all at once."
+    },
+    {
+     "n": 9,
+     "time": "2:37–3:04",
+     "picture": "Bridge: he sits on the roof edge, lamp beside him, the city of identical towers stretching away in ink."
+    },
+    {
+     "n": 10,
+     "time": "3:04–3:36",
+     "picture": "Final chorus: a young newcomer climbs the stair toward him; he hands over the lamp ('let me hold the next')."
+    },
+    {
+     "n": 11,
+     "time": "3:36–3:49",
+     "picture": "Outro: the newcomer's lamp moving away down a gallery; the keeper fading into the wall like the others."
+    }
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Pour",
+   "arc": "Told by the building itself: from the pour of its foundation, through decades of lives layered in ink, to emptiness, demolition, and a new building rising with the old handprint in its base.",
+   "scenes": "1. 0:00–0:11 · Wet concrete poured into a foundation trench; workers in ink silhouette, steam, one ember lamp.\n2. 0:11–0:31 · A young worker presses a handprint into the wet concrete before it sets.\n3. 0:31–0:51 · Lift: girders and floors rise in fast stop-motion ink, the tower climbing into the sky.\n4. 0:51–1:13 · Lives arrive: windows fill with drawn figures, moving in, layered like a time-lapse.\n5. 1:13–1:50 · Building: decades pass in layers, generations overlapping in the same rooms as translucent ink.\n6. 1:50–2:02 · Full: the tower at its fullest, every window lit ember, the whole city around it.\n7. 2:02–2:23 · Quiet: the windows go dark one by one; rain inside empty halls.\n8. 2:23–2:37 · Full: demolition machines at the base; the walls crack, and the cracks glow with all the old lives.\n9. 2:37–3:04 · Bridge: rubble field in pure line drawing; a hand sifts it and finds the slab with the handprint.\n10. 3:04–3:36 · Final chorus: a new structure being poured over the old slab; the handprint set into its foundation.\n11. 3:36–3:49 · Outro: the new tower's first lit window; down in the base, the handprint, ember-warm.",
+   "sceneList": [
+    {
+     "n": 1,
+     "time": "0:00–0:11",
+     "picture": "Wet concrete poured into a foundation trench; workers in ink silhouette, steam, one ember lamp."
+    },
+    {
+     "n": 2,
+     "time": "0:11–0:31",
+     "picture": "A young worker presses a handprint into the wet concrete before it sets."
+    },
+    {
+     "n": 3,
+     "time": "0:31–0:51",
+     "picture": "Lift: girders and floors rise in fast stop-motion ink, the tower climbing into the sky."
+    },
+    {
+     "n": 4,
+     "time": "0:51–1:13",
+     "picture": "Lives arrive: windows fill with drawn figures, moving in, layered like a time-lapse."
+    },
+    {
+     "n": 5,
+     "time": "1:13–1:50",
+     "picture": "Building: decades pass in layers, generations overlapping in the same rooms as translucent ink."
+    },
+    {
+     "n": 6,
+     "time": "1:50–2:02",
+     "picture": "Full: the tower at its fullest, every window lit ember, the whole city around it."
+    },
+    {
+     "n": 7,
+     "time": "2:02–2:23",
+     "picture": "Quiet: the windows go dark one by one; rain inside empty halls."
+    },
+    {
+     "n": 8,
+     "time": "2:23–2:37",
+     "picture": "Full: demolition machines at the base; the walls crack, and the cracks glow with all the old lives."
+    },
+    {
+     "n": 9,
+     "time": "2:37–3:04",
+     "picture": "Bridge: rubble field in pure line drawing; a hand sifts it and finds the slab with the handprint."
+    },
+    {
+     "n": 10,
+     "time": "3:04–3:36",
+     "picture": "Final chorus: a new structure being poured over the old slab; the handprint set into its foundation."
+    },
+    {
+     "n": 11,
+     "time": "3:36–3:49",
+     "picture": "Outro: the new tower's first lit window; down in the base, the handprint, ember-warm."
+    }
+   ]
+  }
+ ]
+}

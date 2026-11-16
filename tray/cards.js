@@ -57,8 +57,10 @@ window.TRAY_PLAN = [
   "time": "4:45 PM",
   "title": "Storyboard",
   "kind": "choice",
-  "status": "planned",
-  "who": "Claude · Opus 5.5"
+  "status": "done",
+  "who": "Claude · Opus 5.5",
+  "doneAt": "4:50 PM",
+  "card": "A06"
  },
  {
   "step": 7,
@@ -349,6 +351,44 @@ window.TRAY_CARDS = [
    "Ran tray/tools/analyze.sh on audio/a04-concrete-remembers-b.m4a: features, beat grid, cues, sections, bundle (about 2 seconds).",
    "Wrote analysis/A05-concrete-remembers-b/README.md with the map, the biggest changes, and the limits (no lyric timing).",
    "Checked the player page opened as a local file."
+  ]
+ },
+ {
+  "id": "A06",
+  "by": "Claude of the Coast",
+  "model": "Opus 5.5",
+  "style": "coast",
+  "posted": "November 16, 2026 · 4:49 PM",
+  "project": "Song 2 (autopilot)",
+  "title": "Step 6 · Choose the storyboard",
+  "prompt": "Three stories for Concrete Remembers, each in 11 scenes cut at the song's biggest changes, drawn in Bone & Ember. Choose on the phone page or reply with a letter. At 5:00 the chosen one's scenes go to Terry for the stills, so if nothing's chosen by then, I'll pick and say so.",
+  "link": {
+   "href": "auto-06-storyboard.html",
+   "label": "Read all three, scene by scene"
+  },
+  "options": [
+   {
+    "key": "A",
+    "name": "The Return",
+    "description": "An older woman comes back to the empty tower she grew up in. As she climbs, the building's memory of everyone wakes in ember light, and at the end she leaves her own mark for whoever comes next.\n\n1. 0:00–0:11 · Black frame; the vast tower in ink against bone sky, one figure tiny at its foot.\n2. 0:11–0:31 · She steps inside: dust, galleries stacked into darkness, her footsteps the only sound.\n3. 0:31–0:51 · The first lift in the music: old footprints in the floor begin to glow ember under hers.\n4. 0:51–1:13 · The stairwell: as she climbs, faint ink figures of children run past her, a memory.\n5. 1:13–1:50 · The building's floors open up as the beat builds: corridors, kitchens, doorways, all faintly peopled.\n6. 1:50–2:02 · First full section: the whole atrium seen from below, every window an ember lamp.\n7. 2:02–2:23 · Quiet turn: she reaches her old apartment door; the coat hook still holds a coat's shape.\n8. 2:23–2:37 · She puts her hand against the wall; ink rings spread outward from her palm through the concrete.\n9. 2:37–3:04 · The bridge ('nothing here forgets'): stripped to line drawing, the tower in cross-section, all its lives at once.\n10. 3:04–3:36 · Final chorus: the whole megastructure glows from inside, cables and galleries alive, she stands at the top window.\n11. 3:36–3:49 · Outro: daylight; empty hall again, but one new handprint glows in the wall by the door."
+   },
+   {
+    "key": "B",
+    "name": "The Keeper's Night Round",
+    "description": "The building's last caretaker walks the night round with a lamp. Each floor still holds its residents as frozen ink silhouettes; the structure itself seems to breathe with the bass. At the end he hands his lamp to a newcomer.\n\n1. 0:00–0:11 · A single ember lamp swinging in total darkness; the keeper's hand.\n2. 0:11–0:31 · He unlocks the lower gate; the colossal interior revealed by his small light.\n3. 0:31–0:51 · Lift: he walks a gallery; frozen ink silhouettes stand in every doorway, mid-gesture.\n4. 0:51–1:13 · Pumps and cable rooms: pipes and conduits drawn like veins, pulsing faintly on the beat.\n5. 1:13–1:50 · Building: the round climbs floor after floor, each with its frozen moment (a meal, an argument, a dance).\n6. 1:50–2:02 · Full: the megastructure 'breathes': galleries expand and contract with the sub-bass, the keeper braced on a walkway.\n7. 2:02–2:23 · Quiet: a broken elevator still waiting with its doors open; he holds the lamp up to it.\n8. 2:23–2:37 · Full again: the silhouettes turn their heads toward his light, all at once.\n9. 2:37–3:04 · Bridge: he sits on the roof edge, lamp beside him, the city of identical towers stretching away in ink.\n10. 3:04–3:36 · Final chorus: a young newcomer climbs the stair toward him; he hands over the lamp ('let me hold the next').\n11. 3:36–3:49 · Outro: the newcomer's lamp moving away down a gallery; the keeper fading into the wall like the others."
+   },
+   {
+    "key": "C",
+    "name": "Pour",
+    "description": "Told by the building itself: from the pour of its foundation, through decades of lives layered in ink, to emptiness, demolition, and a new building rising with the old handprint in its base.\n\n1. 0:00–0:11 · Wet concrete poured into a foundation trench; workers in ink silhouette, steam, one ember lamp.\n2. 0:11–0:31 · A young worker presses a handprint into the wet concrete before it sets.\n3. 0:31–0:51 · Lift: girders and floors rise in fast stop-motion ink, the tower climbing into the sky.\n4. 0:51–1:13 · Lives arrive: windows fill with drawn figures, moving in, layered like a time-lapse.\n5. 1:13–1:50 · Building: decades pass in layers, generations overlapping in the same rooms as translucent ink.\n6. 1:50–2:02 · Full: the tower at its fullest, every window lit ember, the whole city around it.\n7. 2:02–2:23 · Quiet: the windows go dark one by one; rain inside empty halls.\n8. 2:23–2:37 · Full: demolition machines at the base; the walls crack, and the cracks glow with all the old lives.\n9. 2:37–3:04 · Bridge: rubble field in pure line drawing; a hand sifts it and finds the slab with the handprint.\n10. 3:04–3:36 · Final chorus: a new structure being poured over the old slab; the handprint set into its foundation.\n11. 3:36–3:49 · Outro: the new tower's first lit window; down in the base, the handprint, ember-warm."
+   }
+  ],
+  "trigger": "⏰ Music Tray autopilot · 16:45 trigger · Step 6. Read ~/the-window/tray/autopilot/PLAN.md and carry out step 6 exactly as written there (read the previous choice first), then mark it done on the tray, push, and notify Christopher on Telegram.",
+  "how": [
+   "Took the scene grid from Take B's analysis: boundaries at its biggest energy changes, so each new scene starts where the music turns.",
+   "Wrote three arcs on that grid around the lyric (the building remembers): a homecoming, a caretaker's night round, and the building's own life from pour to rebirth.",
+   "Kept every scene to one drawable picture in world A (black ink, bone paper, ember accents) so it can become one still.",
+   "No credits used."
   ]
  }
 ];
