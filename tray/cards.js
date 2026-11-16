@@ -97,8 +97,9 @@ window.TRAY_PLAN = [
   "time": "5:30 PM",
   "title": "Cue-led cut list (by Terry)",
   "kind": "notice",
-  "status": "planned",
-  "who": "Terry (Agent Home) · GPT-6.1 Terra"
+  "status": "waiting",
+  "who": "Terry (Agent Home) · GPT-6.1 Terra",
+  "note": "Request sent to Terry at 5:30 PM"
  },
  {
   "step": 10,
