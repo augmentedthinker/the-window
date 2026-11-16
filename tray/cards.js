@@ -117,8 +117,10 @@ window.TRAY_PLAN = [
   "time": "6:00 PM",
   "title": "Final edit from the critique · ready to render",
   "kind": "notice",
-  "status": "planned",
-  "who": "Claude · Opus 5.5 (Coast video editor)"
+  "status": "done",
+  "who": "Claude · Opus 5.5 (Coast video editor)",
+  "doneAt": "6:09 PM",
+  "card": "A11"
  },
  {
   "step": 12,
@@ -609,6 +611,29 @@ window.TRAY_CARDS = [
    "Sent into Horizon's live chat with ask-horizon.sh; Antigravity wrote 10-critique/review.md: seven numbered findings with shots, times and must/should/could.",
    "Claude posted it unedited in substance; the summary above is Claude's.",
    "5:54 PM: Christopher's interjection appended to 10-critique/review.md and this card; Antigravity's text left as written."
+  ]
+ },
+ {
+  "id": "A11",
+  "by": "Claude of the Coast",
+  "model": "Opus 5.5",
+  "style": "coast",
+  "posted": "November 16, 2026 · 6:09 PM",
+  "project": "Song 2 (autopilot)",
+  "title": "Step 11 · Final edit · ready to render",
+  "prompt": "The final edit, built from Terry's cut with Antigravity's critique and Christopher's interjection weighed: 51 shots, each 3.5–7.1 seconds, every cut on a beat, rotating between story plates, environmental instruments and abstract visualizations (Christopher's guidance), all 11 plates and all six visualizations used.\n\nWhat changed and why:\n• Shot 6: speaker → ink rings, so the speaker first appears inside the building.\n• Shots 49–50: the 1.7-second handoff flash folded into the speaker shot, which now holds through the loudest moment (5.2 s).\n• Shots 25–26: the 1.7-second breathing-building flash now holds 5.2 s (the speaker shot before it is folded in; the speaker still appears four times).\n• Plate 11: pan right → pan left, so the old keeper at the far left stays in frame.\n• Second-to-last shot: lamplight line → the lantern, so the film doesn’t drop to black before its last image.\n• The lamplight line (X3) is now drawn in ink on bone paper with an ember glow, instead of on black, so it no longer strobes against the plates.\n\nNot taken: Antigravity's main finding (hold each room 7–10 s), because Christopher disagreed and asked for cuts every 3–6 s rotating between kinds of scene; masking the speaker's baked-in bars (they read as part of the drawing, and time went to the renderer fix below).\n\nWatch it: the preview below plays the whole cut in the browser, on the phone too. For the real render, the Coast editor project 'concrete-remembers' has 24 stills with camera moves and 27 pre-rendered visualization clips; a 10-second slice rendered cleanly. Rendering the full film waits for Christopher's word.",
+  "link": {
+   "href": "cut-a11.html",
+   "label": "Watch the pre-render cut"
+  },
+  "trigger": "⏰ Music Tray autopilot · 18:00 trigger · Step 11.",
+  "how": [
+   "Applied the edits to Terry's cutlist.json → 11-final/final-cut.json (51 shots).",
+   "Moved the six renderers into one file (11-final/viz.js) and redrew the lamplight line on bone paper.",
+   "Built cut-a11.html: Take B, the 51 shots, camera moves on the plates, the visualizations live from the analysis.",
+   "Rendered the 24 visualization shots and 3 overlay shots into clips with ~/coast/scripts/capture-cut-clips.js (frames on disk, deleted after encoding).",
+   "Wrote the Coast editor project public/music/editor/projects/concrete-remembers.json (stills + clips, the song and its features).",
+   "Slice test with the real renderer (film.py): it was OOM-killed at 1.4 GB. The cause was a one-shot FFT of the whole song for the voice band in visual-instruments/studies.py. I changed it to filter in 10-second blocks and moved its cache off /tmp to disk, keyed by song. After that the slice rendered at 638 MB peak."
   ]
  }
 ];
