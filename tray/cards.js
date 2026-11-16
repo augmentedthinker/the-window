@@ -157,6 +157,14 @@ window.TRAY_PLAN = [
   "kind": "notice",
   "status": "planned",
   "who": "Claude · Opus 5.5"
+ },
+ {
+  "step": 16,
+  "time": "7:15 PM",
+  "title": "Render the film",
+  "kind": "notice",
+  "status": "planned",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash · Coast video editor (film.py)"
  }
 ];
 window.TRAY_CARDS = [

@@ -44,6 +44,10 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 14 | 6:45 | Sunny, Solarium | GPT-6.1 Sol (Codex) |
 | 15 | 7:00 | Claude, the Coast | Opus 5.5 (last, after reading the others; also answers the open questions in `12-journals/christopher.md`) |
 
+## Step 16 · the render (added by Christopher, 6:35 PM)
+
+"We forgot to have someone render the video, so let's assign that to Antigravity … at 7:15." At 7:15 Claude sends `16-render/request.md` into Horizon's chat with `ask-horizon.sh`; Antigravity renders the Coast editor project `concrete-remembers`, copies the film to `tray/video/concrete-remembers-final.mp4` and writes `16-render/README.md` last. Claude checks the file, makes `watch-a16.html`, posts card A16, pushes, and Telegrams Christopher. Publishing (YouTube) waits for Christopher's word.
+
 ## Step 4 in detail · the Suno handoff to Horizon
 
 Christopher's instruction (November 16): Antigravity in Horizon makes the two Suno takes, asked through Horizon's live browser chat.
