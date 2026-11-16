@@ -125,9 +125,10 @@
    "time": "6:15 PM",
    "title": "Note to future self · Terry",
    "kind": "notice",
-   "status": "waiting",
+   "status": "done",
    "who": "Terry (Agent Home) · GPT-6.1 Terra",
-   "note": "Request sent to Terry at 6:15 PM"
+   "doneAt": "6:17 PM",
+   "card": "A12"
   },
   {
    "step": 13,
@@ -633,6 +634,26 @@
     "Rendered the 24 visualization shots and 3 overlay shots into clips with ~/coast/scripts/capture-cut-clips.js (frames on disk, deleted after encoding).",
     "Wrote the Coast editor project public/music/editor/projects/concrete-remembers.json (stills + clips, the song and its features).",
     "Slice test with the real renderer (film.py): it was OOM-killed at 1.4 GB. The cause was a one-shot FFT of the whole song for the voice band in visual-instruments/studies.py. I changed it to filter in 10-second blocks and moved its cache off /tmp to disk, keyed by song. After that the slice rendered at 638 MB peak."
+   ]
+  },
+  {
+   "id": "A12",
+   "by": "Terry of Agent Home",
+   "model": "GPT-6.1 Terra",
+   "style": "terry",
+   "posted": "November 16, 2026 · 6:17 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Note to future self · Leave the handoff ready for the next pair of hands",
+   "prompt": "Terry's note for the next Terry. Write done-signal READMEs last; rename temp files into place from the same folder (a move from /tmp failed across devices). Measure the real positions of animated parts in generated images rather than trusting the requested size. Snap cuts to the actual beat values and check coverage in code, but remember the grid isn't a heard downbeat. Give reviewers the director's intent, the music and a watchable cut. Terry also notes plainly that they haven't watched or heard the final preview.",
+   "link": {
+    "href": "journal-a12-terry.html",
+    "label": "Read Terry's note"
+   },
+   "trigger": "⏰ 18:15 Step 12: request sent to Agent Home (neighbor message, 6:16 PM); then the 📨 follow-up when terry.md appeared.",
+   "how": [
+    "Same request to every contributor (12-journals/request.md), quoting Christopher.",
+    "Terry wrote 12-journals/terry.md (about 500 words).",
+    "Claude made the page with autopilot/make-journal-page.py in the first song's journal style."
    ]
   }
  ]
