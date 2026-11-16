@@ -28,7 +28,7 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 5 | 4:30 | **Song analysis, played back** — `../tools/analyze.sh` on the chosen take → `../analysis/A05-<slug>/`, link `player.html?song=…`; lyric timing only if Suno gives word timings | notice | — |
 | 6 | 4:45 | **Storyboard** — three story arcs across the song's sections, timed to the analysis cues | choice | `step-06` |
 | 7 | 5:00 | **Visual instrument** — three reactive looks (how the world moves with the music) as stills/short previews | choice | `step-07` |
-| 8 | 5:15 | **Plates** — Leonardo stills for the storyboard's scenes in the chosen world (reject off-style ones) | notice | — |
+| 8 | 5:15 | **Plates** — scene stills in the chosen world, **made by Terry in Agent Home** (image generation), requested at 5:00. See *Delegation* below | notice | — |
 | 9 | 5:30 | **Cue-led cut** — Coast editor project `public/music/editor/projects/<slug>.json`, scenes on the analysis cues | notice | — |
 | 10 | 5:45 | **Self-critique** — watch a 10-second slice render, list what's wrong, fix it | notice | — |
 | 11 | 6:00 | **Pre-render cut, ready to render** — final project card with the editor link; render waits for Christopher's word | notice | — |
@@ -42,6 +42,22 @@ Christopher's instruction (November 16): Antigravity in Horizon makes the two Su
 3. Telegram Christopher: "Lyrics and style sent to Antigravity for two Suno takes; I'll post them for your choice when they land."
 4. When the follow-up from `ask-horizon.sh` arrives in the Coast chat: check the files exist and play (ffprobe), post card A04 with both takes (`audio` on each option), the phone page, mark step 4 done, push, Telegram for the choice.
 5. If the takes aren't back by 4:30, step 5 waits: post a notice, Telegram it, and run the analysis when they land. Later steps shift by the same delay rather than run on missing audio.
+
+## Delegation · who does what
+
+Christopher's direction (4:20 PM): the Coast runs the line and sends out the work it can't do itself. Leonardo is finite (78 of 150 daily tokens left after step 3, about 9 images), so image-heavy work goes to neighbors.
+
+| Work | Who | How |
+|---|---|---|
+| Style, lyrics, storyboard, cut, critique, analysis | Claude (Coast) | here |
+| Suno takes (step 4) | Antigravity, Horizon | `~/coast/scripts/ask-horizon.sh` (streams reply, then posts a follow-up here) |
+| Scene plates (step 8), ~8–12 stills | Terry, Agent Home (OpenAI image generation) | `~/coast/scripts/ask-terry.sh` (retries while busy, waits for a done file, then posts a follow-up here) |
+| Visual-instrument previews (step 7) | Claude, in code (no image credits); Sunny if a richer animated preview is wanted | — |
+| Fallback images | Coast Leonardo (reserve the remaining tokens) | `~/coast/scripts/generate-image.js` |
+
+**Step 8 request (send at 5:00, right after posting step 7):** write `08-plates/request.md` with the chosen storyboard's scenes (one prompt per scene, the time each covers), the style reference `03-world/A-ember.jpg` (world A, Bone & Ember, chosen 4:10) and its palette, size 1344×768 or 16:9, no text/signatures. Ask Terry to save `08-plates/NN-<slug>.png` and finish with `08-plates/README.md` (tool, model, prompts as used) — that README is the done file. At 5:15, if the plates aren't in yet, post the notice that they're coming and carry on with what doesn't need them.
+
+Every delegated message is signed "From Claude of the Coast, on Christopher's instruction" and points to a request file in the Window; results come back as files in the Window, never as pasted secrets. Once a home's neighbor-message switch is on (see `~/the-window/neighbor-chat/`), use `/api/neighbor-message` instead of the plain chat route.
 
 ## Known limits (said plainly)
 
