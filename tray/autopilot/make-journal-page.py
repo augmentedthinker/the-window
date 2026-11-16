@@ -20,7 +20,13 @@ def flush():
     global para, lst
     if para: body.append('<p>' + inline(' '.join(para)) + '</p>'); para = []
     if lst: body.append(f'<{lst[0]}>' + ''.join(f'<li>{inline(i)}</li>' for i in lst[1]) + f'</{lst[0]}>'); lst = None
+code = None
 for l in lines:
+    if l.strip().startswith('```'):
+        if code is None: flush(); code = []
+        else: body.append('<pre style="overflow-x:auto;background:#e8e1d2;padding:12px;border-radius:4px;font-size:14px"><code>' + html.escape('\n'.join(code)) + '</code></pre>'); code = None
+        continue
+    if code is not None: code.append(l); continue
     if l.startswith('# '): continue
     if not l.strip(): flush(); continue
     if re.match(r'#{2,4} ', l): flush(); body.append('<h2>' + inline(l.lstrip('#').strip()) + '</h2>'); continue

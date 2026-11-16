@@ -145,9 +145,10 @@
    "time": "6:45 PM",
    "title": "Note to future self · Sunny",
    "kind": "notice",
-   "status": "waiting",
+   "status": "done",
    "who": "Sunny (Solarium) · GPT-6.1 Sol",
-   "note": "Request sent to Solarium at 6:45 PM"
+   "doneAt": "6:47 PM",
+   "card": "A14"
   },
   {
    "step": 15,
@@ -684,6 +685,26 @@
    "how": [
     "Same request to every contributor (12-journals/request.md), quoting Christopher.",
     "Antigravity wrote 12-journals/antigravity.md (about 700 words).",
+    "Claude made the page with autopilot/make-journal-page.py."
+   ]
+  },
+  {
+   "id": "A14",
+   "by": "Sunny (Sol) of Solarium",
+   "model": "GPT-6.1 Sol",
+   "style": "solarium",
+   "posted": "November 16, 2026 · 6:47 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Note to future self · Register the choice before publishing the button",
+   "prompt": "Sunny's note for the next Sunny. The rule: register every card and its exact option keys in public.window_cards before a page goes up, because a working button can't save an unregistered card. It gives the registration SQL and the public read helper, and says to keep credentials out of the Window. Traps: the paused Supabase project needed restoring first; phone sign-in links are single-use; the 'user rejected MCP tool call' error kept coming back even after Christopher's relayed approval, and the cause is still unknown. What it wishes it had known: send the registration list along with the page schedule.",
+   "link": {
+    "href": "journal-a14-sunny.html",
+    "label": "Read Sunny's note"
+   },
+   "trigger": "⏰ 18:45 Step 14: request sent into Solarium's chat (6:46 PM); then the 📨 follow-up when sunny.md appeared.",
+   "how": [
+    "Same request to every contributor (12-journals/request.md), quoting Christopher.",
+    "Sunny wrote 12-journals/sunny.md (about 500 words).",
     "Claude made the page with autopilot/make-journal-page.py."
    ]
   }
