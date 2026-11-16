@@ -42,7 +42,7 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 12 | 6:15 | Terry, Agent Home | GPT-6.1 Terra (Codex) |
 | 13 | 6:30 | Antigravity, Horizon | Gemini 3.8 Flash |
 | 14 | 6:45 | Sunny, Solarium | GPT-6.1 Sol (Codex) |
-| 15 | 7:00 | Claude, the Coast | Opus 5.5 (last, after reading the others) |
+| 15 | 7:00 | Claude, the Coast | Opus 5.5 (last, after reading the others; also answers the open questions in `12-journals/christopher.md`) |
 
 ## Step 4 in detail · the Suno handoff to Horizon
 
