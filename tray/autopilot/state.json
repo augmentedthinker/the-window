@@ -77,7 +77,7 @@
    "kind": "choice",
    "status": "waiting",
    "who": "Terry (Agent Home) · environmental images · Claude · Opus 5.5 · abstract renderers + live page",
-   "note": "Christopher's addition at 5:13 PM; environmental plates requested from Terry"
+   "note": "All six previews ready; waiting for Christopher's choice"
   },
   {
    "step": 8,
@@ -483,7 +483,7 @@
    "posted": "November 16, 2026 · 5:17 PM",
    "project": "Song 2 (autopilot)",
    "title": "Step 7b (interjection) · Six ways for the tower to move",
-   "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. Three abstract ones are ready now (D ink rings, E crosshatch spectrum, F lamplight line). The three environmental ones (A a loudspeaker in the wall, B the lantern, C a wall of gauges) fill in when Terry's images arrive. Open the page, press play and switch between them; the song keeps its place. Choose with a letter on Telegram (or on this card once the six-option card is registered). The cut moved to 5:45 to make room.",
+   "prompt": "Christopher's addition: live previews that play Take B and move with it, as the first song had. All six are ready: environmental A (a loudspeaker in the wall), B (the lantern), C (a wall of five gauges), with images by Terry; abstract D (ink rings), E (crosshatch spectrum), F (lamplight line), drawn in code. Open the page, press play and switch; the song keeps its place. Reply with a letter on Telegram (phone taps need Sunny's registration, waiting on Christopher's approval in Solarium). The cut moved to 5:45.",
    "link": {
     "href": "reactive-a07b.html",
     "label": "Open the six live previews"
@@ -525,7 +525,8 @@
     "Asked Terry (neighbor message) for three front-on object plates in Bone & Ember, with measured positions of the moving parts: request in autopilot/07b-reactive/request-terry.md.",
     "Built reactive-a07b.html: Take B with its saved analysis, one large canvas, six switchable treatments that keep the song's position.",
     "Drew the three abstract treatments in code from the analysis signals (bass, mid, rms, 32 bands, waveform, hits, beats).",
-    "Moved the 5:30, 5:45 and 6:00 triggers 15 minutes later."
+    "Moved the 5:30, 5:45 and 6:00 triggers 15 minutes later.",
+    "Terry delivered E1–E3 at about 5:16 PM with measured positions (env/README.md). Claude wrote env/regions.js from them, masks the baked-in gauge needles with fresh dials, pulses the speaker cone, and lights the lantern; checked all three at 2:30 into the song."
    ],
    "remote": "step-07b"
   }
