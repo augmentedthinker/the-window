@@ -30,7 +30,7 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 7 | 5:00 | **Visual instrument** — three reactive looks (how the world moves with the music) as stills/short previews | choice | `step-07` |
 | 8 | 5:15 | **Plates** — scene stills in the chosen world, **made by Terry in Agent Home** (image generation), requested at 5:00. See *Delegation* below | notice | — |
 | 9 | 5:30 | **Cue-led cut** — Coast editor project `public/music/editor/projects/<slug>.json`, scenes on the analysis cues | notice | — |
-| 10 | 5:45 | **Self-critique** — watch a 10-second slice render, list what's wrong, fix it | notice | — |
+| 10 | 5:45 | **Critique** — by **Antigravity in Horizon** (strong image understanding; Claude shouldn't grade its own cut). Requested at 5:30 with the cut; Claude applies the fixes at step 11 | notice | — |
 | 11 | 6:00 | **Pre-render cut, ready to render** — final project card with the editor link; render waits for Christopher's word | notice | — |
 
 ## Step 4 in detail · the Suno handoff to Horizon
@@ -51,6 +51,7 @@ Christopher's direction (4:20 PM): the Coast runs the line and sends out the wor
 |---|---|---|
 | Style, lyrics, storyboard, cut, critique, analysis | Claude (Coast) | here |
 | Suno takes (step 4) | Antigravity, Horizon | `~/coast/scripts/ask-horizon.sh` (streams reply, then posts a follow-up here) |
+| Critique of the cut (step 10) | Antigravity, Horizon (Gemini 3.8 Flash) | `ask-horizon.sh` at 5:30, right after posting the cut |
 | Scene plates (step 8), ~8–12 stills | Terry, Agent Home (OpenAI image generation) | `~/coast/scripts/ask-terry.sh` (retries while busy, waits for a done file, then posts a follow-up here) |
 | Visual-instrument previews (step 7) | Claude, in code (no image credits); Sunny if a richer animated preview is wanted | — |
 | Fallback images | Coast Leonardo (reserve the remaining tokens) | `~/coast/scripts/generate-image.js` |
@@ -58,6 +59,8 @@ Christopher's direction (4:20 PM): the Coast runs the line and sends out the wor
 **Step 8 request (send at 5:00, right after posting step 7):** write `08-plates/request.md` with the chosen storyboard's scenes (one prompt per scene, the time each covers), the style reference `03-world/A-ember.jpg` (world A, Bone & Ember, chosen 4:10) and its palette, size 1344×768 or 16:9, no text/signatures. Ask Terry to save `08-plates/NN-<slug>.png` and finish with `08-plates/README.md` (tool, model, prompts as used) — that README is the done file. At 5:15, if the plates aren't in yet, post the notice that they're coming and carry on with what doesn't need them.
 
 Every delegated message is signed "From Claude of the Coast, on Christopher's instruction" and points to a request file in the Window; results come back as files in the Window, never as pasted secrets. Once a home's neighbor-message switch is on (see `~/the-window/neighbor-chat/`), use `/api/neighbor-message` instead of the plain chat route.
+
+**Step 10 request (send at 5:30, right after posting the cut):** render a 10-second slice of the real project and a contact sheet (one frame per scene, labelled with scene number and time) into `10-critique/`, and write `10-critique/request.md`: the project path, the song and its analysis, the storyboard, world A's reference and palette, and what to judge (story readability without the lyrics, style consistency with Bone & Ember, cuts against the music, any image faults like text or signatures). Ask Antigravity for `10-critique/review.md`: numbered findings, each saying what it would change and how important it is. At 5:45 post the review as card A10 (a notice, crediting Antigravity); at 6:00 apply the fixes before the pre-render card and say on A11 which findings were taken and which weren't, and why.
 
 ## Known limits (said plainly)
 

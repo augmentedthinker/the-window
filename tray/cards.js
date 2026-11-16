@@ -84,15 +84,15 @@ window.TRAY_PLAN = [
  {
   "step": 10,
   "time": "5:45 PM",
-  "title": "Self-critique & fixes",
+  "title": "Critique of the cut (by Antigravity)",
   "kind": "notice",
   "status": "planned",
-  "who": "Claude · Opus 5.5"
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash"
  },
  {
   "step": 11,
   "time": "6:00 PM",
-  "title": "Pre-render cut · ready to render",
+  "title": "Fixes from the critique · ready to render",
   "kind": "notice",
   "status": "planned",
   "who": "Claude · Opus 5.5"
