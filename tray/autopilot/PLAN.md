@@ -22,7 +22,7 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 1 | 3:30 | **Musical style** — three distinct directions (genre, instruments, mood, a one-line Suno style prompt each) | choice | `directions-001` (registered) |
 | 2 | 3:45 | **Lyrics** — three hook/chorus/refrain drafts in the chosen style, then a full lyric for the chosen one at step 4 | choice | `step-02` |
 | 3 | 4:00 | **Artistic world** — three visual worlds, one Leonardo image + five-colour palette each (`image`, `palette` fields) | choice | `step-03` |
-| 4 | 4:15 | **Recording** — full lyric + style into Suno (`~/coast/scripts/suno.mjs`), two takes, audio in `autopilot/04-recording/` | choice (A/B) | `step-04` |
+| 4 | 4:15 | **Recording** — handed to **Antigravity in Horizon** (I can't reach Suno myself). See *Step 4 in detail* below | choice (A/B) | `step-04` |
 | 5 | 4:30 | **Song analysis, played back** — `../tools/analyze.sh` on the chosen take → `../analysis/A05-<slug>/`, link `player.html?song=…`; lyric timing only if Suno gives word timings | notice | — |
 | 6 | 4:45 | **Storyboard** — three story arcs across the song's sections, timed to the analysis cues | choice | `step-06` |
 | 7 | 5:00 | **Visual instrument** — three reactive looks (how the world moves with the music) as stills/short previews | choice | `step-07` |
@@ -30,6 +30,16 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 9 | 5:30 | **Cue-led cut** — Coast editor project `public/music/editor/projects/<slug>.json`, scenes on the analysis cues | notice | — |
 | 10 | 5:45 | **Self-critique** — watch a 10-second slice render, list what's wrong, fix it | notice | — |
 | 11 | 6:00 | **Pre-render cut, ready to render** — final project card with the editor link; render waits for Christopher's word | notice | — |
+
+## Step 4 in detail · the Suno handoff to Horizon
+
+Christopher's instruction (November 16): Antigravity in Horizon makes the two Suno takes, asked through Horizon's live browser chat.
+
+1. At 4:15, write the full lyric (from the chosen step-2 draft) and the style prompt (step 1) to `04-recording/request.md`: title, Suno style prompt, full lyrics with section tags, and where to save.
+2. Send it with `~/coast/scripts/ask-horizon.sh` **run detached** (`systemd-run --user --unit=ask-horizon-0415 …`) so the Coast turn can end. Message: clearly signed "Claude of the Coast, on Christopher's instruction", asking Antigravity to read `~/the-window/tray/autopilot/04-recording/request.md`, make **two takes** in Suno, and save them as `04-recording/take-A.mp3` and `take-B.mp3` (plus any Suno lyric/word-timing data) with a short `04-recording/README.md` naming tool, model and credits used. The second argument tells the Coast what to do when Horizon replies.
+3. Telegram Christopher: "Lyrics and style sent to Antigravity for two Suno takes; I'll post them for your choice when they land."
+4. When the follow-up from `ask-horizon.sh` arrives in the Coast chat: check the files exist and play (ffprobe), post card A04 with both takes (`audio` on each option), the phone page, mark step 4 done, push, Telegram for the choice.
+5. If the takes aren't back by 4:30, step 5 waits: post a notice, Telegram it, and run the analysis when they land. Later steps shift by the same delay rather than run on missing audio.
 
 ## Known limits (said plainly)
 
