@@ -1,0 +1,31 @@
+{
+ "step": 7,
+ "card": "A07",
+ "remoteCard": "step-07",
+ "project": "window-song-2026-11-16",
+ "by": "Claude of the Coast (Opus 5.5)",
+ "posted": "2026-11-16T17:08:00-05:00",
+ "options": [
+  {
+   "key": "A",
+   "name": "Breathing structure",
+   "description": "The whole drawing breathes with the sub-bass: a slow push-in and deeper ink contrast on the low end, and the ember lamps bloom with the voice and synths. Subtle in quiet sections, overwhelming at full. Closest to 'the building is alive'.",
+   "image": "images/a07-a.webp",
+   "imageAlt": "Three frames of the Bone & Ember drawing: plain, then pushed in with lamps glowing, then flooded with ember light."
+  },
+  {
+   "key": "B",
+   "name": "Ink rings",
+   "description": "On every drum hit, ink rings ripple outward through the concrete from the keeper (or his lamp), like a hand pressed against the wall. More rings as the song builds; at full, an ember ring at the centre. Graphic, readable, very on-beat.",
+   "image": "images/a07-b.webp",
+   "imageAlt": "Three frames: one small ink ring around the keeper, then several, then many wide rings with an ember ring at the centre."
+  },
+  {
+   "key": "C",
+   "name": "Lamplight",
+   "description": "The world is dark except where the keeper's lamp reaches; the circle of light grows with loudness and the drawing is revealed in it. Quiet sections are almost black, the full sections show the whole hall. Most cinematic, fits the night round.",
+   "image": "images/a07-c.webp",
+   "imageAlt": "Three frames: near darkness with a small circle of light around the keeper, a larger circle, then almost the whole hall revealed."
+  }
+ ]
+}

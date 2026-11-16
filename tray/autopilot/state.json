@@ -65,16 +65,19 @@
    "time": "5:00 PM",
    "title": "Visual instrument",
    "kind": "choice",
-   "status": "planned",
-   "who": "Claude · Opus 5.5 (code, no image credits)"
+   "status": "done",
+   "who": "Claude · Opus 5.5 (code, no image credits)",
+   "doneAt": "5:09 PM",
+   "card": "A07"
   },
   {
    "step": 8,
    "time": "5:15 PM",
    "title": "Plates (scene stills)",
    "kind": "notice",
-   "status": "planned",
-   "who": "Terry (Agent Home) · GPT-6.1 Terra + OpenAI image generation"
+   "status": "waiting",
+   "who": "Terry (Agent Home) · GPT-6.1 Terra + OpenAI image generation",
+   "note": "Request sent to Terry at 5:03 PM"
   },
   {
    "step": 9,
@@ -392,7 +395,52 @@
     "Kept every scene to one drawable picture in world A (black ink, bone paper, ember accents) so it can become one still.",
     "No credits used."
    ],
-   "remote": "step-06"
+   "remote": "step-06",
+   "chosenBy": "B · The Keeper’s Night Round (Christopher, phone, 4:55 PM)"
+  },
+  {
+   "id": "A07",
+   "by": "Claude of the Coast",
+   "model": "Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 5:08 PM",
+   "project": "Song 2 (autopilot)",
+   "remote": "step-07",
+   "title": "Step 7 · Choose the visual instrument",
+   "prompt": "How the drawings move with the music. Each preview shows the same plate quiet, building and full. Tap to choose (or reply with a letter). If nothing's chosen by 5:30, I'll use C, Lamplight, which suits the night round, and say so.",
+   "link": {
+    "href": "auto-07-instrument.html",
+    "label": "See the previews on the phone page"
+   },
+   "options": [
+    {
+     "key": "A",
+     "name": "Breathing structure",
+     "description": "The whole drawing breathes with the sub-bass: a slow push-in and deeper ink contrast on the low end, and the ember lamps bloom with the voice and synths. Subtle in quiet sections, overwhelming at full. Closest to 'the building is alive'.",
+     "image": "images/a07-a.webp",
+     "imageAlt": "Three frames of the Bone & Ember drawing: plain, then pushed in with lamps glowing, then flooded with ember light."
+    },
+    {
+     "key": "B",
+     "name": "Ink rings",
+     "description": "On every drum hit, ink rings ripple outward through the concrete from the keeper (or his lamp), like a hand pressed against the wall. More rings as the song builds; at full, an ember ring at the centre. Graphic, readable, very on-beat.",
+     "image": "images/a07-b.webp",
+     "imageAlt": "Three frames: one small ink ring around the keeper, then several, then many wide rings with an ember ring at the centre."
+    },
+    {
+     "key": "C",
+     "name": "Lamplight",
+     "description": "The world is dark except where the keeper's lamp reaches; the circle of light grows with loudness and the drawing is revealed in it. Quiet sections are almost black, the full sections show the whole hall. Most cinematic, fits the night round.",
+     "image": "images/a07-c.webp",
+     "imageAlt": "Three frames: near darkness with a small circle of light around the keeper, a larger circle, then almost the whole hall revealed."
+    }
+   ],
+   "trigger": "⏰ Music Tray autopilot · 17:00 trigger · Step 7. Read ~/the-window/tray/autopilot/PLAN.md and carry out step 7 exactly as written there (read the previous choice first), then mark it done on the tray, push, and notify Christopher on Telegram.",
+   "how": [
+    "Read step 6's choice: B, The Keeper's Night Round (4:55 PM).",
+    "First sent the scene-plates request to Terry (Agent Home) through its neighbor-message route, quoting Christopher's 4:20 PM instruction, and started a watcher for Terry's README.",
+    "Drew three reactive treatments in Python/Pillow from the Bone & Ember plate, each at three music levels. No image credits used."
+   ]
   }
  ]
 }
