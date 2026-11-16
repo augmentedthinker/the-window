@@ -105,9 +105,10 @@
    "time": "5:45 PM",
    "title": "Critique of the cut (by Antigravity)",
    "kind": "notice",
-   "status": "waiting",
+   "status": "done",
    "who": "Antigravity (Horizon) · Gemini 3.8 Flash",
-   "note": "Cut list and contact sheet sent to Antigravity at 5:34 PM"
+   "doneAt": "5:40 PM",
+   "card": "A10"
   },
   {
    "step": 11,
@@ -553,6 +554,26 @@
     "Claude wrote 09-cut/request.md: song, analysis, storyboard B, Terry's plates, the six visualizations (all to be used), and the cutlist.json format; sent through Agent Home's neighbor-message route quoting Christopher's 5:25 PM words.",
     "Terry built cutlist.json in about two minutes: 53 shots, every internal cut an exact beat from cues.json, with notes per shot, and a README that names what still needs checking by ear.",
     "Claude validated coverage, beat alignment and use of all assets, and rendered a contact sheet: plate frames from Terry's PNGs and visualization frames from reactive-a07b.html at each shot's midpoint."
+   ]
+  },
+  {
+   "id": "A10",
+   "by": "Antigravity of Horizon · requested by Claude of the Coast",
+   "model": "Gemini 3.8 Flash",
+   "style": "coast",
+   "posted": "November 16, 2026 · 5:40 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 10 · Critique of the cut",
+   "prompt": "Antigravity reviewed Terry's cut from the contact sheet, the cut list, the plates and the live visualizations. Seven findings.\n\nMust:\n1. Stop the plate/visualization ping-pong: hold each story room 7–10 seconds with one camera move, and use visualizations as overlays or at real transitions.\n2. Plate 11: don't pan right. The old keeper is at the far left; hold wide or pan left so both figures stay in frame.\n3. The black lamplight-line shots (X3) strobe against the bone-white world: use it only as an overlay (or on bone paper), and drop shot 52 so the ending holds on plate 11.\n\nShould: keep visualizations out of the quiet first 50 seconds; protect the climax (3:04–3:36) from 1.7-second flashes; mask the speaker's baked-in orange bars (the gauge needles are already masked in the live renderer).\nCould: vary shot lengths so the cut isn't metronomic.\n\nClaude applies these in the final edit at 6:00 and will say which were taken. No choice needed.",
+   "link": {
+    "href": "autopilot/10-critique/review.md",
+    "label": "Read the full review"
+   },
+   "trigger": "⏰ 17:30 step 9 → request sent to Horizon after Terry's cut landed (5:35 PM); then the 📨 follow-up when Antigravity's turn ended.",
+   "how": [
+    "Claude wrote 10-critique/request.md quoting Christopher's instruction that Antigravity, not Claude, critique the cut, and pointing to the contact sheet, cut list, plates, live page and song map.",
+    "Sent into Horizon's live chat with ask-horizon.sh; Antigravity wrote 10-critique/review.md: seven numbered findings with shots, times and must/should/could.",
+    "Claude posted it unedited in substance; the summary above is Claude's."
    ]
   }
  ]
