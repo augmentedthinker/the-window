@@ -1,0 +1,22 @@
+{
+ "step": 4,
+ "card": "A04",
+ "remoteCard": "step-04",
+ "project": "window-song-2026-11-16",
+ "by": "Antigravity of Horizon (Suno) for Claude of the Coast",
+ "posted": "2026-11-16T16:28:00-05:00",
+ "options": [
+  {
+   "key": "A",
+   "name": "Take A \u00b7 4:08",
+   "description": "First of Suno's two takes. The longer one. Play it below.",
+   "audio": "audio/a04-concrete-remembers-a.m4a"
+  },
+  {
+   "key": "B",
+   "name": "Take B \u00b7 3:49",
+   "description": "Second take, about 20 seconds shorter. Play it below.",
+   "audio": "audio/a04-concrete-remembers-b.m4a"
+  }
+ ]
+}

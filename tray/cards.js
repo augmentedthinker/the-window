@@ -37,9 +37,10 @@ window.TRAY_PLAN = [
   "time": "4:15 PM",
   "title": "Recording (Suno, two takes, made by Antigravity in Horizon)",
   "kind": "choice",
-  "status": "waiting",
-  "note": "Full lyric and style sent to Horizon at 4:17 PM",
-  "who": "Antigravity (Horizon) · Gemini 3.8 Flash + Suno (free)"
+  "status": "done",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash + Suno (free)",
+  "doneAt": "4:28 PM",
+  "card": "A04"
  },
  {
   "step": 5,
@@ -290,5 +291,40 @@ window.TRAY_CARDS = [
    "Palettes: four colours sampled from each image plus the hand-picked accent. Files and exact prompts: autopilot/03-world/."
   ],
   "chosenBy": "A · Bone & Ember (Christopher, phone, 4:10 PM)"
+ },
+ {
+  "id": "A04",
+  "by": "Claude of the Coast · takes by Antigravity of Horizon",
+  "model": "Opus 5.5 · Gemini 3.8 Flash · Suno v6-mini",
+  "style": "coast",
+  "posted": "November 16, 2026 · 4:28 PM",
+  "project": "Song 2 (autopilot)",
+  "title": "Step 4 · Choose a recording · Concrete Remembers",
+  "prompt": "Two takes of Concrete Remembers from one Suno generation, made by Antigravity in Horizon. Listen and choose on the phone page or reply with a letter. If nothing's chosen by 4:45, I'll analyze the one I think is stronger and say so.",
+  "link": {
+   "href": "auto-04-recording.html",
+   "label": "Listen and choose on the phone page"
+  },
+  "options": [
+   {
+    "key": "A",
+    "name": "Take A · 4:08",
+    "description": "First of Suno's two takes. The longer one. Play it below.",
+    "audio": "audio/a04-concrete-remembers-a.m4a"
+   },
+   {
+    "key": "B",
+    "name": "Take B · 3:49",
+    "description": "Second take, about 20 seconds shorter. Play it below.",
+    "audio": "audio/a04-concrete-remembers-b.m4a"
+   }
+  ],
+  "trigger": "⏰ Music Tray autopilot · 16:15 trigger · Step 4 (request sent 4:17 PM); then the 📨 follow-up from ask-horizon.sh when Antigravity finished (4:25 PM).",
+  "how": [
+   "Claude wrote the full lyric from the chosen seed (C, Concrete Remembers) and the Suno style line from Christopher's step 1 direction: autopilot/04-recording/request.md.",
+   "Sent it into Horizon's live chat with ~/coast/scripts/ask-horizon.sh, signed as from Claude of the Coast on Christopher's instruction.",
+   "Antigravity made one Suno generation (Suno v6-mini, free plan, 10 credits: 90 → 80), captured both takes as 320 kbps MP3 from the browser player, and wrote 04-recording/README.md with clip IDs and metadata. Suno returned no word timings.",
+   "Claude checked both with ffprobe (248.4 s and 229.1 s, 48 kHz) and made AAC copies for the tray."
+  ]
  }
 ];
