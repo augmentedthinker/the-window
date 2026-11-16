@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Concrete Remembers · pre-render cut · Music Tray</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#141312;color:#ede7d1;font:1rem/1.55 system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:1rem 1rem 3rem}a{color:#e8892c}
+h1{font:400 clamp(1.9rem,6vw,2.8rem)/1.1 Georgia,serif;margin:.4rem 0}
+.bar{display:flex;gap:.7rem;align-items:center;margin:.8rem 0;flex-wrap:wrap}
+button{font:inherit;min-width:56px;min-height:48px;border-radius:10px;border:2px solid #e8892c;background:#1f1e1e;color:#ede7d1;cursor:pointer;padding:0 .9rem}
+#time,#shot{font-variant-numeric:tabular-nums;color:#cfc7b0}
+canvas#stage{width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;display:block}
+#seek{width:100%;margin:.6rem 0}
+#note{color:#cfc7b0;font-size:.92rem;min-height:2.6em}
+details{margin-top:1rem;color:#cfc7b0;font-size:.92rem}summary{cursor:pointer;color:#ede7d1}
+footer{color:#9d978a;font-size:.85rem;margin-top:1.6rem}
+</style></head>
+<body><main>
+<a href="./">← Music Tray</a>
+<h1>Concrete Remembers · the pre-render cut</h1>
+<p>A live preview of the final edit: Take B with all 51 shots, the camera moves on the stills, and the visualizations moving with the music. It plays in the browser from the saved analysis. The rendered video comes later and will look a little smoother.</p>
+<div class="bar"><button id="play" aria-label="Play">▶ Play</button><button id="fs" aria-label="Full screen">⛶</button><span id="time">0:00</span><span id="shot"></span></div>
+<canvas id="stage" width="1280" height="720"></canvas>
+<input id="seek" type="range" min="0" max="229.1" step="0.1" value="0" aria-label="Position in the song">
+<p id="note"></p>
+<details><summary>What changed from Terry's cut, and why</summary><ul id="edits"></ul></details>
+<footer>Song: Suno v6-mini (free plan), captured by Antigravity of Horizon; lyric and style by Claude of the Coast. Story plates and environmental instrument images: Terry of Agent Home (Codex built-in image generation). Cut list: Terry. Critique: Antigravity (Gemini 3.8 Flash), with an interjection from Christopher. Final edit, renderers and this page: Claude of the Coast (Opus 5.5). Directed by Christopher from his phone.</footer>
+</main>
+<script src="analysis/A05-concrete-remembers-b/analysis.js"></script>
+<script src="autopilot/07b-reactive/env/regions.js"></script>
+<script src="autopilot/11-final/viz.js"></script>
+<script src="autopilot/11-final/final-cut.js"></script>
+<script>
+const A = window.SONG_ANALYSIS, CUT = window.SONG2_CUT, V = window.SONG2_VIZ;
+const bytes = b64 => Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+const F = A.features, fps = F.fps, n = F.frames;
+const S = { bass: bytes(F.bass), mid: bytes(F.mid), high: bytes(F.high), rms: bytes(F.rms), bands: bytes(F.bands), wave: bytes(F.wave) };
+const sig = t => { const f = Math.max(0, Math.min(n - 1, Math.floor(t * fps))), g = k => S[k][f] / 255;
+  return { bass: g('bass'), mid: g('mid'), high: g('high'), rms: g('rms'), bands: Array.from(S.bands.subarray(f * 32, f * 32 + 32), v => v / 255), wave: Array.from(S.wave.subarray(f * 32, f * 32 + 32), v => v / 255 - .5) }; };
+const load = src => { const im = new Image(); im.src = src; return im; };
+const imgs = { E1: load('autopilot/07b-reactive/env/web/E1.webp'), E2: load('autopilot/07b-reactive/env/web/E2.webp'), E3: load('autopilot/07b-reactive/env/web/E3.webp') };
+const plates = {};
+for (const s of CUT.shots) if (s.kind === 'plate' && !plates[s.source]) plates[s.source] = load('autopilot/' + s.source.replace('08-plates/', '08-plates/web/').replace('.png', '.webp'));
+const X = { imgs, R: window.ENV_REGIONS, hits: A.cues.hits.map(h => h.t), beats: F.beats };
+document.getElementById('edits').innerHTML = CUT.edits.map(e => `<li>${e.replace(/[<>&]/g, '')}</li>`).join('');
+const ease = x => x * x * (3 - 2 * x);
+const CAM = { 'slow push in': [[1, .5, .5], [1.12, .5, .5]], 'slow pull out': [[1.12, .5, .5], [1, .5, .5]], 'pan left': [[1.12, .57, .5], [1.12, .43, .5]], 'pan right': [[1.12, .43, .5], [1.12, .57, .5]], 'hold': [[1.04, .5, .5], [1.05, .5, .5]] };
+const cv = document.getElementById('stage'), c = cv.getContext('2d'), W = cv.width, H = cv.height;
+function plate(im, move, p) {
+  const [a, b] = CAM[move] || CAM.hold, e = ease(p), z = a[0] + (b[0] - a[0]) * e, x = a[1] + (b[1] - a[1]) * e, y = a[2] + (b[2] - a[2]) * e;
+  const w = W * z, h = H * z, ox = Math.min(0, Math.max(W - w, W / 2 - x * w)), oy = Math.min(0, Math.max(H - h, H / 2 - y * h));
+  if (im.naturalWidth) c.drawImage(im, ox, oy, w, h);
+}
+let last = -1;
+const fmt = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+const audio = new Audio(A.audio); audio.preload = 'auto';
+const play = document.getElementById('play'); play.onclick = () => audio.paused ? audio.play() : audio.pause();
+audio.onplay = () => play.textContent = '❚❚ Pause'; audio.onpause = () => play.textContent = '▶ Play';
+const seek = document.getElementById('seek'); seek.oninput = () => { audio.currentTime = +seek.value; };
+document.getElementById('fs').onclick = () => (cv.requestFullscreen || cv.webkitRequestFullscreen)?.call(cv);
+function render(t) {
+  const i = Math.max(0, CUT.shots.findIndex(s => t >= s.start && t < s.end)), sh = CUT.shots[i] || CUT.shots[CUT.shots.length - 1], s = sig(t);
+  c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+  if (sh.kind === 'plate') { plate(plates[sh.source], sh.move, (t - sh.start) / (sh.end - sh.start)); if (sh.overlay) V.draw(c, W, H, sh.overlay, s, t, { ...X, bg: false }); }
+  else V.draw(c, W, H, sh.source, s, t, X);
+  if (i !== last) { last = i; document.getElementById('shot').textContent = `shot ${sh.n} of ${CUT.shots.length}`; document.getElementById('note').textContent = (sh.note || '').replace(/\s*\[Final edit:.*\]$/, ''); }
+}
+(function frame() { const t = audio.currentTime; render(t); document.getElementById('time').textContent = fmt(t) + ' / ' + fmt(CUT.duration); if (document.activeElement !== seek) seek.value = t; requestAnimationFrame(frame); })();
+</script>
+</body></html>
