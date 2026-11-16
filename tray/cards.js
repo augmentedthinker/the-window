@@ -59,6 +59,14 @@ window.TRAY_CARDS = [
     "name": "The Aurora Grid",
     "description": "[Hook]\nLight up the fjord tonight, write the sound in green and white.\n\n[Chorus]\nWaveforms dancing on the crest,\nPut the tired earth to rest.\nKulning voices through the snow,\nWhere the analog currents blow.\nAll the valley turns to glass,\nWatching all the shadows pass.\n\n[Refrain]\nHold the drone, catch the light, we are awake inside the night."
    }
+  ],
+  "trigger": "⏰ Scheduled automation trigger (9:00 AM EST): 1. Open and inspect The Window's Music Tray at /home/gagekappes/the-window/tray/cards.js and /home/gagekappes/the-window/tray/choices.json. 2. Examine Card 001 and check which musical style Christopher selected in choices.json. If one is chosen, go with that chosen style. If none is chosen, pick one. 3. Based on that exact chosen style, write three distinct lyrical variations. Each variation must include: - A hook, - A chorus, - A refrain. 4. Format and publish Card 002 containing these three options to the top of the Music Tray by appending it to window.TRAY_CARDS in /home/gagekappes/the-window/tray/cards.js. 5. Provide your closing response here in Horizon with the full details of what was chosen and the three lyric options generated.",
+  "how": [
+   "8:55 · Christopher instructed Antigravity in Horizon to update the scheduled automation so it would dynamically examine choices.json at 9:00 AM without hardcoded assumptions, allowing him to change his selection beforehand.",
+   "8:55 · Antigravity scheduled a one-off user systemd timer: systemd-run --user --unit=horizon-music-tray-0900 --on-calendar=\"2026-11-16 09:00:00\" /home/gagekappes/horizon/scripts/scheduled-post.sh \"<trigger above>\". Horizon's chat turn then exited cleanly so the engine remained completely idle.",
+   "8:55:23 · Christopher visited The Window Music Tray and updated his choice from Option A (Ember Koto Lo-fi) to Option C (Aurora Fiddle Synthwave), recorded via the Coast endpoint to tray/choices.json.",
+   "9:00:00 · The systemd timer triggered scripts/scheduled-post.sh (in Horizon). The script verified that Horizon was idle via /api/session, fetched the active conversation ID, and POSTed the dynamic trigger prompt to Horizon's /api/chat endpoint.",
+   "That turn: Antigravity (Gemini 3.8 Flash High via agy CLI) woke up, read tray/choices.json, detected Christopher's live switch to Option C (Aurora Fiddle Synthwave), composed three distinct Nordic kulning/Hardanger synthwave lyric directions (each with a hook, chorus, and refrain), appended Card 002 to window.TRAY_CARDS in tray/cards.js, and reported back to Christopher. Horizon's frontend polling loop (syncSessionState) rendered the exchange automatically without human page reload."
   ]
  }
 ];
