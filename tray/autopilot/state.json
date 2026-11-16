@@ -93,10 +93,10 @@
   {
    "step": 9,
    "time": "5:30 PM",
-   "title": "Cue-led cut",
+   "title": "Cue-led cut list (by Terry)",
    "kind": "notice",
    "status": "planned",
-   "who": "Claude · Opus 5.5 (Coast video editor)"
+   "who": "Terry (Agent Home) · GPT-6.1 Terra"
   },
   {
    "step": 10,
@@ -109,10 +109,10 @@
   {
    "step": 11,
    "time": "6:00 PM",
-   "title": "Fixes from the critique · ready to render",
+   "title": "Final edit from the critique · ready to render",
    "kind": "notice",
    "status": "planned",
-   "who": "Claude · Opus 5.5"
+   "who": "Claude · Opus 5.5 (Coast video editor)"
   }
  ],
  "cards": [

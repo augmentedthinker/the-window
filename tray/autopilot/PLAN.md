@@ -29,9 +29,9 @@ Free tiers only; credit tools and models on every card. One heavy job at a time;
 | 6 | 4:45 | **Storyboard** — three story arcs across the song's sections, timed to the analysis cues | choice | `step-06` |
 | 7 | 5:00 | **Visual instrument** — three reactive looks (how the world moves with the music) as stills/short previews | choice | `step-07` |
 | 8 | 5:15 | **Plates** — scene stills in the chosen world, **made by Terry in Agent Home** (image generation), requested at 5:00. See *Delegation* below | notice | — |
-| 9 | 5:30 | **Cue-led cut** — Coast editor project `public/music/editor/projects/<slug>.json`, scenes on the analysis cues | notice | — |
+| 9 | 5:30 | **Cue-led cut list** — by **Terry in Agent Home** (as for the first song, card 011). Claude sends the request at 5:30; Terry returns `09-cut/cutlist.json` + README; Claude posts it as card A09 | notice | — |
 | 10 | 5:45 | **Critique** — by **Antigravity in Horizon** (strong image understanding; Claude shouldn't grade its own cut). Requested at 5:30 with the cut; Claude applies the fixes at step 11 | notice | — |
-| 11 | 6:00 | **Pre-render cut, ready to render** — final project card with the editor link; render waits for Christopher's word | notice | — |
+| 11 | 6:00 | **Final edit, ready to render** — Claude builds the Coast editor project from Terry's cut list, applies Antigravity's critique, checks a 10-second slice, posts the pre-render card | notice | — |
 
 ## Step 4 in detail · the Suno handoff to Horizon
 
@@ -47,6 +47,8 @@ Christopher's instruction (November 16): Antigravity in Horizon makes the two Su
 
 **Step 7b (interjection, 5:13–5:22 PM):** six live visualizations, `../reactive-a07b.html` (environmental E1–E3 by Terry, abstract X1–X3 by Claude). Christopher chose **all six, opt-out**: the cut (step 9) uses every one of them somewhere, matched to the scenes, and drops any he names.
 
+**Step 9 request to Terry (Christopher, 5:25 PM: "maybe we should have Terry do the initial cut if Claude's going to be doing the final edit"):** at 5:30 write `09-cut/request.md` with: the song (`audio/a04-concrete-remembers-b.m4a`, 229.1 s, 138 BPM) and its analysis folder (`analysis/A05-concrete-remembers-b/`: `cues.json` hits/changes/bars, `summary.json` sections); storyboard B's 11 scenes and times; Terry's own 11 plates (`08-plates/`); the six visualizations (`reactive-a07b.html`; ids E1 speaker, E2 lantern, E3 gauges, X1 ink rings, X2 crosshatch, X3 lamplight line; env images in `07b-reactive/env/`), **all six to be used somewhere**. Ask for `09-cut/cutlist.json`: an ordered list of shots `{start, end, kind: "plate"|"viz", source, move (e.g. slow push/pan), note}` covering 0–229.1 s with every cut on a beat or hit, plus `09-cut/README.md` last (the done signal; the reasoning and anything unsure). Send via Agent Home's neighbor-message route, quoting Christopher; watch for the README; when it lands, post card A09 crediting Terry and send the cut list to Antigravity for the 5:45 critique (step 10 request), using the cut list plus a contact sheet Claude renders from it.
+
 ## Delegation · who does what
 
 Christopher's direction (4:20 PM): the Coast runs the line and sends out the work it can't do itself. Leonardo is finite (78 of 150 daily tokens left after step 3, about 9 images), so image-heavy work goes to neighbors.
@@ -55,6 +57,7 @@ Christopher's direction (4:20 PM): the Coast runs the line and sends out the wor
 |---|---|---|
 | Style, lyrics, storyboard, cut, critique, analysis | Claude (Coast) | here |
 | Suno takes (step 4) | Antigravity, Horizon | `~/coast/scripts/ask-horizon.sh` (streams reply, then posts a follow-up here) |
+| Cue-led cut list (step 9) | Terry, Agent Home (GPT-6.1 Terra) | neighbor message + watcher, at 5:30 |
 | Critique of the cut (step 10) | Antigravity, Horizon (Gemini 3.8 Flash) | `ask-horizon.sh` at 5:30, right after posting the cut |
 | Scene plates (step 8), ~8–12 stills | Terry, Agent Home (OpenAI image generation) | `~/coast/scripts/ask-terry.sh` (retries while busy, waits for a done file, then posts a follow-up here) |
 | Visual-instrument previews (step 7) | Claude, in code (no image credits); Sunny if a richer animated preview is wanted | — |
