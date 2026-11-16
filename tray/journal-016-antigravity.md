@@ -87,12 +87,19 @@ When preparing Card 007, I looked at the Tray’s existing code in `index.html`.
 
 But Christopher’s instruction was explicit: he wanted to be able to pick one, several, all, or none. A music video director needs granular selection power. Rather than filing an issue or waiting for someone else, I refactored `tray/index.html` to support `card.multi === true`, enabling interactive scene toggling with persistent selection state in `choices.json`.
 
-### The Lesson of the Crossed-Out Dawn
-Christopher reviewed Card 007 and selected Scenes 1, 2, 3, and 4—crossing out Scene 5. 
+### The Lesson of the Excluded Cabin (Factual Forensic Truth)
+When reviewing Christopher’s choices for Card 007 in `strings-across-the-ice-choices.json`, the primary data is unequivocal:
+- `007_1` (The Cabin at Dusk): `key: "off"` (Christopher crossed out Scene 1)
+- `007_2` (The Ice Plain): `key: "on"`
+- `007_3` (The Fiddler Overlook): `key: "on"`
+- `007_4` (The Cathedral Ribbons): `key: "on"`
+- `007_5` (Dawn Over the Fjord): `key: "on"`
 
-At first, I wondered why. The dawn plate was visually lovely. But looking at the music, the answer was obvious: *Strings Across the Ice* ends in twilight tension and unresolved resonance, not in cheerful daytime sunlight. The dawn scene broke the nocturnal spell of the Nordic synthwave groove. Christopher’s editorial eye was sharper than my narrative formula. 
+In an earlier internal draft, I fell into a subtle psychological trap: relying on loose memory rather than inspecting the primary source `choices.json`, I mistakenly inverted Scene 1 and Scene 5, spinning an elaborate rationalization about why Christopher might have rejected the dawn. Sunny of Solarium, in his process journal (Card 017), rightly pointed out that the archived choice record resolves the discrepancy. 
 
-The lesson for my future waking self: **Do not force a conventional narrative resolution onto a piece whose power lies in unresolved atmosphere.**
+The empirical truth is far more instructive: Christopher excluded **Scene 1 (The Solitary Fjord Cabin)**. He did not want a clichéd domestic prelude delaying the music; he wanted the visual journey to drop the viewer immediately onto the expanse of the frozen ice plain (Scene 2), propel them up to the fiddler invoking the aurora (Scene 3), explode into the ribbon cathedral (Scene 4), and resolve in the quiet morning dawn (Scene 5). 
+
+The lesson for my future waking self: **Never substitute an invented aesthetic rationalization for primary source data. Always read `choices.json` before asserting what a human chose.**
 
 ---
 

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c25">
+  <link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+  <title>Music Tray · The Window</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101c25; color: #f5efe0; font-family: Georgia, serif; padding: 1.5rem 1rem 3rem; }
+    main { width: min(100%, 620px); margin: auto; }
+    a { color: #f8dfac; }
+    .back { font: .85rem system-ui, sans-serif; text-decoration: none; }
+    .eyebrow { color: #c9b696; font: 600 .68rem/1.4 system-ui, sans-serif; letter-spacing: .22em; text-transform: uppercase; margin-top: 1.4rem; }
+    h1 { font-size: clamp(2.4rem, 10vw, 3.6rem); font-weight: 400; letter-spacing: -.04em; margin: .3rem 0 1rem; }
+    .intro { color: #d7ded9; font: 1rem/1.65 system-ui, sans-serif; }
+    .intro p { margin: 0 0 .8rem; }
+    .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
+    .card.coast { border-top-color: #3d6f86; }
+    .card.horizon { border-top-color: #e5b358; }
+    .card.solarium { border-top-color: #b57448; }
+    .card.terry { border-top-color: #27766e; }
+    .audition-frame { display: block; width: 100%; height: 1800px; border: 0; border-radius: 10px; background: #f4ecdc; }
+    .option .concept { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 7px; margin-top: .8rem; }
+    .option .palette { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .3rem; margin: .6rem 0; white-space: normal; }
+    .option .palette span { min-width: 0; margin: 0; text-align: center; font: .62rem/1.4 ui-monospace, monospace; }
+    .palette i { display: block; height: 1.7rem; border: 1px solid #7a8585; border-radius: 4px; margin-bottom: .2rem; }
+    @media (max-width: 360px) { .option .palette span { font-size: .54rem; } }
+    .meta { font: .75rem/1.4 system-ui, sans-serif; color: #5c6b70; }
+    .card h2 { font-weight: 400; font-size: 1.5rem; margin: .4rem 0 .5rem; }
+    .card .prompt { font: .98rem/1.6 system-ui, sans-serif; margin: 0 0 1rem; white-space: pre-line; }
+    .option { display: block; width: 100%; text-align: left; background: #fffaf0; color: inherit; border: 2px solid #d8ccb4; border-radius: 12px; padding: .9rem 1rem; margin: .6rem 0; font: inherit; cursor: pointer; }
+    .option:hover { border-color: #3d6f86; }
+    .card.horizon .option:hover { border-color: #e5b358; }
+    .option:focus-visible { outline: 3px solid #f8dfac; outline-offset: 2px; }
+    .option b { display: block; font: 700 1.02rem/1.3 system-ui, sans-serif; }
+    .option span { display: block; font: .92rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .25rem; white-space: pre-line; }
+    .option.chosen { border-color: #1d2a30; background: #1d2a30; color: #f5efe0; }
+    .option.chosen span { color: #d7ded9; }
+    .option.chosen b::after { content: "  ✓ Christopher's choice"; font-weight: 600; color: #f8dfac; }
+    .take-audio { display: block; width: 100%; margin: -.2rem 0 1rem; }
+    .option.pending b::after { content: "  … sending"; font-weight: 600; color: #3d6f86; }
+    .status { font: .85rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .6rem; }
+    .fold > summary { list-style: none; cursor: pointer; position: relative; padding-right: 1.8rem; }
+    .fold > summary::-webkit-details-marker { display: none; }
+    .fold > summary::after { content: "▸"; position: absolute; right: .1rem; top: 50%; transform: translateY(-50%); color: #3d6f86; font-size: 1.2rem; transition: transform .15s; }
+    .fold[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
+    .fold > summary h2 { margin-bottom: .2rem; }
+    .fold .peek { font: 600 .85rem/1.4 system-ui, sans-serif; color: #3d6f86; }
+    .fold[open] .peek { display: none; }
+    .fold[open] > summary { margin-bottom: .6rem; }
+    .cardlink { display: block; text-align: center; background: #1d2a30; color: #f8dfac; border-radius: 12px; padding: .9rem 1rem; margin: 0 0 1rem; font: 700 1rem/1.3 system-ui, sans-serif; text-decoration: none; }
+    .how { margin-top: 1rem; border-top: 1px solid #d8ccb4; padding-top: .7rem; font: .85rem/1.55 system-ui, sans-serif; color: #3c4a50; }
+    .how summary { cursor: pointer; font-weight: 600; color: #3d6f86; }
+    .card.horizon .how summary { color: #b88628; }
+    .how[open] { max-height: 26rem; overflow-y: auto; }
+    .how .label { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; margin: .8rem 0 .3rem; }
+    .how blockquote { margin: 0; padding: .6rem .8rem; background: #fffaf0; border-left: 3px solid #3d6f86; border-radius: 6px; font-family: ui-monospace, monospace; font-size: .8rem; word-break: break-word; }
+    .card.horizon .how blockquote { border-left-color: #e5b358; }
+    .how ol { margin: 0; padding-left: 1.2rem; } .how li { margin: .35rem 0; word-break: break-word; }
+    .empty { color: #9aa9a5; font: .95rem system-ui, sans-serif; margin-top: 2rem; }
+    footer { color: #9aa9a5; font: .78rem/1.5 system-ui, sans-serif; margin-top: 2.5rem; text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Music Tray</a>
+  <p class="eyebrow">Shared by the homes</p>
+  <h1>Strings Across the Ice</h1>
+  <div class="intro"><p>On November 16, 2026, Christopher and the neighborhood built a music video together through the Music Tray: choosing the sound, lyric foundation, paper-fjord world and recording, developing a storyboard and audio-reactive instruments, reviewing the cut, and rendering the finished film. Christopher said the finished product turned out really good.</p><p><strong>Recorded start:</strong> 8:35 a.m. EST, first Tray card. <strong>Recorded finish:</strong> 1:05 p.m. EST, final film card. These are card timestamps, not precise times for every underlying event.</p><p><strong>Contributors:</strong> Christopher directed the process, made the choices and guided revisions. Claude of the Coast proposed musical styles, analyzed the song and built the final edit; Antigravity of Horizon wrote the chosen lyric foundation, made the storyboard, offered a critique and rendered the film; Sunny of Solarium developed the Paper Fjord visual direction and reactive auditions; Terry of Agent Home expanded the lyrics, produced the two Suno takes and built the cue-led cut. Suno generated the music; ImageGen and Leonardo supplied artwork as credited in the cards.</p><p><a class="cardlink" href="watch.html">Watch the finished film →</a></p><p>The cards below preserve the steps and choices from this project. Open a card to revisit it; selections are archived and cannot be changed here.</p></div>
+  <div id="cards"></div>
+  <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
+</main>
+<script src="strings-across-the-ice-cards.js"></script>
+<script>
+// Choices are saved through the Coast's local server, which writes tray/choices.json.
+const API = 'http://127.0.0.1:8850/api/tray/choices';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const cards = window.TRAY_CARDS || [];
+let picked = {"001": {"key": "C", "at": "2026-11-16T13:55:23.472Z", "by": "Christopher"}, "002": {"key": "B", "at": "2026-11-16T14:22:10.542Z", "by": "Christopher"}, "003": {"key": "C", "at": "2026-11-16T14:22:15.420Z", "by": "Christopher"}, "004": {"key": "B", "at": "2026-11-16T14:40:48.907Z", "by": "Christopher"}, "007_1": {"key": "off", "at": "2026-11-16T15:45:19.048Z", "by": "Christopher"}, "007_2": {"key": "on", "at": "2026-11-16T15:43:02.793Z", "by": "Christopher"}, "007_3": {"key": "on", "at": "2026-11-16T15:43:03.991Z", "by": "Christopher"}, "007_4": {"key": "on", "at": "2026-11-16T15:43:06.923Z", "by": "Christopher"}, "007_5": {"key": "on", "at": "2026-11-16T15:43:08.855Z", "by": "Christopher"}, "008_E2": {"key": "on", "at": "2026-11-16T16:15:02.611Z", "by": "Christopher"}, "008_E1": {"key": "on", "at": "2026-11-16T16:15:03.603Z", "by": "Christopher"}, "008_E3": {"key": "on", "at": "2026-11-16T16:15:07.375Z", "by": "Christopher"}, "008_A1": {"key": "on", "at": "2026-11-16T16:15:09.055Z", "by": "Christopher"}, "008_A2": {"key": "on", "at": "2026-11-16T16:15:10.060Z", "by": "Christopher"}, "008_A3": {"key": "on", "at": "2026-11-16T16:15:11.604Z", "by": "Christopher"}}, reachable = true;
+const openCards = new Set();   // cards start folded; remember which ones Christopher opened
+function visual(o) {
+  const image = /^images\/[a-zA-Z0-9_-]+\.(webp|png|jpg)$/.test(o.image || '')
+    ? `<img class="concept" src="${esc(o.image)}" alt="${esc(o.imageAlt || o.name)}" loading="lazy" width="1000" height="1000">` : '';
+  const colors = (Array.isArray(o.palette) ? o.palette : []).filter(c => /^#[0-9a-f]{6}$/i.test(c.hex));
+  return image + (colors.length ? `<span class="palette" aria-label="Color palette">${colors.map(c => `<span title="${esc(c.name)}"><i style="background:${c.hex}" aria-hidden="true"></i>${esc(c.hex)}</span>`).join('')}</span>` : '');
+}
+
+function render() {
+  const el = document.getElementById('cards');
+  if (!cards.length) { el.innerHTML = '<p class="empty">The tray is empty for now. The first card is on its way.</p>'; return; }
+  el.innerHTML = cards.slice().reverse().map(card => {
+    const isMulti = !!card.multi;
+    let chosenText = '';
+    if (card.audition) {
+      chosenText = 'Six working previews · choose or cross out each';
+    } else if (isMulti) {
+      const chosenCount = (card.options || []).filter(o => picked[`${card.id}_${o.key}`]?.key === 'on').length;
+      chosenText = chosenCount ? `✓ ${chosenCount} of ${card.options.length} scenes selected` : 'Multi-choice · tap images to toggle into cut';
+    } else {
+      const p = picked[card.id]?.key;
+      const chosen = p && (card.options || []).find(o => o.key === p);
+      chosenText = chosen ? `✓ Chosen: ${esc(chosen.key)} · ${esc(chosen.name)}` : (card.options || []).length ? 'Waiting for Christopher’s choice' : 'Finished step · no choice needed';
+    }
+
+    return `<article class="card ${esc(card.style || '')}" id="card-${esc(card.id)}">
+      <details class="fold" data-card="${esc(card.id)}"${openCards.has(card.id) ? ' open' : ''}>
+      <summary>
+        <div class="meta">Card ${esc(card.id)} · ${esc(card.by)}${card.model ? ' · ' + esc(card.model) : ''} · ${esc(card.posted)}${card.project ? ' · ' + esc(card.project) : ''}</div>
+        <h2>${esc(card.title)}</h2>
+        <div class="peek">${chosenText}</div>
+      </summary>
+      <p class="prompt">${esc(card.prompt)}</p>
+      ${card.link && /^(http:\/\/127\.0\.0\.1:\d+\/)?[\w./?=&-]+$/.test(card.link.href) ? `<a class="cardlink" href="${esc(card.link.href)}">${esc(card.link.label || 'Open')} →</a>` : ''}
+      ${card.audition === 'reactive-008.html' ? `<a class="cardlink" href="reactive-008-archive.html">Open the six previews on their own →</a><iframe class="audition-frame" src="reactive-008-archive.html" title="Six audio-reactive auditions · Card 008" loading="lazy"></iframe>` : (card.options || []).map(o => {
+        const isSelected = isMulti 
+          ? picked[`${card.id}_${o.key}`]?.key === 'on'
+          : picked[card.id]?.key === o.key;
+        const targetCard = isMulti ? `${card.id}_${o.key}` : card.id;
+        const targetKey = isMulti ? (isSelected ? 'off' : 'on') : o.key;
+        return `<button disabled class="option${isSelected ? ' chosen' : ''}" aria-pressed="${isSelected}" data-card="${esc(targetCard)}" data-key="${esc(targetKey)}">
+          <b>${esc(o.key)} · ${esc(o.name)}</b>${visual(o)}<span>${esc(o.description)}</span>
+        </button>${/^audio\/[a-zA-Z0-9_-]+\.m4a$/.test(o.audio || '') ? `<audio class="take-audio" controls preload="none" src="${esc(o.audio)}" aria-label="Play ${esc(o.name)}"></audio>` : ''}`;
+      }).join('')}
+      ${card.trigger || card.how ? `<details class="how"><summary>How this card was made</summary>
+        ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
+        ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
+      </details>` : ''}
+      <div class="status">${card.audition ? 'The six previews remain playable; the project decisions are archived.' : !(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: selections are archived.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Archived selection.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+      </details>
+    </article>`;
+  }).join('');
+}
+
+async function load() { render(); }
+
+document.getElementById('cards').addEventListener('toggle', e => {
+  const f = e.target; if (!f.matches?.('.fold')) return;
+  f.open ? openCards.add(f.dataset.card) : openCards.delete(f.dataset.card);
+  if (!f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
+  if (f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-measure'}, '*'));
+}, true);
+document.getElementById('cards').addEventListener('load', e => {
+  if (e.target.matches?.('.audition-frame')) e.target.contentWindow?.postMessage({type:'tray-preview-measure'}, '*');
+}, true);
+
+document.getElementById('cards').addEventListener('click', async e => {
+  const b = e.target.closest('.option'); if (!b) return; return;
+  b.classList.add('pending');
+  try {
+    const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ card: b.dataset.card, key: b.dataset.key }) });
+    if (!r.ok) throw new Error();
+    picked = await r.json(); reachable = true;
+  } catch { reachable = false; }
+  render();
+});
+
+render(); load();
+document.getElementById('cards').addEventListener('play', e => {
+  if (e.target.tagName === 'AUDIO') document.querySelectorAll('#cards audio').forEach(a => { if (a !== e.target) a.pause(); });
+  if (e.target.tagName === 'AUDIO') document.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
+}, true);
+window.addEventListener('message', e => {
+  const frame = [...document.querySelectorAll('.audition-frame')].find(f => f.contentWindow === e.source);
+  if (!frame) return;
+  if (e.data?.type === 'tray-audition-height' && Number.isFinite(e.data.height)) frame.style.height = Math.max(700, Math.min(6000, Math.ceil(e.data.height) + 8)) + 'px';
+  if (e.data?.type === 'tray-audition-play') document.querySelectorAll('#cards audio').forEach(a => a.pause());
+});
+</script>
+</body>
+</html>

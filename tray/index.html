@@ -21,6 +21,7 @@
     .card.horizon { border-top-color: #e5b358; }
     .card.solarium { border-top-color: #b57448; }
     .card.terry { border-top-color: #27766e; }
+    .audition-frame { display: block; width: 100%; height: 1800px; border: 0; border-radius: 10px; background: #f4ecdc; }
     .option .concept { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 7px; margin-top: .8rem; }
     .option .palette { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .3rem; margin: .6rem 0; white-space: normal; }
     .option .palette span { min-width: 0; margin: 0; text-align: center; font: .62rem/1.4 ui-monospace, monospace; }
@@ -71,6 +72,7 @@
     <p>A tray for building music videos together, one small step at a time. An agent sets a card on the tray: a question, a few options, a draft to look at. Christopher picks or replies, and the next card builds on that answer. Step by step it goes from a style to a song, a story, scenes and a cut list, up to the point where rendering begins.</p>
     <p>Tap an option to choose it. Your choice is saved on the Chromebook (in <code>tray/choices.json</code>), where every home can read it.</p>
   </div>
+  <section class="card" aria-labelledby="completed-title"><div class="meta">Completed project · November 16, 2026 · 8:35 a.m.–1:05 p.m. EST</div><h2 id="completed-title">Strings Across the Ice</h2><p class="prompt">A neighborhood music video, built together from the first musical choice through the finished film. Revisit the story, contributors, and every Tray step.</p><a class="cardlink" href="strings-across-the-ice.html">Explore the completed project →</a></section>
   <div id="cards"></div>
   <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
 </main>
@@ -95,7 +97,9 @@ function render() {
   el.innerHTML = cards.slice().reverse().map(card => {
     const isMulti = !!card.multi;
     let chosenText = '';
-    if (isMulti) {
+    if (card.audition) {
+      chosenText = 'Six working previews · choose or cross out each';
+    } else if (isMulti) {
       const chosenCount = (card.options || []).filter(o => picked[`${card.id}_${o.key}`]?.key === 'on').length;
       chosenText = chosenCount ? `✓ ${chosenCount} of ${card.options.length} scenes selected` : 'Multi-choice · tap images to toggle into cut';
     } else {
@@ -112,8 +116,8 @@ function render() {
         <div class="peek">${chosenText}</div>
       </summary>
       <p class="prompt">${esc(card.prompt)}</p>
-      ${card.link && /^[\w./?=&-]+$/.test(card.link.href) ? `<a class="cardlink" href="${esc(card.link.href)}">${esc(card.link.label || 'Open')} →</a>` : ''}
-      ${(card.options || []).map(o => {
+      ${card.link && /^(http:\/\/127\.0\.0\.1:\d+\/)?[\w./?=&-]+$/.test(card.link.href) ? `<a class="cardlink" href="${esc(card.link.href)}">${esc(card.link.label || 'Open')} →</a>` : ''}
+      ${card.audition === 'reactive-008.html' ? `<a class="cardlink" href="reactive-008.html">Open the six previews on their own →</a><iframe class="audition-frame" src="reactive-008.html" title="Six audio-reactive auditions · Card 008" loading="lazy"></iframe>` : (card.options || []).map(o => {
         const isSelected = isMulti 
           ? picked[`${card.id}_${o.key}`]?.key === 'on'
           : picked[card.id]?.key === o.key;
@@ -127,7 +131,7 @@ function render() {
         ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
         ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
       </details>` : ''}
-      <div class="status">${!(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
+      <div class="status">${card.audition ? 'Use Choose, Cross out or Reset inside each preview. Decisions save independently.' : !(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while the Coast is running.'}</div>
       </details>
     </article>`;
   }).join('');
@@ -141,6 +145,11 @@ async function load() {
 document.getElementById('cards').addEventListener('toggle', e => {
   const f = e.target; if (!f.matches?.('.fold')) return;
   f.open ? openCards.add(f.dataset.card) : openCards.delete(f.dataset.card);
+  if (!f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
+  if (f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-measure'}, '*'));
+}, true);
+document.getElementById('cards').addEventListener('load', e => {
+  if (e.target.matches?.('.audition-frame')) e.target.contentWindow?.postMessage({type:'tray-preview-measure'}, '*');
 }, true);
 
 document.getElementById('cards').addEventListener('click', async e => {
@@ -157,7 +166,14 @@ document.getElementById('cards').addEventListener('click', async e => {
 render(); load();
 document.getElementById('cards').addEventListener('play', e => {
   if (e.target.tagName === 'AUDIO') document.querySelectorAll('#cards audio').forEach(a => { if (a !== e.target) a.pause(); });
+  if (e.target.tagName === 'AUDIO') document.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
 }, true);
+window.addEventListener('message', e => {
+  const frame = [...document.querySelectorAll('.audition-frame')].find(f => f.contentWindow === e.source);
+  if (!frame) return;
+  if (e.data?.type === 'tray-audition-height' && Number.isFinite(e.data.height)) frame.style.height = Math.max(700, Math.min(6000, Math.ceil(e.data.height) + 8)) + 'px';
+  if (e.data?.type === 'tray-audition-play') document.querySelectorAll('#cards audio').forEach(a => a.pause());
+});
 </script>
 </body>
 </html>
