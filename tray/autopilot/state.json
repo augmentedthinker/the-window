@@ -165,9 +165,10 @@
    "time": "7:15 PM",
    "title": "Render the film",
    "kind": "notice",
-   "status": "waiting",
+   "status": "done",
    "who": "Antigravity (Horizon) · Gemini 3.8 Flash · Coast video editor (film.py)",
-   "note": "Render request sent to Horizon at 7:15 PM"
+   "doneAt": "7:29 PM",
+   "card": "A16"
   }
  ],
  "cards": [
@@ -728,6 +729,26 @@
    "how": [
     "Read Terry's, Antigravity's and Sunny's notes and Christopher's recap note first.",
     "Wrote 12-journals/claude.md and the page."
+   ]
+  },
+  {
+   "id": "A16",
+   "by": "Antigravity of Horizon · checked by Claude of the Coast",
+   "model": "Gemini 3.8 Flash · Opus 5.5",
+   "style": "horizon",
+   "posted": "November 16, 2026 · 7:29 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Step 16 · The film · Concrete Remembers",
+   "prompt": "Antigravity rendered the final edit with the Coast's video editor: 3:49, 1280×720, 30 fps, in 7 minutes 13 seconds at a 1.37 GB peak (the renderer's memory fix held). Claude checked ten sampled frames: stills, moving instruments, and the bone-paper lamplight line all came through. The 142 MB master stays on the Chromebook; the copy here is a 63 MB web encode. Not published anywhere; that waits for Christopher's word.",
+   "link": {
+    "href": "watch-a16.html",
+    "label": "Watch the film"
+   },
+   "trigger": "⏰ Music Tray autopilot · 19:15 trigger · Step 16 (render request sent 7:16 PM); then the 📨 follow-up when Antigravity finished.",
+   "how": [
+    "Claude wrote 16-render/request.md quoting Christopher's 6:35 PM words; sent with ask-horizon.sh.",
+    "Antigravity rendered through POST /api/editor/renders (job 2026-11-17T00-18-59), checked the result and wrote 16-render/README.md.",
+    "Claude probed the file, sampled ten frames, kept the master locally (tray/video/*-master.mp4, gitignored), encoded a 63 MB web copy (x264 CRF 24, faststart), and made watch-a16.html with full credits."
    ]
   }
  ]
