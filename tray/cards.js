@@ -167,8 +167,9 @@ window.TRAY_PLAN = [
   "time": "7:15 PM",
   "title": "Render the film",
   "kind": "notice",
-  "status": "planned",
-  "who": "Antigravity (Horizon) · Gemini 3.8 Flash · Coast video editor (film.py)"
+  "status": "waiting",
+  "who": "Antigravity (Horizon) · Gemini 3.8 Flash · Coast video editor (film.py)",
+  "note": "Render request sent to Horizon at 7:15 PM"
  }
 ];
 window.TRAY_CARDS = [
