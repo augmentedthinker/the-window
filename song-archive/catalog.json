@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T13:10:56.500551+00:00",
+  "updatedAt": "2026-11-17T13:15:32.291337+00:00",
   "youtubeCheckedAt": "2026-11-17T13:00:15.140Z",
   "songs": [
     {
@@ -77,8 +77,8 @@
         "Agent Home",
         "Solarium"
       ],
-      "date": "2026-11-16T21:01:00-05:00",
-      "dateBasis": "Recorded song/project date",
+      "date": "2026-11-16",
+      "dateBasis": "Song recording day; exact time unavailable",
       "preRender": {
         "url": "../tray/concrete-remembers.html",
         "type": "page",
@@ -128,8 +128,8 @@
         "Agent Home",
         "Solarium"
       ],
-      "date": "2026-11-16T13:05:00-05:00",
-      "dateBasis": "Recorded song/project date",
+      "date": "2026-11-16T14:32:57.204Z",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": {
         "url": "../tray/strings-across-the-ice.html",
         "type": "page",
@@ -473,7 +473,7 @@
         "Agent Home"
       ],
       "date": "2026-11-09T18:26:29.788Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": null,
       "short": null,
@@ -491,7 +491,7 @@
         "Agent Home"
       ],
       "date": "2026-11-09T18:09:55.204Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -532,7 +532,7 @@
         "Agent Home"
       ],
       "date": "2026-11-09T18:01:43.054Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": null,
       "short": null,
@@ -593,7 +593,7 @@
         "Agent Home"
       ],
       "date": "2026-11-03T23:43:40.019Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": null,
       "short": null,
@@ -611,7 +611,7 @@
         "Agent Home"
       ],
       "date": "2026-11-03T22:27:34.755Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": null,
       "short": null,
@@ -629,7 +629,7 @@
         "Agent Home"
       ],
       "date": "2026-11-03T17:47:36.794Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -670,7 +670,7 @@
         "Agent Home"
       ],
       "date": "2026-11-02T19:11:04.388Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -711,7 +711,7 @@
         "Agent Home"
       ],
       "date": "2026-11-01T15:29:50.416Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": null,
       "short": null,
@@ -729,7 +729,7 @@
         "Agent Home"
       ],
       "date": "2026-11-01T14:14:09.536Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/industrial-city-film/the-city-has-a-pulse.mp4",
@@ -755,7 +755,7 @@
         "Agent Home"
       ],
       "date": "2026-10-31T19:25:37.878Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -826,7 +826,7 @@
         "Agent Home"
       ],
       "date": "2026-10-31T13:31:26.344Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -867,7 +867,7 @@
         "Agent Home"
       ],
       "date": "2026-10-31T00:28:25.181074+00:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/meet-me-in-the-middle/meet-me-in-the-middle.mp4",
@@ -892,8 +892,8 @@
       "homes": [
         "Agent Home"
       ],
-      "date": "2026-10-30T06:10:51-04:00",
-      "dateBasis": "Recorded song/project date",
+      "date": "2026-10-30T09:56:34Z",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/pass-the-signal/pass-the-signal-film.mp4",
@@ -919,7 +919,7 @@
         "Agent Home"
       ],
       "date": "2026-10-29T20:12:01+00:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
@@ -960,7 +960,7 @@
         "Agent Home"
       ],
       "date": "2026-10-28T23:09:47Z",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/break-the-ceiling-film/break-the-ceiling-final.mp4",
@@ -986,8 +986,8 @@
         "Horizon",
         "Agent Home"
       ],
-      "date": "2026-10-28T20:45",
-      "dateBasis": "Horizon project date (time zone not recorded)",
+      "date": "2026-10-29T00:20:30Z",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:5174/videos/the_city_wakes_cinema.mp4",
@@ -1020,7 +1020,7 @@
         "Agent Home"
       ],
       "date": "2026-10-28T16:55:29-04:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/last-bus-home-film/iteration-2/last-bus-home-v2-final.mp4",
@@ -1046,7 +1046,7 @@
         "Agent Home"
       ],
       "date": "2026-10-27T17:01:30-04:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/dont-tell-me-how-to-feel-film/iteration-2/dont-tell-me-how-to-feel-v2-final.mp4",
@@ -1072,7 +1072,7 @@
         "Agent Home"
       ],
       "date": "2026-10-27T09:24:04-04:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "url": "http://127.0.0.1:8795/api/files/projects/room-for-the-morning-film/iteration-2/room-for-the-morning-v2-review.mp4",
@@ -1098,7 +1098,7 @@
         "Agent Home"
       ],
       "date": "2026-10-26T22:38:20-04:00",
-      "dateBasis": "Recorded song/project date",
+      "dateBasis": "Song generation acknowledgement",
       "preRender": null,
       "movie": {
         "state": "youtube",
