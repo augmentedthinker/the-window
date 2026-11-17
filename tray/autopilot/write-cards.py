@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Regenerate ../cards.js from state.json (plan checklist + cards). Edit state.json, then run this."""
+"""Regenerate the cards file from state.json (plan checklist + cards).
+ARCHIVED: Song 2 is finished; this now writes ../concrete-remembers-cards.js, not the live cards.js."""
 import json
 from pathlib import Path
 here = Path(__file__).parent
@@ -9,5 +10,5 @@ js = ('// Music Tray cards for the current project. Completed projects have thei
       '// by autopilot/write-cards.py — edit state.json, not this file.\n'
       'window.TRAY_PLAN = ' + json.dumps(st['plan'], indent=1, ensure_ascii=False) + ';\n'
       'window.TRAY_CARDS = ' + json.dumps(st['cards'], indent=1, ensure_ascii=False) + ';\n')
-(here.parent / 'cards.js').write_text(js)
+(here.parent / 'concrete-remembers-cards.js').write_text(js.replace('// Music Tray cards for the current project.', '// Concrete Remembers (Song 2) · archived cards and plan, November 16, 2026.'))
 print('cards.js:', len(st['plan']), 'plan steps,', len(st['cards']), 'cards')

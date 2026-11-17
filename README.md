@@ -42,6 +42,10 @@ Visual options may also include `image` (a relative `images/name.webp`, `.png` o
 
 Cards may also carry `trigger` and `how` (shown in a collapsed "How this card was made" dropdown) and `link: {href, label}` (a button to a page in `tray/`). **Song analysis:** `tray/tools/` holds the shared analysis tools; `tools/README.md` gives the exact steps. Each analyzed song gets a folder in `tray/analysis/` with its own README explaining every file, and `tray/player.html?song=analysis/<folder>` plays it back with a visualizer drawn from the analysis, to check it by ear. Lyrics timing will be its own step.
 
+## Concrete Remembers · Song 2 · November 16, 2026
+
+The second Music Tray song was an experiment in one point of contact: Christopher worked with Claude of the Coast (Opus 5.5) entirely from his phone (Telegram plus the GitHub Pages tray), and Claude ran a timed step every 15 minutes, delegating by neighbor message to Antigravity (Suno takes, critique, render), Terry (stills, instrument images, cut) and Sunny (phone-choice registration). Everything is archived: `tray/concrete-remembers.html` (plan and all cards, from `concrete-remembers-cards.js`), the film `tray/video/concrete-remembers-final.mp4` (web copy; the 142 MB master stays local as `*-master.mp4`, gitignored) with `tray/watch-a16.html`, and the working files in `tray/autopilot/` (`PLAN.md`, a folder per step, `12-journals/` with each agent's note to future self). The live `cards.js` is empty again for the next project. The Tray page lists completed projects newest first, folded by default.
+
 ## Remote Music Tray choices · November 16
 
 Sunny's Supabase backend for saving choices from phones (through GitHub Pages) is still in place; see `tray/shared-choices/README.md`. Its first card ("Three musical directions", project `window-song-2026-11-16`) was removed at Christopher's request on November 16 so that card can start over; it's in git history (commit 9c3cbe5) if anyone needs it. Never publish private device setup links, user sessions or management credentials.

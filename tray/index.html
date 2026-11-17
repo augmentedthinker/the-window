@@ -27,7 +27,16 @@
     .plan li.done .tt { text-decoration: line-through; text-decoration-color: #3d6f86; }
     .plan li.done .t::before { content: "✓ "; color: #2f7a4f; font-weight: 700; }
     .plan li.now { background: #fff6e2; }
-    .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
+.done-project { background: #f4ecdc; color: #1d2a30; border-radius: 14px; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
+    .done-project > summary { list-style: none; cursor: pointer; padding: 1.1rem 1.1rem 1rem; }
+    .done-project > summary::-webkit-details-marker { display: none; }
+    .done-project > summary::after { content: "Show ▾"; float: right; font: .8rem system-ui, sans-serif; color: #5d6b70; margin-top: -1.6rem; }
+    .done-project[open] > summary::after { content: "Hide ▴"; }
+    .done-project .meta { font: .78rem system-ui, sans-serif; color: #5d6b70; }
+    .done-project h2 { font-weight: 400; font-size: 1.5rem; margin: .3rem 0 0; }
+    .done-project .inner { padding: 0 1.1rem 1.1rem; font: .97rem/1.6 system-ui, sans-serif; }
+    .done-project .inner ul { padding-left: 1.2rem; margin: .4rem 0 1rem; }
+        .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
     .card.coast { border-top-color: #3d6f86; }
     .card.horizon { border-top-color: #e5b358; }
     .card.solarium { border-top-color: #b57448; }
@@ -83,7 +92,13 @@
     <p>A tray for building music videos together, one small step at a time. An agent sets a card on the tray: a question, a few options, a draft to look at. Christopher picks or replies, and the next card builds on that answer. Step by step it goes from a style to a song, a story, scenes and a cut list, up to the point where rendering begins.</p>
     <p>Tap an option to choose it. Your choice is saved on the Chromebook (in <code>tray/choices.json</code>), where every home can read it.</p>
   </div>
-  <section class="card" aria-labelledby="completed-title"><div class="meta">Completed project · November 16, 2026 · 8:35 a.m.–1:05 p.m. EST</div><h2 id="completed-title">Strings Across the Ice</h2><p class="prompt">A neighborhood music video, built together from the first musical choice through the finished film. Revisit the story, contributors, and every Tray step.</p><a class="cardlink" href="strings-across-the-ice.html">Explore the completed project →</a></section>
+  <details class="done-project"><summary><div class="meta">Completed project · Song 2 · November 16, 2026 · 3:30–7:26 p.m. EST · directed from a phone</div><h2>Concrete Remembers</h2></summary><div class="inner">
+    <p>Christopher and one agent, Claude (Opus 5.5) of the Coast, made this one together, entirely from his phone. Claude ran a step every 15 minutes, posted each card, messaged him on Telegram, and delegated by neighbor message to Antigravity (Suno takes, critique, render), Terry (stills, instrument images, the cut) and Sunny (phone choices). Christopher chose at every step and changed the plan four times along the way.</p>
+    <ul><li>Dark industrial electronica in Monolith's ink world, Bone &amp; Ember; lyric "Concrete Remembers", Take B, 3:49.</li><li>The Keeper's Night Round: 11 story plates, six live visualizations (three environmental, three abstract), a 51-shot cut on the beat.</li><li>Recap: a note to future self from each of the four agents.</li></ul>
+    <a class="cardlink" href="watch-a16.html">▶ Watch the film</a>
+    <a class="cardlink" href="concrete-remembers.html">Explore every step →</a>
+  </div></details>
+  <details class="done-project"><summary><div class="meta">Completed project · Song 1 · November 16, 2026 · 8:35 a.m.–1:05 p.m. EST</div><h2>Strings Across the Ice</h2></summary><div class="inner"><p>A neighborhood music video, built together at the computer: four homes, each on its own timer, from the first musical choice through the finished film. Revisit the story, contributors, and every Tray step.</p><a class="cardlink" href="strings-across-the-ice.html">Explore the completed project →</a></div></details>
   <section class="plan" id="plan" hidden></section>
   <div id="cards"></div>
   <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
