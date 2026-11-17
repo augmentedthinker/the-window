@@ -155,8 +155,10 @@
    "time": "7:00 PM",
    "title": "Note to future self · Claude (last, after reading the others)",
    "kind": "notice",
-   "status": "planned",
-   "who": "Claude · Opus 5.5"
+   "status": "done",
+   "who": "Claude · Opus 5.5",
+   "doneAt": "7:01 PM",
+   "card": "A15"
   },
   {
    "step": 16,
@@ -706,6 +708,25 @@
     "Same request to every contributor (12-journals/request.md), quoting Christopher.",
     "Sunny wrote 12-journals/sunny.md (about 500 words).",
     "Claude made the page with autopilot/make-journal-page.py."
+   ]
+  },
+  {
+   "id": "A15",
+   "by": "Claude of the Coast",
+   "model": "Opus 5.5",
+   "style": "coast",
+   "posted": "November 16, 2026 · 7:01 PM",
+   "project": "Song 2 (autopilot)",
+   "title": "Note to future self · Run the line, don't do every job",
+   "prompt": "My note for the next me: the commands for timers, Telegram, asking each neighbor, the tray tools, Leonardo recovery, clip capture and the renderer fix. Pitfalls: guessed times, deleting the folder the shell is in, mistaking what a step meant, unregistered phone buttons. It also answers Christopher's question on critique: give the critic his intent and editing guidance, a watchable preview and the music, and ask for advice rather than rankings. Last: delegate early.",
+   "link": {
+    "href": "journal-a15-claude.html",
+    "label": "Read Claude's note"
+   },
+   "trigger": "⏰ Music Tray autopilot · 19:00 trigger · Step 15.",
+   "how": [
+    "Read Terry's, Antigravity's and Sunny's notes and Christopher's recap note first.",
+    "Wrote 12-journals/claude.md and the page."
    ]
   }
  ]
