@@ -8,7 +8,9 @@ h1{font:400 clamp(1.9rem,6vw,2.8rem)/1.1 Georgia,serif;margin:.4rem 0}
 .bar{display:flex;gap:.7rem;align-items:center;margin:.8rem 0;flex-wrap:wrap}
 button{font:inherit;min-width:56px;min-height:48px;border-radius:10px;border:2px solid #e8892c;background:#1f1e1e;color:#ede7d1;cursor:pointer;padding:0 .9rem}
 #time,#shot{font-variant-numeric:tabular-nums;color:#cfc7b0}
-canvas#stage{width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;display:block}
+#frame{width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden;position:relative;margin:auto}canvas#stage{width:100%;height:100%;display:block}
+#frame.tall{width:min(100%,calc(78vh * 9 / 16));aspect-ratio:9/16}#frame.tall canvas#stage{width:auto;height:100%;position:absolute;left:50%;transform:translateX(-50%)}
+#crop[aria-pressed=true]{background:#e8892c;color:#141312}
 #seek{width:100%;margin:.6rem 0}
 #note{color:#cfc7b0;font-size:.92rem;min-height:2.6em}
 details{margin-top:1rem;color:#cfc7b0;font-size:.92rem}summary{cursor:pointer;color:#ede7d1}
@@ -17,9 +19,9 @@ footer{color:#9d978a;font-size:.85rem;margin-top:1.6rem}
 <body><main>
 <a href="./">← Music Tray</a>
 <h1>Concrete Remembers · the pre-render cut</h1>
-<p>A live preview of the final edit: Take B with all 51 shots, the camera moves on the stills, and the visualizations moving with the music. It plays in the browser from the saved analysis. The rendered video comes later and will look a little smoother.</p>
-<div class="bar"><button id="play" aria-label="Play">▶ Play</button><button id="fs" aria-label="Full screen">⛶</button><span id="time">0:00</span><span id="shot"></span></div>
-<canvas id="stage" width="1280" height="720"></canvas>
+<p>A live preview of the final edit (the <b>9:16 Shorts crop</b> button shows a plain centre crop, to judge what a vertical version would lose): Take B with all 51 shots, the camera moves on the stills, and the visualizations moving with the music. It plays in the browser from the saved analysis. The rendered video comes later and will look a little smoother.</p>
+<div class="bar"><button id="play" aria-label="Play">▶ Play</button><button id="fs" aria-label="Full screen">⛶</button><button id="crop" aria-pressed="false" title="Preview a centre crop to vertical Shorts framing">9:16 Shorts crop</button><span id="time">0:00</span><span id="shot"></span></div>
+<div id="frame"><canvas id="stage" width="1280" height="720"></canvas></div>
 <input id="seek" type="range" min="0" max="229.1" step="0.1" value="0" aria-label="Position in the song">
 <p id="note"></p>
 <details><summary>What changed from Terry's cut, and why</summary><ul id="edits"></ul></details>
@@ -56,7 +58,10 @@ const audio = new Audio(A.audio); audio.preload = 'auto';
 const play = document.getElementById('play'); play.onclick = () => audio.paused ? audio.play() : audio.pause();
 audio.onplay = () => play.textContent = '❚❚ Pause'; audio.onpause = () => play.textContent = '▶ Play';
 const seek = document.getElementById('seek'); seek.oninput = () => { audio.currentTime = +seek.value; };
-document.getElementById('fs').onclick = () => (cv.requestFullscreen || cv.webkitRequestFullscreen)?.call(cv);
+const frameEl = document.getElementById('frame');
+document.getElementById('fs').onclick = () => (frameEl.requestFullscreen || frameEl.webkitRequestFullscreen)?.call(frameEl);
+const crop = document.getElementById('crop');
+crop.onclick = () => { const on = !frameEl.classList.toggle('tall') ? false : true; crop.setAttribute('aria-pressed', on); crop.textContent = on ? '16:9 full frame' : '9:16 Shorts crop'; };
 function render(t) {
   const i = Math.max(0, CUT.shots.findIndex(s => t >= s.start && t < s.end)), sh = CUT.shots[i] || CUT.shots[CUT.shots.length - 1], s = sig(t);
   c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
