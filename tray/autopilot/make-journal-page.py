@@ -41,6 +41,6 @@ for l in lines:
     if not byline_done and not body and not para: body.append('<p class="byline">' + inline(l) + '</p>'); byline_done = True; continue
     para.append(l.strip())
 flush()
-nav = '<nav aria-label="Song 2 notes"><a href="./">← Music Tray</a><a href="cut-a11.html">Watch the cut</a><a href="journal-a12-terry.html">Terry</a><a href="journal-a13-antigravity.html">Antigravity</a><a href="journal-a14-sunny.html">Sunny</a><a href="journal-a15-claude.html">Claude</a></nav>'
+nav = '<nav aria-label="Song 2 notes"><a href="index.html">← Music Tray</a><a href="cut-a11.html">Watch the cut</a><a href="journal-a12-terry.html">Terry</a><a href="journal-a13-antigravity.html">Antigravity</a><a href="journal-a14-sunny.html">Sunny</a><a href="journal-a15-claude.html">Claude</a></nav>'
 page = f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173E4B"><title>{html.escape(title)} · Song 2 notes</title>{style}</head><body><main>{nav}<h1>{inline(title)}</h1>{"".join(body)}<footer>{html.escape(credit)}<br>Source: <code>autopilot/12-journals/{Path(src).name}</code></footer></main></body></html>\n'
 Path(out).write_text(page); print('wrote', out)
