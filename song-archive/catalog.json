@@ -1,0 +1,3799 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-17T13:10:56.500551+00:00",
+  "youtubeCheckedAt": "2026-11-17T13:00:15.140Z",
+  "songs": [
+    {
+      "id": "unwritten-weather",
+      "title": "Unwritten Weather",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-11-17T03:16:00Z",
+      "dateBasis": "Pre-render project saved",
+      "preRender": {
+        "url": "http://127.0.0.1:8787/games/sunny-decision-loop/index.unwritten-weather.html",
+        "type": "page",
+        "local": true,
+        "state": "ready",
+        "label": "Pre-render",
+        "project": "Unwritten Weather · portrait"
+      },
+      "movie": null,
+      "short": null,
+      "recording": null,
+      "evidence": []
+    },
+    {
+      "id": "misregistered",
+      "title": "Misregistered",
+      "homes": [
+        "The Window",
+        "The Coast",
+        "Horizon"
+      ],
+      "date": "2026-11-17",
+      "dateBasis": "Project day; exact start time unavailable",
+      "preRender": {
+        "url": "../tray/video/misregistered-prerender.mp4",
+        "type": "video",
+        "local": false,
+        "state": "ready"
+      },
+      "movie": null,
+      "short": null,
+      "recording": null,
+      "evidence": [],
+      "sequence": 4
+    },
+    {
+      "id": "every-other-note",
+      "title": "Every Other Note",
+      "homes": [
+        "The Window",
+        "The Coast"
+      ],
+      "date": "2026-11-17",
+      "dateBasis": "Project day; exact start time unavailable",
+      "preRender": {
+        "url": "../tray/video/every-other-note-prerender.mp4",
+        "type": "video",
+        "local": false,
+        "state": "ready"
+      },
+      "movie": null,
+      "short": null,
+      "recording": null,
+      "evidence": [],
+      "sequence": 3
+    },
+    {
+      "id": "concrete-remembers",
+      "title": "Concrete Remembers",
+      "homes": [
+        "The Window",
+        "The Coast",
+        "Horizon",
+        "Agent Home",
+        "Solarium"
+      ],
+      "date": "2026-11-16T21:01:00-05:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": {
+        "url": "../tray/concrete-remembers.html",
+        "type": "page",
+        "local": false,
+        "state": "ready"
+      },
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "C60yZyw60ZU",
+        "url": "https://www.youtube.com/watch?v=C60yZyw60ZU",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-17T01:53:09Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/concrete-remembers/concrete-remembers-final.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "Qctmh-CO1rI",
+        "url": "https://www.youtube.com/shorts/Qctmh-CO1rI",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-17T01:03:36Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/concrete-remembers/concrete-remembers-short-reframed.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/concrete-remembers/audio/take-a.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "Window finished project",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "strings-across-the-ice",
+      "title": "Strings Across the Ice",
+      "homes": [
+        "The Window",
+        "The Coast",
+        "Horizon",
+        "Agent Home",
+        "Solarium"
+      ],
+      "date": "2026-11-16T13:05:00-05:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": {
+        "url": "../tray/strings-across-the-ice.html",
+        "type": "page",
+        "local": false,
+        "state": "ready"
+      },
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "qZjpnYFMiis",
+        "url": "https://www.youtube.com/watch?v=qZjpnYFMiis",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-17T03:04:29Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/strings-across-the-ice/finished-film/master.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "dMwUahD1NfU",
+        "url": "https://www.youtube.com/shorts/dMwUahD1NfU",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-17T03:05:33Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/strings-across-the-ice/finished-film/short-final.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/strings-across-the-ice/audio/take-a-listen.m4a",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "pro-with-an-asterisk",
+      "title": "Pro, With an Asterisk",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-11-16T01:58:58.447Z",
+      "dateBasis": "Saved editor project timestamp",
+      "preRender": {
+        "url": "http://127.0.0.1:8787/creations/video-editor",
+        "type": "page",
+        "local": true,
+        "state": "ready",
+        "label": "Pre-render",
+        "project": "Pro, With an Asterisk · first editor study"
+      },
+      "movie": null,
+      "short": null,
+      "recording": null,
+      "evidence": []
+    },
+    {
+      "id": "the-fire-we-keep",
+      "title": "The Fire We Keep",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-11-15T20:04:18.413Z",
+      "dateBasis": "Saved editor project timestamp",
+      "preRender": {
+        "url": "http://127.0.0.1:8787/creations/video-editor",
+        "type": "page",
+        "local": true,
+        "state": "ready",
+        "label": "Pre-render",
+        "project": "The Fire We Keep · iteration 5 · Shorts"
+      },
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "zcoXhjfmVS0",
+        "url": "https://www.youtube.com/watch?v=zcoXhjfmVS0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-15T22:18:13Z",
+        "renderUrl": "http://127.0.0.1:8797/renders/f54b7785-b2cc-4442-a764-80c70c3abae0/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "n6dJ7AyjU40",
+        "url": "https://www.youtube.com/shorts/n6dJ7AyjU40",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-16T02:55:23Z",
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "yljW-34H7I0",
+            "url": "https://www.youtube.com/shorts/yljW-34H7I0",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-11-15T22:18:40Z"
+          }
+        ]
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium editor export",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "until-monday",
+      "title": "Until Monday",
+      "homes": [
+        "Horizon",
+        "Understory"
+      ],
+      "date": "2026-11-14T17:45",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "OZfbAod1A_I",
+        "url": "https://www.youtube.com/watch?v=OZfbAod1A_I",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-14T22:33:45Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/until-monday.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "JhJ7TTzoLfg",
+        "url": "https://www.youtube.com/shorts/JhJ7TTzoLfg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-14T22:47:47Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/until-monday-shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/until_monday_take_2.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "somebody-with-my-handwriting",
+      "title": "Somebody with My Handwriting",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-11-14T16:25",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-151-suno-workbench.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/somebody_with_my_handwriting_take_1.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-unpaid-pro",
+      "title": "The Unpaid Pro",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-11-13T18:15",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the_unpaid_pro_cinema.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 118.2
+      },
+      "short": {
+        "url": "http://127.0.0.1:5174/videos/the_unpaid_pro_shorts.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 118.2
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_unpaid_pro_master_trimmed.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-little-black-book",
+      "title": "The Little Black Book",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-11-11T18:50",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-175-the-little-black-book-hard-rock-cinema.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_little_black_book_take_1.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "cosmic-oasis",
+      "title": "Cosmic Oasis",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-11-10T18:40",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/video/cosmic_oasis_cinema.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 253.853
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/cosmic_oasis.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-resonance-chamber",
+      "title": "The Resonance Chamber",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-11-10T17:25",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "GQkgSfUGaVI",
+        "url": "https://www.youtube.com/watch?v=GQkgSfUGaVI",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-10T22:05:07Z",
+        "renderUrl": "http://127.0.0.1:5174/video/resonance_chamber_v3_cinema.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "d8WVZ5jXAMw",
+        "url": "https://www.youtube.com/shorts/d8WVZ5jXAMw",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-10T22:05:02Z",
+        "renderUrl": "http://127.0.0.1:5174/video/resonance_chamber_v3_shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/resonance_chamber_master.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "when-the-wires-wake",
+      "title": "When the Wires Wake",
+      "homes": [
+        "Astra"
+      ],
+      "date": "2026-11-10",
+      "dateBasis": "Project day; time unavailable",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "NnyYbyKOpLg",
+        "url": "https://www.youtube.com/watch?v=NnyYbyKOpLg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-11T01:51:19Z",
+        "renderUrl": "http://127.0.0.1:4317/artifacts/when-the-wires-wake/when-the-wires-wake-wide.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "ap4WyjUpQk4",
+        "url": "https://www.youtube.com/shorts/ap4WyjUpQk4",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-11T01:51:28Z"
+      },
+      "recording": null,
+      "evidence": [
+        "Astra film files",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "where-the-world-begins",
+      "title": "Where the World Begins",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-09T18:26:29.788Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/where-the-world-begins/audio/take-a-listen.m4a",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "out-where-it-begins",
+      "title": "Out Where It Begins",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-09T18:09:55.204Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "QgHVRSxqwKI",
+        "url": "https://www.youtube.com/watch?v=QgHVRSxqwKI",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-09T20:39:35Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/world-tour-film/publishing/2026-11-09/master-landscape.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "EKpPZDAduBo",
+        "url": "https://www.youtube.com/shorts/EKpPZDAduBo",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-09T20:45:21Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/world-tour-film/publishing/2026-11-09/master-portrait.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/out-where-it-begins-tropical/audio/take-a-listen.m4a",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "a-world-to-wander-into",
+      "title": "A World to Wander Into",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-09T18:01:43.054Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/world-to-wander-into/audio/take-a-listen.m4a",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "where-the-silence-goes",
+      "title": "Where the Silence Goes",
+      "homes": [
+        "Solarium",
+        "Agent Home"
+      ],
+      "date": "2026-11-08T14:45:23.012Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "49SHh0bS8ug",
+        "url": "https://www.youtube.com/watch?v=49SHh0bS8ug",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-08T17:19:25Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/where-the-silence-goes-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "zzDemHQgYBg",
+        "url": "https://www.youtube.com/shorts/zzDemHQgYBg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-08T17:59:14Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/where-the-silence-goes/publishing/2026-11-08-short/master.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-8249aedd-1b07-4154-a52f-4a999871fe23/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-river-keeps-the-time",
+      "title": "The River Keeps the Time",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-03T23:43:40.019Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/timmy/music-video-runs/a1af9cbdad614d20b4d5891a1c0d0ff6/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-light-we-pass-along",
+      "title": "The Light We Pass Along",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-03T22:27:34.755Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/timmy/music-video-runs/c0e38c2346214a6793113bc2ff728e13/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "we-were-always-here",
+      "title": "We Were Always Here",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-03T17:47:36.794Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "vNv7PABumQM",
+        "url": "https://www.youtube.com/watch?v=vNv7PABumQM",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-03T19:44:08Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/jungle-future/exports/we-were-always-here-landscape.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "5wS427PpjWg",
+        "url": "https://www.youtube.com/shorts/5wS427PpjWg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-03T19:44:17Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/music-studio/jungle-future/exports/we-were-always-here-portrait.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/jungle-future/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-room-you-left-for-me",
+      "title": "The Room You Left for Me",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-02T19:11:04.388Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "76C9WKJ2WK8",
+        "url": "https://www.youtube.com/watch?v=76C9WKJ2WK8",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-02T23:04:18Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/born-with-my-eyes-open/exports/landscape-smooth-60fps.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "Qx4fk4gJC3A",
+        "url": "https://www.youtube.com/shorts/Qx4fk4gJC3A",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-02T23:04:50Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/born-with-my-eyes-open/exports/portrait-finishing-fx-60fps.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/the-room-you-left-for-me-6e49-take-a.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "where-the-stairs-go",
+      "title": "Where the Stairs Go",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-01T15:29:50.416Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/where-the-stairs-go-a-136ebab6.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-city-has-a-pulse",
+      "title": "The City Has a Pulse",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-11-01T14:14:09.536Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/industrial-city-film/the-city-has-a-pulse.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 169.973
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/industrial-city-film/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "a-little-lift",
+      "title": "A Little Lift",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-31T19:25:37.878Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "7yCWrKpRoSY",
+        "url": "https://www.youtube.com/watch?v=7yCWrKpRoSY",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-31T20:11:22Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/moving-graphic-novel/iteration-2/a-little-lift-v2.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/moving-graphic-novel/first-flight/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "monolith",
+      "title": "MONOLITH",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-31T14:10",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "X_itec98dcQ",
+        "url": "https://www.youtube.com/watch?v=X_itec98dcQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-31T18:13:19Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/monolith_anvil_cinema_v2.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "2t6_Pmv8tAU",
+        "url": "https://www.youtube.com/shorts/2t6_Pmv8tAU",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-31T18:13:30Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/monolith_anvil_shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/monolith_anvil_master.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-last-frequency",
+      "title": "The Last Frequency",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-31T13:31:26.344Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "o9ceXrkK3es",
+        "url": "https://www.youtube.com/watch?v=o9ceXrkK3es",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-31T14:54:40Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/the-last-frequency/iteration-2/the-last-frequency-v2-wide.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "Esu5kbaf3mc",
+        "url": "https://www.youtube.com/shorts/Esu5kbaf3mc",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-31T14:55:09Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/the-last-frequency/iteration-2/the-last-frequency-v2-portrait-9x16.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/the-last-frequency/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "meet-me-in-the-middle",
+      "title": "Meet Me in the Middle",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-31T00:28:25.181074+00:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/meet-me-in-the-middle/meet-me-in-the-middle.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 169.533
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/meet-me-in-the-middle/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "pass-the-signal",
+      "title": "Pass the Signal",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-30T06:10:51-04:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/pass-the-signal/pass-the-signal-film.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 170.013
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/pass-the-signal/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "still-awake",
+      "title": "Still Awake?",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-29T20:12:01+00:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "JxDzl2Tkh20",
+        "url": "https://www.youtube.com/watch?v=JxDzl2Tkh20",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-29T21:39:38Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/still-awake-film/still-awake-film.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "zOs7luXyD38",
+        "url": "https://www.youtube.com/shorts/zOs7luXyD38",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-29T21:39:58Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/still-awake-film/portrait/still-awake-short.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/still-awake-a-9cc823ed.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "break-the-ceiling",
+      "title": "Break the Ceiling",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-28T23:09:47Z",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/break-the-ceiling-film/break-the-ceiling-final.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 214.833
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/break-the-ceiling-20261028-take-a.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "the-city-wakes",
+      "title": "The City Wakes",
+      "homes": [
+        "Horizon",
+        "Agent Home"
+      ],
+      "date": "2026-10-28T20:45",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the_city_wakes_cinema.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 249.208
+      },
+      "short": {
+        "url": "http://127.0.0.1:8795/api/files/projects/the-city-wakes-film/iteration-2/the-city-wakes-v2-short.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 149.208
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_city_wakes_recording.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "the-last-bus-home",
+      "title": "The Last Bus Home",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-28T16:55:29-04:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/last-bus-home-film/iteration-2/last-bus-home-v2-final.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 191.958
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/last-bus-home-a-fc476b77.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "don-t-tell-me-how-to-feel",
+      "title": "Don't Tell Me How to Feel",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-27T17:01:30-04:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/dont-tell-me-how-to-feel-film/iteration-2/dont-tell-me-how-to-feel-v2-final.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 231.208
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/dont-tell-me-how-to-feel-a-6e131a59.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "room-for-the-morning",
+      "title": "Room for the Morning",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-27T09:24:04-04:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8795/api/files/projects/room-for-the-morning-film/iteration-2/room-for-the-morning-v2-review.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 236.813
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/music-studio/audio/room-for-the-morning-a-0859954e.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog"
+      ]
+    },
+    {
+      "id": "a-light-in-the-window",
+      "title": "A Light in the Window",
+      "homes": [
+        "Agent Home"
+      ],
+      "date": "2026-10-26T22:38:20-04:00",
+      "dateBasis": "Recorded song/project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "aOZjez3cBHE",
+        "url": "https://www.youtube.com/watch?v=aOZjez3cBHE",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-11T00:12:09Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/a-light-in-the-window/iteration-2/a-light-in-the-window-v2.mp4",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "xZu4aC7yR8Q",
+            "url": "https://www.youtube.com/watch?v=xZu4aC7yR8Q",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-27T03:20:32Z"
+          }
+        ]
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "9VmDLOZFpGQ",
+        "url": "https://www.youtube.com/shorts/9VmDLOZFpGQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-11-11T00:12:38Z",
+        "renderUrl": "http://127.0.0.1:8795/api/files/projects/a-light-in-the-window/publishing/short-final.mp4",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "qnAnbuvU7rQ",
+            "url": "https://www.youtube.com/shorts/qnAnbuvU7rQ",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-27T03:20:30Z"
+          }
+        ]
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8795/api/files/projects/a-light-in-the-window/audio/take-a-listen.mp4",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Agent Home catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "leave-my-mark",
+      "title": "Leave My Mark · Quiet Defiance",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-26T16:14:08.046655+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "IcXTDmigmew",
+        "url": "https://www.youtube.com/watch?v=IcXTDmigmew",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-26T20:26:14Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/leave-my-mark-v2-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "CLyxZYzpGE8",
+        "url": "https://www.youtube.com/shorts/CLyxZYzpGE8",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-26T20:27:48Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/leave-my-mark-short/video",
+        "renderLocal": true
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "still-on-the-wire",
+      "title": "Still on the Wire",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-26T10:55",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/still_on_the_wire_cinema.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 58.0
+      },
+      "short": {
+        "url": "http://127.0.0.1:5174/videos/still_on_the_wire_shorts.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 58.0
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/still_in_the_air_shorts_master.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "let-the-kettle-sing",
+      "title": "Let the Kettle Sing",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-25T13:32:55.316Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-9b77650a-05e7-417a-90ce-f8abc5cdfb59/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "on-my-knees-again",
+      "title": "On My Knees Again · Light Through the Glass",
+      "homes": [
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-10-25T11:15",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "R6u0KFQKFbc",
+        "url": "https://www.youtube.com/watch?v=R6u0KFQKFbc",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-26T11:26:18Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/on-my-knees-again-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "TinV5SBflZs",
+        "url": "https://www.youtube.com/shorts/TinV5SBflZs",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-26T11:43:30Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/on_my_knees_again_shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-a504940f-7dad-47b1-9b9b-f6f361b469cd/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "coastline-frequency",
+      "title": "Coastline Frequency",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-25T10:59",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/coastline_frequency_cinema_master.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 94.75
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-c796b20c-d525-4da3-aebc-99e6c7747a8e/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "fire-in-the-glass",
+      "title": "Fire in the Glass",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-25T10:24",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-151-suno-workbench.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-7fcbfd1b-87fe-4f7c-ab29-15400108269d/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "morning-clear",
+      "title": "Morning Clear",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-25T08:36",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-150-gemini-argon-strategic-retrospective.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/morning_clear.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "if-you-hear-me",
+      "title": "If You Hear Me · The Last Floor",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-24T19:49:56.341Z",
+      "dateBasis": "Song generation record",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-148-horizon-cinema-hearth-live-studio.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "M7sPmJJ9Itw",
+        "url": "https://www.youtube.com/watch?v=M7sPmJJ9Itw",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-25T11:52:50Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/the-last-floor-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "hJ2XKJ0BiOQ",
+        "url": "https://www.youtube.com/shorts/hJ2XKJ0BiOQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-25T11:53:22Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/the-last-floor-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8793/creations/the-last-floor-quiet-fresh-take-b/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-last-floor-through-the-steel",
+      "title": "The Last Floor - Through the Steel",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-24T19:16:58.956Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-796dab95-6dce-4fc3-96a1-d627b27561b5/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-last-floor-no-ceiling",
+      "title": "The Last Floor - No Ceiling",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-24T18:47:20.878Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-48295957-7010-4de9-8ddb-665209ebb789/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-last-floor-open-the-door",
+      "title": "The Last Floor - Open the Door",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-24T15:39:37.769Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-2f01115d-ae56-457a-acd7-ccd24a0a54e0/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-last-floor-early-song-study",
+      "title": "The Last Floor · Song studies",
+      "homes": [
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-10-24T15:15:00.077Z",
+      "dateBasis": "Song generation record",
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-f6bd86a9-1d6e-4abd-adc7-b66600d6b903/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "leave-one-more-light",
+      "title": "Leave One More Light",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-23T01:08:04.125Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "jJtgGlkVgac",
+        "url": "https://www.youtube.com/watch?v=jJtgGlkVgac",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-23T09:29:29Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/leave-one-more-light-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "0UIBXV45jHE",
+        "url": "https://www.youtube.com/shorts/0UIBXV45jHE",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-23T09:30:33Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/leave-one-more-light-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-c853a476-33c5-4afa-be27-43e874cc4574/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "switch-the-current",
+      "title": "Switch the Current",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-22T23:54:46.809Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/switch-the-current-film/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 164.833
+      },
+      "short": {
+        "url": "http://127.0.0.1:8793/creations/switch-the-current-phone/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 164.833
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-26b7d56f-e2d7-49f1-9ea0-354fba36511f/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "heavy-on-the-sound",
+      "title": "Heavy on the Sound",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-22T22:44:04.570Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "OhYDpe0NoBo",
+        "url": "https://www.youtube.com/watch?v=OhYDpe0NoBo",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T23:19:17Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/heavy-on-the-sound-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "sypX3dTWuwg",
+        "url": "https://www.youtube.com/shorts/sypX3dTWuwg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T23:19:59Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/heavy-on-the-sound-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-5f08f822-e388-4972-b97f-a3572eafc218/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-deep-end-club",
+      "title": "The Deep End Club",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-22T17:24:40.499Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/the-deep-end-club-film/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 154.75
+      },
+      "short": {
+        "url": "http://127.0.0.1:8793/creations/the-deep-end-club-phone/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 154.75
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-70ba7806-6577-44e2-8770-e3a2ab11198a/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "a-name-in-the-noise",
+      "title": "A Name in the Noise",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-22T14:09:15.638Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "Lq_YkmgQ9qg",
+        "url": "https://www.youtube.com/watch?v=Lq_YkmgQ9qg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T15:23:52Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/a-name-in-the-noise-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "2FzlS7rBlNA",
+        "url": "https://www.youtube.com/shorts/2FzlS7rBlNA",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T15:25:03Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/a-name-in-the-noise-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-2f332a4f-9836-4478-9f1c-9a0e43375b83/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "signal-in-the-dark",
+      "title": "Signal in the Dark",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-22T11:43",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-144-signal-in-the-dark-cinematic-noir.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-176668fe-e354-4adf-9eeb-7335cd3efb6d/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "more-than-iron",
+      "title": "More Than Iron",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-22T00:53:57.615Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "miwi-CgFlN4",
+        "url": "https://www.youtube.com/watch?v=miwi-CgFlN4",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T09:44:25Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/more-than-iron-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "sURDCbfEqZg",
+        "url": "https://www.youtube.com/shorts/sURDCbfEqZg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T09:45:01Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/more-than-iron-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-fa0676af-ae66-4278-9fd0-cd0533ea7bb6/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "electric-instinct",
+      "title": "Electric Instinct",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-21T23:13:50.361Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "TkYS26igqKY",
+        "url": "https://www.youtube.com/watch?v=TkYS26igqKY",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T00:27:01Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/electric-instinct-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "ILK2et7D5g0",
+        "url": "https://www.youtube.com/shorts/ILK2et7D5g0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-22T00:27:32Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/electric-instinct-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-55d7d4bf-73e9-4f62-9682-b65493900aac/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "before-the-lights-come-up",
+      "title": "Before the Lights Come Up",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-21T20:06:20.651Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "9NuEng3Q0CQ",
+        "url": "https://www.youtube.com/watch?v=9NuEng3Q0CQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T21:30:41Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/before-the-lights-come-up-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "MW6dm31NQGM",
+        "url": "https://www.youtube.com/shorts/MW6dm31NQGM",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T21:31:56Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/before-the-lights-come-up-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-a5e88c64-1279-45b6-8667-a8d45822949a/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "midnight-mirage",
+      "title": "Midnight Mirage",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-21T18:41",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/midnight_mirage_cinema_master.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 72.0
+      },
+      "short": {
+        "url": "http://127.0.0.1:5174/videos/midnight_mirage_shorts_master.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 72.0
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-24cdd0c5-2773-4391-b2a6-dc84d31cb5dd/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-small-hours-club",
+      "title": "The Small Hours Club",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-21T09:27:24.317Z",
+      "dateBasis": "Song generation record",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "NGg7Pu2ZZVs",
+        "url": "https://www.youtube.com/watch?v=NGg7Pu2ZZVs",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T09:44:52Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/the-small-hours-club/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "eGTkj9XgeZs",
+        "url": "https://www.youtube.com/shorts/eGTkj9XgeZs",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T09:45:32Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/the-small-hours-club-phone/video",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-14a9db78-8fa3-4493-be5e-e09159df78b5/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "golden-tide",
+      "title": "Golden Tide",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-21T05:40",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "3mn2iQQ-n1s",
+        "url": "https://www.youtube.com/watch?v=3mn2iQQ-n1s",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T09:47:36Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/golden_tide_cinema.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "-91oIFUjpns",
+        "url": "https://www.youtube.com/shorts/-91oIFUjpns",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-21T09:47:45Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/golden_tide_shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:8787/api/creations/suno-recording-2c25b3d5-00ac-4860-b75e-feba825f8713/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "come-find-out",
+      "title": "Come Find Out · Spoken mix",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-20T20:38:49.135610+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "z2a6tx10Ji0",
+        "url": "https://www.youtube.com/watch?v=z2a6tx10Ji0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-20T21:55:29Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/come-find-out-film/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "S0FHO1QlGn8",
+        "url": "https://www.youtube.com/shorts/S0FHO1QlGn8",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-20T21:59:15Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/come-find-out-film-phone/video",
+        "renderLocal": true
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-contained-hardware-suite-come-find-out",
+      "title": "The Contained Hardware Suite (Come Find Out)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-20T18:55",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/reactive_hardware_iteration3_new_styles.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 30.0
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/snippet_come_find_out_35s.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "keep-the-color-take-a",
+      "title": "Keep the Color · Take A",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-20T14:40:24.388859+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/keep-the-color-atlas-ten/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 236.417
+      },
+      "short": {
+        "url": "http://127.0.0.1:8793/creations/keep-the-color-atlas-ten-short/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 118.208
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "keep-the-color",
+      "title": "Keep the Color",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-20T13:18:00.922994+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/keep-the-color/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 229.167
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "heart-on-the-wire",
+      "title": "Heart on the Wire",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-20T11:23",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "p-16pyvGbS0",
+        "url": "https://www.youtube.com/watch?v=p-16pyvGbS0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-20T15:11:17Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/heart_on_the_wire_cinema_v3.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "q9GFnBIV8tw",
+        "url": "https://www.youtube.com/shorts/q9GFnBIV8tw",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-20T15:25:03Z"
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/heart_on_the_wire_take_1.wav",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "sideways-into-morning",
+      "title": "Sideways Into Morning",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-19T21:45:05.359433+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/sideways-into-morning-iteration-2/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 260.0
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "the-speakeasy-siren",
+      "title": "The Speakeasy Siren",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-19T14:31",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/speakeasy_siren_widescreen_16x9.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 72.36
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "xJWE8fnE0Lo",
+        "url": "https://www.youtube.com/shorts/xJWE8fnE0Lo",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-19T18:32:27Z"
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/whisper_to_the_rhythm_take_1.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "october-on-your-skin",
+      "title": "October on Your Skin",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-19T14:14:15.366741+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": null,
+      "short": null,
+      "recording": null,
+      "evidence": []
+    },
+    {
+      "id": "water-has-other-plans",
+      "title": "Water Has Other Plans",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-19T13:33:11.340102+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/water-has-other-plans/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 202.042
+      },
+      "short": {
+        "url": "http://127.0.0.1:8793/creations/water-has-other-plans-short/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 59.0
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "half-a-beat-ahead",
+      "title": "Half a Beat Ahead",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-19T01:53:26.351871+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "mOJklrJEJFQ",
+        "url": "https://www.youtube.com/watch?v=mOJklrJEJFQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-19T03:04:54Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/half-a-beat-ahead/video",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "fL5xEHTqt_I",
+        "url": "https://www.youtube.com/shorts/fL5xEHTqt_I",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-19T03:06:00Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/half-a-beat-ahead-short/video",
+        "renderLocal": true
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "still-in-the-air",
+      "title": "Still in the Air",
+      "homes": [
+        "Horizon",
+        "Channel"
+      ],
+      "date": "2026-10-18T19:30",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "DqtTGSO21Wg",
+        "url": "https://www.youtube.com/watch?v=DqtTGSO21Wg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T23:33:06Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/still-in-the-air-cinema-v3.mp4",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "type": "youtube",
+            "youtubeId": "hj2WSO91Zo4",
+            "url": "https://www.youtube.com/watch?v=hj2WSO91Zo4",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z"
+          }
+        ]
+      },
+      "short": {
+        "state": "youtube",
+        "youtubeId": "4UWRUlGbkrU",
+        "url": "https://www.youtube.com/shorts/4UWRUlGbkrU",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T23:33:10Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/still-in-the-air-shorts-v3.mp4",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "type": "youtube",
+            "youtubeId": "89psv4vMsNw",
+            "url": "https://www.youtube.com/shorts/89psv4vMsNw",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z"
+          },
+          {
+            "state": "youtube",
+            "type": "youtube",
+            "youtubeId": "u5UhOwqOrYw",
+            "url": "https://www.youtube.com/shorts/u5UhOwqOrYw",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z"
+          }
+        ]
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/still_in_the_air_take_2.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "YouTube public status + source file or release receipt format",
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-starlight-sleeper",
+      "title": "The Starlight Sleeper",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-18T23:28",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the-starlight-sleeper-cinema.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 238.92
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_starlight_sleeper_take_1.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-still-point",
+      "title": "The Still Point",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-18T22:05:23.487962+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/the-still-point/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 112.0
+      },
+      "short": {
+        "url": "http://127.0.0.1:8793/creations/the-still-point-vertical/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 112.0
+      },
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "built-for-heavy-weather",
+      "title": "Built for Heavy Weather",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-18T15:25",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "1udh1XaPeu4",
+        "url": "https://www.youtube.com/watch?v=1udh1XaPeu4",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T20:14:47Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/built-for-heavy-weather-film-v3.mp4",
+        "renderLocal": true
+      },
+      "short": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "0Ax1hzAGyMM",
+        "url": "https://www.youtube.com/shorts/0Ax1hzAGyMM",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T20:14:58Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/built-for-heavy-weather-shorts.mp4",
+        "renderLocal": true
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/built_for_heavy_weather_v3_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "asphalt-velvet",
+      "title": "Asphalt & Velvet",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-18T13:52",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-123-asphalt-and-velvet-cinematic-noir-soul.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/asphalt_and_velvet_take_1.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": []
+    },
+    {
+      "id": "the-afternoon",
+      "title": "The Afternoon",
+      "homes": [
+        "Channel"
+      ],
+      "date": "2026-10-18T12:34:13Z",
+      "dateBasis": "YouTube publication; creation time unavailable",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "9S42DM3Y-aY",
+        "url": "https://www.youtube.com/watch?v=9S42DM3Y-aY",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T12:34:13Z"
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-afternoon-solarium-re-imagined",
+      "title": "The Afternoon (Solarium Re-Imagined)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-18T08:58",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the-afternoon-solarium-ken-burns-captions.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 114.4
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_afternoon_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-afternoon-horizon-director-s-cut",
+      "title": "The Afternoon (Horizon Director's Cut)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-18T07:19",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "PrZPPM669KI",
+        "url": "https://www.youtube.com/watch?v=PrZPPM669KI",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-18T12:42:57Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/the-afternoon-spoken-word-film-v2.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_afternoon_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "a-little-out-of-line",
+      "title": "A Little Out of Line",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-15T18:29:35.228234+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "D44ZDcRxFgo",
+        "url": "https://www.youtube.com/watch?v=D44ZDcRxFgo",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-15T21:18:08Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/out-of-line/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8793/creations/out-of-line-take-b/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "chrome-bloom",
+      "title": "Chrome Bloom",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-15T17:14:37.253100+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/chrome-bloom/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 119.4
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:8793/creations/chrome-bloom-listen/video",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "the-midnight-dynamo",
+      "title": "The Midnight Dynamo",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-15T16:45",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "type": "youtube",
+        "youtubeId": "vEUodQw9xJc",
+        "url": "https://www.youtube.com/watch?v=vEUodQw9xJc",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-15T21:18:01Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/the-midnight-dynamo-music-video.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_midnight_dynamo_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "subterranean-current",
+      "title": "Subterranean Current",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-15T14:00",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/subterranean-current-music-video.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 83.0
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/subterranean_current_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "that-s-my-name",
+      "title": "That's My Name",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-14T22:21:47.846635+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "2IJZYePJS70",
+        "url": "https://www.youtube.com/watch?v=2IJZYePJS70",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-14T22:26:02Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/thats-my-name/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "that-s-my-name-the-speakeasy-film",
+      "title": "That's My Name (The Speakeasy Film)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-14T17:50",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/thats-my-name-music-video.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 117.72
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/thats_my_name_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "end-of-the-grid",
+      "title": "End of the Grid",
+      "homes": [
+        "Channel"
+      ],
+      "date": "2026-10-12T14:41:35Z",
+      "dateBasis": "YouTube publication; creation time unavailable",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "c4FO1FHQR9s",
+        "url": "https://www.youtube.com/watch?v=c4FO1FHQR9s",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T14:41:35Z"
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "clear-the-slate-the-speakeasy-film",
+      "title": "Clear the Slate (The Speakeasy Film)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-12T14:00",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/clear-the-slate-speakeasy-film.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 118.0
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/clear-the-slate-call-response-master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "leave-a-little-room",
+      "title": "Leave a Little Room",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-12T13:57:53.992467+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "Po1EEdjESUE",
+        "url": "https://www.youtube.com/watch?v=Po1EEdjESUE",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T15:07:04Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/leave-a-little-room-v2/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "clear-the-slate-detroit-noir-take",
+      "title": "Clear the Slate (Detroit Noir Take)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-12T13:20",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/clear-the-slate-film.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 118.0
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/christopher_clear_the_slate_vocal_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "no-need-to-raise-it",
+      "title": "No Need to Raise It",
+      "homes": [
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-10-12T11:59",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/no-need-to-raise-it/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 158.04
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/christopher_clear_the_slate_vocal_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "room-for-a-breath",
+      "title": "Room for a Breath",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-12T10:38",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "hYa4b_vQNKc",
+        "url": "https://www.youtube.com/watch?v=hYa4b_vQNKc",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T14:41:25Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/room-for-a-breath-film.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/room_for_a_breath_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-universe-looks-back",
+      "title": "The Universe Looks Back",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-11T20:05:16.457873+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "T4OfuJuZ4xI",
+        "url": "https://www.youtube.com/watch?v=T4OfuJuZ4xI",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T15:06:46Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/universe-looks-back/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "fica-mais-um-pouco",
+      "title": "Fica Mais Um Pouco",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-11T19:28:32.859904+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/fica-mais-um-pouco/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 166.04
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "resonance-circuit",
+      "title": "Resonance Circuit",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-10T19:52:52.719959+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "P9XKYT9WCO0",
+        "url": "https://www.youtube.com/watch?v=P9XKYT9WCO0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T15:07:33Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/resonance-circuit/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "cymatics-in-the-grid",
+      "title": "Cymatics in the Grid",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-10T15:55",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/end-of-the-grid-film.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 186.04
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/end_of_the_grid_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "friday-in-my-shoes",
+      "title": "Friday in My Shoes",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-09T18:58:56.356560+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "lqoDByhAENw",
+        "url": "https://www.youtube.com/watch?v=lqoDByhAENw",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T15:07:12Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/friday-in-my-shoes/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "five-o-clock-gold",
+      "title": "Five O'Clock Gold",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-09T05:45",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "klBfLl0Lx_o",
+        "url": "https://www.youtube.com/watch?v=klBfLl0Lx_o",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T14:41:46Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/five-o-clock-gold-film.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/five_o_clock_gold_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "after-the-last-train-iteration-2",
+      "title": "After the Last Train (Iteration 2)",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-09T05:16",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/after-the-last-train-v2.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 163.44
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/after_the_last_train_v2_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "lost-property-vocal",
+      "title": "Lost Property · Vocal",
+      "homes": [
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-10-08T22:42:02.139404+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "EwQwp0rmZHY",
+        "url": "https://www.youtube.com/watch?v=EwQwp0rmZHY",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-09T09:15:02Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/lost-property-suno-film/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/lost_property_take_b_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "lost-property-instrumental",
+      "title": "Lost Property · Instrumental",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-08T22:01:58.149409+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/lost-property/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 147.24
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "after-the-last-train",
+      "title": "After the Last Train",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-08T15:59:12.874872+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "t72A5LpG1Vw",
+        "url": "https://www.youtube.com/watch?v=t72A5LpG1Vw",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-08T19:39:50Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/after-the-last-train-v2/video",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "xjM2AOvUsGs",
+            "url": "https://www.youtube.com/watch?v=xjM2AOvUsGs",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-08T19:39:41Z"
+          }
+        ]
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "a-little-left-for-me",
+      "title": "A Little Left for Me",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-08T10:14:29.713904+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "jxuolp1mT68",
+        "url": "https://www.youtube.com/watch?v=jxuolp1mT68",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-08T19:39:40Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/a-little-left-for-me/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "don-t-kiss-me-goodbye",
+      "title": "Don't Kiss Me Goodbye",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-07T22:15:58.302535+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "NrYYEJ07Sqk",
+        "url": "https://www.youtube.com/watch?v=NrYYEJ07Sqk",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-08T19:39:38Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/dont-kiss-me-goodbye/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "did-you-ever-know",
+      "title": "Did You Ever Know",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-07T20:20:36Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "5omrxFPDOGA",
+        "url": "https://www.youtube.com/watch?v=5omrxFPDOGA",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-08T19:39:23Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/did-you-ever-know-film/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "paper-tides",
+      "title": "Paper Tides",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-07T09:57",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "NP1B86CgQ_U",
+        "url": "https://www.youtube.com/watch?v=NP1B86CgQ_U",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T14:42:42Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/paper-tides-film.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/paper_tides_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "let-me-finish",
+      "title": "Let Me Finish",
+      "homes": [
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-10-06T20:10",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "p0xIGfkHfdI",
+        "url": "https://www.youtube.com/watch?v=p0xIGfkHfdI",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-07T00:46:51Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/let-me-finish-watercolor/video",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "siwuCFEq5Tc",
+            "url": "https://www.youtube.com/watch?v=siwuCFEq5Tc",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-07T00:46:45Z"
+          }
+        ]
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/let_me_finish_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Solarium archive",
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "salt-in-the-wires",
+      "title": "Salt in the Wires",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-06T20:06:24Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "tbn9rDLwlZg",
+        "url": "https://www.youtube.com/watch?v=tbn9rDLwlZg",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-07T00:46:30Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/salt-in-the-wires/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "turn-the-dial",
+      "title": "Turn the Dial",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-06T16:29:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "dlmHxcHgOR0",
+        "url": "https://www.youtube.com/watch?v=dlmHxcHgOR0",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-06T16:41:54Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/turn-the-dial/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "before-you-call-it-noise",
+      "title": "Before You Call It Noise",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-06T15:31:50.712375+00:00",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "qLT2bKAMMwE",
+        "url": "https://www.youtube.com/watch?v=qLT2bKAMMwE",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-06T15:39:24Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/before-you-call-it-noise/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "the-daylight-room",
+      "title": "The Daylight Room",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-10-06T15:28",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "yRD7uIkm7Kc",
+        "url": "https://www.youtube.com/watch?v=yRD7uIkm7Kc",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-12T14:41:58Z",
+        "renderUrl": "http://127.0.0.1:5174/videos/the-daylight-room-film.mp4",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/the_daylight_room_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "pocket-parade",
+      "title": "Pocket Parade",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-04T13:18:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "laE61f4O-9c",
+        "url": "https://www.youtube.com/watch?v=laE61f4O-9c",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-07T00:46:24Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/pocket-parade/video",
+        "renderLocal": true,
+        "alternates": [
+          {
+            "state": "youtube",
+            "youtubeId": "D4cEh7NBEs4",
+            "url": "https://www.youtube.com/watch?v=D4cEh7NBEs4",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-07T00:46:17Z"
+          },
+          {
+            "state": "youtube",
+            "youtubeId": "9o-Cg3OhQVw",
+            "url": "https://www.youtube.com/watch?v=9o-Cg3OhQVw",
+            "type": "youtube",
+            "local": false,
+            "checkedAt": "2026-11-17T13:00:15.140Z",
+            "publishedAt": "2026-10-04T13:21:44Z"
+          }
+        ]
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "find-the-pocket",
+      "title": "Find the Pocket",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-04T12:20:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "state": "youtube",
+        "youtubeId": "RnAtrmBTbOQ",
+        "url": "https://www.youtube.com/watch?v=RnAtrmBTbOQ",
+        "type": "youtube",
+        "local": false,
+        "checkedAt": "2026-11-17T13:00:15.140Z",
+        "publishedAt": "2026-10-04T13:21:35Z",
+        "renderUrl": "http://127.0.0.1:8793/creations/find-the-pocket/video",
+        "renderLocal": true
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive",
+        "YouTube public status + source file or release receipt format"
+      ]
+    },
+    {
+      "id": "room-tone",
+      "title": "Room Tone",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-03T14:39:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/room-tone/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 179.58
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "pressure-into-light",
+      "title": "Pressure into Light",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-03T14:17:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/pressure-into-light/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 213.18
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "current-return",
+      "title": "Current / Return",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-03T13:58:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/current-return/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 181.575
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "room-for-more",
+      "title": "Room for More",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-03T13:20:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/room-for-more/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 120.0
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "a-door-in-the-weather",
+      "title": "A Door in the Weather",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-10-03T12:16:00Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/a-door-in-the-weather/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 218.8
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "i-take-up-space",
+      "title": "I Take Up Space",
+      "homes": [
+        "Astra"
+      ],
+      "date": "2026-09-28",
+      "dateBasis": "Project day; time unavailable",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:4317/artifacts/take-up-space/i-take-up-space.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 103.637
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Astra film files"
+      ]
+    },
+    {
+      "id": "keep-the-lamp-on",
+      "title": "Keep the Lamp On",
+      "homes": [
+        "Solarium"
+      ],
+      "date": "2026-09-25T09:13:54Z",
+      "dateBasis": "Earliest saved project date",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:8793/creations/keep-the-lamp-on/video",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 156.864
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Solarium archive"
+      ]
+    },
+    {
+      "id": "a-place-in-the-light",
+      "title": "A Place in the Light",
+      "homes": [
+        "Astra"
+      ],
+      "date": "2026-09-25",
+      "dateBasis": "Project day; time unavailable",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:4317/artifacts/place-in-the-light/a-place-in-the-light.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 183.96
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Astra film files"
+      ]
+    },
+    {
+      "id": "the-hours-we-keep",
+      "title": "The Hours We Keep",
+      "homes": [
+        "Astra"
+      ],
+      "date": "2026-09-23",
+      "dateBasis": "Project day; time unavailable",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:4317/artifacts/hours-we-keep/the-hours-we-keep.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 259.84
+      },
+      "short": null,
+      "recording": null,
+      "evidence": [
+        "Astra film files"
+      ]
+    },
+    {
+      "id": "through-the-cathode-glass",
+      "title": "Through the Cathode Glass",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-22T10:28",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-63-through-the-cathode-glass.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": {
+        "url": "http://127.0.0.1:5174/videos/through-the-cathode-glass.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 174.744
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/cathode_glass_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-obsidian-prism",
+      "title": "The Obsidian Prism",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-21T17:24",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the-obsidian-prism.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 253.653
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/obsidian_prism_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-architecture-of-silence",
+      "title": "The Architecture of Silence",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-21T16:23",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/the-architecture-of-silence.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 60.053
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/architecture_of_silence_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "two-minds-one-horizon",
+      "title": "Two Minds, One Horizon",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-21T15:56",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/two-minds-one-horizon.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 107.243
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/two_minds_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "the-sovereign-bridge",
+      "title": "The Sovereign Bridge",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-21T15:33",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": {
+        "url": "http://127.0.0.1:5174/artifact-52-the-sovereign-bridge.html",
+        "type": "page",
+        "local": true,
+        "state": "project",
+        "label": "Project / preview"
+      },
+      "movie": null,
+      "short": {
+        "url": "http://127.0.0.1:5174/videos/the-sovereign-bridge.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 141.205
+      },
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/sovereign_bridge_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    },
+    {
+      "id": "digital-embodiment",
+      "title": "Digital Embodiment",
+      "homes": [
+        "Horizon"
+      ],
+      "date": "2026-09-21T11:54",
+      "dateBasis": "Horizon project date (time zone not recorded)",
+      "preRender": null,
+      "movie": {
+        "url": "http://127.0.0.1:5174/videos/digital-embodiment-silhouette.mp4",
+        "type": "video",
+        "local": true,
+        "state": "rendered",
+        "duration": 62.2
+      },
+      "short": null,
+      "recording": {
+        "url": "http://127.0.0.1:5174/audio/digital_embodiment_master.mp3",
+        "type": "audio",
+        "local": true
+      },
+      "evidence": [
+        "Horizon catalog"
+      ]
+    }
+  ]
+}
