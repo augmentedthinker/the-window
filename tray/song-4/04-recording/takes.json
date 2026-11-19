@@ -1,0 +1,23 @@
+{
+  "song": "Misregistered",
+  "takes": [
+    {
+      "take": "A",
+      "clipId": "12420be2-0a61-4f41-b23f-e70b5ebdacc9",
+      "duration": 182.32,
+      "mp3": "take-A.mp3",
+      "wav": "take-A.wav",
+      "json": "take-A.json",
+      "imageUrl": "https://cdn2.suno.ai/image_large_12420be2-0a61-4f41-b23f-e70b5ebdacc9.jpeg"
+    },
+    {
+      "take": "B",
+      "clipId": "a9c4d47c-e6c8-4216-8965-09a6f97ff8a8",
+      "duration": 182.80,
+      "mp3": "take-B.mp3",
+      "wav": "take-B.wav",
+      "json": "take-B.json",
+      "imageUrl": "https://cdn2.suno.ai/image_large_a9c4d47c-e6c8-4216-8965-09a6f97ff8a8.jpeg"
+    }
+  ]
+}

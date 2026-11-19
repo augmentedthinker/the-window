@@ -1,0 +1,1143 @@
+{
+ "title": "Misregistered",
+ "bpm": 133.0,
+ "t0": 0.27,
+ "bar": 1.8045112781954886,
+ "duration": 182.33,
+ "shots": [
+  {
+   "n": 1,
+   "section": "Intro",
+   "kind": "plate",
+   "source": "P01",
+   "start": 0.0,
+   "end": 5.684,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "First light in the print studio. Cream paper waiting."
+  },
+  {
+   "n": 2,
+   "section": "Intro",
+   "kind": "plate",
+   "source": "P03",
+   "start": 5.684,
+   "end": 9.293,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    }
+   },
+   "note": "A kalimba resting on a rejected proof."
+  },
+  {
+   "n": 3,
+   "section": "Intro",
+   "kind": "viz",
+   "source": "R2",
+   "start": 9.293,
+   "end": 12.902,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "Registration marks: two copies of one target, looking for each other."
+  },
+  {
+   "n": 4,
+   "section": "Intro",
+   "kind": "plate",
+   "source": "P02",
+   "start": 12.902,
+   "end": 16.511,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   },
+   "note": "The two drums, pink and blue, side by side."
+  },
+  {
+   "n": 5,
+   "section": "Verse 1",
+   "kind": "plate",
+   "source": "P04",
+   "start": 16.511,
+   "end": 20.12,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"You print in blue\""
+  },
+  {
+   "n": 6,
+   "section": "Verse 1",
+   "kind": "plate",
+   "source": "P05",
+   "start": 20.12,
+   "end": 23.729,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    }
+   },
+   "note": "\"I print in red\""
+  },
+  {
+   "n": 7,
+   "section": "Verse 1",
+   "kind": "plate",
+   "source": "P06",
+   "start": 23.729,
+   "end": 29.142,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Half a breath late, half an inch wide. Our colours never quite collide.\""
+  },
+  {
+   "n": 8,
+   "section": "Pre-chorus",
+   "kind": "plate",
+   "source": "P07",
+   "start": 29.142,
+   "end": 34.556,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    }
+   },
+   "note": "\"Hold it up to the window light\""
+  },
+  {
+   "n": 9,
+   "section": "Pre-chorus",
+   "kind": "viz",
+   "source": "R1",
+   "start": 34.556,
+   "end": 38.165,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Neither of us got it right\": two dot screens, a little off."
+  },
+  {
+   "n": 10,
+   "section": "Chorus 1",
+   "kind": "split",
+   "source": "P11",
+   "start": 38.165,
+   "end": 41.774,
+   "camera": {
+    "from": {
+     "z": 1.04,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"But where we miss, a third colour grows\": the image comes apart into its two inks."
+  },
+  {
+   "n": 11,
+   "section": "Chorus 1",
+   "kind": "plate",
+   "source": "P10",
+   "start": 41.774,
+   "end": 45.383,
+   "camera": {
+    "from": {
+     "z": 1.3,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.4,
+     "x": 0.52,
+     "y": 0.48
+    }
+   },
+   "note": "\"Violet in the overlap that nobody chose.\""
+  },
+  {
+   "n": 12,
+   "section": "Chorus 1",
+   "kind": "viz",
+   "source": "R2",
+   "start": 45.383,
+   "end": 48.992,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Off by a hair, and I like it that way.\""
+  },
+  {
+   "n": 13,
+   "section": "Chorus 1",
+   "kind": "split",
+   "source": "P06",
+   "start": 48.992,
+   "end": 52.601,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Misregistered, we stay.\""
+  },
+  {
+   "n": 14,
+   "section": "Drop 1",
+   "kind": "viz",
+   "source": "R3",
+   "start": 52.601,
+   "end": 54.405,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The bassline: the drum rolls."
+  },
+  {
+   "n": 15,
+   "section": "Drop 1",
+   "kind": "plate",
+   "source": "P12",
+   "start": 54.405,
+   "end": 58.014,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    }
+   },
+   "note": "The drying rack, held long enough to read (Antigravity's note)."
+  },
+  {
+   "n": 16,
+   "section": "Drop 1",
+   "kind": "viz",
+   "source": "R1",
+   "start": 58.014,
+   "end": 59.819,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 17,
+   "section": "Drop 1",
+   "kind": "split",
+   "source": "P05",
+   "start": 59.819,
+   "end": 61.623,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The pink pass, pulled apart."
+  },
+  {
+   "n": 18,
+   "section": "Drop 1",
+   "kind": "viz",
+   "source": "R3",
+   "start": 61.623,
+   "end": 63.428,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 19,
+   "section": "Drop 1",
+   "kind": "split",
+   "source": "P02",
+   "start": 63.428,
+   "end": 65.232,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The drums, apart."
+  },
+  {
+   "n": 20,
+   "section": "Drop 1",
+   "kind": "viz",
+   "source": "R2",
+   "start": 65.232,
+   "end": 67.037,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"We stay.\""
+  },
+  {
+   "n": 21,
+   "section": "Verse 2",
+   "kind": "plate",
+   "source": "P08",
+   "start": 67.037,
+   "end": 70.646,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Coffee rings on the proof we drew\""
+  },
+  {
+   "n": 22,
+   "section": "Verse 2",
+   "kind": "plate",
+   "source": "P09",
+   "start": 70.646,
+   "end": 76.059,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   },
+   "note": "\"The edges ghost where I followed you.\""
+  },
+  {
+   "n": 23,
+   "section": "Verse 2",
+   "kind": "plate",
+   "source": "P10",
+   "start": 76.059,
+   "end": 79.668,
+   "camera": {
+    "from": {
+     "z": 1.3,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.4,
+     "x": 0.52,
+     "y": 0.48
+    }
+   },
+   "note": "\"You lean left and I lean late, two plates turning through one day.\""
+  },
+  {
+   "n": 24,
+   "section": "Pre-chorus 2",
+   "kind": "plate",
+   "source": "P07",
+   "start": 79.668,
+   "end": 83.278,
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Hold it up to the window light.\""
+  },
+  {
+   "n": 25,
+   "section": "Pre-chorus 2",
+   "kind": "viz",
+   "source": "R1",
+   "start": 83.278,
+   "end": 85.082,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Neither of us got it right\" (Antigravity's note)."
+  },
+  {
+   "n": 26,
+   "section": "Chorus 2",
+   "kind": "split",
+   "source": "P11",
+   "start": 85.082,
+   "end": 88.691,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"But where we miss, a third colour grows.\""
+  },
+  {
+   "n": 27,
+   "section": "Chorus 2",
+   "kind": "viz",
+   "source": "R1",
+   "start": 88.691,
+   "end": 92.3,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Violet in the overlap.\""
+  },
+  {
+   "n": 28,
+   "section": "Chorus 2",
+   "kind": "plate",
+   "source": "P05",
+   "start": 92.3,
+   "end": 95.909,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    }
+   },
+   "note": "\"Off by a hair.\""
+  },
+  {
+   "n": 29,
+   "section": "Chorus 2",
+   "kind": "split",
+   "source": "P10",
+   "start": 95.909,
+   "end": 101.323,
+   "camera": {
+    "from": {
+     "z": 1.04,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Misregistered, we stay.\""
+  },
+  {
+   "n": 30,
+   "section": "Bridge",
+   "kind": "plate",
+   "source": "P06",
+   "start": 101.323,
+   "end": 106.736,
+   "camera": {
+    "from": {
+     "z": 1.3,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.4,
+     "x": 0.52,
+     "y": 0.48
+    }
+   },
+   "note": "\"If we lined up perfect we'd be one flat shade.\""
+  },
+  {
+   "n": 31,
+   "section": "Bridge",
+   "kind": "viz",
+   "source": "R2",
+   "start": 106.736,
+   "end": 110.345,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The copies almost meet."
+  },
+  {
+   "n": 32,
+   "section": "Bridge",
+   "kind": "plate",
+   "source": "P03",
+   "start": 110.345,
+   "end": 113.954,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"I'd rather keep the halo the mistake made.\""
+  },
+  {
+   "n": 33,
+   "section": "Break",
+   "kind": "plate",
+   "source": "P01",
+   "start": 113.954,
+   "end": 117.563,
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "A breath in the empty studio before the drop."
+  },
+  {
+   "n": 34,
+   "section": "Drop 2",
+   "kind": "viz",
+   "source": "R3",
+   "start": 117.563,
+   "end": 119.368,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"We stay\""
+  },
+  {
+   "n": 35,
+   "section": "Drop 2",
+   "kind": "plate",
+   "source": "P12",
+   "start": 119.368,
+   "end": 121.172,
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.5,
+     "y": 0.6
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 36,
+   "section": "Drop 2",
+   "kind": "split",
+   "source": "P02",
+   "start": 121.172,
+   "end": 122.977,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 37,
+   "section": "Drop 2",
+   "kind": "viz",
+   "source": "R1",
+   "start": 122.977,
+   "end": 124.781,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 38,
+   "section": "Drop 2",
+   "kind": "split",
+   "source": "P04",
+   "start": 124.781,
+   "end": 126.586,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 39,
+   "section": "Drop 2",
+   "kind": "viz",
+   "source": "R2",
+   "start": 126.586,
+   "end": 128.39,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 40,
+   "section": "Drop 2",
+   "kind": "split",
+   "source": "P12",
+   "start": 128.39,
+   "end": 130.195,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 41,
+   "section": "Drop 2",
+   "kind": "viz",
+   "source": "R3",
+   "start": 130.195,
+   "end": 131.999,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 42,
+   "section": "Final chorus",
+   "kind": "plate",
+   "source": "P09",
+   "start": 131.999,
+   "end": 137.413,
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Where we miss, a third colour grows.\""
+  },
+  {
+   "n": 43,
+   "section": "Final chorus",
+   "kind": "viz",
+   "source": "R2",
+   "start": 137.413,
+   "end": 139.217,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The pickup."
+  },
+  {
+   "n": 44,
+   "section": "Final chorus",
+   "kind": "plate",
+   "source": "P11",
+   "start": 139.217,
+   "end": 142.826,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Off by a hair, and I like it that way.\" At last in register: the two makers rest together in violet (Antigravity's note)."
+  },
+  {
+   "n": 45,
+   "section": "Final chorus",
+   "kind": "split",
+   "source": "P07",
+   "start": 142.826,
+   "end": 146.435,
+   "camera": {
+    "from": {
+     "z": 1.04,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "\"Misregistered, we stay.\" The proof against the light, both inks breathing."
+  },
+  {
+   "n": 46,
+   "section": "Finale",
+   "kind": "viz",
+   "source": "R3",
+   "start": 146.435,
+   "end": 150.044,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The last drop: the whole song printing."
+  },
+  {
+   "n": 47,
+   "section": "Finale",
+   "kind": "split",
+   "source": "P12",
+   "start": 150.044,
+   "end": 153.653,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "Twenty proofs, every one off-register."
+  },
+  {
+   "n": 48,
+   "section": "Finale",
+   "kind": "viz",
+   "source": "R1",
+   "start": 153.653,
+   "end": 157.262,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 49,
+   "section": "Finale",
+   "kind": "split",
+   "source": "P05",
+   "start": 157.262,
+   "end": 160.872,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 50,
+   "section": "Finale",
+   "kind": "split",
+   "source": "P09",
+   "start": 160.872,
+   "end": 164.481,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 51,
+   "section": "Finale",
+   "kind": "viz",
+   "source": "R2",
+   "start": 164.481,
+   "end": 168.09,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 52,
+   "section": "Finale",
+   "kind": "split",
+   "source": "P06",
+   "start": 168.09,
+   "end": 171.699,
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 53,
+   "section": "Finale",
+   "kind": "viz",
+   "source": "R3",
+   "start": 171.699,
+   "end": 175.308,
+   "camera": {
+    "from": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": ""
+  },
+  {
+   "n": 54,
+   "section": "Outro",
+   "kind": "plate",
+   "source": "P01",
+   "start": 175.308,
+   "end": 182.33,
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "Back to the empty studio, where it started; the kalimba alone."
+  }
+ ]
+}

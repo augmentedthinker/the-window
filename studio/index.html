@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15121c">
+  <title>Cut Room · The Window</title>
+  <link rel="icon" href="../icon-192.png">
+  <link rel="stylesheet" href="studio.css">
+  <script defer src="vendor/jszip.min.js"></script>
+  <script type="module" src="studio.js"></script>
+</head>
+<body>
+  <header class="bar">
+    <div class="identity"><a href="../">The Window</a><span aria-hidden="true">/</span><strong>Cut Room</strong></div>
+    <div class="actions">
+      <button type="button" id="new">New</button>
+      <button type="button" id="open" aria-haspopup="dialog">Open project</button>
+      <button type="button" id="import">Import file</button>
+      <button type="button" id="save" class="primary">Save package</button>
+      <button type="button" id="share">Share project</button>
+      <input id="project-file" type="file" accept=".zip,.json" hidden>
+    </div>
+  </header>
+  <main>
+    <div class="heading">
+      <div>
+        <label class="sr" for="title">Project title</label>
+        <input id="title" class="title" maxlength="100" value="The Missing Beat">
+        <p id="summary">Loading project…</p>
+      </div>
+      <p id="status" role="status"></p>
+      <a id="shared-link" hidden>Open shared revision</a>
+    </div>
+    <div id="desk" class="desk">
+      <div id="workspace" class="workspace">
+        <aside id="media-panel" class="sidebar" aria-labelledby="media-title">
+          <h2 id="media-title">Media</h2>
+          <div class="scene-actions">
+            <button id="add-media" type="button">Add files</button>
+            <button id="add-folder" type="button">Add folder</button>
+            <input id="media-files" type="file" multiple accept="image/*,video/*,audio/*" hidden>
+            <input id="media-folder" type="file" webkitdirectory multiple hidden>
+          </div>
+          <label>Soundtrack <select id="audio-source"></select></label>
+          <ul id="media"></ul>
+        </aside>
+        <div id="media-divider" class="splitter" role="separator" tabindex="0"
+             aria-orientation="vertical" aria-label="Resize media tray" aria-controls="media-panel"></div>
+        <section class="monitor" aria-label="Preview">
+          <div id="stage" class="stage">
+            <canvas id="picture" width="960" height="540" aria-label="Video composition preview"></canvas>
+            <video id="clip" muted playsinline hidden></video>
+          </div>
+          <div class="transport">
+            <button type="button" id="play" class="primary">Play</button>
+            <span id="clock">0:00.00</span>
+            <input id="seek" type="range" min="0" max="0" step=".01" value="0" aria-label="Preview time">
+            <button type="button" id="fullscreen" aria-label="Fullscreen preview">Full screen</button>
+          </div>
+          <audio id="soundtrack" preload="metadata"></audio>
+        </section>
+      </div>
+      <div id="timeline-divider" class="splitter" role="separator" tabindex="0"
+           aria-orientation="horizontal" aria-label="Resize timeline" aria-controls="timeline-panel"></div>
+      <section id="timeline-panel" class="edit" aria-labelledby="sequence-title">
+        <div class="edit-header">
+          <div class="edit-title"><h2 id="sequence-title">Timeline</h2><span id="total"></span></div>
+          <div class="timeline-actions">
+            <label class="zoom">Zoom <input id="zoom" type="range" min="4" max="80" value="22" aria-label="Timeline zoom"></label>
+            <button id="inspect-toggle" type="button" aria-controls="inspect" aria-expanded="false" disabled>Scene settings</button>
+            <button id="add-scene" type="button">Add scene</button>
+          </div>
+        </div>
+        <div class="edit-body">
+          <div class="tracks">
+            <div class="legend"><span data-kind="Story">Story</span><span data-kind="Environmental">Environmental</span><span data-kind="Abstract">Abstract</span></div>
+            <div id="cues" class="cue-list" aria-label="Musical cues" hidden></div>
+            <div id="timeline-scroll" class="timeline-scroll">
+              <div id="timeline"><div id="ruler"></div><div id="track"></div><div id="wave" aria-hidden="true"></div><div id="cursor" aria-hidden="true"></div></div>
+            </div>
+          </div>
+          <section id="inspect" aria-labelledby="inspector-title" hidden>
+            <h2 id="inspector-title">Scene</h2>
+            <fieldset id="fields" disabled>
+              <label>Name <input id="scene-name" maxlength="90"></label>
+              <div class="pair">
+                <label>Length (s) <input id="duration" type="number" min=".1" max="3600" step="any"></label>
+                <label>Type <select id="kind"><option>Story</option><option>Environmental</option><option>Abstract</option></select></label>
+              </div>
+              <label id="asset-label">Source <select id="asset"></select></label>
+              <label id="motion-label">Camera <select id="motion"><option value="still">Still</option><option value="in">Push in</option><option value="out">Pull back</option><option value="left">Pan left</option><option value="right">Pan right</option></select></label>
+              <label id="effect-label">Visualizer <select id="effect"></select></label>
+              <details id="instrument-panel" hidden>
+                <summary>Instrument placement</summary>
+                <div class="pair">
+                  <label>Center X <input data-axis="0" type="number" min="0" max="1" step="any"></label>
+                  <label>Center Y <input data-axis="1" type="number" min="0" max="1" step="any"></label>
+                  <label>Horizontal radius <input data-axis="2" type="number" min=".001" max="1" step="any"></label>
+                  <label>Vertical radius <input data-axis="3" type="number" min=".001" max="1" step="any"></label>
+                </div>
+              </details>
+              <label id="clip-label" hidden>Video offset (s) <input id="source-start" type="number" min="0" max="3600" step=".01"></label>
+              <div class="pair">
+                <label>Fade in (s) <input id="fade-in" type="number" min="0" step="any"></label>
+                <label>Fade out (s) <input id="fade-out" type="number" min="0" step="any"></label>
+              </div>
+              <p id="scene-note"></p>
+              <div class="scene-actions">
+                <button id="earlier" type="button">Move earlier</button>
+                <button id="later" type="button">Move later</button>
+                <button id="delete" type="button">Remove</button>
+              </div>
+            </fieldset>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+  <dialog id="project-library" aria-labelledby="project-library-title">
+    <div class="library-heading">
+      <h2 id="project-library-title">Open project</h2>
+      <form method="dialog"><button type="submit" aria-label="Close project library">Close</button></form>
+    </div>
+    <p id="project-library-status" role="status"></p>
+    <ul id="project-library-list"></ul>
+  </dialog>
+</body>
+</html>

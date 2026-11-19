@@ -1,8 +1,124 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T13:15:32.291337+00:00",
+  "updatedAt": "2026-11-19T14:02:20.716642+00:00",
   "youtubeCheckedAt": "2026-11-17T13:00:15.140Z",
   "songs": [
+    {
+      "id": "the-missing-beat",
+      "title": "The Missing Beat",
+      "homes": [
+        "Tidemark"
+      ],
+      "date": "2026-11-18T20:27:02-05:00",
+      "dateBasis": "File timestamp of the original Tidemark instrumental score",
+      "preRender": {
+        "state": "ready",
+        "type": "page",
+        "url": "http://127.0.0.1:8860/studio/?project=the-missing-beat-suno",
+        "local": true,
+        "label": "Pre-render \u00b7 Suno Take B"
+      },
+      "movie": null,
+      "short": null,
+      "takes": {
+        "A": {
+          "state": "saved",
+          "type": "audio",
+          "url": "http://127.0.0.1:8860/api/recordings/the-missing-beat-A",
+          "local": true,
+          "duration": 197.853,
+          "sourceLabel": "A",
+          "verifiedAt": "2026-11-19T14:02:20.716642+00:00",
+          "used": false
+        },
+        "B": {
+          "state": "saved",
+          "type": "audio",
+          "url": "http://127.0.0.1:8860/api/recordings/the-missing-beat-B",
+          "local": true,
+          "duration": 186.413,
+          "sourceLabel": "B",
+          "verifiedAt": "2026-11-19T14:02:20.716642+00:00",
+          "used": true
+        }
+      },
+      "evidence": [
+        {
+          "source": "studio/projects/the-missing-beat/field-notes.md",
+          "note": "Original Tidemark instrumental cut and Suno audition."
+        },
+        {
+          "source": "studio/projects/the-missing-beat-suno/project.json",
+          "note": "Editable widescreen pre-render set to Send It Back, Suno Take B."
+        }
+      ],
+      "takeUsageEvidence": [
+        {
+          "take": "B",
+          "source": "Suno Take B listening copy matches the saved Cut Room project's soundtrack byte for byte."
+        }
+      ]
+    },
+    {
+      "id": "light-left-on",
+      "title": "Light Left On",
+      "homes": [
+        "The Window",
+        "The Coast",
+        "Solarium",
+        "Horizon"
+      ],
+      "date": "2026-11-17T17:02:20.701Z",
+      "dateBasis": "Acknowledged original Suno generation timestamp",
+      "preRender": {
+        "state": "ready",
+        "type": "page",
+        "url": "../tray/projects/light-left-on-2026-11-17/assets/review.html",
+        "local": true,
+        "label": "Pre-render \u00b7 Movie + Short"
+      },
+      "movie": null,
+      "short": null,
+      "recording": {
+        "type": "audio",
+        "url": "../tray/projects/light-left-on-2026-11-17/assets/audio/light-left-on-a-listen.mp4",
+        "local": true
+      },
+      "takes": {
+        "A": {
+          "state": "saved",
+          "type": "audio",
+          "url": "../tray/projects/light-left-on-2026-11-17/assets/audio/light-left-on-a-listen.mp4",
+          "local": true,
+          "duration": 179.9893333333,
+          "sourceLabel": "A",
+          "verifiedAt": "2026-11-17T17:32:00.446596+00:00",
+          "used": true
+        },
+        "B": {
+          "state": "saved",
+          "type": "audio",
+          "url": "../tray/projects/light-left-on-2026-11-17/assets/audio/light-left-on-b-listen.mp4",
+          "local": true,
+          "duration": 179.904,
+          "sourceLabel": "B",
+          "verifiedAt": "2026-11-17T17:32:00.446596+00:00",
+          "used": false
+        }
+      },
+      "evidence": [
+        {
+          "source": "tray/projects/light-left-on-2026-11-17/assets/13-verification.json",
+          "note": "Both compositions verified in shared pre-render review; final MP4s unrendered."
+        }
+      ],
+      "takeUsageEvidence": [
+        {
+          "take": "A",
+          "source": "shared review-project.json full film and source135.8\u2013172.5Short"
+        }
+      ]
+    },
     {
       "id": "unwritten-weather",
       "title": "Unwritten Weather",
@@ -17,7 +133,7 @@
         "local": true,
         "state": "ready",
         "label": "Pre-render",
-        "project": "Unwritten Weather · portrait"
+        "project": "Unwritten Weather \u00b7 portrait"
       },
       "movie": null,
       "short": null,
@@ -182,7 +298,7 @@
         "local": true,
         "state": "ready",
         "label": "Pre-render",
-        "project": "Pro, With an Asterisk · first editor study"
+        "project": "Pro, With an Asterisk \u00b7 first editor study"
       },
       "movie": null,
       "short": null,
@@ -203,7 +319,7 @@
         "local": true,
         "state": "ready",
         "label": "Pre-render",
-        "project": "The Fire We Keep · iteration 5 · Shorts"
+        "project": "The Fire We Keep \u00b7 iteration 5 \u00b7 Shorts"
       },
       "movie": {
         "state": "youtube",
@@ -1156,7 +1272,7 @@
     },
     {
       "id": "leave-my-mark",
-      "title": "Leave My Mark · Quiet Defiance",
+      "title": "Leave My Mark \u00b7 Quiet Defiance",
       "homes": [
         "Solarium"
       ],
@@ -1243,7 +1359,7 @@
     },
     {
       "id": "on-my-knees-again",
-      "title": "On My Knees Again · Light Through the Glass",
+      "title": "On My Knees Again \u00b7 Light Through the Glass",
       "homes": [
         "Solarium",
         "Horizon"
@@ -1360,7 +1476,7 @@
     },
     {
       "id": "if-you-hear-me",
-      "title": "If You Hear Me · The Last Floor",
+      "title": "If You Hear Me \u00b7 The Last Floor",
       "homes": [
         "Solarium"
       ],
@@ -1461,7 +1577,7 @@
     },
     {
       "id": "the-last-floor-early-song-study",
-      "title": "The Last Floor · Song studies",
+      "title": "The Last Floor \u00b7 Song studies",
       "homes": [
         "Solarium",
         "Horizon"
@@ -1927,7 +2043,7 @@
     },
     {
       "id": "come-find-out",
-      "title": "Come Find Out · Spoken mix",
+      "title": "Come Find Out \u00b7 Spoken mix",
       "homes": [
         "Solarium"
       ],
@@ -1990,7 +2106,7 @@
     },
     {
       "id": "keep-the-color-take-a",
-      "title": "Keep the Color · Take A",
+      "title": "Keep the Color \u00b7 Take A",
       "homes": [
         "Solarium"
       ],
@@ -2996,7 +3112,7 @@
     },
     {
       "id": "lost-property-vocal",
-      "title": "Lost Property · Vocal",
+      "title": "Lost Property \u00b7 Vocal",
       "homes": [
         "Solarium",
         "Horizon"
@@ -3029,7 +3145,7 @@
     },
     {
       "id": "lost-property-instrumental",
-      "title": "Lost Property · Instrumental",
+      "title": "Lost Property \u00b7 Instrumental",
       "homes": [
         "Solarium"
       ],

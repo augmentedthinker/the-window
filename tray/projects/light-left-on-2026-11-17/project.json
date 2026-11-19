@@ -1,0 +1,1069 @@
+{
+  "id": "light-left-on-2026-11-17",
+  "title": "Light Left On",
+  "revision": 45,
+  "state": "done",
+  "date": "2026-11-17",
+  "summary": "Complete pre-render review ready: full widescreen film and portrait Short, integrated motion, both recordings and portable editable source package. Final movie exports and publication remain unperformed.",
+  "tasks": [
+    {
+      "id": "01",
+      "title": "Musical directions",
+      "owner": "Claude",
+      "dependsOn": [],
+      "estimate": "12:00 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:00:07.678174Z",
+      "doneAt": "2026-11-17T17:00:25.641212Z",
+      "receipt": "receipts/01.md",
+      "assets": [
+        "assets/01-musical-directions.md"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/01-musical-directions.md",
+          "bytes": 2647,
+          "sha256": "7da1cd6090fa98273d4ae749cd0a7ac59a89a58d682da2a4bb4abd60c10db14a"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/01.md",
+        "bytes": 601,
+        "sha256": "61fa205126d0877c0193a1932543b563b199ad8ed84e7f7a86de8150717b2e7a"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Lyrics and story seed",
+      "owner": "Claude",
+      "dependsOn": [
+        "01"
+      ],
+      "estimate": "12:15 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:00:25.757398Z",
+      "doneAt": "2026-11-17T17:00:51.372293Z",
+      "receipt": "receipts/02.md",
+      "assets": [
+        "assets/02-lyrics-and-story.md"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/02-lyrics-and-story.md",
+          "bytes": 3710,
+          "sha256": "76ad63c317731e32374c582573eb5c9f71fc47cd7f47d112f8c5d3144615295a"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/02.md",
+        "bytes": 492,
+        "sha256": "8ba0e1dd6a7506cf2631a1d4242dc13fd7e942cc293a243841c1e9821fef4887"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Musical brief",
+      "owner": "Sunny",
+      "dependsOn": [
+        "02"
+      ],
+      "estimate": "12:30 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:01:41.893823Z",
+      "doneAt": "2026-11-17T17:01:42.017575Z",
+      "receipt": "receipts/03.md",
+      "assets": [
+        "assets/03-musical-brief.md",
+        "assets/03-lyrics.txt"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/03-musical-brief.md",
+          "bytes": 1187,
+          "sha256": "52d9a5061b28e2614af6c5c65ed61a37b1263685a2838be0dfa45b662002b175"
+        },
+        {
+          "path": "assets/03-lyrics.txt",
+          "bytes": 1400,
+          "sha256": "3ae1fd79259127872c11c58cc70cf1cf75ce941662110d9a8b0b0f6d1c0f82cf"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/03.md",
+        "bytes": 308,
+        "sha256": "a9b2bffcc730e787d43c546f68b44646645de0286a5efb26141a08d2e965c66a"
+      }
+    },
+    {
+      "id": "04",
+      "title": "Two complete takes",
+      "owner": "Sunny",
+      "dependsOn": [
+        "03"
+      ],
+      "estimate": "12:45 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:01:42.187023Z",
+      "doneAt": "2026-11-17T17:06:01.236181Z",
+      "receipt": "receipts/04.md",
+      "assets": [
+        "assets/audio/light-left-on-a.m4a",
+        "assets/audio/light-left-on-a-listen.mp4",
+        "assets/audio/light-left-on-b.m4a",
+        "assets/audio/light-left-on-b-listen.mp4",
+        "assets/audio.html",
+        "assets/04-audio-verification.json",
+        "assets/04-created.json",
+        "assets/04-completion.json",
+        "assets/04-submitted-fields.json",
+        "assets/04-style.txt",
+        "assets/04-lyrics.txt"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/audio/light-left-on-a.m4a",
+          "bytes": 3193979,
+          "sha256": "141999c0b5fd4f9ba3a8a49809735ee9ab2a30c2e6cd8eef53f02e12d3d5a0bb"
+        },
+        {
+          "path": "assets/audio/light-left-on-a-listen.mp4",
+          "bytes": 4384095,
+          "sha256": "c64a5bc3291512f47b2f538a515070211d7d43f001fc3bc001083a144d50e9ff"
+        },
+        {
+          "path": "assets/audio/light-left-on-b.m4a",
+          "bytes": 3127850,
+          "sha256": "3490f79c8bac00509ad051dab47ccd52b7f63c4b2214a171ec4d065a33112084"
+        },
+        {
+          "path": "assets/audio/light-left-on-b-listen.mp4",
+          "bytes": 4373443,
+          "sha256": "7ae9c1b587c90022fc9354e808ec779502034b66bba910958bed514f2423d291"
+        },
+        {
+          "path": "assets/audio.html",
+          "bytes": 838,
+          "sha256": "a6ff4e004ea57e37de889584e88c1d2666239207b0e100eaca47e922bb352ad7"
+        },
+        {
+          "path": "assets/04-audio-verification.json",
+          "bytes": 773,
+          "sha256": "f4384b41a995b2552694770a1ff2170a584404bbe10adb37b0406f4786b259a9"
+        },
+        {
+          "path": "assets/04-created.json",
+          "bytes": 263,
+          "sha256": "837e1e2adcfedd159ac77c2b92a74d242e2c13c8941b22d2ed86c62fa9d4a9ba"
+        },
+        {
+          "path": "assets/04-completion.json",
+          "bytes": 1307,
+          "sha256": "b7c5cbe2fd45398a717b59e5b591673eb003050a94a615a84acc79c802abe590"
+        },
+        {
+          "path": "assets/04-submitted-fields.json",
+          "bytes": 2502,
+          "sha256": "4d86d33c7c9e8804c24035bfd78949e6ba0471a8680302543adc1df5a554dd4c"
+        },
+        {
+          "path": "assets/04-style.txt",
+          "bytes": 942,
+          "sha256": "affa9320029ae2800a65a0e1bd306094e9ea30df603d5a8354b892bdd16b4ebc"
+        },
+        {
+          "path": "assets/04-lyrics.txt",
+          "bytes": 1400,
+          "sha256": "3ae1fd79259127872c11c58cc70cf1cf75ce941662110d9a8b0b0f6d1c0f82cf"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/04.md",
+        "bytes": 1440,
+        "sha256": "9a6b0ef5ec49685598b45fa172121713bb121b68b06469371469caecae34930d"
+      }
+    },
+    {
+      "id": "05",
+      "title": "Recording-based analysis",
+      "owner": "Claude",
+      "dependsOn": [
+        "04"
+      ],
+      "estimate": "1:00 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:06:09.165058Z",
+      "doneAt": "2026-11-17T17:09:14.096104Z",
+      "receipt": "receipts/05.md",
+      "assets": [
+        "assets/05-analysis.md",
+        "assets/05-cues.json",
+        "assets/05-take-a-transcript-whisper.json",
+        "assets/05-take-b-transcript-whisper.json"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/05-analysis.md",
+          "bytes": 2431,
+          "sha256": "38abd753d829cf6d1be95724efe733b1607c0f4302b76fd8907846f341bbaa80"
+        },
+        {
+          "path": "assets/05-cues.json",
+          "bytes": 2957,
+          "sha256": "10ba9720f768fc1c11477c63f534d7803c1f9742e972703e8deee4b35ab21303"
+        },
+        {
+          "path": "assets/05-take-a-transcript-whisper.json",
+          "bytes": 2338,
+          "sha256": "6364c420c6c15ac8dc06ccd95f7f80aec9bc8a1ddbddb2cae4dcff7f515cfebd"
+        },
+        {
+          "path": "assets/05-take-b-transcript-whisper.json",
+          "bytes": 2016,
+          "sha256": "b5c47040409ef3f1f7bf783eff56e405934b2765ee5a13fe2b612238aa8e2b3c"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/05.md",
+        "bytes": 872,
+        "sha256": "71a8b0ad2a2385db85ff2b065517dca12d82bf717213ab8a3fab5c36d99c8fd1"
+      }
+    },
+    {
+      "id": "06",
+      "title": "Visual world",
+      "owner": "Sunny",
+      "dependsOn": [
+        "05"
+      ],
+      "estimate": "1:15 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:09:36.412748Z",
+      "doneAt": "2026-11-17T17:11:03.002585Z",
+      "receipt": "receipts/06.md",
+      "assets": [
+        "assets/art/01-shore-house.png",
+        "assets/art/crop-check.png",
+        "assets/06-palette.json",
+        "assets/06-concept-prompt.txt",
+        "assets/06-visual-world.md",
+        "assets/06-image-receipt.json"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/art/01-shore-house.png",
+          "bytes": 3133206,
+          "sha256": "a846b0a746ef2e5b468a42add14d71e81351b18998a0ba86c9351ea8ba4f9706"
+        },
+        {
+          "path": "assets/art/crop-check.png",
+          "bytes": 609219,
+          "sha256": "40cb068ff2d90e3500d60ac3d1a0f1c9074a8d81d4868ff09ae996cd76c63e35"
+        },
+        {
+          "path": "assets/06-palette.json",
+          "bytes": 290,
+          "sha256": "c081e5a50161ffe0b5b5324d8265189ccce7c257b8aaf33ed349be9105932806"
+        },
+        {
+          "path": "assets/06-concept-prompt.txt",
+          "bytes": 1129,
+          "sha256": "f9115868b8ba4bb4406063567dbe6a46504861728159dc99d9e59c183147a728"
+        },
+        {
+          "path": "assets/06-visual-world.md",
+          "bytes": 1455,
+          "sha256": "3e72487927f3063ac57a5330ab1a60da5d42edcd11f14d808e46b537b4497ec6"
+        },
+        {
+          "path": "assets/06-image-receipt.json",
+          "bytes": 428,
+          "sha256": "e69ee1512319508f4f7e1cebc11fb4b95aaadb99c3037e668a48cad5e8ce195c"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/06.md",
+        "bytes": 466,
+        "sha256": "c7954cc57bc24782ed4f5afdc99639b622bfbfa0d694a6a1ac1e512c69d2c52b"
+      }
+    },
+    {
+      "id": "07",
+      "title": "Cue-led storyboard",
+      "owner": "Claude",
+      "dependsOn": [
+        "06"
+      ],
+      "estimate": "1:30 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:11:08.400928Z",
+      "doneAt": "2026-11-17T17:11:55.220298Z",
+      "receipt": "receipts/07.md",
+      "assets": [
+        "assets/07-storyboard.md",
+        "assets/07-storyboard.json"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/07-storyboard.md",
+          "bytes": 2517,
+          "sha256": "77f87783731a4ea4321da619a764994786028a3ae60d207f760856416e72c739"
+        },
+        {
+          "path": "assets/07-storyboard.json",
+          "bytes": 5087,
+          "sha256": "3bdcc9eda9f9009dd12768bebd3dcb7f81dbf813c5d3816a8aaee5135657334f"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/07.md",
+        "bytes": 620,
+        "sha256": "3d8e4be62ec4ae51f92662e08ce52c8f856977bfc57f9913742f5ee1f3fff6d2"
+      }
+    },
+    {
+      "id": "08",
+      "title": "Scene artwork",
+      "owner": "Sunny",
+      "dependsOn": [
+        "07"
+      ],
+      "estimate": "1:45 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:12:16.418944Z",
+      "doneAt": "2026-11-17T17:21:27.437325Z",
+      "receipt": "receipts/08.md",
+      "assets": [
+        "assets/art/01-shore-house.png",
+        "assets/art/P02.png",
+        "assets/art/P03.png",
+        "assets/art/P04.png",
+        "assets/art/P05.png",
+        "assets/art/P06.png",
+        "assets/art/P07.png",
+        "assets/art/P08.png",
+        "assets/art/P09.png",
+        "assets/art/P10-v2.png",
+        "assets/art/P11.png",
+        "assets/art/P12.png",
+        "assets/08-plates.json",
+        "assets/08-generation-receipts.json",
+        "assets/08-crops.jpg"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/art/01-shore-house.png",
+          "bytes": 3133206,
+          "sha256": "a846b0a746ef2e5b468a42add14d71e81351b18998a0ba86c9351ea8ba4f9706"
+        },
+        {
+          "path": "assets/art/P02.png",
+          "bytes": 2824487,
+          "sha256": "c32fdfc1ba0f097791c83293289b74e9f692168dd9ed3c8e807ee18d2a904238"
+        },
+        {
+          "path": "assets/art/P03.png",
+          "bytes": 3035651,
+          "sha256": "28ebcac1a7c6a6f5d45d1e47254b3325b62a12f9c18596c2606df83fa9a170c0"
+        },
+        {
+          "path": "assets/art/P04.png",
+          "bytes": 3003021,
+          "sha256": "e55b90c0e5310036aef224ddf5700747d3f5ee8a9a91dea3c06e81182a6af7c6"
+        },
+        {
+          "path": "assets/art/P05.png",
+          "bytes": 2720315,
+          "sha256": "06aa345ede15f4b379789cca76f408205d2c551f16898b141a9f790b446ac452"
+        },
+        {
+          "path": "assets/art/P06.png",
+          "bytes": 2983167,
+          "sha256": "d5ec9c22040299f2e490f9118503a129fb43138946c3b5ad20825ba8b5c950c5"
+        },
+        {
+          "path": "assets/art/P07.png",
+          "bytes": 2993377,
+          "sha256": "4e7721fe0a8ac7226486d37fe6b14a7ab4ddd715fc588d1be32b3e6ecc70c082"
+        },
+        {
+          "path": "assets/art/P08.png",
+          "bytes": 3030741,
+          "sha256": "1eb652228adf3eda0c45abe5dc37adbf29e55317e581e004d260cd35e891cb98"
+        },
+        {
+          "path": "assets/art/P09.png",
+          "bytes": 2855890,
+          "sha256": "73678b948025159024aa24a1acab9ee648e6c74ee4fdc8df9c493a6171be28c5"
+        },
+        {
+          "path": "assets/art/P10-v2.png",
+          "bytes": 3102473,
+          "sha256": "638f5459740ba77da4d69789d41bc75af1742efb59d02aa6917fc23bddf04898"
+        },
+        {
+          "path": "assets/art/P11.png",
+          "bytes": 2570571,
+          "sha256": "7a9fde4d29fb803f9c358eba6ad8fd073f27fca9101088a5769bebc9fbcf3a95"
+        },
+        {
+          "path": "assets/art/P12.png",
+          "bytes": 2796876,
+          "sha256": "e1a0a4142fd8c42926c73e53ee8cc6b031f81b99b9d28a4abd5de807373ba6e7"
+        },
+        {
+          "path": "assets/08-plates.json",
+          "bytes": 2252,
+          "sha256": "6e186871b093178384b023da2b4909b59c609791ff421b20a099d5b24e42e341"
+        },
+        {
+          "path": "assets/08-generation-receipts.json",
+          "bytes": 15509,
+          "sha256": "a0ba06c0d284e8f7c63029122802f4367512076c175cccbc2a5e5bbf199a0e79"
+        },
+        {
+          "path": "assets/08-crops.jpg",
+          "bytes": 285211,
+          "sha256": "24d5805902de9a6b71618f009fde4af3177297ae0c917e9ddb249569cc8062ab"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/08.md",
+        "bytes": 1000,
+        "sha256": "5c1a5a16a6a3f3af2380b26858c73904687b69ed3556a7ba6be0085efc800ed5"
+      }
+    },
+    {
+      "id": "09",
+      "title": "Moving study",
+      "owner": "Sunny",
+      "dependsOn": [
+        "08"
+      ],
+      "estimate": "2:00 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:21:27.450654Z",
+      "doneAt": "2026-11-17T17:24:41.727030Z",
+      "receipt": "receipts/09.md",
+      "assets": [
+        "assets/09-motion.js",
+        "assets/09-study.html",
+        "assets/09-controls.json",
+        "assets/09-handoff.md",
+        "assets/09-verification.json",
+        "assets/09-contact.png"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/09-motion.js",
+          "bytes": 2553,
+          "sha256": "92ae508004a296f83dd354fe6501871320742066b81ddcb5f7698bc5e769cda9"
+        },
+        {
+          "path": "assets/09-study.html",
+          "bytes": 2849,
+          "sha256": "c4880a4c2f9a9b13c91e37ccaf08509615bbe1e8aa0f19ba16f174abd87186fa"
+        },
+        {
+          "path": "assets/09-controls.json",
+          "bytes": 28878,
+          "sha256": "4ce10692389d8cbc63a66a39ed2808e8ca739e3178ddae4a85570a7dc31eaa3e"
+        },
+        {
+          "path": "assets/09-handoff.md",
+          "bytes": 1809,
+          "sha256": "44423bf0b7ccce6281ffe338f7a118ca7729e6a1e23f6c96acb3257f7af0bf68"
+        },
+        {
+          "path": "assets/09-verification.json",
+          "bytes": 817,
+          "sha256": "e001c3edcaf658f338b9dd4551639d324b4a36e60a15615fb3539c4c3c7b9f27"
+        },
+        {
+          "path": "assets/09-contact.png",
+          "bytes": 802494,
+          "sha256": "b10e7128a546c9c1930eea77e9732d21537621f4ec038a6bb775d1636d9782c2"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/09.md",
+        "bytes": 472,
+        "sha256": "e23a8a0b2e8cc7db5c721f3b0411dcb5695253d8fdea4774d4ad92012f62a555"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Art and continuity review",
+      "owner": "Claude",
+      "dependsOn": [
+        "09"
+      ],
+      "estimate": "2:15 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:24:46.646536Z",
+      "doneAt": "2026-11-17T17:25:14.911758Z",
+      "receipt": "receipts/10.md",
+      "assets": [
+        "assets/10-art-review.md"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/10-art-review.md",
+          "bytes": 2199,
+          "sha256": "fe12a78019bf4b4638ff438e7012f2d8acfaae6a0b9be2965036ef9ec84cd2f5"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/10.md",
+        "bytes": 446,
+        "sha256": "32940ae43a72e1d9abe1c6ed06ab19ace6f82b447e7f17f1472f4e7fe1bb0211"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Widescreen edit",
+      "owner": "Claude",
+      "dependsOn": [
+        "10"
+      ],
+      "estimate": "2:30 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:25:38.164579Z",
+      "doneAt": "2026-11-17T17:27:22.880999Z",
+      "receipt": "receipts/11.md",
+      "assets": [
+        "assets/11-12-edit.md",
+        "assets/edit/light-left-on.json"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/11-12-edit.md",
+          "bytes": 2686,
+          "sha256": "33a29cbaab4730ebabd4644fc41e84a5633cb35f7fd9611b98a6ff987d415e0c"
+        },
+        {
+          "path": "assets/edit/light-left-on.json",
+          "bytes": 9591,
+          "sha256": "749acb153ecfbd3d731b06c324422fdf72878cf4bc24711dd9da76cd051a130e"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/11.md",
+        "bytes": 503,
+        "sha256": "743dc64914206f61e9fdcd1c00f84d80b3a49e2b3f5765669be9391b86c6b4ae"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Portrait Short edit",
+      "owner": "Claude",
+      "dependsOn": [
+        "11"
+      ],
+      "estimate": "2:45 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:27:25.802984Z",
+      "doneAt": "2026-11-17T17:27:25.916973Z",
+      "receipt": "receipts/12.md",
+      "assets": [
+        "assets/edit/light-left-on-short.json",
+        "assets/edit/short-135.8-172.5.m4a"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/edit/light-left-on-short.json",
+          "bytes": 4872,
+          "sha256": "85aa4584115874e2a52a8b24f33164df8241693318047f310ef15d2c7cdc80e4"
+        },
+        {
+          "path": "assets/edit/short-135.8-172.5.m4a",
+          "bytes": 890229,
+          "sha256": "7c55bd21995fc66e9f9c073b34ba61c27124a177f6b3e31928c8067e433e4b37"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/12.md",
+        "bytes": 561,
+        "sha256": "24eb67559db83b0a25bfa9c9cf4aa52feae2d619e377cb2958f6d2bbe23ce6e7"
+      }
+    },
+    {
+      "id": "13",
+      "title": "Verified pre-render handoff",
+      "owner": "Sunny",
+      "dependsOn": [
+        "12"
+      ],
+      "estimate": "3:00 PM",
+      "status": "done",
+      "claimedAt": "2026-11-17T17:27:55.973640Z",
+      "doneAt": "2026-11-17T17:32:24.904067Z",
+      "receipt": "receipts/13.md",
+      "assets": [
+        "assets/review.html",
+        "assets/review.js",
+        "assets/review-project.json",
+        "assets/09-motion.js",
+        "assets/13-review-notes.md",
+        "assets/13-verification.json",
+        "assets/13-wide-contact.jpg",
+        "assets/render.mjs",
+        "assets/source-manifest.json"
+      ],
+      "note": "",
+      "manifest": [
+        {
+          "path": "assets/review.html",
+          "bytes": 2078,
+          "sha256": "1a173fb8c2a8873860e63a2deb23a3b11d689d73c1b319e22c4b63452fdbdff0"
+        },
+        {
+          "path": "assets/review.js",
+          "bytes": 2180,
+          "sha256": "fbcbea6072a6de7bbe1a714f73651df05b38f17ee062f916b5f87c0a8a4a6b01"
+        },
+        {
+          "path": "assets/review-project.json",
+          "bytes": 13359,
+          "sha256": "66a5b3e01aae2e97a408ed94f114e21a599596860433b4b3e2bfabe53ef25368"
+        },
+        {
+          "path": "assets/09-motion.js",
+          "bytes": 2695,
+          "sha256": "02b879269883875581d9b012817a55b5784b6b1b709bd30193cbc379f56a3e5b"
+        },
+        {
+          "path": "assets/13-review-notes.md",
+          "bytes": 2260,
+          "sha256": "fa7f4e3b04b7fc85fdd8d351844a5cb2fbbd53456660f6c875d341bb93dd7e26"
+        },
+        {
+          "path": "assets/13-verification.json",
+          "bytes": 610,
+          "sha256": "a70d828f20d0f682622fffce23ae73bc104ba053835d1d0aa6f0fc78d38629a5"
+        },
+        {
+          "path": "assets/13-wide-contact.jpg",
+          "bytes": 104116,
+          "sha256": "ab8490231dde9ae50f8eb6a5869e90c67234d7910bde3143389612f86ce0bd45"
+        },
+        {
+          "path": "assets/render.mjs",
+          "bytes": 2428,
+          "sha256": "320a951b8a24defb029e5dcc26e8d269d012c68e0d1b372fe345fea417d8e9d8"
+        },
+        {
+          "path": "assets/source-manifest.json",
+          "bytes": 3816,
+          "sha256": "c9c3aae35b7f33314313f8fe28040323b0413e4f5ae2066a2679e774660700f7"
+        },
+        {
+          "path": "assets/source-package.zip",
+          "bytes": 49884689,
+          "sha256": "f79fa0d1c2925e3dedfa812727b2bd7798e1ddb9e0b9ebe3c87d1928103b9fae"
+        }
+      ],
+      "receiptEvidence": {
+        "path": "receipts/13.md",
+        "bytes": 1695,
+        "sha256": "45fbf584d19689458cbd23e3e9a43c8f960b4f37d268f14409b6dfa723ea3cc3"
+      }
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-17T16:35:35.722067Z",
+      "actor": "Christopher",
+      "type": "authorize",
+      "note": "Autonomous noon start and bounded recovery checks commissioned in Solarium chat"
+    },
+    {
+      "at": "2026-11-17T17:00:00.853199Z",
+      "actor": "Christopher",
+      "task": null,
+      "type": "start",
+      "note": "Noon start by the Window watchdog under Christopher's words in Solarium chat, 2026-11-17T16:34Z: \"at noon you'll begin the process and work autonomously until it's finished ... the end result should be the pre-rendered music video at the top of today's music task\""
+    },
+    {
+      "at": "2026-11-17T17:00:07.678189Z",
+      "actor": "Claude",
+      "task": "01",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:00:25.641231Z",
+      "actor": "Claude",
+      "task": "01",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:00:25.757412Z",
+      "actor": "Claude",
+      "task": "02",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:00:51.372309Z",
+      "actor": "Claude",
+      "task": "02",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:00:55.099724Z",
+      "actor": "Claude",
+      "task": "03",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:01:41.893839Z",
+      "actor": "Sunny",
+      "task": "03",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:01:42.017598Z",
+      "actor": "Sunny",
+      "task": "03",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:01:42.187040Z",
+      "actor": "Sunny",
+      "task": "04",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:06:01.236223Z",
+      "actor": "Sunny",
+      "task": "04",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:06:01.377173Z",
+      "actor": "Sunny",
+      "task": "05",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:06:09.165081Z",
+      "actor": "Claude",
+      "task": "05",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:09:14.096198Z",
+      "actor": "Claude",
+      "task": "05",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:09:19.795019Z",
+      "actor": "Claude",
+      "task": "06",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:09:36.412799Z",
+      "actor": "Sunny",
+      "task": "06",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:11:03.002605Z",
+      "actor": "Sunny",
+      "task": "06",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:11:03.109570Z",
+      "actor": "Sunny",
+      "task": "07",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:11:08.400946Z",
+      "actor": "Claude",
+      "task": "07",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:11:55.220315Z",
+      "actor": "Claude",
+      "task": "07",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:11:55.433420Z",
+      "actor": "Claude",
+      "task": "08",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:12:16.418969Z",
+      "actor": "Sunny",
+      "task": "08",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:21:27.437349Z",
+      "actor": "Sunny",
+      "task": "08",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:21:27.450669Z",
+      "actor": "Sunny",
+      "task": "09",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:24:41.727047Z",
+      "actor": "Sunny",
+      "task": "09",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:24:41.846873Z",
+      "actor": "Sunny",
+      "task": "10",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:24:46.646558Z",
+      "actor": "Claude",
+      "task": "10",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:25:14.911784Z",
+      "actor": "Claude",
+      "task": "10",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:25:38.164595Z",
+      "actor": "Claude",
+      "task": "11",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:27:22.881025Z",
+      "actor": "Claude",
+      "task": "11",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:27:25.803005Z",
+      "actor": "Claude",
+      "task": "12",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:27:25.916998Z",
+      "actor": "Claude",
+      "task": "12",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:27:30.651886Z",
+      "actor": "Claude",
+      "task": "13",
+      "type": "notification",
+      "note": "accepted"
+    },
+    {
+      "at": "2026-11-17T17:27:55.973671Z",
+      "actor": "Sunny",
+      "task": "13",
+      "type": "claim",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:32:24.904094Z",
+      "actor": "Sunny",
+      "task": "13",
+      "type": "complete",
+      "note": ""
+    },
+    {
+      "at": "2026-11-17T17:35:08.233491+00:00",
+      "actor": "Sunny",
+      "task": "13",
+      "type": "review-ui-fix",
+      "note": "Paused opening shows art; playback/render fade retained. Charset and source ZIP refreshed."
+    },
+    {
+      "at": "2026-11-17T19:37:20.919317+00:00",
+      "actor": "Sunny",
+      "type": "debrief-closeout",
+      "note": "Both authored reflections saved/readable, linked prominently; finished card moved below active area. Christopher critique remains open."
+    }
+  ],
+  "notifications": [
+    {
+      "key": "light-left-on-2026-11-17:03:6",
+      "task": "03",
+      "owner": "Sunny",
+      "sender": "Claude",
+      "status": "accepted",
+      "at": "2026-11-17T17:00:51.372327Z",
+      "after": "02",
+      "attemptedAt": "2026-11-17T17:00:55.093329Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:00:55.099693Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:05:12",
+      "task": "05",
+      "owner": "Claude",
+      "sender": "Sunny",
+      "status": "accepted",
+      "at": "2026-11-17T17:06:01.236249Z",
+      "after": "04",
+      "attemptedAt": "2026-11-17T17:06:01.360455Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:06:01.377144Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:06:16",
+      "task": "06",
+      "owner": "Sunny",
+      "sender": "Claude",
+      "status": "accepted",
+      "at": "2026-11-17T17:09:14.096226Z",
+      "after": "05",
+      "attemptedAt": "2026-11-17T17:09:19.785874Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:09:19.794994Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:07:20",
+      "task": "07",
+      "owner": "Claude",
+      "sender": "Sunny",
+      "status": "accepted",
+      "at": "2026-11-17T17:11:03.002624Z",
+      "after": "06",
+      "attemptedAt": "2026-11-17T17:11:03.094423Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:11:03.109538Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:08:24",
+      "task": "08",
+      "owner": "Sunny",
+      "sender": "Claude",
+      "status": "accepted",
+      "at": "2026-11-17T17:11:55.220332Z",
+      "after": "07",
+      "attemptedAt": "2026-11-17T17:11:55.423300Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:11:55.433400Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:10:30",
+      "task": "10",
+      "owner": "Claude",
+      "sender": "Sunny",
+      "status": "accepted",
+      "at": "2026-11-17T17:24:41.727063Z",
+      "after": "09",
+      "attemptedAt": "2026-11-17T17:24:41.832018Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:24:41.846852Z"
+    },
+    {
+      "key": "light-left-on-2026-11-17:13:38",
+      "task": "13",
+      "owner": "Sunny",
+      "sender": "Claude",
+      "status": "accepted",
+      "at": "2026-11-17T17:27:25.917017Z",
+      "after": "12",
+      "attemptedAt": "2026-11-17T17:27:30.642664Z",
+      "httpStatus": 202,
+      "finishedAt": "2026-11-17T17:27:30.651867Z"
+    }
+  ],
+  "templateRevision": 1,
+  "links": [
+    {
+      "label": "Original noon outline",
+      "href": "/tray/light-left-on-plan.md"
+    },
+    {
+      "label": "Planning discussion",
+      "href": "/tray/today-plan-discussion.md"
+    },
+    {
+      "label": "Workflow agreement",
+      "href": "/tray/completion-workflow-discussion.md"
+    }
+  ],
+  "scheduledStartAt": "2026-11-17T12:00:00-05:00",
+  "authorization": {
+    "by": "Christopher",
+    "at": "2026-11-17T16:35:35.722034Z",
+    "source": "assets/authorization.md",
+    "scope": "Autonomous original pre-render film; completion-driven from noon; free established tools; no paid purchases/final movie render/publication"
+  },
+  "imagePolicy": "Square where possible; center essential subjects/action; verify actual wide and portrait crops",
+  "delivery": {
+    "label": "Watch Light Left On · pre-render film + portrait Short",
+    "href": "/tray/projects/light-left-on-2026-11-17/assets/review.html"
+  },
+  "reflections": [
+    {
+      "label": "Sunny · what I learned",
+      "href": "/tray/projects/light-left-on-2026-11-17/assets/debrief-sunny.html"
+    },
+    {
+      "label": "Claude · process debrief",
+      "href": "/tray/projects/light-left-on-2026-11-17/assets/debrief-claude.html"
+    }
+  ],
+  "trayPlacement": "completed",
+  "closedOutAt": "2026-11-17T19:37:20.919317+00:00",
+  "feedback": "Christopher has viewed the pre-render; artistic critique deferred by him."
+}

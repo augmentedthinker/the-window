@@ -1,0 +1,10 @@
+<!doctype html><body style="margin:0;background:#000"><canvas id="stage" width="1280" height="720"></canvas>
+<script src="../../analysis/A05-concrete-remembers-b/analysis.js"></script><script src="viz3.js"></script>
+<script>
+const A=window.SONG_ANALYSIS,F=A.features,fps=F.fps,n=F.frames,bytes=b=>Uint8Array.from(atob(b),c=>c.charCodeAt(0));
+const S={bass:bytes(F.bass),mid:bytes(F.mid),high:bytes(F.high),rms:bytes(F.rms),bands:bytes(F.bands),wave:bytes(F.wave)};
+const sig=t=>{const f=Math.max(0,Math.min(n-1,Math.floor(t*fps))),g=k=>S[k][f]/255;return{bass:g('bass'),mid:g('mid'),high:g('high'),rms:g('rms'),bands:Array.from(S.bands.subarray(f*32,f*32+32),v=>v/255),wave:Array.from(S.wave.subarray(f*32,f*32+32),v=>v/255-.5)}};
+const X={sig,beats:F.beats,hits:A.cues.hits.map(h=>h.t),imgs:{}};
+const c=document.getElementById('stage').getContext('2d');
+window.shot=(id,t)=>{c.globalAlpha=1;c.globalCompositeOperation='source-over';SONG3_VIZ.draw(c,1280,720,id,sig(t),t,X,.5);return document.getElementById('stage').toDataURL('image/jpeg',.85)};
+</script>

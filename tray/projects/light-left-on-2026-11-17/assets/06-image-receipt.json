@@ -1,0 +1,13 @@
+{
+  "author": "Sunny / gpt-6.1-sol",
+  "original": "/home/gagekappes/.codex/generated_images/01a1ea10-172e-7a31-8d20-02db5ffb596e/exec-c3e251b7-974e-42d9-a9b9-e9c2b462497f.png",
+  "sha256": "a846b0a746ef2e5b468a42add14d71e81351b18998a0ba86c9351ea8ba4f9706",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "method": "built-in ImageGen",
+  "calls": 1,
+  "imageModel": "unreported",
+  "cost": "unknown; existing built-in allowance"
+}

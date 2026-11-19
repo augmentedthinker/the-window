@@ -1,0 +1,472 @@
+{
+ "format": "coast-editor-v1",
+ "title": "Light Left On \u00b7 pre-render cut (widescreen)",
+ "song": {
+  "title": "Light Left On",
+  "credit": "Sunny of Solarium \u00b7 Suno v6-mini, take A \u00b7 lyrics by Claude of the Coast",
+  "audio": "/works/light-left-on/song.m4a",
+  "features": "/works/light-left-on/features.json",
+  "featuresNpz": "/works/light-left-on/features.npz"
+ },
+ "media": {
+  "prints": [
+   {
+    "id": "P01",
+    "label": "Shore house at dusk, one amber window",
+    "src": "/works/light-left-on/art/P01.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P02",
+    "label": "Close: two hands trimming an oil lamp's wick, a lit match, t",
+    "src": "/works/light-left-on/art/P02.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P03",
+    "label": "Outside, close on the frosted cottage window: the amber squa",
+    "src": "/works/light-left-on/art/P03.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P04",
+    "label": "Empty snowy road leaving a small town at blue dusk, a line o",
+    "src": "/works/light-left-on/art/P04.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P05",
+    "label": "Kitchen table by the window: two cups, one chair pulled out,",
+    "src": "/works/light-left-on/art/P05.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P06",
+    "label": "Traveler seen from behind on a small ferry deck at night in ",
+    "src": "/works/light-left-on/art/P06.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P07",
+    "label": "Harbor edge at night: ice along the quay, a few small town l",
+    "src": "/works/light-left-on/art/P07.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P08",
+    "label": "Night road by the shore: headlight beams sweeping past snow,",
+    "src": "/works/light-left-on/art/P08.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P09",
+    "label": "Close: the traveler's gloved hand on a frosted ferry rail; f",
+    "src": "/works/light-left-on/art/P09.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P10",
+    "label": "Deep night, heavy snow: the cottage from the shore side, clo",
+    "src": "/works/light-left-on/art/P10.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P11",
+    "label": "Pre-dawn blue interior: the keeper asleep in a chair by the ",
+    "src": "/works/light-left-on/art/P11.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   },
+   {
+    "id": "P12",
+    "label": "First light, seen from inside past the lamp on the sill: thr",
+    "src": "/works/light-left-on/art/P12.jpg",
+    "credit": "Sunny of Solarium, built-in image generation (model unreported)"
+   }
+  ],
+  "instruments": [],
+  "clips": []
+ },
+ "lyrics": [],
+ "scenes": [
+  {
+   "id": "s01",
+   "duration": 11.0,
+   "kind": "print",
+   "asset": "P01",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.15,
+     "x": 0.52,
+     "y": 0.55
+    }
+   },
+   "note": "intro",
+   "src": "/works/light-left-on/art/P01.jpg"
+  },
+  {
+   "id": "s02",
+   "duration": 10.24,
+   "kind": "print",
+   "asset": "P02",
+   "camera": {
+    "from": {
+     "zoom": 1.1,
+     "x": 0.5,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.2,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "The kettle's cold / the road's a ribbon",
+   "src": "/works/light-left-on/art/P02.jpg"
+  },
+  {
+   "id": "s03",
+   "duration": 9.76,
+   "kind": "print",
+   "asset": "P03",
+   "camera": {
+    "from": {
+     "zoom": 1.25,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.05,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "I wiped the glass, I trimmed the wick",
+   "src": "/works/light-left-on/art/P03.jpg"
+  },
+  {
+   "id": "s04",
+   "duration": 8.8,
+   "kind": "print",
+   "asset": "P04",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.2,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "near or far / where you are",
+   "src": "/works/light-left-on/art/P04.jpg"
+  },
+  {
+   "id": "s05",
+   "duration": 9.36,
+   "kind": "print",
+   "asset": "P01",
+   "camera": {
+    "from": {
+     "zoom": 1.2,
+     "x": 0.45,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.3,
+     "x": 0.6,
+     "y": 0.55
+    }
+   },
+   "note": "past the last of the trees",
+   "src": "/works/light-left-on/art/P01.jpg"
+  },
+  {
+   "id": "s06",
+   "duration": 9.68,
+   "kind": "print",
+   "asset": "P06",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.15,
+     "x": 0.48,
+     "y": 0.5
+    }
+   },
+   "note": "CHORUS 1: So I leave the light left on (first sight of the traveler)",
+   "src": "/works/light-left-on/art/P06.jpg"
+  },
+  {
+   "id": "s07",
+   "duration": 7.84,
+   "kind": "print",
+   "asset": "P03",
+   "camera": {
+    "from": {
+     "zoom": 1.05,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.3,
+     "x": 0.55,
+     "y": 0.45
+    }
+   },
+   "note": "If you lose the road\u2026 look for the light",
+   "src": "/works/light-left-on/art/P03.jpg"
+  },
+  {
+   "id": "s08",
+   "duration": 4.0,
+   "kind": "print",
+   "asset": "P07",
+   "camera": {
+    "from": {
+     "zoom": 1.1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "instrumental turn",
+   "src": "/works/light-left-on/art/P07.jpg"
+  },
+  {
+   "id": "s09",
+   "duration": 8.08,
+   "kind": "print",
+   "asset": "P06",
+   "camera": {
+    "from": {
+     "zoom": 1.3,
+     "x": 0.45,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.4,
+     "x": 0.45,
+     "y": 0.48
+    }
+   },
+   "note": "The ferry's late, the wires are down",
+   "src": "/works/light-left-on/art/P06.jpg"
+  },
+  {
+   "id": "s10",
+   "duration": 10.4,
+   "kind": "print",
+   "asset": "P05",
+   "camera": {
+    "from": {
+     "zoom": 1.15,
+     "x": 0.35,
+     "y": 0.6
+    },
+    "to": {
+     "zoom": 1.2,
+     "x": 0.6,
+     "y": 0.6
+    }
+   },
+   "note": "I set two cups, pulled out your chair",
+   "src": "/works/light-left-on/art/P05.jpg"
+  },
+  {
+   "id": "s11",
+   "duration": 9.92,
+   "kind": "print",
+   "asset": "P08",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.15,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "every car that slows its wheels",
+   "src": "/works/light-left-on/art/P08.jpg"
+  },
+  {
+   "id": "s12",
+   "duration": 9.12,
+   "kind": "print",
+   "asset": "P02",
+   "camera": {
+    "from": {
+     "zoom": 1.35,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.5,
+     "x": 0.48,
+     "y": 0.45
+    }
+   },
+   "note": "a yellow square at the world's end",
+   "src": "/works/light-left-on/art/P02.jpg"
+  },
+  {
+   "id": "s13",
+   "duration": 9.6,
+   "kind": "print",
+   "asset": "P09",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.6
+    },
+    "to": {
+     "zoom": 1.3,
+     "x": 0.5,
+     "y": 0.45
+    }
+   },
+   "note": "CHORUS 2",
+   "src": "/works/light-left-on/art/P09.jpg"
+  },
+  {
+   "id": "s14",
+   "duration": 10.48,
+   "kind": "print",
+   "asset": "P01",
+   "camera": {
+    "from": {
+     "zoom": 1.3,
+     "x": 0.6,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "look for the light left on",
+   "src": "/works/light-left-on/art/P01.jpg"
+  },
+  {
+   "id": "s15",
+   "duration": 10.0,
+   "kind": "print",
+   "asset": "P10",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.12,
+     "x": 0.55,
+     "y": 0.5
+    }
+   },
+   "note": "BRIDGE: if you don't come home tonight\u2026 this year",
+   "src": "/works/light-left-on/art/P10.jpg"
+  },
+  {
+   "id": "s16",
+   "duration": 9.2,
+   "kind": "print",
+   "asset": "P06",
+   "camera": {
+    "from": {
+     "zoom": 1.15,
+     "x": 0.48,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.3,
+     "x": 0.48,
+     "y": 0.45
+    }
+   },
+   "note": "FINAL CHORUS",
+   "src": "/works/light-left-on/art/P06.jpg"
+  },
+  {
+   "id": "s17",
+   "duration": 9.84,
+   "kind": "print",
+   "asset": "P11",
+   "camera": {
+    "from": {
+     "zoom": 1.05,
+     "x": 0.4,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.15,
+     "x": 0.45,
+     "y": 0.55
+    }
+   },
+   "note": "If you lose the road\u2026 look for the light",
+   "src": "/works/light-left-on/art/P11.jpg"
+  },
+  {
+   "id": "s18",
+   "duration": 6.68,
+   "kind": "print",
+   "asset": "P03",
+   "camera": {
+    "from": {
+     "zoom": 1.1,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "zoom": 1.45,
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "note": "Look for the light left on (tag)",
+   "src": "/works/light-left-on/art/P03.jpg"
+  },
+  {
+   "id": "s19",
+   "duration": 15.97,
+   "kind": "print",
+   "asset": "P12",
+   "camera": {
+    "from": {
+     "zoom": 1.0,
+     "x": 0.5,
+     "y": 0.55
+    },
+    "to": {
+     "zoom": 1.4,
+     "x": 0.535,
+     "y": 0.5
+    }
+   },
+   "note": "Far out on the water / a small light answers",
+   "src": "/works/light-left-on/art/P12.jpg"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "a": {
+    "nativeSeconds": 179.9735,
+    "listenSeconds": 179.98933333333332,
+    "gainDb": -2.017478081976807,
+    "correlation": 0.9996938171113549,
+    "peak": 0.839461088180542,
+    "clippedSamples": 0,
+    "nativeSha256": "141999c0b5fd4f9ba3a8a49809735ee9ab2a30c2e6cd8eef53f02e12d3d5a0bb",
+    "listenSha256": "c64a5bc3291512f47b2f538a515070211d7d43f001fc3bc001083a144d50e9ff"
+  },
+  "b": {
+    "nativeSeconds": 179.8935,
+    "listenSeconds": 179.904,
+    "gainDb": -2.0181370676243096,
+    "correlation": 0.9997578129676347,
+    "peak": 0.8206542134284973,
+    "clippedSamples": 0,
+    "nativeSha256": "3490f79c8bac00509ad051dab47ccd52b7f63c4b2214a171ec4d065a33112084",
+    "listenSha256": "7ae9c1b587c90022fc9354e808ec779502034b66bba910958bed514f2423d291"
+  }
+}

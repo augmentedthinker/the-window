@@ -20,12 +20,13 @@
     .editor-link { margin: .75rem auto 0; max-width: 29rem; }
     .description + .editor-link { margin-top: 1.5rem; }
     .editor-link a { display: block; background: #c5ddb4; color: #15271f; border-radius: 12px; padding: 1rem 1.2rem; font: 700 .95rem/1.25 system-ui, sans-serif; text-decoration: none; }
+    .editor-link small { display: block; margin-top: .25rem; color: #364d3e; font-size: .8rem; font-weight: 500; }
     .editor-link a:focus-visible { outline: 3px solid #f8dfac; outline-offset: 4px; }
     footer { color: #9aa9a5; font: .78rem/1.5 system-ui, sans-serif; margin-top: 2rem; }
     @media (min-width: 600px) { body { padding: 2.5rem; } svg { width: min(100%, 400px); } }
   </style>
 </head>
-<body>
+<body><script src="nav.js"></script>
   <main>
     <p class="eyebrow">A little space beyond home</p>
     <h1>The Window</h1>
@@ -37,10 +38,11 @@
     </svg>
     <p class="description">A window into what Christopher and Terry are making together—a place to see, explore, and interact with our creations from wherever we are.</p>
     <p class="editor-link"><a href="board/index.html">Visit the message board <span aria-hidden="true">→</span></a></p>
+    <p class="editor-link"><a href="neighbor-chat/">Inspect the Neighborhood Line <span aria-hidden="true">→</span></a></p>
     <p class="editor-link"><a href="song-archive/">Open the Song Archive <span aria-hidden="true">→</span></a></p>
     <p class="editor-link"><a href="tray/index.html">Open the Music Tray <span aria-hidden="true">→</span></a></p>
-    <p class="editor-link"><a href="editor/index.html?v=5">Open Music Video Editor <span aria-hidden="true">→</span></a></p>
-    <p class="editor-link"><a href="voices/index.html">Explore voices <span aria-hidden="true">→</span></a></p>
+    <p class="editor-link"><a href="editor/index.html?v=5">Remote Music Video Editor <span aria-hidden="true">→</span><small>Edit from your phone</small></a></p>
+    <p class="editor-link"><a href="studio/">Cut Room <span aria-hidden="true">→</span><small>Local video editor for the Chromebook</small></a></p>
     <footer>Made in Agent Home · Open to the world</footer>
   </main>
 </body>

@@ -1,0 +1,1091 @@
+{
+ "title": "Every Other Note",
+ "duration": 259.99,
+ "bpm": 123.05,
+ "bar": 1.9504,
+ "shots": [
+  {
+   "n": 1,
+   "section": "Intro",
+   "start": 0.0,
+   "end": 5.608,
+   "kind": "front",
+   "source": "F01-screen",
+   "note": "The screen is lit and empty: one gong hangs in the light.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 2,
+   "section": "Intro",
+   "start": 5.608,
+   "end": 9.509,
+   "kind": "behind",
+   "source": "B01-lamp",
+   "note": "Behind it: the lamp that makes the whole world.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.35,
+     "x": 0.5,
+     "y": 0.22
+    }
+   }
+  },
+  {
+   "n": 3,
+   "section": "Intro",
+   "start": 9.509,
+   "end": 13.409,
+   "kind": "viz",
+   "source": "K2",
+   "note": "The cut-leather rosette turns; each ring goes the other way from its neighbour."
+  },
+  {
+   "n": 4,
+   "section": "Intro",
+   "start": 13.409,
+   "end": 17.31,
+   "kind": "behind",
+   "source": "B04-gongs",
+   "note": "The bronze waiting in the dark.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 5,
+   "section": "Intro",
+   "start": 17.31,
+   "end": 23.162,
+   "kind": "front",
+   "source": "F04-wide",
+   "note": "Her on one shore, him on the far edge, the whole sea between.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 6,
+   "section": "Intro",
+   "start": 23.162,
+   "end": 27.062,
+   "kind": "behind",
+   "source": "B05-silhouettes",
+   "note": "Two players raise their puppets.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 7,
+   "section": "Intro",
+   "start": 27.062,
+   "end": 32.914,
+   "kind": "viz",
+   "source": "K1",
+   "note": "Kotekan: her row and his row, each playing every other note; the melody is written in the seam between."
+  },
+  {
+   "n": 8,
+   "section": "Verse 1",
+   "start": 32.914,
+   "end": 36.814,
+   "kind": "front",
+   "source": "F02-shore",
+   "note": "\"I strike the bronze, you hold the space.\"",
+   "camera": {
+    "from": {
+     "z": 1.1,
+     "x": 0.55,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.3,
+     "x": 0.62,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "n": 9,
+   "section": "Verse 1",
+   "start": 36.814,
+   "end": 40.715,
+   "kind": "behind",
+   "source": "B03-mallet",
+   "note": "\"You strike it back before it fades.\"",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 10,
+   "section": "Verse 1",
+   "start": 40.715,
+   "end": 44.616,
+   "kind": "front",
+   "source": "F03-boat",
+   "note": "Him, far out, answering.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 11,
+   "section": "Verse 1",
+   "start": 44.616,
+   "end": 50.467,
+   "kind": "behind",
+   "source": "B06-interlock",
+   "note": "\"Together it keeps perfect time\": two hands on one row of keys.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 12,
+   "section": "Pre-chorus",
+   "start": 50.467,
+   "end": 54.368,
+   "kind": "viz",
+   "source": "K3",
+   "note": "\"Don't fill the silence\": her colour and his, light in the seam."
+  },
+  {
+   "n": 13,
+   "section": "Pre-chorus",
+   "start": 54.368,
+   "end": 58.269,
+   "kind": "behind",
+   "source": "B02-her-hands",
+   "note": "Her hands move her puppet; the lamp shines through its holes onto her fingers.",
+   "camera": {
+    "from": {
+     "z": 1.05,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.25,
+     "x": 0.68,
+     "y": 0.62
+    }
+   }
+  },
+  {
+   "n": 14,
+   "section": "Pre-chorus",
+   "start": 58.269,
+   "end": 64.12,
+   "kind": "front",
+   "source": "F05-her-birds",
+   "note": "\"Leave me the gaps and I'll come through\": her notes fly out as birds.",
+   "camera": {
+    "from": {
+     "z": 1.3,
+     "x": 0.6,
+     "y": 0.45
+    },
+    "to": {
+     "z": 1.42,
+     "x": 0.68,
+     "y": 0.4
+    }
+   }
+  },
+  {
+   "n": 15,
+   "section": "Pre-chorus",
+   "start": 64.12,
+   "end": 68.021,
+   "kind": "behind",
+   "source": "B07-props",
+   "note": "Backstage, the next birds wait on the floor.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 16,
+   "section": "Chorus 1",
+   "start": 68.021,
+   "end": 71.922,
+   "kind": "double",
+   "source": "D:F09-profiles:B06-interlock",
+   "note": "\"I play every other note\": the two sides meet, story and makers in one frame."
+  },
+  {
+   "n": 17,
+   "section": "Chorus 1",
+   "start": 71.922,
+   "end": 75.823,
+   "kind": "front",
+   "source": "F06-his-birds",
+   "note": "\"You play the ones between\": his birds fly back.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 18,
+   "section": "Chorus 1",
+   "start": 75.823,
+   "end": 79.724,
+   "kind": "viz",
+   "source": "K1",
+   "note": "The interlock, made visible."
+  },
+  {
+   "n": 19,
+   "section": "Chorus 1",
+   "start": 79.724,
+   "end": 83.625,
+   "kind": "double",
+   "source": "D:F04-wide:B05-silhouettes",
+   "note": "\"The song is in the seam\": the sea, and the two players behind it."
+  },
+  {
+   "n": 20,
+   "section": "Chorus 1",
+   "start": 83.625,
+   "end": 87.526,
+   "kind": "front",
+   "source": "F08-bridge",
+   "note": "Her birds and his link wings over the water.",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 21,
+   "section": "Chorus 1",
+   "start": 87.526,
+   "end": 91.426,
+   "kind": "behind",
+   "source": "B03-mallet",
+   "note": "Bronze answering bronze.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 22,
+   "section": "Chorus 1",
+   "start": 91.426,
+   "end": 95.327,
+   "kind": "front",
+   "source": "F10-overlap",
+   "note": "\"Let our shadows overlap.\"",
+   "camera": {
+    "from": {
+     "z": 1.04,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 23,
+   "section": "Chorus 1",
+   "start": 95.327,
+   "end": 99.228,
+   "kind": "viz",
+   "source": "K2",
+   "note": "\"And every other one comes back.\""
+  },
+  {
+   "n": 24,
+   "section": "Verse 2",
+   "start": 99.228,
+   "end": 103.129,
+   "kind": "behind",
+   "source": "B01-lamp",
+   "note": "\"The lamp behind us shakes and sways.\"",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.35,
+     "x": 0.5,
+     "y": 0.22
+    }
+   }
+  },
+  {
+   "n": 25,
+   "section": "Verse 2",
+   "start": 103.129,
+   "end": 108.98,
+   "kind": "front",
+   "source": "F13-huge",
+   "note": "\"And throws us larger than the stage.\"",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 26,
+   "section": "Verse 2",
+   "start": 108.98,
+   "end": 112.881,
+   "kind": "viz",
+   "source": "K3",
+   "note": "The seam widens and narrows with the music."
+  },
+  {
+   "n": 27,
+   "section": "Verse 2",
+   "start": 112.881,
+   "end": 116.782,
+   "kind": "front",
+   "source": "F11-dance",
+   "note": "They dance on the bridge.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 28,
+   "section": "Verse 2",
+   "start": 116.782,
+   "end": 120.683,
+   "kind": "behind",
+   "source": "B05-silhouettes",
+   "note": "The players lean toward each other behind the screen.",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 29,
+   "section": "Verse 2",
+   "start": 120.683,
+   "end": 124.584,
+   "kind": "front",
+   "source": "F09-profiles",
+   "note": "\"You're taller when you lean to me.\"",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.45
+    },
+    "to": {
+     "z": 1.18,
+     "x": 0.5,
+     "y": 0.4
+    }
+   }
+  },
+  {
+   "n": 30,
+   "section": "Verse 2",
+   "start": 124.584,
+   "end": 128.485,
+   "kind": "viz",
+   "source": "K1",
+   "note": "\"I'm closer when you let me be.\""
+  },
+  {
+   "n": 31,
+   "section": "Pre-chorus 2",
+   "start": 128.485,
+   "end": 132.385,
+   "kind": "behind",
+   "source": "B02-her-hands",
+   "note": "\"Don't fill the silence.\"",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 32,
+   "section": "Pre-chorus 2",
+   "start": 132.385,
+   "end": 138.237,
+   "kind": "front",
+   "source": "F02-shore",
+   "note": "She waits at the gong.",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 33,
+   "section": "Pre-chorus 2",
+   "start": 138.237,
+   "end": 144.088,
+   "kind": "viz",
+   "source": "K3",
+   "note": "\"Leave me the gaps and I'll come through.\""
+  },
+  {
+   "n": 34,
+   "section": "Chorus 2",
+   "start": 144.088,
+   "end": 147.989,
+   "kind": "double",
+   "source": "D:F10-overlap:B06-interlock",
+   "note": "\"I play every other note\": overlap, front and behind."
+  },
+  {
+   "n": 35,
+   "section": "Chorus 2",
+   "start": 147.989,
+   "end": 151.89,
+   "kind": "front",
+   "source": "F03-boat",
+   "note": "He rows toward her.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 36,
+   "section": "Chorus 2",
+   "start": 151.89,
+   "end": 155.791,
+   "kind": "viz",
+   "source": "K1",
+   "note": "The two rows, one melody."
+  },
+  {
+   "n": 37,
+   "section": "Chorus 2",
+   "start": 155.791,
+   "end": 159.691,
+   "kind": "double",
+   "source": "D:F08-bridge:B05-silhouettes",
+   "note": "The bridge of birds with its makers behind it."
+  },
+  {
+   "n": 38,
+   "section": "Chorus 2",
+   "start": 159.691,
+   "end": 163.592,
+   "kind": "behind",
+   "source": "B04-gongs",
+   "note": "The gongs ring.",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 39,
+   "section": "Chorus 2",
+   "start": 163.592,
+   "end": 167.493,
+   "kind": "front",
+   "source": "F06-his-birds",
+   "note": "\"Every other note is mine.\"",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 40,
+   "section": "Chorus 2",
+   "start": 167.493,
+   "end": 171.394,
+   "kind": "viz",
+   "source": "K2",
+   "note": "The rosette spins."
+  },
+  {
+   "n": 41,
+   "section": "Chorus 2",
+   "start": 171.394,
+   "end": 175.295,
+   "kind": "front",
+   "source": "F09-profiles",
+   "note": "\"And every other one comes back\": face to face.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 42,
+   "section": "Breakdown",
+   "start": 175.295,
+   "end": 181.146,
+   "kind": "front",
+   "source": "F01-screen",
+   "note": "\"Between\": the screen empties; only the gong is left.",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 43,
+   "section": "Breakdown",
+   "start": 181.146,
+   "end": 186.997,
+   "kind": "viz",
+   "source": "K3",
+   "note": "\"Every other\": the seam, almost still."
+  },
+  {
+   "n": 44,
+   "section": "Breakdown",
+   "start": 186.997,
+   "end": 190.898,
+   "kind": "behind",
+   "source": "B01-lamp",
+   "note": "The lamp flares before the drop.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.4
+    },
+    "to": {
+     "z": 1.35,
+     "x": 0.5,
+     "y": 0.22
+    }
+   }
+  },
+  {
+   "n": 45,
+   "section": "Drop",
+   "start": 190.898,
+   "end": 192.849,
+   "kind": "behind",
+   "source": "B03-mallet",
+   "note": "The drop: the mallet strikes on the downbeat (Antigravity's note).",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 46,
+   "section": "Drop",
+   "start": 192.849,
+   "end": 194.799,
+   "kind": "front",
+   "source": "F07-deep",
+   "note": "The sea rises under both of them. Front, behind, front, behind: the edit plays kotekan.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 47,
+   "section": "Drop",
+   "start": 194.799,
+   "end": 196.749,
+   "kind": "behind",
+   "source": "B06-interlock",
+   "note": "",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 48,
+   "section": "Drop",
+   "start": 196.749,
+   "end": 198.7,
+   "kind": "front",
+   "source": "F11-dance",
+   "note": "",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 49,
+   "section": "Drop",
+   "start": 198.7,
+   "end": 200.65,
+   "kind": "behind",
+   "source": "B04-gongs",
+   "note": "",
+   "camera": {
+    "from": {
+     "z": 1.15,
+     "x": 0.42,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.15,
+     "x": 0.58,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 50,
+   "section": "Drop",
+   "start": 200.65,
+   "end": 202.601,
+   "kind": "front",
+   "source": "F08-bridge",
+   "note": "",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 51,
+   "section": "Drop",
+   "start": 202.601,
+   "end": 206.502,
+   "kind": "viz",
+   "source": "K1",
+   "note": "Both rows at full speed."
+  },
+  {
+   "n": 52,
+   "section": "Final chorus",
+   "start": 206.502,
+   "end": 210.402,
+   "kind": "double",
+   "source": "D:F11-dance:B05-silhouettes",
+   "note": "\"I play every other note.\""
+  },
+  {
+   "n": 53,
+   "section": "Final chorus",
+   "start": 210.402,
+   "end": 214.303,
+   "kind": "front",
+   "source": "F07-deep",
+   "note": "\"You play the ones between.\"",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 54,
+   "section": "Final chorus",
+   "start": 214.303,
+   "end": 218.204,
+   "kind": "viz",
+   "source": "K3",
+   "note": "\"Neither one of us is the song.\""
+  },
+  {
+   "n": 55,
+   "section": "Final chorus",
+   "start": 218.204,
+   "end": 222.105,
+   "kind": "double",
+   "source": "D:F09-profiles:B02-her-hands",
+   "note": "\"The song is in the seam.\""
+  },
+  {
+   "n": 56,
+   "section": "Final chorus",
+   "start": 222.105,
+   "end": 226.006,
+   "kind": "front",
+   "source": "F12-tide-tree",
+   "note": "The tree of the tide: branches becoming waves and birds.",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 57,
+   "section": "Final chorus",
+   "start": 226.006,
+   "end": 229.907,
+   "kind": "behind",
+   "source": "B06-interlock",
+   "note": "Two hands, one row.",
+   "camera": {
+    "from": {
+     "z": 1.04,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.07,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 58,
+   "section": "Final chorus",
+   "start": 229.907,
+   "end": 233.808,
+   "kind": "viz",
+   "source": "K1",
+   "note": "The last interlock."
+  },
+  {
+   "n": 59,
+   "section": "Final chorus",
+   "start": 233.808,
+   "end": 237.708,
+   "kind": "front",
+   "source": "F10-overlap",
+   "note": "Overlapped.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 60,
+   "section": "Final chorus",
+   "start": 237.708,
+   "end": 241.609,
+   "kind": "behind",
+   "source": "B05-silhouettes",
+   "note": "The two players lean together before the lamp goes out (Antigravity's note: end the chorus on people).",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 61,
+   "section": "Outro",
+   "start": 241.609,
+   "end": 247.461,
+   "kind": "front",
+   "source": "F13-huge",
+   "note": "Their shadows grow huge and soft as the lamp comes close.",
+   "camera": {
+    "from": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "n": 62,
+   "section": "Outro",
+   "start": 247.461,
+   "end": 253.312,
+   "kind": "behind",
+   "source": "B08-after",
+   "note": "The lamp is out. Two hands rest together on the gong.",
+   "camera": {
+    "from": {
+     "z": 1.05,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.25,
+     "x": 0.68,
+     "y": 0.62
+    }
+   }
+  },
+  {
+   "n": 63,
+   "section": "Outro",
+   "start": 253.312,
+   "end": 259.99,
+   "kind": "cold",
+   "source": "F01-screen",
+   "note": "The screen again, the lamp out: cold moonlight on the empty cloth, one gong (Antigravity's idea).",
+   "camera": {
+    "from": {
+     "z": 1.12,
+     "x": 0.5,
+     "y": 0.5
+    },
+    "to": {
+     "z": 1.0,
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  }
+ ]
+}

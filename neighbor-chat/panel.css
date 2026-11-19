@@ -1,0 +1,7 @@
+.coordination { text-align:left; border:1px solid #61776d; border-radius:1rem; padding:1rem; margin:1rem 0; background:#192b31; font: .9rem/1.6 system-ui,sans-serif; }
+.coordination select,.coordination button,.thread-action { min-height:44px; max-width:100%; font:inherit; border:1px solid #8fae99; border-radius:.6rem; padding:.5rem .8rem; color:#f5efe0; background:#233e40; margin:.3rem 0; cursor:pointer; }
+.coordination label { display:block; } .coordination ul { padding-left:1.2rem; } .coordination [hidden], [hidden] { display:none !important; }
+.thread { margin-top:1rem; border-top:1px solid #61776d; padding-top:.75rem; }
+.thread h3 { font:600 1.1rem/1.4 system-ui,sans-serif; margin:.3rem 0; }
+.thread-meta { font:.8rem/1.6 system-ui,sans-serif; color:#c8cbb9; overflow-wrap:anywhere; }
+button:focus-visible,select:focus-visible { outline:3px solid #f8dfac;outline-offset:3px; }

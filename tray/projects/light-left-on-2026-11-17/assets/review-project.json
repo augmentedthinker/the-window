@@ -1,0 +1,591 @@
+{
+  "title": "Light Left On",
+  "audio": {
+    "wide": "audio/light-left-on-a-listen.mp4",
+    "short": "edit/short-135.8-172.5.m4a"
+  },
+  "controls": "09-controls.json",
+  "plates": {
+    "P01": {
+      "file": "art/01-shore-house.png",
+      "stage": "beginning"
+    },
+    "P02": {
+      "file": "art/P02.png",
+      "stage": "beginning",
+      "sha256": "c32fdfc1ba0f097791c83293289b74e9f692168dd9ed3c8e807ee18d2a904238",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P03": {
+      "file": "art/P03.png",
+      "stage": "beginning",
+      "sha256": "28ebcac1a7c6a6f5d45d1e47254b3325b62a12f9c18596c2606df83fa9a170c0",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P04": {
+      "file": "art/P04.png",
+      "stage": "beginning",
+      "sha256": "e55b90c0e5310036aef224ddf5700747d3f5ee8a9a91dea3c06e81182a6af7c6",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P05": {
+      "file": "art/P05.png",
+      "stage": "middle",
+      "sha256": "06aa345ede15f4b379789cca76f408205d2c551f16898b141a9f790b446ac452",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P06": {
+      "file": "art/P06.png",
+      "stage": "middle",
+      "sha256": "d5ec9c22040299f2e490f9118503a129fb43138946c3b5ad20825ba8b5c950c5",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P07": {
+      "file": "art/P07.png",
+      "stage": "middle",
+      "sha256": "4e7721fe0a8ac7226486d37fe6b14a7ab4ddd715fc588d1be32b3e6ecc70c082",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P08": {
+      "file": "art/P08.png",
+      "stage": "middle",
+      "sha256": "1eb652228adf3eda0c45abe5dc37adbf29e55317e581e004d260cd35e891cb98",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P09": {
+      "file": "art/P09.png",
+      "stage": "middle",
+      "sha256": "73678b948025159024aa24a1acab9ee648e6c74ee4fdc8df9c493a6171be28c5",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P10": {
+      "file": "art/P10-v2.png",
+      "stage": "end",
+      "sha256": "638f5459740ba77da4d69789d41bc75af1742efb59d02aa6917fc23bddf04898",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P11": {
+      "file": "art/P11.png",
+      "stage": "end",
+      "sha256": "7a9fde4d29fb803f9c358eba6ad8fd073f27fca9101088a5769bebc9fbcf3a95",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "P12": {
+      "file": "art/P12.png",
+      "stage": "end",
+      "sha256": "e1a0a4142fd8c42926c73e53ee8cc6b031f81b99b9d28a4abd5de807373ba6e7",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "versions": {
+    "wide": {
+      "duration": 179.97,
+      "sourceStart": 0,
+      "width": 1280,
+      "height": 720,
+      "shots": [
+        {
+          "id": "s01",
+          "plate": "P01",
+          "start": 0,
+          "end": 11.0,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.15,
+              "x": 0.52,
+              "y": 0.55
+            }
+          },
+          "note": "intro"
+        },
+        {
+          "id": "s02",
+          "plate": "P02",
+          "start": 11.0,
+          "end": 21.24,
+          "camera": {
+            "from": {
+              "zoom": 1.1,
+              "x": 0.5,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.2,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "The kettle's cold / the road's a ribbon"
+        },
+        {
+          "id": "s03",
+          "plate": "P03",
+          "start": 21.24,
+          "end": 31.0,
+          "camera": {
+            "from": {
+              "zoom": 1.25,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.05,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "I wiped the glass, I trimmed the wick"
+        },
+        {
+          "id": "s04",
+          "plate": "P04",
+          "start": 31.0,
+          "end": 39.8,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.2,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "near or far / where you are"
+        },
+        {
+          "id": "s05",
+          "plate": "P01",
+          "start": 39.8,
+          "end": 49.16,
+          "camera": {
+            "from": {
+              "zoom": 1.2,
+              "x": 0.45,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.3,
+              "x": 0.6,
+              "y": 0.55
+            }
+          },
+          "note": "past the last of the trees"
+        },
+        {
+          "id": "s06",
+          "plate": "P06",
+          "start": 49.16,
+          "end": 58.84,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.15,
+              "x": 0.48,
+              "y": 0.5
+            }
+          },
+          "note": "CHORUS 1: So I leave the light left on (first sight of the traveler)"
+        },
+        {
+          "id": "s07",
+          "plate": "P03",
+          "start": 58.84,
+          "end": 66.68,
+          "camera": {
+            "from": {
+              "zoom": 1.05,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.3,
+              "x": 0.55,
+              "y": 0.45
+            }
+          },
+          "note": "If you lose the road\u2026 look for the light"
+        },
+        {
+          "id": "s08",
+          "plate": "P07",
+          "start": 66.68,
+          "end": 70.68,
+          "camera": {
+            "from": {
+              "zoom": 1.1,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.12,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "instrumental turn"
+        },
+        {
+          "id": "s09",
+          "plate": "P06",
+          "start": 70.68,
+          "end": 78.76,
+          "camera": {
+            "from": {
+              "zoom": 1.3,
+              "x": 0.45,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.4,
+              "x": 0.45,
+              "y": 0.48
+            }
+          },
+          "note": "The ferry's late, the wires are down"
+        },
+        {
+          "id": "s10",
+          "plate": "P05",
+          "start": 78.76,
+          "end": 89.16,
+          "camera": {
+            "from": {
+              "zoom": 1.15,
+              "x": 0.35,
+              "y": 0.6
+            },
+            "to": {
+              "zoom": 1.2,
+              "x": 0.6,
+              "y": 0.6
+            }
+          },
+          "note": "I set two cups, pulled out your chair"
+        },
+        {
+          "id": "s11",
+          "plate": "P08",
+          "start": 89.16,
+          "end": 99.08,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.15,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "every car that slows its wheels"
+        },
+        {
+          "id": "s12",
+          "plate": "P02",
+          "start": 99.08,
+          "end": 108.2,
+          "camera": {
+            "from": {
+              "zoom": 1.35,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.5,
+              "x": 0.48,
+              "y": 0.45
+            }
+          },
+          "note": "a yellow square at the world's end"
+        },
+        {
+          "id": "s13",
+          "plate": "P09",
+          "start": 108.2,
+          "end": 117.8,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.6
+            },
+            "to": {
+              "zoom": 1.3,
+              "x": 0.5,
+              "y": 0.45
+            }
+          },
+          "note": "CHORUS 2"
+        },
+        {
+          "id": "s14",
+          "plate": "P01",
+          "start": 117.8,
+          "end": 128.28,
+          "camera": {
+            "from": {
+              "zoom": 1.3,
+              "x": 0.6,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "look for the light left on"
+        },
+        {
+          "id": "s15",
+          "plate": "P10",
+          "start": 128.28,
+          "end": 138.28,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.12,
+              "x": 0.55,
+              "y": 0.5
+            }
+          },
+          "note": "BRIDGE: if you don't come home tonight\u2026 this year"
+        },
+        {
+          "id": "s16",
+          "plate": "P06",
+          "start": 138.28,
+          "end": 147.48,
+          "camera": {
+            "from": {
+              "zoom": 1.15,
+              "x": 0.48,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.3,
+              "x": 0.48,
+              "y": 0.45
+            }
+          },
+          "note": "FINAL CHORUS"
+        },
+        {
+          "id": "s17",
+          "plate": "P11",
+          "start": 147.48,
+          "end": 157.32,
+          "camera": {
+            "from": {
+              "zoom": 1.05,
+              "x": 0.4,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.15,
+              "x": 0.45,
+              "y": 0.55
+            }
+          },
+          "note": "If you lose the road\u2026 look for the light"
+        },
+        {
+          "id": "s18",
+          "plate": "P03",
+          "start": 157.32,
+          "end": 164.0,
+          "camera": {
+            "from": {
+              "zoom": 1.1,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.45,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "Look for the light left on (tag)"
+        },
+        {
+          "id": "s19",
+          "plate": "P12",
+          "start": 164.0,
+          "end": 179.97,
+          "camera": {
+            "from": {
+              "zoom": 1,
+              "x": 0.5,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.1,
+              "x": 0.515,
+              "y": 0.56
+            }
+          },
+          "note": "Far out on the water / a small light answers"
+        }
+      ],
+      "fadeIn": 2,
+      "fadeOut": 3
+    },
+    "short": {
+      "duration": 36.7,
+      "sourceStart": 135.8,
+      "width": 720,
+      "height": 1280,
+      "shots": [
+        {
+          "id": "s15",
+          "plate": "P10",
+          "start": 0,
+          "end": 2.48,
+          "camera": {
+            "from": {
+              "zoom": 1.0,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.12,
+              "x": 0.55,
+              "y": 0.5
+            }
+          },
+          "note": "BRIDGE: if you don't come home tonight\u2026 this year"
+        },
+        {
+          "id": "s16",
+          "plate": "P06",
+          "start": 2.48,
+          "end": 11.68,
+          "camera": {
+            "from": {
+              "zoom": 1.15,
+              "x": 0.48,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.3,
+              "x": 0.48,
+              "y": 0.45
+            }
+          },
+          "note": "FINAL CHORUS"
+        },
+        {
+          "id": "s17",
+          "plate": "P11",
+          "start": 11.68,
+          "end": 21.52,
+          "camera": {
+            "from": {
+              "zoom": 1.05,
+              "x": 0.4,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.15,
+              "x": 0.45,
+              "y": 0.55
+            }
+          },
+          "note": "If you lose the road\u2026 look for the light"
+        },
+        {
+          "id": "s18",
+          "plate": "P03",
+          "start": 21.52,
+          "end": 28.2,
+          "camera": {
+            "from": {
+              "zoom": 1.1,
+              "x": 0.5,
+              "y": 0.5
+            },
+            "to": {
+              "zoom": 1.45,
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "note": "Look for the light left on (tag)"
+        },
+        {
+          "id": "s19",
+          "plate": "P12",
+          "start": 28.2,
+          "end": 36.7,
+          "camera": {
+            "from": {
+              "zoom": 1,
+              "x": 0.5,
+              "y": 0.55
+            },
+            "to": {
+              "zoom": 1.1,
+              "x": 0.515,
+              "y": 0.56
+            }
+          },
+          "note": "Far out on the water / a small light answers"
+        }
+      ],
+      "fadeIn": 0.4,
+      "fadeOut": 3
+    }
+  }
+}

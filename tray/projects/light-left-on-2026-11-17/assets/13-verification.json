@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "playback": [
+    {
+      "time": 0.32,
+      "duration": 179.973,
+      "error": null
+    },
+    {
+      "time": 0.33045,
+      "duration": 36.7,
+      "error": null
+    }
+  ],
+  "checks": [
+    "both compositions real audio clock and ended via test-only silent sink",
+    "19/5shot coverage and no adjacent same plate",
+    "all source images decode",
+    "source-time motion integrated",
+    "ending frames",
+    "320/390/1366layout",
+    "no autoplay/errors"
+  ],
+  "errors": [],
+  "limit": "Test-only silent AudioContext output, not physical audible playback or artistic listening"
+}

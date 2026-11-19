@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "plate": "P02",
+      "format": "wide",
+      "changedFraction": 0.018510802469135803
+    },
+    {
+      "plate": "P02",
+      "format": "tall",
+      "changedFraction": 0.018493441358024693
+    },
+    {
+      "plate": "P08",
+      "format": "wide",
+      "changedFraction": 0.012822145061728395
+    },
+    {
+      "plate": "P08",
+      "format": "tall",
+      "changedFraction": 0.11348186728395061
+    },
+    {
+      "plate": "P10",
+      "format": "wide",
+      "changedFraction": 0.018805941358024693
+    },
+    {
+      "plate": "P10",
+      "format": "tall",
+      "changedFraction": 0.01861111111111111
+    }
+  ],
+  "checks": [
+    "no autoplay",
+    "all3scenes2formats response",
+    "switch preserves audio position",
+    "320/390/1366fit"
+  ],
+  "errors": []
+}

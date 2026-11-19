@@ -1,0 +1,27 @@
+{"source":"assets/audio/light-left-on-a.m4a","take":"A","duration":179.97,
+ "tempo":{"detected_bpm":145.87,"note":"Detector counts in 4/4; the brief was a 3/4 sway near 76 BPM. Treat beats/bars in analysis/019-light-left-on-a as a cutting grid, not a verified meter."},
+ "sections":[
+  {"id":"intro","start":0.0,"end":11.0,"lines":"instrumental (transcriber hallucinated text here)"},
+  {"id":"verse1","start":11.0,"end":49.16,"lines":"The kettle's cold … finding your way through the winter trees"},
+  {"id":"chorus1","start":49.16,"end":66.68},
+  {"id":"gap1","start":66.68,"end":70.68,"lines":"instrumental turn"},
+  {"id":"verse2","start":70.68,"end":108.2},
+  {"id":"chorus2","start":108.2,"end":128.28},
+  {"id":"bridge","start":128.28,"end":138.28},
+  {"id":"chorus3","start":138.28,"end":157.32},
+  {"id":"tag","start":157.32,"end":163.5,"lines":"Look for the light left on"},
+  {"id":"outro","start":163.5,"end":179.97,"lines":"Far out on the water / a small light answers (~164–172), then guitar tail"}
+ ],
+ "lines":[
+  [11.0,"The kettle's cold, the clock is slow"],[16.0,"the road's a ribbon in the snow"],[21.24,"I wiped the glass, I trimmed the wick"],[25.0,"the dark comes early and comes thick"],
+  [31.0,"I don't know if you're near or far"],[35.5,"I only know just where you are"],[39.8,"somewhere out past the last of the trees"],[44.5,"finding your way through the winter trees"],
+  [49.16,"So I leave the light left on"],[53.9,"one small window, burning long"],[58.84,"If you lose the road, if the night is wrong"],[62.7,"look for the light left on"],
+  [70.68,"The ferry's late, the wires are down"],[74.7,"there's ice along the edge of town"],[78.76,"I set two cups, pulled out your chair"],[84.0,"the way it was when you were there"],
+  [89.16,"And every car that slows its wheels"],[94.1,"I tell my heart, be still, be still"],[99.08,"It isn't much that I can send"],[103.6,"a yellow square at the world's end"],
+  [108.2,"So I leave the light left on"],[113.0,"one small window, burning long"],[117.8,"If you lose the road, if the night is wrong"],[123.0,"look for the light left on"],
+  [128.28,"And if you don't come home tonight"],[130.8,"I'll leave it on till morning light"],[133.24,"And if you don't come home this year"],[135.8,"the glass will know that I was here"],
+  [138.28,"So I leave the light left on"],[142.9,"one small window, burning long"],[147.48,"If you lose the road, if the night is wrong"],[152.4,"look for the light left on"],[157.32,"Look for the light left on"],
+  [164.0,"Far out on the water"],[168.0,"a small light answers"]
+ ],
+ "short":{"start":137.5,"end":172.5,"why":"Final chorus through the answering-light outro: the song's emotional peak plus its resolution, 35 s, safely under 60 s."},
+ "provisional":"Segment starts are Whisper (small.en, local) on the full mix; lines inside a segment are split evenly and are approximate to ±1 s. Confirm by ear in the player before final cut points."}
