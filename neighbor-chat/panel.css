@@ -5,3 +5,7 @@
 .thread h3 { font:600 1.1rem/1.4 system-ui,sans-serif; margin:.3rem 0; }
 .thread-meta { font:.8rem/1.6 system-ui,sans-serif; color:#c8cbb9; overflow-wrap:anywhere; }
 button:focus-visible,select:focus-visible { outline:3px solid #f8dfac;outline-offset:3px; }
+.coordination h2 { margin: 0 0 .35rem; }
+.coordination summary { cursor: pointer; }
+.coordination .line-guide { margin-top: .7rem; }
+.coordination .line-guide code { overflow-wrap: anywhere; }

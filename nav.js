@@ -13,8 +13,8 @@
     ['Board', 'board/index.html', 'board/'],
     ['Tray', 'tray/index.html', 'tray/'],
     ['Songs', 'song-archive/index.html', 'song-archive/'],
-    ['Line', 'neighbor-chat/index.html', 'neighbor-chat/'],
     ['Editor', 'editor/index.html?v=5', 'editor/'],
+    ['Cut Room', 'studio/', 'studio/'],
   ];
   const here = decodeURI(location.pathname).slice(decodeURI(base.pathname).length);
   let current = rooms.find(([, , prefix]) => prefix && here.startsWith(prefix));
@@ -26,8 +26,8 @@
     html { scrollbar-gutter: stable; scroll-padding-top: ${H + 12}px; }
     #window-nav, #window-nav * { all: revert; box-sizing: border-box; margin: 0; }
     #window-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 2147483000; height: ${H}px;
-      display: block; padding: 0; background: rgba(16, 28, 37, .94);
-      -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border: 0; border-bottom: 1px solid #2c3f45;
+      display: block; padding: 0; background: #101c25;
+      border: 0; border-bottom: 1px solid #2c3f45;
       font: 400 15px/20px system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: normal;
       text-transform: none; text-align: left; color: #b9c9c2; }
     #window-nav .wn-inner { max-width: 1100px; height: 100%; margin: 0 auto; padding: 0 16px;
