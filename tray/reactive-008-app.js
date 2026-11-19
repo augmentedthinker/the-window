@@ -8,7 +8,6 @@ function height(){if(parent!==window)parent.postMessage({type:'tray-audition-hei
 new ResizeObserver(height).observe(document.body);
 window.addEventListener('resize',height);
 window.addEventListener('load',height);
-if(parent!==window)document.querySelector('#back').hidden=true;
 if(!card||!A||A.audio!==card.audio){status.textContent='The selected song and analysis do not match. Please reload the current Tray.';status.className='error';return;}
 const F=A.features,bytes=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0)),data={};
 for(const k of ['bass','mid','high','rms','bands','wave'])data[k]=bytes(F[k]);
