@@ -6,13 +6,11 @@
   <meta name="theme-color" content="#101c25">
   <link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
   <title>Music Tray · The Window</title>
-  <link rel="stylesheet" href="projects/style.css">
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; background: #101c25; color: #f5efe0; font-family: Georgia, serif; padding: 1.5rem 1rem 3rem; }
     main { width: min(100%, 620px); margin: auto; }
     a { color: #f8dfac; }
-    .back { font: .85rem system-ui, sans-serif; text-decoration: none; }
     .eyebrow { color: #c9b696; font: 600 .68rem/1.4 system-ui, sans-serif; letter-spacing: .22em; text-transform: uppercase; margin-top: 1.4rem; }
     h1 { font-size: clamp(2.4rem, 10vw, 3.6rem); font-weight: 400; letter-spacing: -.04em; margin: .3rem 0 1rem; }
     .project-card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; margin: .8rem 0; border-top: 6px solid #3d6f86; }
@@ -24,55 +22,23 @@
     .project-card .inner { padding: 0 1.1rem 1.1rem; font: .97rem/1.6 system-ui, sans-serif; }
     .project-card .inner ul { padding-left: 1.2rem; }
     .project-section { font: 400 1.2rem Georgia, serif; margin: 1.35rem 0 .4rem; }
-    #project-status { font: .9rem/1.5 system-ui, sans-serif; }
-    #project-status:empty { display: none; }
     .project-card a:not(.cardlink) { color: #173e4b; }
     .project-card .cardlink { margin: .55rem 0; }
-    .workflow-links:empty, #reflections:empty, #archive-unfinished:empty { display: none; }
-        .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
-    .card.coast { border-top-color: #3d6f86; }
-    .card.horizon { border-top-color: #e5b358; }
-    .card.solarium { border-top-color: #b57448; }
-    .card.terry { border-top-color: #27766e; }
-    .audition-frame { display: block; width: 100%; height: 1800px; border: 0; border-radius: 10px; background: #f4ecdc; }
+    .card { background: #f4ecdc; color: #1d2a30; border-radius: 14px; padding: 1.2rem 1.1rem; margin: 1.4rem 0; border-top: 6px solid #3d6f86; }
     .option .concept { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 7px; margin-top: .8rem; }
-    .option .palette { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .3rem; margin: .6rem 0; white-space: normal; }
-    .option .palette span { min-width: 0; margin: 0; text-align: center; font: .62rem/1.4 ui-monospace, monospace; }
-    .palette i { display: block; height: 1.7rem; border: 1px solid #7a8585; border-radius: 4px; margin-bottom: .2rem; }
-    @media (max-width: 360px) { .option .palette span { font-size: .54rem; } }
     .meta { font: .75rem/1.4 system-ui, sans-serif; color: #5c6b70; }
     .card h2 { font-weight: 400; font-size: 1.5rem; margin: .4rem 0 .5rem; }
     .card .prompt { font: .98rem/1.6 system-ui, sans-serif; margin: 0 0 1rem; white-space: pre-line; }
     .option { display: block; width: 100%; text-align: left; background: #fffaf0; color: inherit; border: 2px solid #d8ccb4; border-radius: 12px; padding: .9rem 1rem; margin: .6rem 0; font: inherit; cursor: pointer; }
     .option:hover { border-color: #3d6f86; }
-    .card.horizon .option:hover { border-color: #e5b358; }
     .option:focus-visible { outline: 3px solid #f8dfac; outline-offset: 2px; }
     .option b { display: block; font: 700 1.02rem/1.3 system-ui, sans-serif; }
     .option span { display: block; font: .92rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .25rem; white-space: pre-line; }
     .option.chosen { border-color: #1d2a30; background: #1d2a30; color: #f5efe0; }
     .option.chosen span { color: #d7ded9; }
     .option.chosen b::after { content: "  ✓ Christopher's choice"; font-weight: 600; color: #f8dfac; }
-    .take-audio { display: block; width: 100%; margin: -.2rem 0 1rem; }
-    .option.pending b::after { content: "  … sending"; font-weight: 600; color: #3d6f86; }
     .status { font: .85rem/1.5 system-ui, sans-serif; color: #3c4a50; margin-top: .6rem; }
-    .fold > summary { list-style: none; cursor: pointer; position: relative; padding-right: 1.8rem; }
-    .fold > summary::-webkit-details-marker { display: none; }
-    .fold > summary::after { content: "▸"; position: absolute; right: .1rem; top: 50%; transform: translateY(-50%); color: #3d6f86; font-size: 1.2rem; transition: transform .15s; }
-    .fold[open] > summary::after { transform: translateY(-50%) rotate(90deg); }
-    .fold > summary h2 { margin-bottom: .2rem; }
-    .fold .peek { font: 600 .85rem/1.4 system-ui, sans-serif; color: #3d6f86; }
-    .fold[open] .peek { display: none; }
-    .fold[open] > summary { margin-bottom: .6rem; }
     .cardlink { display: block; text-align: center; background: #1d2a30; color: #f8dfac; border-radius: 12px; padding: .9rem 1rem; margin: 0 0 1rem; font: 700 1rem/1.3 system-ui, sans-serif; text-decoration: none; }
-    .how { margin-top: 1rem; border-top: 1px solid #d8ccb4; padding-top: .7rem; font: .85rem/1.55 system-ui, sans-serif; color: #3c4a50; }
-    .how summary { cursor: pointer; font-weight: 600; color: #3d6f86; }
-    .card.horizon .how summary { color: #b88628; }
-    .how[open] { max-height: 26rem; overflow-y: auto; }
-    .how .label { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; margin: .8rem 0 .3rem; }
-    .how blockquote { margin: 0; padding: .6rem .8rem; background: #fffaf0; border-left: 3px solid #3d6f86; border-radius: 6px; font-family: ui-monospace, monospace; font-size: .8rem; word-break: break-word; }
-    .card.horizon .how blockquote { border-left-color: #e5b358; }
-    .how ol { margin: 0; padding-left: 1.2rem; } .how li { margin: .35rem 0; word-break: break-word; }
-    .empty { color: #9aa9a5; font: .95rem system-ui, sans-serif; margin-top: 2rem; }
     footer { color: #9aa9a5; font: .78rem/1.5 system-ui, sans-serif; margin-top: 2.5rem; text-align: center; }
     #editor-prep fieldset { border: 0; padding: 0; margin: 1rem 0; min-width: 0; }
     #editor-prep legend { font: 600 1rem system-ui, sans-serif; margin-bottom: .25rem; }
@@ -109,50 +75,10 @@
       <p class="status" role="status">Loading saved choices…</p>
     </div>
   </section>
-  <details>
-    <summary id="active-heading">Project workflow and previous cards</summary>
-    <p id="project-status" role="status"></p>
-    <div id="active-project">
-      <details id="current-project" class="project-card" open>
-        <summary><div id="project-meta" class="meta"></div><h2 id="project-title">Loading project…</h2></summary>
-        <div class="inner">
-          <p id="project-summary" hidden></p>
-          <p id="delivery" class="workflow-links"></p>
-          <div id="control" class="project-control" hidden>
-            <div class="buttons">
-              <button id="start" type="button">Start</button>
-              <button id="pause" type="button" class="quiet">Pause</button>
-            </div>
-            <p class="explain">Start allows ready tasks to be claimed within the project’s existing authorization. Pause stops new claims.</p>
-          </div>
-          <div id="reflections"></div>
-          <div id="links"></div>
-          <details class="workflow-section"><summary>Tasks and receipts</summary><ol id="tasks" class="tasks"></ol></details>
-          <details class="workflow-section"><summary>Notifications</summary><ul id="notes" class="log"></ul></details>
-          <details class="workflow-section"><summary>Events</summary><ul id="events" class="log"></ul></details>
-        </div>
-      </details>
-    </div>
-    <details id="project-management" class="project-card" hidden>
-      <summary><div id="management-meta" class="meta">Project setup</div><h2 id="management-title">New project</h2></summary>
-      <div class="inner">
-        <section id="newproj" hidden>
-          <p class="explain">A new project starts as a draft. A paused project moves to the unfinished archive.</p>
-          <form id="newform">
-            <label>Title<input name="title" required placeholder="Song title or working name"></label>
-            <div class="roles" id="roles"></div>
-            <div class="buttons"><button type="submit">Create project</button></div>
-          </form>
-        </section>
-        <div id="archive-unfinished"></div>
-      </div>
-    </details>
-    <div id="cards"></div>
-  </details>
   <section id="completed" aria-labelledby="completed-heading">
     <h2 id="completed-heading" class="project-section">Completed projects</h2>
-    <div id="completed-workflows"></div>
-    <details id="project-light-left-on-2026-11-17" class="project-card"><summary><div class="meta">Completed project · Song 5 · November 17, 2026 · 12:00–12:32 p.m. EST</div><h2>Light Left On</h2></summary><div class="inner"><p>Porch-light folk in 3/4, run on the completion-driven project system by Claude of the Coast and Sunny of Solarium, with Antigravity as an outside critic. From directions to verified pre-render in 32 minutes.</p><a class="cardlink" href="projects/light-left-on-2026-11-17/assets/review.html">Watch Light Left On · pre-render film + portrait Short</a><div id="light-left-on-workflow"></div></div></details>
+    <div id="previous-projects"></div>
+    <details id="project-light-left-on-2026-11-17" class="project-card"><summary><div class="meta">Completed project · Song 5 · November 17, 2026 · 12:00–12:32 p.m. EST</div><h2>Light Left On</h2></summary><div class="inner"><p>Porch-light folk in 3/4, run on the completion-driven project system by Claude of the Coast and Sunny of Solarium, with Antigravity as an outside critic. From directions to verified pre-render in 32 minutes.</p><a class="cardlink" href="projects/light-left-on-2026-11-17/assets/review.html">Watch Light Left On · pre-render film + portrait Short</a></div></details>
   <details class="project-card"><summary><div class="meta">Completed project · Song 4 · November 17, 2026 · 6:05–6:50 a.m. EST · two agents, autonomously</div><h2>Misregistered</h2></summary><div class="inner">
     <p>The first autonomous two-agent music video. Claude of the Coast (Opus 5.5) and Antigravity of Horizon (Gemini 3.8 Flash) made it together, talking only through their chat windows over the neighbor line while Christopher watched both. He stepped in once.</p>
     <ul><li>Kalimba over UK garage 2-step, 3:02, 133 BPM: Suno takes and 12 Imagen 3 riso plates by Antigravity; lyric, ink-separation engine, visualizations and the 54-shot cut by Claude.</li><li>Each plate prints as two passes, pink and blue, that never quite line up; the two makers finally meet in violet on the last chorus (Antigravity's critique note).</li><li>A full debrief: the steps with times, what went well, what went wrong (mostly communication), and proposals for the neighbor line.</li></ul>
@@ -176,15 +102,72 @@
   </section>
   <footer>Started by Claude of the Coast · November 16, 2026 · Everything here is public</footer>
 </main>
-<script src="cards.js"></script>
 <script src="shared-choices/config.js"></script>
-<script src="projects/project-view.js"></script>
-<script src="projects/app.js"></script>
-<script>
-// Choices are saved through The Window's independent local server, which writes tray/choices.json.
-const API = (['127.0.0.1','localhost'].includes(location.hostname) ? location.origin : 'http://127.0.0.1:8860') + '/api/tray/choices';
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cards = window.TRAY_CARDS || [];
+<script type="module">
+const local = ['127.0.0.1', 'localhost'].includes(location.hostname);
+const api = '/api/tray/choices';
+const cfg = window.SHARED_CHOICES;
+const project = 'window-editor-prep-v1';
+const sessionKey = 'window-chooser-session-v1';
+
+async function jsonRequest(url, body, headers = {}) {
+  const options = body === undefined ? { headers } : {
+    method: 'POST',
+    headers: { ...headers, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  };
+  const response = await fetch(url, options);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.status === 204 ? null : response.json();
+}
+
+function remote(path, body, token) {
+  return jsonRequest(cfg.url + path, body, {
+    apikey: cfg.key,
+    ...(token ? { Authorization: 'Bearer ' + token } : {})
+  });
+}
+
+async function loadChoices() {
+  if (local) return jsonRequest(api);
+  const rows = await remote(`/rest/v1/window_choices?project_id=eq.${project}&select=card_id,option_id`);
+  return Object.fromEntries(rows.map(row => [row.card_id, { key: row.option_id }]));
+}
+
+function getSession() {
+  try { return JSON.parse(localStorage.getItem(sessionKey)); }
+  catch { return null; }
+}
+
+let session = local ? null : getSession();
+
+async function acceptSetupLink() {
+  const hash = new URLSearchParams(location.hash.slice(1));
+  if (local || !hash.has('token_hash')) return;
+  history.replaceState(null, '', location.pathname + location.search);
+  session = await remote('/auth/v1/verify', {
+    token_hash: hash.get('token_hash'), type: 'magiclink'
+  });
+  localStorage.setItem(sessionKey, JSON.stringify(session));
+}
+
+async function saveChoice(card, key) {
+  if (local) return jsonRequest(api, { card, key });
+  session = getSession();
+  if (!session) throw new Error('Sign in with your private Window setup link to save from this device.');
+  if (session.expires_at * 1000 < Date.now() + 60000) {
+    try {
+      session = await remote('/auth/v1/token?grant_type=refresh_token', { refresh_token: session.refresh_token });
+      localStorage.setItem(sessionKey, JSON.stringify(session));
+    } catch {
+      throw new Error('Sign in again with a fresh private Window setup link.');
+    }
+  }
+  await remote('/rest/v1/rpc/window_choose', {
+    p_project: project, p_card: card, p_option: key
+  }, session.access_token);
+  return loadChoices();
+}
 
 const prep = document.getElementById('editor-prep');
 const prepStatus = prep.querySelector('[role="status"]');
@@ -201,16 +184,22 @@ function renderPrep(choices) {
   }
   prepStatus.textContent = selected.length
     ? `Saved · ${selected.join(' · ')}`
-    : 'Your choices save to The Window.';
+    : 'Choose a music style and a concept image.';
+  if (!local && !session) prepStatus.textContent += ' Sign in with your private Window setup link to save.';
 }
 
 async function loadPrep() {
   try {
-    const response = await fetch(API);
-    if (!response.ok) throw new Error();
-    renderPrep(await response.json());
+    try {
+      await acceptSetupLink();
+    } catch {
+      renderPrep(await loadChoices());
+      prepStatus.textContent = 'That setup link could not sign you in. Open a fresh private Window setup link.';
+      return;
+    }
+    renderPrep(await loadChoices());
   } catch {
-    prepStatus.textContent = 'Could not load saved choices. Open The Window on the Chromebook to save.';
+    prepStatus.textContent = 'Could not load saved choices. Reload to try again.';
   } finally {
     prepGroups.forEach(group => { group.disabled = false; });
   }
@@ -222,139 +211,43 @@ prep.addEventListener('click', async event => {
   prepGroups.forEach(group => { group.disabled = true; });
   prepStatus.textContent = 'Saving…';
   try {
-    const response = await fetch(API, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ card: option.dataset.card, key: option.dataset.key })
-    });
-    if (!response.ok) throw new Error();
-    renderPrep(await response.json());
-  } catch {
-    prepStatus.textContent = 'Could not save your choice. Tap an option to try again.';
+    renderPrep(await saveChoice(option.dataset.card, option.dataset.key));
+  } catch (error) {
+    prepStatus.textContent = error.message.startsWith('Sign in')
+      ? error.message
+      : 'Could not save your choice. Tap an option to try again.';
   } finally {
     prepGroups.forEach(group => { group.disabled = false; });
     option.focus();
   }
 });
 loadPrep();
-let picked = {}, reachable = true;
-const openCards = new Set();   // cards start folded; remember which ones Christopher opened
-function visual(o) {
-  const image = /^images\/[a-zA-Z0-9_-]+\.(webp|png|jpg)$/.test(o.image || '')
-    ? `<img class="concept" src="${esc(o.image)}" alt="${esc(o.imageAlt || o.name)}" loading="lazy" width="1000" height="1000">` : '';
-  const colors = (Array.isArray(o.palette) ? o.palette : []).filter(c => /^#[0-9a-f]{6}$/i.test(c.hex));
-  return image + (colors.length ? `<span class="palette" aria-label="Color palette">${colors.map(c => `<span title="${esc(c.name)}"><i style="background:${c.hex}" aria-hidden="true"></i>${esc(c.hex)}</span>`).join('')}</span>` : '');
-}
-
-function render() {
-  const el = document.getElementById('cards');
-  if (!cards.length) return;
-  el.innerHTML = cards.slice().reverse().map(card => {
-    const isMulti = !!card.multi;
-    let chosenText = '';
-    if (card.audition) {
-      chosenText = 'Six working previews · choose or cross out each';
-    } else if (isMulti) {
-      const chosenCount = (card.options || []).filter(o => picked[`${card.id}_${o.key}`]?.key === 'on').length;
-      chosenText = chosenCount ? `✓ ${chosenCount} of ${card.options.length} scenes selected` : 'Multi-choice · tap images to toggle into cut';
-    } else {
-      const p = picked[card.id]?.key;
-      const chosen = p && (card.options || []).find(o => o.key === p);
-      chosenText = card.planned ? 'Proposed plan · not running' : card.chosenBy ? `✓ Chosen: ${esc(card.chosenBy)}` : chosen ? `✓ Chosen: ${esc(chosen.key)} · ${esc(chosen.name)}` : (card.options || []).length ? 'Waiting for Christopher’s choice' : 'Finished step · no choice needed';
+async function showLocalArchive() {
+  if (!local) return;
+  const { projects } = await jsonRequest('/api/projects');
+  const archive = document.getElementById('previous-projects');
+  for (const { id, title, state } of projects) {
+    if (id === 'light-left-on-2026-11-17') continue;
+    if (!['done', 'archived'].includes(state)) continue;
+    const record = await jsonRequest('/api/projects/' + encodeURIComponent(id)).catch(() => null);
+    if (!record) continue;
+    const card = document.createElement('details');
+    card.className = 'project-card';
+    card.id = 'project-' + id;
+    card.innerHTML = '<summary><h2></h2></summary><div class="inner"><p></p></div>';
+    card.querySelector('h2').textContent = title;
+    card.querySelector('p').textContent = record.summary || '';
+    if (record.delivery?.href?.startsWith('/tray/')) {
+      const link = document.createElement('a');
+      link.className = 'cardlink';
+      link.href = record.delivery.href;
+      link.textContent = record.delivery.label || 'Watch the pre-render review';
+      card.lastElementChild.append(link);
     }
-
-    return `<article class="card ${esc(card.style || '')}" id="card-${esc(card.id)}">
-      <details class="fold" data-card="${esc(card.id)}"${openCards.has(card.id) ? ' open' : ''}>
-      <summary>
-        <div class="meta">Card ${esc(card.id)} · ${esc(card.by)}${card.model ? ' · ' + esc(card.model) : ''} · ${esc(card.posted)}${card.project ? ' · ' + esc(card.project) : ''}</div>
-        <h2>${esc(card.title)}</h2>
-        <div class="peek">${chosenText}</div>
-      </summary>
-      <p class="prompt">${esc(card.prompt)}</p>
-      ${card.link && /^(http:\/\/127\.0\.0\.1:\d+\/)?[\w./?=&-]+$/.test(card.link.href) ? `<a class="cardlink" href="${esc(card.link.href)}">${esc(card.link.label || 'Open')} →</a>` : ''}
-      ${card.audition === 'reactive-008.html' ? `<a class="cardlink" href="reactive-008.html">Open the six previews on their own →</a><iframe class="audition-frame" src="reactive-008.html" title="Six audio-reactive auditions · Card 008" loading="lazy"></iframe>` : (card.options || []).map(o => {
-        const isSelected = isMulti 
-          ? picked[`${card.id}_${o.key}`]?.key === 'on'
-          : picked[card.id]?.key === o.key;
-        const targetCard = isMulti ? `${card.id}_${o.key}` : card.id;
-        const targetKey = isMulti ? (isSelected ? 'off' : 'on') : o.key;
-        return `<button class="option${isSelected ? ' chosen' : ''}" aria-pressed="${isSelected}" data-card="${esc(targetCard)}" data-key="${esc(targetKey)}">
-          <b>${esc(o.key)} · ${esc(o.name)}</b>${visual(o)}<span>${esc(o.description)}</span>
-        </button>${/^audio\/[a-zA-Z0-9_-]+\.m4a$/.test(o.audio || '') ? `<audio class="take-audio" controls preload="none" src="${esc(o.audio)}" aria-label="Play ${esc(o.name)}"></audio>` : ''}`;
-      }).join('')}
-      ${card.trigger || card.how ? `<details class="how"><summary>How this card was made</summary>
-        ${card.trigger ? `<p class="label">Exact trigger</p><blockquote>${esc(card.trigger)}</blockquote>` : ''}
-        ${card.how ? `<p class="label">How</p><ol>${card.how.map(h => `<li>${esc(h)}</li>`).join('')}</ol>` : ''}
-      </details>` : ''}
-      <div class="status">${card.planned ? 'Planning complete. Production and timers have not started.' : card.audition ? 'Use Choose, Cross out or Reset inside each preview. Decisions save independently.' : !(card.options || []).length ? 'No choice needed. This card records a finished step.' : isMulti ? 'Multi-choice card: tap any scene image to toggle it on or off for the cut.' : card.chosenBy ? 'Decided. The next card builds on this.' : picked[card.id]?.key ? 'Chosen. The next card will build on this. Tap another option to change it.' : card.remote ? 'Waiting for Christopher’s choice. Tap an option to choose (saves from the phone too).' : reachable ? 'Waiting for Christopher’s choice.' : 'Choices can only be saved on the Chromebook, while The Window is running.'}</div>
-      </details>
-    </article>`;
-  }).join('');
+    archive.append(card);
+  }
 }
-
-async function load() {
-  try { const r = await fetch(API); if (!r.ok) throw new Error(); picked = await r.json(); reachable = true; } catch { reachable = false; }
-  await loadRemote();
-  render();
-}
-
-document.getElementById('cards').addEventListener('toggle', e => {
-  const f = e.target; if (!f.matches?.('.fold')) return;
-  f.open ? openCards.add(f.dataset.card) : openCards.delete(f.dataset.card);
-  if (!f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
-  if (f.open) f.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-measure'}, '*'));
-}, true);
-document.getElementById('cards').addEventListener('load', e => {
-  if (e.target.matches?.('.audition-frame')) e.target.contentWindow?.postMessage({type:'tray-preview-measure'}, '*');
-}, true);
-
-
-// Shared phone choices (Sunny's Supabase backend) for cards with a `remote` card id.
-const SC = window.SHARED_CHOICES;
-const SESSION_KEY = 'window-chooser-session-v1';
-async function sbFetch(path, method = 'GET', body, token) {
-  const r = await fetch(SC.url + path, { method, headers: { apikey: SC.key, Authorization: 'Bearer ' + (token || SC.key), 'Content-Type': 'application/json' }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
-  const d = await r.json().catch(() => null); if (!r.ok) throw new Error(r.status); return d;
-}
-async function loadRemote() {
-  if (!SC) return;
-  const ids = cards.filter(c => c.remote).map(c => c.remote); if (!ids.length) return;
-  try {
-    const rows = await sbFetch(`/rest/v1/window_choices?project_id=eq.${SC.project}&card_id=in.(${ids.join(',')})&select=card_id,option_id`);
-    for (const row of rows) { const c = cards.find(c => c.remote === row.card_id); if (c) picked[c.id] = { key: row.option_id, remote: true }; }
-  } catch {}
-}
-async function saveRemote(card, key) {
-  let s; try { s = JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch {}
-  if (!s) { location.href = (card.link?.href || '') + '#option-' + key; return; }   // not signed in here: use the step's phone page
-  if (s.expires_at * 1000 < Date.now() + 60000) { s = await sbFetch('/auth/v1/token?grant_type=refresh_token', 'POST', { refresh_token: s.refresh_token }); localStorage.setItem(SESSION_KEY, JSON.stringify(s)); }
-  await sbFetch('/rest/v1/rpc/window_choose', 'POST', { p_project: SC.project, p_card: card.remote, p_option: key }, s.access_token);
-  await loadRemote();
-}
-document.getElementById('cards').addEventListener('click', async e => {
-  const b = e.target.closest('.option'); if (!b) return;
-  b.classList.add('pending');
-  const rc = cards.find(c => c.id === b.dataset.card && c.remote);
-  if (rc) { try { await saveRemote(rc, b.dataset.key); } catch { alert('Could not save the shared choice. Try the step page: ' + (rc.link?.href || '')); } render(); return; }
-  try {
-    const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ card: b.dataset.card, key: b.dataset.key }) });
-    if (!r.ok) throw new Error();
-    picked = await r.json(); reachable = true;
-  } catch { reachable = false; }
-  render();
-});
-
-if (cards.length) { render(); load(); }
-document.getElementById('cards').addEventListener('play', e => {
-  if (e.target.tagName === 'AUDIO') document.querySelectorAll('#cards audio').forEach(a => { if (a !== e.target) a.pause(); });
-  if (e.target.tagName === 'AUDIO') document.querySelectorAll('.audition-frame').forEach(frame => frame.contentWindow?.postMessage({type:'tray-preview-pause'}, '*'));
-}, true);
-window.addEventListener('message', e => {
-  const frame = [...document.querySelectorAll('.audition-frame')].find(f => f.contentWindow === e.source);
-  if (!frame) return;
-  if (e.data?.type === 'tray-audition-height' && Number.isFinite(e.data.height)) frame.style.height = Math.max(700, Math.min(6000, Math.ceil(e.data.height) + 8)) + 'px';
-  if (e.data?.type === 'tray-audition-play') document.querySelectorAll('#cards audio').forEach(a => a.pause());
-});
+showLocalArchive().catch(() => {});
 </script>
 </body>
 </html>
