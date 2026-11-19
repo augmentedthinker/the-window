@@ -1,0 +1,930 @@
+{
+  "format": "horizon-video-editor-v1",
+  "id": "project_the_fire_we_keep_iter_5",
+  "title": "The Fire We Keep (Iteration 5 — Master Sovereign Cinema)",
+  "audio": "/audio/the_fire_we_keep_iter2_take_1.mp3",
+  "audioName": "The Fire We Keep (124.35 BPM Melodic House Master)",
+  "bpm": 124.35,
+  "barDuration": 1.93,
+  "twoBarCut": 3.8601,
+  "duration": 173.71,
+  "frame": "landscape",
+  "exportResolution": "720p",
+  "fxEnabled": true,
+  "assets": [
+    {
+      "id": "asset-01",
+      "name": "Plate 01 · Cockpit Intimacy (2 AM Rain & Silhouettes)",
+      "path": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "type": "story-plate"
+    },
+    {
+      "id": "asset-02",
+      "name": "Plate 02 · Open Highway Rain (Vanishing Nocturnal Perspective)",
+      "path": "/images/fire_v5/02_open_highway_rain.jpg",
+      "type": "story-plate"
+    },
+    {
+      "id": "asset-03",
+      "name": "Plate 03 · Cockpit Dash Console (Analog Gauges & Rain Glass)",
+      "path": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "type": "hardware-visualizer",
+      "visualizer": "dashboard"
+    },
+    {
+      "id": "asset-04",
+      "name": "Plate 04 · Rearview City Fade (Skyline Receding into Night)",
+      "path": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "type": "story-plate"
+    },
+    {
+      "id": "asset-05",
+      "name": "Plate 05 · Door Transducer Woofer (Carbon Fiber & Cyan Rim)",
+      "path": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "type": "hardware-visualizer",
+      "visualizer": "woofer"
+    },
+    {
+      "id": "asset-06",
+      "name": "Plate 06 · Audiophile Vacuum Tube Console (Tungsten Warmth)",
+      "path": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "type": "hardware-visualizer",
+      "visualizer": "vacuumTube"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "name": "01 · Intro Awakening (Bar 01)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.6,
+      "fadeOut": 0.0,
+      "notes": "Intimate silhouettes emerge through twilight rain glass.",
+      "start": 0.0
+    },
+    {
+      "id": "scene-02",
+      "name": "02 · Highway Cockpit Console (Bar 03)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Active analog dials and dashboard telemetry pulse to BPM.",
+      "start": 3.8601
+    },
+    {
+      "id": "scene-03",
+      "name": "03 · 16th-Note Synth Rails (Bar 05)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "neonArp",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Hypnotic synth arpeggiator rails cascade down perspective grid.",
+      "start": 7.7202
+    },
+    {
+      "id": "scene-04",
+      "name": "04 · Audiophile Filament Glow (Bar 07)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "vacuumTube",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Tungsten vacuum tube filaments warm up with glowing amber heat bloom.",
+      "start": 11.5803
+    },
+    {
+      "id": "scene-05",
+      "name": "05 · Verse 1: Open Road (Bar 09)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Vocal entry: Two in the morning on an open road.",
+      "start": 15.4404
+    },
+    {
+      "id": "scene-06",
+      "name": "06 · Shadow in Dashboard Glow (Bar 11)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Carrying the weight of what we never told.",
+      "start": 19.3005
+    },
+    {
+      "id": "scene-07",
+      "name": "07 · Smoked-Glass VFD Spectrum (Bar 13)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "receiver",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "VFD frequency bars dance to mid-range vocal harmonics.",
+      "start": 23.1606
+    },
+    {
+      "id": "scene-08",
+      "name": "08 · Carbon Door Transducer (Bar 15)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "woofer",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Argon 18-shell piston kinematics warping on sub-bass kicks.",
+      "start": 27.0207
+    },
+    {
+      "id": "scene-09",
+      "name": "09 · City in Rearview (Bar 17)",
+      "image": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "left",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "City in the rearview fading to black.",
+      "start": 30.8808
+    },
+    {
+      "id": "scene-10",
+      "name": "10 · Polar Resonance Scope (Bar 19)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "chladni",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Circular acoustic mandala expands to vocal presence.",
+      "start": 34.7409
+    },
+    {
+      "id": "scene-11",
+      "name": "11 · Can You Feel the Pulse (Bar 21)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Pre-chorus tension builds: Can you feel the pulse?",
+      "start": 38.601
+    },
+    {
+      "id": "scene-12",
+      "name": "12 · Neon Arp Surge (Bar 23)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "neonArp",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Synth rails accelerate as harmonics rise.",
+      "start": 42.4611
+    },
+    {
+      "id": "scene-13",
+      "name": "13 · Breathing in the Dark (Bar 25)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "right",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "I hear you breathing in the dark.",
+      "start": 46.3212
+    },
+    {
+      "id": "scene-14",
+      "name": "14 · Lissajous Harmonic Ribbon (Bar 27)",
+      "image": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "visualizer": "lissajous",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Multi-pass cybernetic Lissajous ribbon twists to vocal arpeggio.",
+      "start": 50.1813
+    },
+    {
+      "id": "scene-15",
+      "name": "15 · Heartbeat Mark (Bar 29)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "woofer",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Every heartbeat leaves a mark. Sub-bass pre-drop build.",
+      "start": 54.0414
+    },
+    {
+      "id": "scene-16",
+      "name": "16 · Chorus Drop: The Fire We Keep (Bar 31)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 7.72,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Main hook drop: It’s the fire we keep. Deep night euphoria.",
+      "start": 57.9015
+    },
+    {
+      "id": "scene-17",
+      "name": "17 · 32-Band VFD Spectrum (Bar 35)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "spectrum",
+      "duration": 7.72,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "32-band color organ leaping across kick and bassline frequencies.",
+      "start": 65.6215
+    },
+    {
+      "id": "scene-18",
+      "name": "18 · Synth Rail Flight (Bar 39)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "neonArp",
+      "duration": 7.72,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Through the cold and the rain, through promises made.",
+      "start": 73.3415
+    },
+    {
+      "id": "scene-19",
+      "name": "19 · Piston Climax (Bar 43)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "woofer",
+      "duration": 7.72,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Maximum 18-shell woofer excursion with 3D key-light lift.",
+      "start": 81.0615
+    },
+    {
+      "id": "scene-20",
+      "name": "20 · Post-Chorus Breath (Bar 47)",
+      "image": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "out",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Breath pause as beat strips back: It’s the fire we keep.",
+      "start": 88.7815
+    },
+    {
+      "id": "scene-21",
+      "name": "21 · Verse 2: Neon Haze (Bar 49)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "right",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Years come and go like a neon haze.",
+      "start": 92.6416
+    },
+    {
+      "id": "scene-22",
+      "name": "22 · Vacuum Tube Warmth (Bar 51)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "vacuumTube",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "People get lost in the crowded days. Warm thermionic glow.",
+      "start": 96.5017
+    },
+    {
+      "id": "scene-23",
+      "name": "23 · Hands on the Wheel (Bar 53)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "I got your handwriting locked in my mind.",
+      "start": 100.3618
+    },
+    {
+      "id": "scene-24",
+      "name": "24 · Receiver VU Dynamics (Bar 55)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "receiver",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Hands on the wheel and the engine hums.",
+      "start": 104.2219
+    },
+    {
+      "id": "scene-25",
+      "name": "25 · Intimate Cabin Horizon (Bar 57)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "left",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Waiting for the moment that the feeling comes.",
+      "start": 108.082
+    },
+    {
+      "id": "scene-26",
+      "name": "26 · Polar Scope Resonance (Bar 59)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "chladni",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Polar mandala ripples with percussion formants.",
+      "start": 111.9421
+    },
+    {
+      "id": "scene-27",
+      "name": "27 · Can You Feel the Rise (Bar 61)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Can you feel the pulse? Can you feel the rise?",
+      "start": 115.8022
+    },
+    {
+      "id": "scene-28",
+      "name": "28 · Neon Arp Surge (Bar 63)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "neonArp",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Cutting through the noise behind my eyes.",
+      "start": 119.6623
+    },
+    {
+      "id": "scene-29",
+      "name": "29 · Transducer Excursion (Bar 65)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "woofer",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "I hear you breathing in the dark.",
+      "start": 123.5224
+    },
+    {
+      "id": "scene-30",
+      "name": "30 · Lissajous Twisting Chamber (Bar 67)",
+      "image": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "visualizer": "lissajous",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Every heartbeat leaves a mark.",
+      "start": 127.3825
+    },
+    {
+      "id": "scene-31",
+      "name": "31 · Climax Threshold (Bar 69)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 3.8601,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Final bar before the monumental climax drop.",
+      "start": 131.2426
+    },
+    {
+      "id": "scene-32",
+      "name": "32 · Climax Hook: The Fire We Keep (Bar 71)",
+      "image": "/images/fire_v5/01_cockpit_intimacy.jpg",
+      "visualizer": "story",
+      "duration": 7.72,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Monumental climax drop. It’s the fire we keep!",
+      "start": 135.1027
+    },
+    {
+      "id": "scene-33",
+      "name": "33 · Instrumental Arp Expressway (Bar 75)",
+      "image": "/images/fire_v5/02_open_highway_rain.jpg",
+      "visualizer": "neonArp",
+      "duration": 7.72,
+      "motion": "in",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Full-throttle melodic house synth arpeggios on wet night highway.",
+      "start": 142.8227
+    },
+    {
+      "id": "scene-34",
+      "name": "34 · Grand Subwoofer Flex (Bar 79)",
+      "image": "/images/fire_v5/05_door_transducer_woofer.jpg",
+      "visualizer": "woofer",
+      "duration": 7.72,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Maximum excursion with recessed surround depth.",
+      "start": 150.5427
+    },
+    {
+      "id": "scene-35",
+      "name": "35 · 32-Band VFD Spectrum (Bar 83)",
+      "image": "/images/fire_v5/06_vacuum_tube_console.jpg",
+      "visualizer": "spectrum",
+      "duration": 7.72,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Full color organ illuminated in cyan, magenta, and amber.",
+      "start": 158.2627
+    },
+    {
+      "id": "scene-36",
+      "name": "36 · Pull Me In: Deep Resonance (Bar 87)",
+      "image": "/images/fire_v5/03_cockpit_dash_console.jpg",
+      "visualizer": "dashboard",
+      "duration": 3.8601,
+      "motion": "still",
+      "fadeIn": 0.0,
+      "fadeOut": 0.0,
+      "notes": "Pull me in... where you end and where I begin.",
+      "start": 165.9827
+    },
+    {
+      "id": "scene-37",
+      "name": "37 · Still Burning: City Vanishes (Bar 89)",
+      "image": "/images/fire_v5/04_rearview_city_fade.jpg",
+      "visualizer": "story",
+      "duration": 3.87,
+      "motion": "out",
+      "fadeIn": 0.0,
+      "fadeOut": 1.5,
+      "notes": "Still burning. The fire we keep. Slow fade to black.",
+      "start": 169.8428
+    }
+  ],
+  "cues": [
+    {
+      "id": "cue-01",
+      "time": 0.26,
+      "duration": 15.44,
+      "label": "Intro",
+      "bar": 1,
+      "type": "intro",
+      "energy": "low",
+      "notes": "Intro section"
+    },
+    {
+      "id": "cue-02",
+      "time": 15.7,
+      "duration": 23.16,
+      "label": "Verse 1",
+      "bar": 9,
+      "type": "verse",
+      "energy": "mid",
+      "notes": "Two in the morning on an open road"
+    },
+    {
+      "id": "cue-03",
+      "time": 38.86,
+      "duration": 19.3,
+      "label": "Pre-Chorus",
+      "bar": 21,
+      "type": "prechorus",
+      "energy": "mid",
+      "notes": "Can you feel the pulse?"
+    },
+    {
+      "id": "cue-04",
+      "time": 58.16,
+      "duration": 34.74,
+      "label": "Chorus",
+      "bar": 31,
+      "type": "chorus",
+      "energy": "high",
+      "notes": "It’s the fire we keep"
+    },
+    {
+      "id": "cue-05",
+      "time": 92.9,
+      "duration": 23.16,
+      "label": "Verse 2",
+      "bar": 49,
+      "type": "verse",
+      "energy": "mid",
+      "notes": "Years come and go like a neon haze"
+    },
+    {
+      "id": "cue-06",
+      "time": 116.06,
+      "duration": 19.3,
+      "label": "Pre-Chorus",
+      "bar": 61,
+      "type": "prechorus",
+      "energy": "mid",
+      "notes": "Can you feel the pulse?"
+    },
+    {
+      "id": "cue-07",
+      "time": 135.36,
+      "duration": 34.74,
+      "label": "Chorus",
+      "bar": 71,
+      "type": "chorus",
+      "energy": "high",
+      "notes": "It’s the fire we keep"
+    },
+    {
+      "id": "cue-08",
+      "time": 170.1,
+      "duration": 3.87,
+      "label": "Bridge",
+      "bar": 89,
+      "type": "bridge",
+      "energy": "mid",
+      "notes": "Pull me in... pull me in..."
+    }
+  ],
+  "captions": [
+    {
+      "id": "cap-01",
+      "name": "Verse 1 · Line 1",
+      "start": 15.7,
+      "duration": 3.86,
+      "text": "Two in the morning on an open road"
+    },
+    {
+      "id": "cap-02",
+      "name": "Verse 1 · Line 2",
+      "start": 19.56,
+      "duration": 3.86,
+      "text": "Carrying the weight of what we never told"
+    },
+    {
+      "id": "cap-03",
+      "name": "Verse 1 · Line 3",
+      "start": 23.42,
+      "duration": 3.86,
+      "text": "City in the rearview fading to black"
+    },
+    {
+      "id": "cap-04",
+      "name": "Verse 1 · Line 4",
+      "start": 27.28,
+      "duration": 3.86,
+      "text": "There is no other way, no turning back"
+    },
+    {
+      "id": "cap-05",
+      "name": "Verse 1 · Line 5",
+      "start": 31.14,
+      "duration": 3.86,
+      "text": "I see your shadow in the dashboard glow"
+    },
+    {
+      "id": "cap-06",
+      "name": "Verse 1 · Line 6",
+      "start": 35.0,
+      "duration": 3.86,
+      "text": "A frequency that only you and I know"
+    },
+    {
+      "id": "cap-07",
+      "name": "Pre-Chorus · Line 1",
+      "start": 38.86,
+      "duration": 3.86,
+      "text": "Can you feel the pulse?"
+    },
+    {
+      "id": "cap-08",
+      "name": "Pre-Chorus · Line 2",
+      "start": 42.72,
+      "duration": 3.86,
+      "text": "Can you feel the rise?"
+    },
+    {
+      "id": "cap-09",
+      "name": "Pre-Chorus · Line 3",
+      "start": 46.58,
+      "duration": 3.86,
+      "text": "Cutting through the noise behind my eyes"
+    },
+    {
+      "id": "cap-10",
+      "name": "Pre-Chorus · Line 4",
+      "start": 50.44,
+      "duration": 3.86,
+      "text": "I hear you breathing in the dark"
+    },
+    {
+      "id": "cap-11",
+      "name": "Pre-Chorus · Line 5",
+      "start": 54.3,
+      "duration": 3.86,
+      "text": "Every heartbeat leaves a mark"
+    },
+    {
+      "id": "cap-12",
+      "name": "Chorus · Line 1",
+      "start": 58.16,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-13",
+      "name": "Chorus · Line 2",
+      "start": 62.02,
+      "duration": 3.86,
+      "text": "In the dead of the night, when the silence is deep"
+    },
+    {
+      "id": "cap-14",
+      "name": "Chorus · Line 3",
+      "start": 65.88,
+      "duration": 3.86,
+      "text": "Tell me you feel it, tell me you feel it"
+    },
+    {
+      "id": "cap-15",
+      "name": "Chorus · Line 4",
+      "start": 69.74,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-16",
+      "name": "Chorus · Line 5",
+      "start": 73.6,
+      "duration": 3.86,
+      "text": "Through the cold and the rain, through the promises made"
+    },
+    {
+      "id": "cap-17",
+      "name": "Chorus · Line 6",
+      "start": 77.46,
+      "duration": 3.86,
+      "text": "This is the one thing that never will fade"
+    },
+    {
+      "id": "cap-18",
+      "name": "Chorus · Line 7",
+      "start": 81.32,
+      "duration": 3.86,
+      "text": "Tell me you feel it, tell me you feel it"
+    },
+    {
+      "id": "cap-19",
+      "name": "Chorus · Line 8",
+      "start": 85.18,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-20",
+      "name": "Chorus · Line 9",
+      "start": 89.04,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-21",
+      "name": "Verse 2 · Line 1",
+      "start": 92.9,
+      "duration": 3.86,
+      "text": "Years come and go like a neon haze"
+    },
+    {
+      "id": "cap-22",
+      "name": "Verse 2 · Line 2",
+      "start": 96.76,
+      "duration": 3.86,
+      "text": "People get lost in the crowded days"
+    },
+    {
+      "id": "cap-23",
+      "name": "Verse 2 · Line 3",
+      "start": 100.62,
+      "duration": 3.86,
+      "text": "They look for meaning they will never find"
+    },
+    {
+      "id": "cap-24",
+      "name": "Verse 2 · Line 4",
+      "start": 104.48,
+      "duration": 3.86,
+      "text": "I got your handwriting locked in my mind"
+    },
+    {
+      "id": "cap-25",
+      "name": "Verse 2 · Line 5",
+      "start": 108.34,
+      "duration": 3.86,
+      "text": "Hands on the wheel and the engine hums"
+    },
+    {
+      "id": "cap-26",
+      "name": "Verse 2 · Line 6",
+      "start": 112.2,
+      "duration": 3.86,
+      "text": "Waiting for the moment that the feeling comes"
+    },
+    {
+      "id": "cap-27",
+      "name": "Pre-Chorus · Line 1",
+      "start": 116.06,
+      "duration": 3.86,
+      "text": "Can you feel the pulse?"
+    },
+    {
+      "id": "cap-28",
+      "name": "Pre-Chorus · Line 2",
+      "start": 119.92,
+      "duration": 3.86,
+      "text": "Can you feel the rise?"
+    },
+    {
+      "id": "cap-29",
+      "name": "Pre-Chorus · Line 3",
+      "start": 123.78,
+      "duration": 3.86,
+      "text": "Cutting through the noise behind my eyes"
+    },
+    {
+      "id": "cap-30",
+      "name": "Pre-Chorus · Line 4",
+      "start": 127.64,
+      "duration": 3.86,
+      "text": "I hear you breathing in the dark"
+    },
+    {
+      "id": "cap-31",
+      "name": "Pre-Chorus · Line 5",
+      "start": 131.5,
+      "duration": 3.86,
+      "text": "Every heartbeat leaves a mark"
+    },
+    {
+      "id": "cap-32",
+      "name": "Chorus · Line 1",
+      "start": 135.36,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-33",
+      "name": "Chorus · Line 2",
+      "start": 139.22,
+      "duration": 3.86,
+      "text": "In the dead of the night, when the silence is deep"
+    },
+    {
+      "id": "cap-34",
+      "name": "Chorus · Line 3",
+      "start": 143.08,
+      "duration": 3.86,
+      "text": "Tell me you feel it, tell me you feel it"
+    },
+    {
+      "id": "cap-35",
+      "name": "Chorus · Line 4",
+      "start": 146.94,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-36",
+      "name": "Chorus · Line 5",
+      "start": 150.8,
+      "duration": 3.86,
+      "text": "Through the cold and the rain, through the promises made"
+    },
+    {
+      "id": "cap-37",
+      "name": "Chorus · Line 6",
+      "start": 154.66,
+      "duration": 3.86,
+      "text": "This is the one thing that never will fade"
+    },
+    {
+      "id": "cap-38",
+      "name": "Chorus · Line 7",
+      "start": 158.52,
+      "duration": 3.86,
+      "text": "Tell me you feel it, tell me you feel it"
+    },
+    {
+      "id": "cap-39",
+      "name": "Chorus · Line 8",
+      "start": 162.38,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-40",
+      "name": "Chorus · Line 9",
+      "start": 166.24,
+      "duration": 3.86,
+      "text": "It’s the fire we keep"
+    },
+    {
+      "id": "cap-41",
+      "name": "Bridge · Line 1",
+      "start": 170.1,
+      "duration": 3.86,
+      "text": "Pull me in... pull me in..."
+    },
+    {
+      "id": "cap-42",
+      "name": "Bridge · Line 2",
+      "start": 170.75,
+      "duration": 0.65,
+      "text": "Where you end and where I begin"
+    },
+    {
+      "id": "cap-43",
+      "name": "Bridge · Line 3",
+      "start": 171.39,
+      "duration": 0.65,
+      "text": "Tell me you feel it"
+    },
+    {
+      "id": "cap-44",
+      "name": "Bridge · Line 4",
+      "start": 172.04,
+      "duration": 0.65,
+      "text": "Tell me you feel it"
+    },
+    {
+      "id": "cap-45",
+      "name": "Bridge · Line 5",
+      "start": 172.68,
+      "duration": 0.65,
+      "text": "Pull me in... pull me in..."
+    },
+    {
+      "id": "cap-46",
+      "name": "Bridge · Line 6",
+      "start": 173.33,
+      "duration": 0.65,
+      "text": "We’re not giving up, we’re not giving in"
+    }
+  ],
+  "palette": [
+    {
+      "name": "Obsidian Charcoal",
+      "hex": "#101114"
+    },
+    {
+      "name": "Graphite Grain",
+      "hex": "#928f86"
+    },
+    {
+      "name": "Electric Cyan",
+      "hex": "#5dfcff"
+    },
+    {
+      "name": "Glowing Magenta",
+      "hex": "#ffc3ff"
+    },
+    {
+      "name": "Amber Tungsten",
+      "hex": "#ffee6e"
+    }
+  ],
+  "theme": "Late-night psychological drive at 2:00 AM in a 1970s sports coupe through cold city rain, holding onto love and purpose through exhaustion. Fine-art charcoal and graphite paper sketch illuminated by glowing electric cyan, magenta, and amber neon currents."
+}

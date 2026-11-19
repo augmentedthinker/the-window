@@ -590,7 +590,7 @@ async function openLibrary() {
   status.textContent = 'Loading projects…';
   dialog.showModal();
   const [featured, shared] = await Promise.allSettled([
-    LOCAL ? readJSON('projects/catalog.json') : [],
+    readJSON('projects/catalog.json'),
     LOCAL ? readJSON('/api/studio/projects') : { projects: [] },
   ]);
   if (!dialog.open) return;

@@ -1,0 +1,4260 @@
+{
+  "format": "solarium-video-editor-v1",
+  "revision": 1,
+  "projectId": "unwritten-weather-wide",
+  "title": "Unwritten Weather · wide",
+  "outputFormat": "wide",
+  "assets": [
+    {
+      "id": "f1373204-e8c0-4073-89fd-caaa9b9d4173",
+      "name": "The sky tied in a knot",
+      "type": "image",
+      "url": "assets/2c8f7c508ca9bd68a738e28176a30ea593d6ad24da30be6f270945f5f8d008d5.png",
+      "sourceSha256": "2c8f7c508ca9bd68a738e28176a30ea593d6ad24da30be6f270945f5f8d008d5",
+      "storyStage": "bound"
+    },
+    {
+      "id": "9b7bdb66-8cc4-4f80-8059-c062fa397856",
+      "name": "One loose end",
+      "type": "image",
+      "url": "assets/818849a46a0b3a33487626217aad9b45439cea761902b3f812d99f7a37a8bcc5.png",
+      "sourceSha256": "818849a46a0b3a33487626217aad9b45439cea761902b3f812d99f7a37a8bcc5",
+      "storyStage": "bound"
+    },
+    {
+      "id": "27f668a8-a1c4-4c64-af30-ffab21c36e76",
+      "name": "The suspended crossing",
+      "type": "image",
+      "url": "assets/f91c6a3a3503b44ff717bdd4cc53e4afa4b00506da7d02ac8ae6a3ed37032c7b.png",
+      "sourceSha256": "f91c6a3a3503b44ff717bdd4cc53e4afa4b00506da7d02ac8ae6a3ed37032c7b",
+      "storyStage": "crossing"
+    },
+    {
+      "id": "29a2f8ad-efd0-44c6-835a-c353750f24e4",
+      "name": "Unstitch the forecast",
+      "type": "image",
+      "url": "assets/2d6375b3e16d943678115d20707558cc17ece552c3fb8d9813d8d6766df58071.png",
+      "sourceSha256": "2d6375b3e16d943678115d20707558cc17ece552c3fb8d9813d8d6766df58071",
+      "storyStage": "release"
+    },
+    {
+      "id": "44c23d17-5be5-4091-8edc-4ffb2b57d776",
+      "name": "The first unpredicted weather",
+      "type": "image",
+      "url": "assets/99810d90f3b71ca2ead8b33a0dea21ba0e802eb9a9c7083d265f989d00b80ff0.png",
+      "sourceSha256": "99810d90f3b71ca2ead8b33a0dea21ba0e802eb9a9c7083d265f989d00b80ff0",
+      "storyStage": "release"
+    },
+    {
+      "id": "14f67cc1-20bc-41a8-8586-58ede4cbce3d",
+      "name": "The city opens its awnings",
+      "type": "image",
+      "url": "assets/7c9b2a7b6af3d941d745182af0824017e85aa8468d08ae6b5376e1252a2e29ce.png",
+      "sourceSha256": "7c9b2a7b6af3d941d745182af0824017e85aa8468d08ae6b5376e1252a2e29ce",
+      "storyStage": "weather"
+    },
+    {
+      "id": "b4925e7a-2bb5-4366-ba7b-0bec58df4ca0",
+      "name": "A garden for the wind",
+      "type": "image",
+      "url": "assets/e0a6a5d7299b536c86b3123e0206aefb06456dbc9297969c4619476d7b569a64.png",
+      "sourceSha256": "e0a6a5d7299b536c86b3123e0206aefb06456dbc9297969c4619476d7b569a64",
+      "storyStage": "weather"
+    },
+    {
+      "id": "7984c9ab-ff8c-405e-b60a-b7b8d7cd1fbd",
+      "name": "Leave the sky unfinished",
+      "type": "image",
+      "url": "assets/4e1e9d49a37eb4ad4d4922210c61b6f2e2b447837a1c1fcbd4e5ec5888f5670a.png",
+      "sourceSha256": "4e1e9d49a37eb4ad4d4922210c61b6f2e2b447837a1c1fcbd4e5ec5888f5670a",
+      "storyStage": "open"
+    },
+    {
+      "id": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "type": "image",
+      "url": "assets/a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc.png",
+      "sourceSha256": "a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc",
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "type": "image",
+      "url": "assets/fca536a982fffd6182fb49b50d6beb5765c3be983c7242f12d6f098babbe093c.png",
+      "sourceSha256": "fca536a982fffd6182fb49b50d6beb5765c3be983c7242f12d6f098babbe093c",
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "49575e89-8f1e-46b5-968e-5f5456fdf46c",
+      "name": "Unwritten Weather · complete selected performance",
+      "type": "audio",
+      "url": "assets/08e1888a8870b9078d98235b5fe23e9f0c91e3021d99d1e59e60bdeaa43a67ef.mp4",
+      "sourceSha256": "08e1888a8870b9078d98235b5fe23e9f0c91e3021d99d1e59e60bdeaa43a67ef",
+      "duration": 169.89866666666666
+    },
+    {
+      "id": "9e8b75ca-794b-4afd-a7aa-ec960098ea98",
+      "name": "Unwritten Weather · measured source-bound controls",
+      "type": "data",
+      "url": "assets/60121e5250f0b7b51ca676a5b8b4d068e484d7afd93d18a6e477a9ba93b2ddd3.json",
+      "sourceSha256": "60121e5250f0b7b51ca676a5b8b4d068e484d7afd93d18a6e477a9ba93b2ddd3"
+    },
+    {
+      "id": "a9bec0c4-45d0-484e-94d6-0c091df4662e",
+      "name": "Forecast warp",
+      "type": "image",
+      "url": "assets/a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc.png",
+      "sourceSha256": "a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc",
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-warp"
+    },
+    {
+      "id": "68e64031-9238-458b-9631-157811a33866",
+      "name": "Pressure cloth",
+      "type": "image",
+      "url": "assets/a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc.png",
+      "sourceSha256": "a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc",
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-isobars"
+    },
+    {
+      "id": "463d0755-e9bf-4f38-a261-1b6c7fdfb206",
+      "name": "Unwritten sky",
+      "type": "image",
+      "url": "assets/a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc.png",
+      "sourceSha256": "a0bbc1a7478d798e052b6cc88d1e714b5fab9e54dc697fa6e97c2d284b9e20bc",
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-unbound"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "2402302e-5ebc-4638-bc6a-dd9710c64099",
+      "assetId": "f1373204-e8c0-4073-89fd-caaa9b9d4173",
+      "name": "The sky tied in a knot",
+      "duration": 4.333333,
+      "sourceStart": 0,
+      "motion": "in",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "storyStage": "bound",
+      "allowedStart": 0,
+      "allowedEnd": 17.1
+    },
+    {
+      "id": "22317862-8320-4af6-a973-ed5c639896a6",
+      "assetId": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "duration": 4.125,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "bound",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "4cd7b6d5-0b97-49f8-872c-6c15a1c147f2",
+      "assetId": "a9bec0c4-45d0-484e-94d6-0c091df4662e",
+      "name": "Forecast warp",
+      "duration": 4.166667,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "bound",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-warp",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "fa4a63ba-3fbf-445b-a0ce-39d78465ca78",
+      "assetId": "f1373204-e8c0-4073-89fd-caaa9b9d4173",
+      "name": "The sky tied in a knot",
+      "duration": 4.475000000000001,
+      "sourceStart": 0,
+      "motion": "right",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "storyStage": "bound",
+      "allowedStart": 0,
+      "allowedEnd": 17.1
+    },
+    {
+      "id": "a4f51216-0009-48bf-9c5f-95ca834e142a",
+      "assetId": "9b7bdb66-8cc4-4f80-8059-c062fa397856",
+      "name": "One loose end",
+      "duration": 4.274999999999999,
+      "sourceStart": 0,
+      "motion": "in",
+      "focus": {
+        "x": 0.5,
+        "y": 0.48
+      },
+      "storyStage": "bound",
+      "allowedStart": 17.1,
+      "allowedEnd": 30
+    },
+    {
+      "id": "596e4553-1fac-4b7d-b7a1-640cdaac15a8",
+      "assetId": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "duration": 4.166667,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "bound",
+      "recurringInstrument": true,
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "8ea93a8a-d5c4-4cf7-b7cc-3226306e0648",
+      "assetId": "9b7bdb66-8cc4-4f80-8059-c062fa397856",
+      "name": "One loose end",
+      "duration": 4.458333,
+      "sourceStart": 0,
+      "motion": "in",
+      "focus": {
+        "x": 0.5,
+        "y": 0.48
+      },
+      "storyStage": "bound",
+      "allowedStart": 17.1,
+      "allowedEnd": 30
+    },
+    {
+      "id": "adb04fff-e1c3-41d0-84d5-636fac023ff8",
+      "assetId": "27f668a8-a1c4-4c64-af30-ffab21c36e76",
+      "name": "The suspended crossing",
+      "duration": 4.875,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "storyStage": "crossing",
+      "allowedStart": 30,
+      "allowedEnd": 39.8
+    },
+    {
+      "id": "efb738b4-0632-4a6f-a274-9cf06e3b09f0",
+      "assetId": "68e64031-9238-458b-9631-157811a33866",
+      "name": "Pressure cloth",
+      "duration": 4.924999999999997,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "crossing",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-isobars",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "5271f4d2-1dd7-4ebb-83bb-31078d9e8176",
+      "assetId": "29a2f8ad-efd0-44c6-835a-c353750f24e4",
+      "name": "Unstitch the forecast",
+      "duration": 5.283333000000006,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.47
+      },
+      "storyStage": "release",
+      "allowedStart": 39.8,
+      "allowedEnd": 49.8
+    },
+    {
+      "id": "fd1899ef-c6ab-4561-8657-46639607b253",
+      "assetId": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "duration": 4.716666999999994,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "release",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "9cacd019-8521-4950-bb03-7eea95bd8410",
+      "assetId": "44c23d17-5be5-4091-8edc-4ffb2b57d776",
+      "name": "The first unpredicted weather",
+      "duration": 5.116667,
+      "sourceStart": 0,
+      "motion": "right",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "storyStage": "release",
+      "allowedStart": 49.8,
+      "allowedEnd": 59.8
+    },
+    {
+      "id": "927da2e1-d34a-4185-b63d-b32abec04538",
+      "assetId": "a9bec0c4-45d0-484e-94d6-0c091df4662e",
+      "name": "Forecast warp",
+      "duration": 4.883333,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "release",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-warp",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "5ad46483-0a29-4b10-a0de-84312a7511f3",
+      "assetId": "14f67cc1-20bc-41a8-8586-58ede4cbce3d",
+      "name": "The city opens its awnings",
+      "duration": 4.533332999999999,
+      "sourceStart": 0,
+      "motion": "left",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "storyStage": "weather",
+      "allowedStart": 59.8,
+      "allowedEnd": 102
+    },
+    {
+      "id": "4d99c200-111d-4bc2-a1a5-e4753d3460ee",
+      "assetId": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "duration": 4.666667000000004,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "22a373c9-8fa9-40e3-b84a-fc1a43019e62",
+      "assetId": "68e64031-9238-458b-9631-157811a33866",
+      "name": "Pressure cloth",
+      "duration": 4.666667000000004,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-isobars",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "ec33328f-943b-41ab-8509-17895a809c29",
+      "assetId": "14f67cc1-20bc-41a8-8586-58ede4cbce3d",
+      "name": "The city opens its awnings",
+      "duration": 4.666665999999992,
+      "sourceStart": 0,
+      "motion": "in",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "storyStage": "weather",
+      "allowedStart": 59.8,
+      "allowedEnd": 102
+    },
+    {
+      "id": "bc20348d-01f9-46f0-b08f-111a4f117279",
+      "assetId": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "duration": 4.846667000000011,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "03ac179e-c3f4-4c59-b849-937a0d58d3cb",
+      "assetId": "a9bec0c4-45d0-484e-94d6-0c091df4662e",
+      "name": "Forecast warp",
+      "duration": 4.444999999999993,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-warp",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "7ee8b8a6-134b-41b1-a704-583fa631edd6",
+      "assetId": "14f67cc1-20bc-41a8-8586-58ede4cbce3d",
+      "name": "The city opens its awnings",
+      "duration": 4.916667000000004,
+      "sourceStart": 0,
+      "motion": "right",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "storyStage": "weather",
+      "allowedStart": 59.8,
+      "allowedEnd": 102
+    },
+    {
+      "id": "27351e8c-4b67-4e9b-8b5e-04ac8b3e6345",
+      "assetId": "463d0755-e9bf-4f38-a261-1b6c7fdfb206",
+      "name": "Unwritten sky",
+      "duration": 4.916665999999992,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-unbound",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "59e2059d-ca19-49b1-bb85-2b81117ecf04",
+      "assetId": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "duration": 4.541667000000004,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "bbf1bf62-b93e-4b31-86b0-b88ba454152c",
+      "assetId": "b4925e7a-2bb5-4366-ba7b-0bec58df4ca0",
+      "name": "A garden for the wind",
+      "duration": 4,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "storyStage": "weather",
+      "allowedStart": 102,
+      "allowedEnd": 128.88
+    },
+    {
+      "id": "0b9cf67a-ba14-43c2-9ef0-35981f213c31",
+      "assetId": "68e64031-9238-458b-9631-157811a33866",
+      "name": "Pressure cloth",
+      "duration": 3.680000000000007,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-isobars",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "d97ad074-2461-4937-a4a2-d59d0b2a9e46",
+      "assetId": "b4925e7a-2bb5-4366-ba7b-0bec58df4ca0",
+      "name": "A garden for the wind",
+      "duration": 4.861666999999997,
+      "sourceStart": 0,
+      "motion": "in",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "storyStage": "weather",
+      "allowedStart": 102,
+      "allowedEnd": 128.88
+    },
+    {
+      "id": "137c1e91-d49d-4107-afc8-8dd89e0944a9",
+      "assetId": "a9bec0c4-45d0-484e-94d6-0c091df4662e",
+      "name": "Forecast warp",
+      "duration": 4.625,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-warp",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "6d79a293-7b9f-44f8-a384-dc3e4155a481",
+      "assetId": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "duration": 4.666665999999992,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "weather",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "874b46cf-d9c2-4041-8d2f-94d7422d0864",
+      "assetId": "b4925e7a-2bb5-4366-ba7b-0bec58df4ca0",
+      "name": "A garden for the wind",
+      "duration": 5.046666999999999,
+      "sourceStart": 0,
+      "motion": "right",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "storyStage": "weather",
+      "allowedStart": 102,
+      "allowedEnd": 128.88
+    },
+    {
+      "id": "aff596c7-7d89-444b-8e3f-c6607eb2fbea",
+      "assetId": "7984c9ab-ff8c-405e-b60a-b7b8d7cd1fbd",
+      "name": "Leave the sky unfinished",
+      "duration": 4.286666999999994,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "storyStage": "open",
+      "allowedStart": 128.88,
+      "allowedEnd": 169.89866666666666
+    },
+    {
+      "id": "5e6be038-5bbc-40a8-ba9d-8cc8b480b9e3",
+      "assetId": "463d0755-e9bf-4f38-a261-1b6c7fdfb206",
+      "name": "Unwritten sky",
+      "duration": 3.875,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-unbound",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "b87902ee-a1aa-466c-8b7e-08c379463933",
+      "assetId": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "duration": 4.125,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "09e22a8c-85e5-433b-a42f-8dc3ef8f78f1",
+      "assetId": "7984c9ab-ff8c-405e-b60a-b7b8d7cd1fbd",
+      "name": "Leave the sky unfinished",
+      "duration": 4.416666000000021,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "storyStage": "open",
+      "allowedStart": 128.88,
+      "allowedEnd": 169.89866666666666
+    },
+    {
+      "id": "3fc0bcec-ba96-4d0d-9637-8c9e3784c9bf",
+      "assetId": "68e64031-9238-458b-9631-157811a33866",
+      "name": "Pressure cloth",
+      "duration": 3.8566669999999874,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-isobars",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "87c4e9eb-05c4-4c13-88e8-7e9ac1415176",
+      "assetId": "811b8b29-877f-4c8a-b9dc-eec10313c75b",
+      "name": "The loom drum",
+      "duration": 3.101666999999992,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "0f75f0ae-a43f-4201-8312-09ff7b80bc3a",
+      "assetId": "7984c9ab-ff8c-405e-b60a-b7b8d7cd1fbd",
+      "name": "Leave the sky unfinished",
+      "duration": 3.218333000000001,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "storyStage": "open",
+      "allowedStart": 128.88,
+      "allowedEnd": 169.89866666666666
+    },
+    {
+      "id": "88fe4fea-24bf-4a9d-8bb0-b7ac777b9d7b",
+      "assetId": "755296e0-2a77-49d0-b789-80d041ce50c5",
+      "name": "The reed barometer",
+      "duration": 4.698333000000019,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "receiver",
+        "rect": [
+          0.26,
+          0.46,
+          0.48,
+          0.11
+        ]
+      }
+    },
+    {
+      "id": "4312ee5d-a1af-4afe-be4a-86ab99c823a6",
+      "assetId": "463d0755-e9bf-4f38-a261-1b6c7fdfb206",
+      "name": "Unwritten sky",
+      "duration": 4.66666699999999,
+      "sourceStart": 0,
+      "motion": "still",
+      "storyStage": "open",
+      "recurringInstrument": true,
+      "response": {
+        "type": "speaker",
+        "x": 0.5,
+        "y": 0.473,
+        "radius": 0.3
+      },
+      "treatment": "weather-unbound",
+      "textureRect": [
+        0.3,
+        0.27,
+        0.2,
+        0.12
+      ]
+    },
+    {
+      "id": "64ffaef5-a3aa-4c70-a3ef-840057e79955",
+      "assetId": "7984c9ab-ff8c-405e-b60a-b7b8d7cd1fbd",
+      "name": "Leave the sky unfinished",
+      "duration": 4.7736666666666565,
+      "sourceStart": 0,
+      "motion": "out",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "storyStage": "open",
+      "allowedStart": 128.88,
+      "allowedEnd": 169.89866666666666
+    }
+  ],
+  "cues": [
+    {
+      "time": 0,
+      "label": "A sky tied in a knot",
+      "evidence": "authored opening"
+    },
+    {
+      "time": 17.1,
+      "label": "The prescribed morning",
+      "evidence": "approximate ASR verse"
+    },
+    {
+      "time": 27.1,
+      "label": "One loose end",
+      "evidence": "approximate ASR"
+    },
+    {
+      "time": 32.26,
+      "label": "Pull it slow",
+      "evidence": "approximate ASR prechorus"
+    },
+    {
+      "time": 39.8,
+      "label": "We are not the weather",
+      "evidence": "approximate ASR chorus"
+    },
+    {
+      "time": 59.84,
+      "label": "The city learns",
+      "evidence": "approximate ASR second verse"
+    },
+    {
+      "time": 83.18,
+      "label": "Second refrain",
+      "evidence": "approximate ASR"
+    },
+    {
+      "time": 109.68,
+      "label": "I almost missed the rain",
+      "evidence": "approximate ASR exposed bridge; quiet contrast editorial hypothesis"
+    },
+    {
+      "time": 128.88,
+      "label": "Final release",
+      "evidence": "approximate ASR final chorus"
+    },
+    {
+      "time": 149.44,
+      "label": "Leave a little room",
+      "evidence": "approximate ASR outro"
+    },
+    {
+      "time": 155.76,
+      "label": "Uncertain future / full musical tail",
+      "evidence": "approximate last lyric end"
+    }
+  ],
+  "audio": {
+    "assetId": "49575e89-8f1e-46b5-968e-5f5456fdf46c",
+    "duration": 169.89866666666666
+  },
+  "featureAssetId": "9e8b75ca-794b-4afd-a7aa-ec960098ea98",
+  "palette": [
+    {
+      "name": "Dark plum",
+      "hex": "#241B35"
+    },
+    {
+      "name": "Oxidized jade",
+      "hex": "#39877B"
+    },
+    {
+      "name": "Coral",
+      "hex": "#E77761"
+    },
+    {
+      "name": "Straw",
+      "hex": "#D8B86A"
+    },
+    {
+      "name": "Warm paper",
+      "hex": "#EFE3CC"
+    }
+  ],
+  "waveform": {
+    "assetId": "49575e89-8f1e-46b5-968e-5f5456fdf46c",
+    "sourceSha256": "08e1888a8870b9078d98235b5fe23e9f0c91e3021d99d1e59e60bdeaa43a67ef",
+    "peaks": [
+      [
+        -0.1277,
+        0.1522
+      ],
+      [
+        -0.1224,
+        0.1186
+      ],
+      [
+        -0.1177,
+        0.0883
+      ],
+      [
+        -0.168,
+        0.1461
+      ],
+      [
+        -0.131,
+        0.1029
+      ],
+      [
+        -0.1549,
+        0.1537
+      ],
+      [
+        -0.1507,
+        0.1361
+      ],
+      [
+        -0.1723,
+        0.1574
+      ],
+      [
+        -0.1813,
+        0.1462
+      ],
+      [
+        -0.1513,
+        0.1505
+      ],
+      [
+        -0.1846,
+        0.1878
+      ],
+      [
+        -0.1847,
+        0.1917
+      ],
+      [
+        -0.1806,
+        0.1559
+      ],
+      [
+        -0.194,
+        0.2122
+      ],
+      [
+        -0.1375,
+        0.1231
+      ],
+      [
+        -0.2393,
+        0.2736
+      ],
+      [
+        -0.3103,
+        0.1897
+      ],
+      [
+        -0.2337,
+        0.2698
+      ],
+      [
+        -0.2377,
+        0.2466
+      ],
+      [
+        -0.255,
+        0.2271
+      ],
+      [
+        -0.2612,
+        0.3693
+      ],
+      [
+        -0.1782,
+        0.1507
+      ],
+      [
+        -0.2927,
+        0.1917
+      ],
+      [
+        -0.1958,
+        0.1624
+      ],
+      [
+        -0.1437,
+        0.131
+      ],
+      [
+        -0.1596,
+        0.1913
+      ],
+      [
+        -0.147,
+        0.1384
+      ],
+      [
+        -0.2137,
+        0.2773
+      ],
+      [
+        -0.1477,
+        0.1368
+      ],
+      [
+        -0.1365,
+        0.1023
+      ],
+      [
+        -0.2409,
+        0.1847
+      ],
+      [
+        -0.175,
+        0.1923
+      ],
+      [
+        -0.2285,
+        0.3059
+      ],
+      [
+        -0.2207,
+        0.225
+      ],
+      [
+        -0.1975,
+        0.3095
+      ],
+      [
+        -0.2771,
+        0.3229
+      ],
+      [
+        -0.3113,
+        0.2566
+      ],
+      [
+        -0.2728,
+        0.4218
+      ],
+      [
+        -0.2965,
+        0.4027
+      ],
+      [
+        -0.269,
+        0.3824
+      ],
+      [
+        -0.2885,
+        0.3196
+      ],
+      [
+        -0.27,
+        0.1989
+      ],
+      [
+        -0.3591,
+        0.2231
+      ],
+      [
+        -0.1939,
+        0.2357
+      ],
+      [
+        -0.2927,
+        0.1788
+      ],
+      [
+        -0.2663,
+        0.3078
+      ],
+      [
+        -0.2076,
+        0.3183
+      ],
+      [
+        -0.1767,
+        0.2434
+      ],
+      [
+        -0.2555,
+        0.1621
+      ],
+      [
+        -0.2685,
+        0.2768
+      ],
+      [
+        -0.2241,
+        0.2384
+      ],
+      [
+        -0.2283,
+        0.2341
+      ],
+      [
+        -0.289,
+        0.3377
+      ],
+      [
+        -0.3252,
+        0.2965
+      ],
+      [
+        -0.3185,
+        0.4485
+      ],
+      [
+        -0.3669,
+        0.3833
+      ],
+      [
+        -0.3766,
+        0.3828
+      ],
+      [
+        -0.3609,
+        0.383
+      ],
+      [
+        -0.3691,
+        0.3986
+      ],
+      [
+        -0.4096,
+        0.3537
+      ],
+      [
+        -0.3552,
+        0.3944
+      ],
+      [
+        -0.3431,
+        0.3973
+      ],
+      [
+        -0.3105,
+        0.3599
+      ],
+      [
+        -0.331,
+        0.2751
+      ],
+      [
+        -0.3605,
+        0.3518
+      ],
+      [
+        -0.3398,
+        0.3342
+      ],
+      [
+        -0.383,
+        0.3111
+      ],
+      [
+        -0.256,
+        0.2606
+      ],
+      [
+        -0.2613,
+        0.2406
+      ],
+      [
+        -0.3524,
+        0.297
+      ],
+      [
+        -0.361,
+        0.3064
+      ],
+      [
+        -0.3355,
+        0.4264
+      ],
+      [
+        -0.3653,
+        0.3277
+      ],
+      [
+        -0.3489,
+        0.3741
+      ],
+      [
+        -0.5298,
+        0.4068
+      ],
+      [
+        -0.4306,
+        0.3534
+      ],
+      [
+        -0.4805,
+        0.4094
+      ],
+      [
+        -0.3834,
+        0.342
+      ],
+      [
+        -0.5064,
+        0.4557
+      ],
+      [
+        -0.4128,
+        0.4555
+      ],
+      [
+        -0.3349,
+        0.3052
+      ],
+      [
+        -0.5142,
+        0.4168
+      ],
+      [
+        -0.2407,
+        0.2721
+      ],
+      [
+        -0.5498,
+        0.529
+      ],
+      [
+        -0.3208,
+        0.4458
+      ],
+      [
+        -0.2334,
+        0.2795
+      ],
+      [
+        -0.5075,
+        0.5284
+      ],
+      [
+        -0.2594,
+        0.253
+      ],
+      [
+        -0.4516,
+        0.519
+      ],
+      [
+        -0.3136,
+        0.2433
+      ],
+      [
+        -0.4178,
+        0.467
+      ],
+      [
+        -0.4876,
+        0.487
+      ],
+      [
+        -0.2372,
+        0.2567
+      ],
+      [
+        -0.4954,
+        0.5742
+      ],
+      [
+        -0.3263,
+        0.2852
+      ],
+      [
+        -0.4467,
+        0.5641
+      ],
+      [
+        -0.2941,
+        0.3322
+      ],
+      [
+        -0.2642,
+        0.3178
+      ],
+      [
+        -0.5174,
+        0.5076
+      ],
+      [
+        -0.2742,
+        0.3666
+      ],
+      [
+        -0.43,
+        0.4564
+      ],
+      [
+        -0.3935,
+        0.3545
+      ],
+      [
+        -0.2599,
+        0.3026
+      ],
+      [
+        -0.5448,
+        0.4965
+      ],
+      [
+        -0.3116,
+        0.3208
+      ],
+      [
+        -0.5497,
+        0.4806
+      ],
+      [
+        -0.2257,
+        0.2313
+      ],
+      [
+        -0.2509,
+        0.2874
+      ],
+      [
+        -0.5034,
+        0.6032
+      ],
+      [
+        -0.2525,
+        0.3004
+      ],
+      [
+        -0.5483,
+        0.5387
+      ],
+      [
+        -0.1757,
+        0.2086
+      ],
+      [
+        -0.5908,
+        0.539
+      ],
+      [
+        -0.4773,
+        0.5378
+      ],
+      [
+        -0.256,
+        0.2533
+      ],
+      [
+        -0.4892,
+        0.5334
+      ],
+      [
+        -0.248,
+        0.3644
+      ],
+      [
+        -0.4401,
+        0.4573
+      ],
+      [
+        -0.3419,
+        0.4311
+      ],
+      [
+        -0.32,
+        0.268
+      ],
+      [
+        -0.5169,
+        0.5263
+      ],
+      [
+        -0.3545,
+        0.3741
+      ],
+      [
+        -0.5091,
+        0.4874
+      ],
+      [
+        -0.3765,
+        0.4336
+      ],
+      [
+        -0.2893,
+        0.3656
+      ],
+      [
+        -0.4993,
+        0.4558
+      ],
+      [
+        -0.1774,
+        0.2265
+      ],
+      [
+        -0.4856,
+        0.5526
+      ],
+      [
+        -0.3545,
+        0.39
+      ],
+      [
+        -0.4337,
+        0.4308
+      ],
+      [
+        -0.4666,
+        0.4516
+      ],
+      [
+        -0.2379,
+        0.2627
+      ],
+      [
+        -0.432,
+        0.4913
+      ],
+      [
+        -0.3211,
+        0.3585
+      ],
+      [
+        -0.4639,
+        0.4449
+      ],
+      [
+        -0.3445,
+        0.3046
+      ],
+      [
+        -0.2127,
+        0.4047
+      ],
+      [
+        -0.4743,
+        0.4437
+      ],
+      [
+        -0.2174,
+        0.2925
+      ],
+      [
+        -0.4495,
+        0.5073
+      ],
+      [
+        -0.3056,
+        0.3109
+      ],
+      [
+        -0.2935,
+        0.2746
+      ],
+      [
+        -0.43,
+        0.4404
+      ],
+      [
+        -0.4879,
+        0.3759
+      ],
+      [
+        -0.4374,
+        0.4776
+      ],
+      [
+        -0.4437,
+        0.3356
+      ],
+      [
+        -0.2537,
+        0.3169
+      ],
+      [
+        -0.4639,
+        0.4535
+      ],
+      [
+        -0.3024,
+        0.4367
+      ],
+      [
+        -0.4643,
+        0.4171
+      ],
+      [
+        -0.2135,
+        0.412
+      ],
+      [
+        -0.4787,
+        0.4168
+      ],
+      [
+        -0.5006,
+        0.4468
+      ],
+      [
+        -0.3203,
+        0.4235
+      ],
+      [
+        -0.5134,
+        0.5001
+      ],
+      [
+        -0.238,
+        0.347
+      ],
+      [
+        -0.4378,
+        0.5504
+      ],
+      [
+        -0.4272,
+        0.4558
+      ],
+      [
+        -0.2867,
+        0.4331
+      ],
+      [
+        -0.448,
+        0.4286
+      ],
+      [
+        -0.3106,
+        0.2735
+      ],
+      [
+        -0.4958,
+        0.4232
+      ],
+      [
+        -0.4,
+        0.4052
+      ],
+      [
+        -0.3771,
+        0.4787
+      ],
+      [
+        -0.4445,
+        0.4443
+      ],
+      [
+        -0.2979,
+        0.2838
+      ],
+      [
+        -0.5362,
+        0.5331
+      ],
+      [
+        -0.3453,
+        0.4122
+      ],
+      [
+        -0.369,
+        0.4105
+      ],
+      [
+        -0.4795,
+        0.4947
+      ],
+      [
+        -0.3847,
+        0.2992
+      ],
+      [
+        -0.4854,
+        0.4646
+      ],
+      [
+        -0.3809,
+        0.3323
+      ],
+      [
+        -0.4536,
+        0.4753
+      ],
+      [
+        -0.4371,
+        0.411
+      ],
+      [
+        -0.4032,
+        0.3509
+      ],
+      [
+        -0.5575,
+        0.6042
+      ],
+      [
+        -0.3746,
+        0.316
+      ],
+      [
+        -0.4268,
+        0.5098
+      ],
+      [
+        -0.3262,
+        0.3502
+      ],
+      [
+        -0.3193,
+        0.3738
+      ],
+      [
+        -0.5225,
+        0.5463
+      ],
+      [
+        -0.3538,
+        0.3489
+      ],
+      [
+        -0.419,
+        0.5663
+      ],
+      [
+        -0.3462,
+        0.474
+      ],
+      [
+        -0.3251,
+        0.2675
+      ],
+      [
+        -0.5164,
+        0.4555
+      ],
+      [
+        -0.3335,
+        0.3793
+      ],
+      [
+        -0.4234,
+        0.3871
+      ],
+      [
+        -0.3454,
+        0.4694
+      ],
+      [
+        -0.3408,
+        0.4659
+      ],
+      [
+        -0.2347,
+        0.3028
+      ],
+      [
+        -0.3218,
+        0.3996
+      ],
+      [
+        -0.564,
+        0.5289
+      ],
+      [
+        -0.356,
+        0.4136
+      ],
+      [
+        -0.5436,
+        0.5903
+      ],
+      [
+        -0.4499,
+        0.434
+      ],
+      [
+        -0.4077,
+        0.4792
+      ],
+      [
+        -0.4689,
+        0.4969
+      ],
+      [
+        -0.4013,
+        0.3243
+      ],
+      [
+        -0.5501,
+        0.4804
+      ],
+      [
+        -0.5694,
+        0.5619
+      ],
+      [
+        -0.4572,
+        0.4373
+      ],
+      [
+        -0.4279,
+        0.4679
+      ],
+      [
+        -0.4049,
+        0.3661
+      ],
+      [
+        -0.4909,
+        0.5048
+      ],
+      [
+        -0.4543,
+        0.4837
+      ],
+      [
+        -0.6081,
+        0.5496
+      ],
+      [
+        -0.5303,
+        0.3992
+      ],
+      [
+        -0.4739,
+        0.4427
+      ],
+      [
+        -0.3922,
+        0.3621
+      ],
+      [
+        -0.5275,
+        0.5262
+      ],
+      [
+        -0.4892,
+        0.4394
+      ],
+      [
+        -0.3744,
+        0.4193
+      ],
+      [
+        -0.4008,
+        0.4539
+      ],
+      [
+        -0.6056,
+        0.5561
+      ],
+      [
+        -0.4092,
+        0.3727
+      ],
+      [
+        -0.4271,
+        0.5272
+      ],
+      [
+        -0.3961,
+        0.435
+      ],
+      [
+        -0.4371,
+        0.5364
+      ],
+      [
+        -0.4404,
+        0.3513
+      ],
+      [
+        -0.4474,
+        0.5911
+      ],
+      [
+        -0.5275,
+        0.4447
+      ],
+      [
+        -0.3206,
+        0.2884
+      ],
+      [
+        -0.4451,
+        0.3777
+      ],
+      [
+        -0.5272,
+        0.4916
+      ],
+      [
+        -0.4149,
+        0.3842
+      ],
+      [
+        -0.5622,
+        0.4956
+      ],
+      [
+        -0.4188,
+        0.4244
+      ],
+      [
+        -0.5018,
+        0.4923
+      ],
+      [
+        -0.392,
+        0.4404
+      ],
+      [
+        -0.5151,
+        0.552
+      ],
+      [
+        -0.4278,
+        0.5298
+      ],
+      [
+        -0.3816,
+        0.3581
+      ],
+      [
+        -0.4731,
+        0.4839
+      ],
+      [
+        -0.3994,
+        0.5068
+      ],
+      [
+        -0.3743,
+        0.4217
+      ],
+      [
+        -0.5555,
+        0.5111
+      ],
+      [
+        -0.3245,
+        0.2498
+      ],
+      [
+        -0.5001,
+        0.5239
+      ],
+      [
+        -0.501,
+        0.5579
+      ],
+      [
+        -0.4483,
+        0.4827
+      ],
+      [
+        -0.4599,
+        0.4405
+      ],
+      [
+        -0.4045,
+        0.4002
+      ],
+      [
+        -0.4954,
+        0.5383
+      ],
+      [
+        -0.4353,
+        0.5518
+      ],
+      [
+        -0.4682,
+        0.481
+      ],
+      [
+        -0.4123,
+        0.3609
+      ],
+      [
+        -0.433,
+        0.4111
+      ],
+      [
+        -0.4118,
+        0.4742
+      ],
+      [
+        -0.5443,
+        0.499
+      ],
+      [
+        -0.3953,
+        0.4813
+      ],
+      [
+        -0.438,
+        0.4803
+      ],
+      [
+        -0.3864,
+        0.3962
+      ],
+      [
+        -0.4711,
+        0.4722
+      ],
+      [
+        -0.3883,
+        0.3317
+      ],
+      [
+        -0.575,
+        0.4112
+      ],
+      [
+        -0.4052,
+        0.4485
+      ],
+      [
+        -0.4831,
+        0.5083
+      ],
+      [
+        -0.5063,
+        0.3735
+      ],
+      [
+        -0.545,
+        0.5022
+      ],
+      [
+        -0.4857,
+        0.4645
+      ],
+      [
+        -0.312,
+        0.3488
+      ],
+      [
+        -0.352,
+        0.3533
+      ],
+      [
+        -0.557,
+        0.5167
+      ],
+      [
+        -0.4574,
+        0.4976
+      ],
+      [
+        -0.4542,
+        0.5377
+      ],
+      [
+        -0.5197,
+        0.5393
+      ],
+      [
+        -0.4893,
+        0.5811
+      ],
+      [
+        -0.4277,
+        0.4701
+      ],
+      [
+        -0.4409,
+        0.4784
+      ],
+      [
+        -0.4894,
+        0.5425
+      ],
+      [
+        -0.5176,
+        0.4981
+      ],
+      [
+        -0.5486,
+        0.5023
+      ],
+      [
+        -0.4067,
+        0.4438
+      ],
+      [
+        -0.4475,
+        0.3686
+      ],
+      [
+        -0.3174,
+        0.4086
+      ],
+      [
+        -0.4026,
+        0.4013
+      ],
+      [
+        -0.3669,
+        0.3436
+      ],
+      [
+        -0.3964,
+        0.4115
+      ],
+      [
+        -0.4508,
+        0.4396
+      ],
+      [
+        -0.3573,
+        0.3509
+      ],
+      [
+        -0.4044,
+        0.3527
+      ],
+      [
+        -0.5159,
+        0.4837
+      ],
+      [
+        -0.3896,
+        0.3308
+      ],
+      [
+        -0.477,
+        0.5674
+      ],
+      [
+        -0.399,
+        0.4148
+      ],
+      [
+        -0.3551,
+        0.4129
+      ],
+      [
+        -0.4829,
+        0.4749
+      ],
+      [
+        -0.2937,
+        0.3739
+      ],
+      [
+        -0.5336,
+        0.4962
+      ],
+      [
+        -0.3809,
+        0.3037
+      ],
+      [
+        -0.282,
+        0.3136
+      ],
+      [
+        -0.4994,
+        0.5428
+      ],
+      [
+        -0.2859,
+        0.2986
+      ],
+      [
+        -0.4602,
+        0.5394
+      ],
+      [
+        -0.3236,
+        0.3494
+      ],
+      [
+        -0.287,
+        0.3416
+      ],
+      [
+        -0.5061,
+        0.3991
+      ],
+      [
+        -0.357,
+        0.2635
+      ],
+      [
+        -0.4859,
+        0.565
+      ],
+      [
+        -0.2954,
+        0.3258
+      ],
+      [
+        -0.4545,
+        0.3979
+      ],
+      [
+        -0.4271,
+        0.4498
+      ],
+      [
+        -0.381,
+        0.3278
+      ],
+      [
+        -0.5128,
+        0.4967
+      ],
+      [
+        -0.2457,
+        0.2902
+      ],
+      [
+        -0.4586,
+        0.5183
+      ],
+      [
+        -0.368,
+        0.3579
+      ],
+      [
+        -0.3834,
+        0.3014
+      ],
+      [
+        -0.4946,
+        0.5096
+      ],
+      [
+        -0.306,
+        0.3537
+      ],
+      [
+        -0.464,
+        0.4685
+      ],
+      [
+        -0.3584,
+        0.3314
+      ],
+      [
+        -0.3258,
+        0.3215
+      ],
+      [
+        -0.4594,
+        0.5089
+      ],
+      [
+        -0.3173,
+        0.266
+      ],
+      [
+        -0.4794,
+        0.4852
+      ],
+      [
+        -0.3187,
+        0.3182
+      ],
+      [
+        -0.3164,
+        0.3298
+      ],
+      [
+        -0.4884,
+        0.5593
+      ],
+      [
+        -0.291,
+        0.2982
+      ],
+      [
+        -0.5442,
+        0.4903
+      ],
+      [
+        -0.2568,
+        0.252
+      ],
+      [
+        -0.5866,
+        0.5917
+      ],
+      [
+        -0.41,
+        0.4076
+      ],
+      [
+        -0.3092,
+        0.3359
+      ],
+      [
+        -0.4451,
+        0.429
+      ],
+      [
+        -0.4359,
+        0.3106
+      ],
+      [
+        -0.503,
+        0.5386
+      ],
+      [
+        -0.3441,
+        0.3457
+      ],
+      [
+        -0.3517,
+        0.3705
+      ],
+      [
+        -0.5069,
+        0.4717
+      ],
+      [
+        -0.3636,
+        0.3686
+      ],
+      [
+        -0.4646,
+        0.4757
+      ],
+      [
+        -0.3852,
+        0.3222
+      ],
+      [
+        -0.3308,
+        0.3043
+      ],
+      [
+        -0.5375,
+        0.501
+      ],
+      [
+        -0.3273,
+        0.3171
+      ],
+      [
+        -0.5155,
+        0.5601
+      ],
+      [
+        -0.3701,
+        0.3605
+      ],
+      [
+        -0.5146,
+        0.5265
+      ],
+      [
+        -0.4366,
+        0.4745
+      ],
+      [
+        -0.2851,
+        0.2753
+      ],
+      [
+        -0.5075,
+        0.5105
+      ],
+      [
+        -0.3423,
+        0.3307
+      ],
+      [
+        -0.5415,
+        0.5039
+      ],
+      [
+        -0.3798,
+        0.3885
+      ],
+      [
+        -0.2988,
+        0.3168
+      ],
+      [
+        -0.5721,
+        0.6007
+      ],
+      [
+        -0.3315,
+        0.3797
+      ],
+      [
+        -0.5478,
+        0.4998
+      ],
+      [
+        -0.3349,
+        0.2972
+      ],
+      [
+        -0.34,
+        0.3481
+      ],
+      [
+        -0.5683,
+        0.4678
+      ],
+      [
+        -0.3692,
+        0.4101
+      ],
+      [
+        -0.6188,
+        0.5684
+      ],
+      [
+        -0.3292,
+        0.2853
+      ],
+      [
+        -0.5526,
+        0.6185
+      ],
+      [
+        -0.515,
+        0.5474
+      ],
+      [
+        -0.2909,
+        0.2505
+      ],
+      [
+        -0.5756,
+        0.569
+      ],
+      [
+        -0.3306,
+        0.3711
+      ],
+      [
+        -0.5397,
+        0.5056
+      ],
+      [
+        -0.4705,
+        0.4089
+      ],
+      [
+        -0.3855,
+        0.3576
+      ],
+      [
+        -0.584,
+        0.5289
+      ],
+      [
+        -0.4078,
+        0.3777
+      ],
+      [
+        -0.5406,
+        0.5818
+      ],
+      [
+        -0.3547,
+        0.3893
+      ],
+      [
+        -0.2529,
+        0.3293
+      ],
+      [
+        -0.5333,
+        0.5461
+      ],
+      [
+        -0.3478,
+        0.3962
+      ],
+      [
+        -0.5679,
+        0.5364
+      ],
+      [
+        -0.4758,
+        0.3804
+      ],
+      [
+        -0.4296,
+        0.442
+      ],
+      [
+        -0.5237,
+        0.5895
+      ],
+      [
+        -0.3807,
+        0.3589
+      ],
+      [
+        -0.6153,
+        0.5955
+      ],
+      [
+        -0.5554,
+        0.4095
+      ],
+      [
+        -0.5994,
+        0.5675
+      ],
+      [
+        -0.5348,
+        0.5504
+      ],
+      [
+        -0.5293,
+        0.5288
+      ],
+      [
+        -0.5461,
+        0.5749
+      ],
+      [
+        -0.5243,
+        0.5131
+      ],
+      [
+        -0.506,
+        0.5415
+      ],
+      [
+        -0.3841,
+        0.4697
+      ],
+      [
+        -0.5212,
+        0.4874
+      ],
+      [
+        -0.511,
+        0.5533
+      ],
+      [
+        -0.4977,
+        0.4935
+      ],
+      [
+        -0.517,
+        0.5077
+      ],
+      [
+        -0.5159,
+        0.55
+      ],
+      [
+        -0.4652,
+        0.4977
+      ],
+      [
+        -0.532,
+        0.5672
+      ],
+      [
+        -0.5798,
+        0.5846
+      ],
+      [
+        -0.3836,
+        0.4359
+      ],
+      [
+        -0.4185,
+        0.4165
+      ],
+      [
+        -0.3303,
+        0.3699
+      ],
+      [
+        -0.4373,
+        0.3818
+      ],
+      [
+        -0.3466,
+        0.3141
+      ],
+      [
+        -0.5972,
+        0.4697
+      ],
+      [
+        -0.443,
+        0.4022
+      ],
+      [
+        -0.5121,
+        0.6217
+      ],
+      [
+        -0.41,
+        0.3862
+      ],
+      [
+        -0.4836,
+        0.5149
+      ],
+      [
+        -0.3918,
+        0.375
+      ],
+      [
+        -0.598,
+        0.5133
+      ],
+      [
+        -0.4974,
+        0.4296
+      ],
+      [
+        -0.3817,
+        0.4306
+      ],
+      [
+        -0.4594,
+        0.5116
+      ],
+      [
+        -0.5606,
+        0.5467
+      ],
+      [
+        -0.4062,
+        0.3963
+      ],
+      [
+        -0.5073,
+        0.5419
+      ],
+      [
+        -0.4071,
+        0.4132
+      ],
+      [
+        -0.4723,
+        0.5038
+      ],
+      [
+        -0.3801,
+        0.55
+      ],
+      [
+        -0.5148,
+        0.577
+      ],
+      [
+        -0.6448,
+        0.4891
+      ],
+      [
+        -0.4316,
+        0.4093
+      ],
+      [
+        -0.5879,
+        0.5059
+      ],
+      [
+        -0.5159,
+        0.4933
+      ],
+      [
+        -0.4249,
+        0.4453
+      ],
+      [
+        -0.473,
+        0.4612
+      ],
+      [
+        -0.5072,
+        0.3965
+      ],
+      [
+        -0.5109,
+        0.4561
+      ],
+      [
+        -0.5901,
+        0.4769
+      ],
+      [
+        -0.4462,
+        0.5864
+      ],
+      [
+        -0.4735,
+        0.4558
+      ],
+      [
+        -0.3137,
+        0.3816
+      ],
+      [
+        -0.5113,
+        0.5276
+      ],
+      [
+        -0.3757,
+        0.4291
+      ],
+      [
+        -0.5455,
+        0.4982
+      ],
+      [
+        -0.6109,
+        0.4443
+      ],
+      [
+        -0.4569,
+        0.5361
+      ],
+      [
+        -0.4214,
+        0.5021
+      ],
+      [
+        -0.5562,
+        0.5871
+      ],
+      [
+        -0.4716,
+        0.5251
+      ],
+      [
+        -0.5697,
+        0.4
+      ],
+      [
+        -0.4113,
+        0.3704
+      ],
+      [
+        -0.5236,
+        0.4705
+      ],
+      [
+        -0.5137,
+        0.4384
+      ],
+      [
+        -0.4959,
+        0.4384
+      ],
+      [
+        -0.4234,
+        0.5159
+      ],
+      [
+        -0.5446,
+        0.5314
+      ],
+      [
+        -0.3952,
+        0.4496
+      ],
+      [
+        -0.5368,
+        0.5558
+      ],
+      [
+        -0.5906,
+        0.5223
+      ],
+      [
+        -0.4081,
+        0.4474
+      ],
+      [
+        -0.381,
+        0.4298
+      ],
+      [
+        -0.5068,
+        0.561
+      ],
+      [
+        -0.462,
+        0.592
+      ],
+      [
+        -0.4629,
+        0.5613
+      ],
+      [
+        -0.4652,
+        0.5261
+      ],
+      [
+        -0.5521,
+        0.5307
+      ],
+      [
+        -0.4525,
+        0.4619
+      ],
+      [
+        -0.5168,
+        0.5446
+      ],
+      [
+        -0.5406,
+        0.5571
+      ],
+      [
+        -0.4019,
+        0.4081
+      ],
+      [
+        -0.5352,
+        0.6103
+      ],
+      [
+        -0.4517,
+        0.4532
+      ],
+      [
+        -0.4399,
+        0.4179
+      ],
+      [
+        -0.5067,
+        0.4459
+      ],
+      [
+        -0.3939,
+        0.4108
+      ],
+      [
+        -0.5284,
+        0.548
+      ],
+      [
+        -0.6152,
+        0.6233
+      ],
+      [
+        -0.5076,
+        0.6043
+      ],
+      [
+        -0.557,
+        0.4812
+      ],
+      [
+        -0.3101,
+        0.3914
+      ],
+      [
+        -0.5661,
+        0.5395
+      ],
+      [
+        -0.5991,
+        0.5038
+      ],
+      [
+        -0.4965,
+        0.4698
+      ],
+      [
+        -0.5562,
+        0.5605
+      ],
+      [
+        -0.5124,
+        0.5495
+      ],
+      [
+        -0.5636,
+        0.5342
+      ],
+      [
+        -0.4713,
+        0.5753
+      ],
+      [
+        -0.6031,
+        0.6176
+      ],
+      [
+        -0.5503,
+        0.5146
+      ],
+      [
+        -0.5175,
+        0.6097
+      ],
+      [
+        -0.6072,
+        0.6204
+      ],
+      [
+        -0.4566,
+        0.5037
+      ],
+      [
+        -0.5191,
+        0.4659
+      ],
+      [
+        -0.4913,
+        0.3944
+      ],
+      [
+        -0.4112,
+        0.435
+      ],
+      [
+        -0.4333,
+        0.508
+      ],
+      [
+        -0.4296,
+        0.3671
+      ],
+      [
+        -0.4146,
+        0.526
+      ],
+      [
+        -0.407,
+        0.4085
+      ],
+      [
+        -0.4912,
+        0.4289
+      ],
+      [
+        -0.4892,
+        0.4834
+      ],
+      [
+        -0.3942,
+        0.4355
+      ],
+      [
+        -0.5144,
+        0.5803
+      ],
+      [
+        -0.4702,
+        0.508
+      ],
+      [
+        -0.4183,
+        0.3709
+      ],
+      [
+        -0.4711,
+        0.4748
+      ],
+      [
+        -0.4174,
+        0.5134
+      ],
+      [
+        -0.5427,
+        0.4999
+      ],
+      [
+        -0.4688,
+        0.5341
+      ],
+      [
+        -0.4913,
+        0.5149
+      ],
+      [
+        -0.4301,
+        0.4871
+      ],
+      [
+        -0.4492,
+        0.3943
+      ],
+      [
+        -0.457,
+        0.5927
+      ],
+      [
+        -0.4914,
+        0.4395
+      ],
+      [
+        -0.5257,
+        0.4216
+      ],
+      [
+        -0.413,
+        0.4204
+      ],
+      [
+        -0.4824,
+        0.387
+      ],
+      [
+        -0.5308,
+        0.6118
+      ],
+      [
+        -0.419,
+        0.5089
+      ],
+      [
+        -0.5484,
+        0.4849
+      ],
+      [
+        -0.4134,
+        0.4769
+      ],
+      [
+        -0.5042,
+        0.4687
+      ],
+      [
+        -0.6064,
+        0.6381
+      ],
+      [
+        -0.4795,
+        0.6008
+      ],
+      [
+        -0.5471,
+        0.5676
+      ],
+      [
+        -0.5418,
+        0.539
+      ],
+      [
+        -0.5156,
+        0.5019
+      ],
+      [
+        -0.4734,
+        0.4518
+      ],
+      [
+        -0.579,
+        0.6471
+      ],
+      [
+        -0.5606,
+        0.5202
+      ],
+      [
+        -0.4846,
+        0.5229
+      ],
+      [
+        -0.5608,
+        0.5954
+      ],
+      [
+        -0.45,
+        0.4942
+      ],
+      [
+        -0.4737,
+        0.5011
+      ],
+      [
+        -0.6452,
+        0.5809
+      ],
+      [
+        -0.4438,
+        0.4374
+      ],
+      [
+        -0.634,
+        0.6436
+      ],
+      [
+        -0.5702,
+        0.4547
+      ],
+      [
+        -0.4884,
+        0.3897
+      ],
+      [
+        -0.5612,
+        0.582
+      ],
+      [
+        -0.5013,
+        0.4533
+      ],
+      [
+        -0.6066,
+        0.6088
+      ],
+      [
+        -0.4197,
+        0.4798
+      ],
+      [
+        -0.5967,
+        0.506
+      ],
+      [
+        -0.5078,
+        0.5181
+      ],
+      [
+        -0.4475,
+        0.4964
+      ],
+      [
+        -0.5948,
+        0.642
+      ],
+      [
+        -0.4683,
+        0.5062
+      ],
+      [
+        -0.5875,
+        0.5811
+      ],
+      [
+        -0.5682,
+        0.5544
+      ],
+      [
+        -0.55,
+        0.4659
+      ],
+      [
+        -0.6103,
+        0.6292
+      ],
+      [
+        -0.4251,
+        0.5144
+      ],
+      [
+        -0.6033,
+        0.5986
+      ],
+      [
+        -0.4577,
+        0.4623
+      ],
+      [
+        -0.5015,
+        0.4654
+      ],
+      [
+        -0.5712,
+        0.6168
+      ],
+      [
+        -0.499,
+        0.3808
+      ],
+      [
+        -0.6929,
+        0.7259
+      ],
+      [
+        -0.4942,
+        0.4265
+      ],
+      [
+        -0.6137,
+        0.536
+      ],
+      [
+        -0.6601,
+        0.6225
+      ],
+      [
+        -0.6215,
+        0.4935
+      ],
+      [
+        -0.7223,
+        0.6944
+      ],
+      [
+        -0.4512,
+        0.5626
+      ],
+      [
+        -0.6642,
+        0.6707
+      ],
+      [
+        -0.5036,
+        0.4701
+      ],
+      [
+        -0.5059,
+        0.5683
+      ],
+      [
+        -0.6295,
+        0.5522
+      ],
+      [
+        -0.5286,
+        0.5587
+      ],
+      [
+        -0.6704,
+        0.6563
+      ],
+      [
+        -0.6156,
+        0.5371
+      ],
+      [
+        -0.5027,
+        0.6215
+      ],
+      [
+        -0.6435,
+        0.5967
+      ],
+      [
+        -0.4958,
+        0.5003
+      ],
+      [
+        -0.6525,
+        0.7184
+      ],
+      [
+        -0.5924,
+        0.5645
+      ],
+      [
+        -0.489,
+        0.4641
+      ],
+      [
+        -0.656,
+        0.6318
+      ],
+      [
+        -0.5385,
+        0.532
+      ],
+      [
+        -0.6357,
+        0.6119
+      ],
+      [
+        -0.5545,
+        0.4778
+      ],
+      [
+        -0.7762,
+        0.664
+      ],
+      [
+        -0.6142,
+        0.5457
+      ],
+      [
+        -0.5793,
+        0.509
+      ],
+      [
+        -0.6725,
+        0.6937
+      ],
+      [
+        -0.6225,
+        0.6248
+      ],
+      [
+        -0.6146,
+        0.6339
+      ],
+      [
+        -0.5943,
+        0.6565
+      ],
+      [
+        -0.5446,
+        0.4278
+      ],
+      [
+        -0.6614,
+        0.6162
+      ],
+      [
+        -0.6265,
+        0.4974
+      ],
+      [
+        -0.6505,
+        0.6391
+      ],
+      [
+        -0.6684,
+        0.6256
+      ],
+      [
+        -0.6228,
+        0.6194
+      ],
+      [
+        -0.5982,
+        0.6936
+      ],
+      [
+        -0.4907,
+        0.4601
+      ],
+      [
+        -0.6709,
+        0.661
+      ],
+      [
+        -0.6382,
+        0.605
+      ],
+      [
+        -0.7154,
+        0.5879
+      ],
+      [
+        -0.6886,
+        0.6059
+      ],
+      [
+        -0.6632,
+        0.6132
+      ],
+      [
+        -0.6143,
+        0.6498
+      ],
+      [
+        -0.6711,
+        0.6521
+      ],
+      [
+        -0.697,
+        0.5573
+      ],
+      [
+        -0.5466,
+        0.5072
+      ],
+      [
+        -0.6795,
+        0.6255
+      ],
+      [
+        -0.5958,
+        0.5984
+      ],
+      [
+        -0.5841,
+        0.4196
+      ],
+      [
+        -0.461,
+        0.477
+      ],
+      [
+        -0.4629,
+        0.4395
+      ],
+      [
+        -0.4979,
+        0.4027
+      ],
+      [
+        -0.4666,
+        0.5779
+      ],
+      [
+        -0.4727,
+        0.5119
+      ],
+      [
+        -0.5212,
+        0.4773
+      ],
+      [
+        -0.5253,
+        0.4433
+      ],
+      [
+        -0.5686,
+        0.4246
+      ],
+      [
+        -0.5676,
+        0.4369
+      ],
+      [
+        -0.5089,
+        0.481
+      ],
+      [
+        -0.5025,
+        0.4697
+      ],
+      [
+        -0.5511,
+        0.554
+      ],
+      [
+        -0.5632,
+        0.6109
+      ],
+      [
+        -0.5759,
+        0.5568
+      ],
+      [
+        -0.6693,
+        0.6355
+      ],
+      [
+        -0.5849,
+        0.6676
+      ],
+      [
+        -0.641,
+        0.5816
+      ],
+      [
+        -0.658,
+        0.5919
+      ],
+      [
+        -0.4721,
+        0.4707
+      ],
+      [
+        -0.3054,
+        0.3902
+      ],
+      [
+        -0.5865,
+        0.5527
+      ],
+      [
+        -0.4149,
+        0.4314
+      ],
+      [
+        -0.6054,
+        0.5366
+      ],
+      [
+        -0.4468,
+        0.3522
+      ],
+      [
+        -0.3296,
+        0.3516
+      ],
+      [
+        -0.6919,
+        0.5913
+      ],
+      [
+        -0.4782,
+        0.4574
+      ],
+      [
+        -0.634,
+        0.6999
+      ],
+      [
+        -0.3123,
+        0.397
+      ],
+      [
+        -0.6106,
+        0.4215
+      ],
+      [
+        -0.5478,
+        0.5976
+      ],
+      [
+        -0.2877,
+        0.3044
+      ],
+      [
+        -0.5738,
+        0.5986
+      ],
+      [
+        -0.3559,
+        0.3134
+      ],
+      [
+        -0.6335,
+        0.6871
+      ],
+      [
+        -0.6032,
+        0.5207
+      ],
+      [
+        -0.424,
+        0.4389
+      ],
+      [
+        -0.574,
+        0.6019
+      ],
+      [
+        -0.6125,
+        0.5667
+      ],
+      [
+        -0.5938,
+        0.595
+      ],
+      [
+        -0.6004,
+        0.5919
+      ],
+      [
+        -0.528,
+        0.5319
+      ],
+      [
+        -0.6204,
+        0.6073
+      ],
+      [
+        -0.5938,
+        0.6327
+      ],
+      [
+        -0.5908,
+        0.6421
+      ],
+      [
+        -0.6075,
+        0.6208
+      ],
+      [
+        -0.5552,
+        0.5567
+      ],
+      [
+        -0.6679,
+        0.6317
+      ],
+      [
+        -0.6029,
+        0.6067
+      ],
+      [
+        -0.5749,
+        0.5978
+      ],
+      [
+        -0.5969,
+        0.6108
+      ],
+      [
+        -0.6239,
+        0.6214
+      ],
+      [
+        -0.6276,
+        0.5648
+      ],
+      [
+        -0.6607,
+        0.6583
+      ],
+      [
+        -0.6254,
+        0.6146
+      ],
+      [
+        -0.6204,
+        0.6888
+      ],
+      [
+        -0.6419,
+        0.6161
+      ],
+      [
+        -0.4937,
+        0.5263
+      ],
+      [
+        -0.5853,
+        0.4918
+      ],
+      [
+        -0.5936,
+        0.5244
+      ],
+      [
+        -0.5272,
+        0.5608
+      ],
+      [
+        -0.5748,
+        0.5833
+      ],
+      [
+        -0.657,
+        0.6074
+      ],
+      [
+        -0.4791,
+        0.6072
+      ],
+      [
+        -0.6068,
+        0.5859
+      ],
+      [
+        -0.5104,
+        0.5943
+      ],
+      [
+        -0.5906,
+        0.6392
+      ],
+      [
+        -0.5232,
+        0.6271
+      ],
+      [
+        -0.6036,
+        0.67
+      ],
+      [
+        -0.5805,
+        0.5896
+      ],
+      [
+        -0.6153,
+        0.612
+      ],
+      [
+        -0.5152,
+        0.5204
+      ],
+      [
+        -0.6473,
+        0.6011
+      ],
+      [
+        -0.5782,
+        0.6044
+      ],
+      [
+        -0.5002,
+        0.5114
+      ],
+      [
+        -0.4549,
+        0.4902
+      ],
+      [
+        -0.6256,
+        0.6506
+      ],
+      [
+        -0.596,
+        0.57
+      ],
+      [
+        -0.6433,
+        0.707
+      ],
+      [
+        -0.6013,
+        0.6175
+      ],
+      [
+        -0.6892,
+        0.6708
+      ],
+      [
+        -0.5585,
+        0.4784
+      ],
+      [
+        -0.7639,
+        0.7559
+      ],
+      [
+        -0.7786,
+        0.6637
+      ],
+      [
+        -0.5965,
+        0.5004
+      ],
+      [
+        -0.693,
+        0.6296
+      ],
+      [
+        -0.7354,
+        0.7022
+      ],
+      [
+        -0.6468,
+        0.5004
+      ],
+      [
+        -0.6638,
+        0.7682
+      ],
+      [
+        -0.5052,
+        0.5676
+      ],
+      [
+        -0.6532,
+        0.6417
+      ],
+      [
+        -0.5627,
+        0.5962
+      ],
+      [
+        -0.7489,
+        0.7143
+      ],
+      [
+        -0.715,
+        0.6253
+      ],
+      [
+        -0.5621,
+        0.5924
+      ],
+      [
+        -0.6798,
+        0.6376
+      ],
+      [
+        -0.6456,
+        0.643
+      ],
+      [
+        -0.6227,
+        0.6658
+      ],
+      [
+        -0.5789,
+        0.7097
+      ],
+      [
+        -0.6079,
+        0.5774
+      ],
+      [
+        -0.5878,
+        0.7314
+      ],
+      [
+        -0.8353,
+        0.7505
+      ],
+      [
+        -0.6512,
+        0.6456
+      ],
+      [
+        -0.696,
+        0.7242
+      ],
+      [
+        -0.6392,
+        0.657
+      ],
+      [
+        -0.6377,
+        0.6101
+      ],
+      [
+        -0.636,
+        0.5625
+      ],
+      [
+        -0.6968,
+        0.6024
+      ],
+      [
+        -0.6361,
+        0.6416
+      ],
+      [
+        -0.6228,
+        0.698
+      ],
+      [
+        -0.6913,
+        0.6205
+      ],
+      [
+        -0.7008,
+        0.6857
+      ],
+      [
+        -0.7205,
+        0.655
+      ],
+      [
+        -0.6171,
+        0.5846
+      ],
+      [
+        -0.6218,
+        0.5924
+      ],
+      [
+        -0.6743,
+        0.6875
+      ],
+      [
+        -0.7268,
+        0.4819
+      ],
+      [
+        -0.6421,
+        0.6616
+      ],
+      [
+        -0.5987,
+        0.6345
+      ],
+      [
+        -0.7283,
+        0.7046
+      ],
+      [
+        -0.539,
+        0.5049
+      ],
+      [
+        -0.6768,
+        0.6529
+      ],
+      [
+        -0.6976,
+        0.6773
+      ],
+      [
+        -0.5853,
+        0.5802
+      ],
+      [
+        -0.5966,
+        0.6433
+      ],
+      [
+        -0.6913,
+        0.7214
+      ],
+      [
+        -0.5801,
+        0.6116
+      ],
+      [
+        -0.6982,
+        0.7307
+      ],
+      [
+        -0.63,
+        0.6039
+      ],
+      [
+        -0.6286,
+        0.6319
+      ],
+      [
+        -0.6796,
+        0.6405
+      ],
+      [
+        -0.7297,
+        0.6946
+      ],
+      [
+        -0.6545,
+        0.7184
+      ],
+      [
+        -0.6572,
+        0.5251
+      ],
+      [
+        -0.6629,
+        0.6811
+      ],
+      [
+        -0.6518,
+        0.635
+      ],
+      [
+        -0.5786,
+        0.6479
+      ],
+      [
+        -0.7227,
+        0.741
+      ],
+      [
+        -0.575,
+        0.6061
+      ],
+      [
+        -0.6145,
+        0.6302
+      ],
+      [
+        -0.737,
+        0.7222
+      ],
+      [
+        -0.7063,
+        0.7204
+      ],
+      [
+        -0.6505,
+        0.732
+      ],
+      [
+        -0.5435,
+        0.6182
+      ],
+      [
+        -0.6634,
+        0.7261
+      ],
+      [
+        -0.6309,
+        0.6027
+      ],
+      [
+        -0.5768,
+        0.6869
+      ],
+      [
+        -0.6902,
+        0.73
+      ],
+      [
+        -0.6299,
+        0.6233
+      ],
+      [
+        -0.6118,
+        0.6528
+      ],
+      [
+        -0.6424,
+        0.6904
+      ],
+      [
+        -0.6923,
+        0.6902
+      ],
+      [
+        -0.5648,
+        0.6142
+      ],
+      [
+        -0.6128,
+        0.6493
+      ],
+      [
+        -0.636,
+        0.6552
+      ],
+      [
+        -0.6237,
+        0.4943
+      ],
+      [
+        -0.7366,
+        0.7242
+      ],
+      [
+        -0.5919,
+        0.5637
+      ],
+      [
+        -0.7328,
+        0.6547
+      ],
+      [
+        -0.677,
+        0.586
+      ],
+      [
+        -0.7143,
+        0.7605
+      ],
+      [
+        -0.6544,
+        0.6303
+      ],
+      [
+        -0.6945,
+        0.5836
+      ],
+      [
+        -0.6741,
+        0.6424
+      ],
+      [
+        -0.6583,
+        0.687
+      ],
+      [
+        -0.6898,
+        0.6421
+      ],
+      [
+        -0.6416,
+        0.6741
+      ],
+      [
+        -0.6298,
+        0.7483
+      ],
+      [
+        -0.6507,
+        0.6515
+      ],
+      [
+        -0.7318,
+        0.6616
+      ],
+      [
+        -0.6684,
+        0.6487
+      ],
+      [
+        -0.6965,
+        0.7218
+      ],
+      [
+        -0.6904,
+        0.7102
+      ],
+      [
+        -0.6633,
+        0.6798
+      ],
+      [
+        -0.5668,
+        0.6092
+      ],
+      [
+        -0.5788,
+        0.52
+      ],
+      [
+        -0.5289,
+        0.5837
+      ],
+      [
+        -0.5267,
+        0.6547
+      ],
+      [
+        -0.6463,
+        0.6115
+      ],
+      [
+        -0.5632,
+        0.5842
+      ],
+      [
+        -0.5992,
+        0.5477
+      ],
+      [
+        -0.5117,
+        0.5064
+      ],
+      [
+        -0.5561,
+        0.5101
+      ],
+      [
+        -0.6542,
+        0.657
+      ],
+      [
+        -0.5751,
+        0.5582
+      ],
+      [
+        -0.5431,
+        0.6023
+      ],
+      [
+        -0.6076,
+        0.5769
+      ],
+      [
+        -0.5642,
+        0.5259
+      ],
+      [
+        -0.6899,
+        0.6978
+      ],
+      [
+        -0.5973,
+        0.7331
+      ],
+      [
+        -0.6689,
+        0.6712
+      ],
+      [
+        -0.6045,
+        0.6253
+      ],
+      [
+        -0.6518,
+        0.604
+      ],
+      [
+        -0.6775,
+        0.677
+      ],
+      [
+        -0.6243,
+        0.4908
+      ],
+      [
+        -0.5035,
+        0.5117
+      ],
+      [
+        -0.3704,
+        0.3348
+      ],
+      [
+        -0.214,
+        0.1726
+      ],
+      [
+        -0.1192,
+        0.1144
+      ],
+      [
+        -0.04,
+        0.0316
+      ],
+      [
+        -0.0098,
+        0.0051
+      ],
+      [
+        -0.0002,
+        0.0002
+      ],
+      [
+        -0.0004,
+        0.0017
+      ]
+    ]
+  },
+  "storyStages": [
+    {
+      "stage": "bound",
+      "name": "The written sky",
+      "start": 0,
+      "end": 30
+    },
+    {
+      "stage": "crossing",
+      "name": "Follow the loose thread",
+      "start": 30,
+      "end": 39.8
+    },
+    {
+      "stage": "release",
+      "name": "Unstitch the forecast",
+      "start": 39.8,
+      "end": 59.8
+    },
+    {
+      "stage": "weather",
+      "name": "Let the city answer",
+      "start": 59.8,
+      "end": 128.88
+    },
+    {
+      "stage": "open",
+      "name": "The unpredicted sky",
+      "start": 128.88,
+      "end": 169.89866666666666
+    }
+  ],
+  "storyWindows": [
+    {
+      "key": "sky",
+      "start": 0,
+      "end": 17.1
+    },
+    {
+      "key": "thread",
+      "start": 17.1,
+      "end": 30
+    },
+    {
+      "key": "bridge",
+      "start": 30,
+      "end": 39.8
+    },
+    {
+      "key": "hands",
+      "start": 39.8,
+      "end": 49.8
+    },
+    {
+      "key": "release",
+      "start": 49.8,
+      "end": 59.8
+    },
+    {
+      "key": "awnings",
+      "start": 59.8,
+      "end": 102
+    },
+    {
+      "key": "garden",
+      "start": 102,
+      "end": 128.88
+    },
+    {
+      "key": "ending",
+      "start": 128.88,
+      "end": 169.89866666666666
+    }
+  ],
+  "captions": [],
+  "artworkPrompts": {
+    "all": [
+      {
+        "id": "01-knotted-sky",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Scene 01: a striking wide view into a city beneath an immense tightly knotted woven sky. Huge thick jade and cream cloth cloud-ribbons converge into one complex physical knot centered over the street; the fabric seems to hold the weather captive. Foreground center the small woman stands looking up, three-quarter back view, clearly relatable against immense scale. Plum loom-towers and coral awnings frame the central knot. Ominous energy with a thin warm opening inside the knot. Dramatic depth, bold silhouette, handwoven material everywhere. Square image."
+      },
+      {
+        "id": "02-loose-thread",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image: style and character reference only; make a genuinely different scene. Scene 02: medium close view at a tall loom-wall, woman in coral coat at center-right turns toward one vivid coral loose thread escaping a rigid jade woven forecast fabric. Her attentive face in profile, one hand gently catches the thread, a little cloth tuft lifts on unseen wind. Thread and hand at the image center, face nearby, wooden loom verticals behind. Claustrophobic patterned wall contrasts with tiny opening showing free cream cloud beyond. No sky knot here. Square frame, tactile fiber detail and strong ink shadows, same style as reference."
+      },
+      {
+        "id": "03-fabric-bridge",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image is style and recurring character reference only. Scene 03: high suspended bridge of taut woven jade cloth crossing a deep gap between loom-towers, dynamic diagonal perspective. Same short-bob woman in coral coat crossing at the exact image center, grasping one rope rail, purposeful and balanced. Her full torso and bridge destination near center, feet visible beneath. Overhead the knotted cloud cloth is distant, not dominating. Foreground loose fringe streams in wind, background layered plum carved towers, warm paper haze. Distinct adventurous travel scene, not street opening. Square frame."
+      },
+      {
+        "id": "04-untying",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image style reference only. Scene 04: intimate close-up of two believable adult hands emerging from coral woven workcoat cuffs, gently loosening one tight jade and straw rope-knot at center. Hands have natural anatomy, five fingers each, clearly separate and unambiguous, one holds the loop while the other draws a coral thread out. Center knot opening reveals small warm-paper gap. No face necessary; blurred loom wood behind, enormous frayed fabric above, a quiet decisive act. Both hands and knot fit within middle 45 percent horizontal width and middle 45 percent height, generous textured surroundings for both crops. Square frame."
+      },
+      {
+        "id": "05-released-weather",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image style/character reference only. Scene 05: the weather released. Giant woven jade and cream cloud-ribbons have COME UNKNOTTED, surging upward as free separated sweeping fabric forms with open air between them. No closed knot anywhere. A dramatic windstorm crosses the loom city, coral banners stream, rain-like loose threads arc in curved paths. Woman in coral coat at central mid-height on a small roof ledge, braced with arms out for balance, looking upward into the release. Thrilling freedom rather than destruction; buildings remain intact. Strong directional sweep from lower left to upper right, energetic carved-ink lines, square frame."
+      },
+      {
+        "id": "06-open-awnings",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image is style reference only. Scene 06: human community responds to new wind. Medium street-level scene of three adult neighbors in simple jade, cream and straw clothing, central two people lift open one coral cloth awning together, smiling in surprise as loose embroidered leaves and threads fly gently. Their faces and raised hands around image center; background shows loom-city now airy with open spaces, no sky knot, not ominous. The coral-coat woman is a small observer behind them, no need for her to dominate. A distinct shared action, not another lone-woman view. Ink-carved anatomy, rich woven texture, square frame."
+      },
+      {
+        "id": "07-wind-garden",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image style and character reference only. Scene 07: rooftop wind garden at the edge of the loom city, a sculptural grove of jade woven leaves and tall straw reed fans on slender stems, coral cloth seedpods, all leaning together in a fresh breeze. Same woman in coral coat at middle center crouches and plants a small jade fabric seedling in a woven basket bed. Her face, hands and plant near center, city recedes behind, sky broad and open with only loose thin cream cloud streaks, NO knot, NO giant ribbons overhead. Strange but peaceful botanical invention, sunset warm paper light, square frame."
+      },
+      {
+        "id": "08-open-sky",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image style/character reference only. Scene 08 ending: an expansive liberated sky above the loom city, huge open warm-paper and jade flowing cloud currents with visible empty space between, no knots, no restrictive bands. At middle-lower center the small coral-coat woman stands beside two neighbors on a rooftop overlook, all facing the new sky, their three silhouettes grouped tightly near center. Woven garden leaves lean in foreground. Below, towers' cloth awnings are now open and irregular. A single loose coral thread arcs freely upward. Quiet confident release and possibility, grand ending composition, square frame. Main grouped figures at y.62 rather than bottom edge so wide frame retains them."
+      },
+      {
+        "id": "09-loom-drum",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image is style reference only. Environmental instrument E1: frontal close-up of one large circular bass diaphragm drum built into a wooden loom frame on a rooftop, centered exactly at x.5 y.5, diameter .48 of square width. Thick carved plum wood rim, jade woven cloth flexible cone with radial weave, small coral circular center cap. Face is perfectly frontal and round, no perspective ellipse, rim clearly separate from moving woven diaphragm. Cream and straw thread cables connect to wooden supports, distant loom city softly behind. No person, no lettering, no symbols, no extra circles inside except center cap. Intended for local audio deformation; clean unobscured circular surface, square painting, tactile same-world materials."
+      },
+      {
+        "id": "10-wind-barometer",
+        "prompt": "Use case: illustration-story. Square standalone music-video painting, no text, no borders, no labels. Original tactile world made from woven tapestry, carved woodcut ink, risograph gouache on thick paper: visible fibers, chunky carved shadows, ink registration imperfections, rich physical textures, sophisticated cinematic composition rather than flat vector. Palette only dark plum #241B35, oxidized jade #39877B, coral #E77761, straw #D8B86A, warm paper #EFE3CC with tonal variations. City built like tall wooden looms with cloth awnings and thread rails, impossible but physically legible. Main recurring character is an adult woman, simple short dark bob, coral workcoat, charcoal trousers. Keep crucial subject/action near central square region and mid-height so both wide and portrait crops retain meaning. No writing, logos, watermarks, symbols resembling letters. Input image style reference only. Environmental instrument E2: frontal medium-close view of a strange handmade textile weather barometer attached to loom timber in a rooftop wind garden. One rectangular carved dark-plum wood instrument cabinet, centered, with one perfectly frontal wide rectangular EMPTY DARK PLUM display glass in its middle, clean uninterrupted dark flat surface, no needles, no bars, no writing or marks. Display corners approximately x.28-.72 y.38-.59 of whole square image. Above cabinet seven tall straw reed pipes with jade thread bindings; beside cabinet small coral cloth wind tassels. Believable same-world mechanical musical object, woven surfaces and carved wood, not futuristic electronic plastic. Warm sky and distant loom city behind, no people. Square."
+      }
+    ]
+  },
+  "editorialRules": {
+    "noAdjacentIdenticalArtwork": true,
+    "narrativeMustRemainInStage": true
+  },
+  "editorialNotes": "Complete pre-render edit. Story events remain in their chronological stage. Three image-textured responsive instruments and two calibrated scene objects use measured controls from this exact recording. No complete film export performed. Final critique: broader textured abstract forms, native-scale repeated weave, attachment-inclusive portrait thread framing, awning-hand crop protection.",
+  "savedAt": "2026-11-17T03:26:43.475Z",
+  "editorialVersion": 2
+}
