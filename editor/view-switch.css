@@ -1,0 +1,25 @@
+.editor-view-switch {
+  display: inline-flex;
+  width: max-content;
+  border: 1px solid #7a9189;
+  border-radius: 999px;
+  padding: 2px;
+  font: 600 .86rem/1.2 system-ui, sans-serif;
+}
+
+.editor-view-switch > button {
+  display: grid;
+  place-items: center;
+  min-height: 38px;
+  padding: .3rem .82rem;
+  border-radius: inherit;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.editor-view-switch button:hover { background: #304845; color: #f5efe0; }
+.editor-view-switch button:focus-visible { outline: 2px solid #f8dfac; outline-offset: 2px; }
+.editor-view-switch [aria-pressed="true"] { background: #c5ddb4; color: #15271f; }

@@ -13,11 +13,10 @@
     ['Board', 'board/index.html', 'board/'],
     ['Tray', 'tray/index.html', 'tray/'],
     ['Songs', 'song-archive/index.html', 'song-archive/'],
-    ['Editor', 'editor/index.html?v=5', 'editor/'],
-    ['Cut Room', 'studio/', 'studio/'],
+    ['Editor', 'studio/', ['editor/', 'studio/']],
   ];
   const here = decodeURI(location.pathname).slice(decodeURI(base.pathname).length);
-  let current = rooms.find(([, , prefix]) => prefix && here.startsWith(prefix));
+  let current = rooms.find(([, , prefix]) => [prefix].flat().some(path => path && here.startsWith(path)));
   if (!current && (here === '' || here === 'index.html')) current = rooms[0];
 
   const H = 52; // bar height in px, the same everywhere

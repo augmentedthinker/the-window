@@ -9,10 +9,18 @@
   <link rel="stylesheet" href="studio.css">
   <script defer src="vendor/jszip.min.js"></script>
   <script type="module" src="studio.js"></script>
+  <link rel="stylesheet" href="../editor/view-switch.css">
+  <script src="../editor/view-switch.js" defer></script>
 </head>
-<body><script src="../nav.js"></script>
+<body data-editor-view="phone"><script src="../nav.js"></script>
   <header class="bar">
-    <div class="identity"><strong>Cut Room</strong></div>
+    <div class="identity">
+      <strong>Video Editor</strong>
+      <nav class="editor-view-switch" aria-label="Video editor view">
+        <button type="button" data-editor-view="phone" aria-pressed="true">Phone</button>
+        <button type="button" data-editor-view="desktop" aria-pressed="false">Desktop</button>
+      </nav>
+    </div>
     <div class="actions">
       <button type="button" id="new">New</button>
       <button type="button" id="open" aria-haspopup="dialog">Open project</button>
@@ -31,6 +39,14 @@
       </div>
       <p id="status" role="status"></p>
       <a id="shared-link" hidden>Open shared revision</a>
+    </div>
+    <div class="render-actions">
+      <button id="render-landscape" type="button" disabled>Render 16:9</button>
+      <button id="render-portrait" type="button" disabled>Render 9:16</button>
+      <button id="render-cancel" type="button" hidden>Cancel render</button>
+      <progress id="render-progress" max="1" aria-label="Film render progress" hidden></progress>
+      <span id="render-status" role="status"></span>
+      <a id="render-download" hidden>Download film</a>
     </div>
     <div id="desk" class="desk">
       <div id="workspace" class="workspace">

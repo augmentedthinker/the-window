@@ -11,13 +11,51 @@ const editable = ['scene-name', 'duration', 'kind', 'asset', 'motion', 'effect',
 const instrumentFields = [...document.querySelectorAll('[data-axis]')];
 const SOURCE_LIMIT = 768 * 1024 * 1024;
 const SHARED_LIMIT = 128 * 1024 * 1024;
-const DEFAULT_PROJECT = 'the-missing-beat-suno';
+const LOCAL = ['127.0.0.1', 'localhost'].includes(location.hostname);
+const DEFAULT_PROJECT = LOCAL ? 'the-missing-beat-suno' : 'always';
+const PHONE_SEEDS = {
+  always: 'We Were Always Here',
+  river: 'The River Keeps the Time · phone edit',
+  blank: 'New project · saved phone draft',
+};
+
+function phoneDraft(id) {
+  try { return JSON.parse(localStorage.getItem('window-editor-draft-v1-' + id)); }
+  catch { return null; }
+}
+
+async function readJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw Error('Project files are unavailable.');
+  return response.json();
+}
+
+async function loadPhoneSeed(id) {
+  const base = new URL('../editor/', location.href);
+  const [seed, manifest] = await Promise.all([
+    readJSON(new URL('project-' + id + '.json', base)),
+    readJSON(new URL('package-' + id + '.json', base)),
+  ]);
+  const draft = phoneDraft(id);
+  const source = draft?.format === seed.format && Array.isArray(draft.scenes) ? draft : seed;
+  const controls = manifest.find(asset => asset.path.endsWith('/features.json'))?.path;
+  const next = normalize({ ...source, controls });
+  const sources = new Map(manifest.map(asset => [asset.path, asset.url]));
+  const available = new Map();
+  for (const path of assetLocations(next)) {
+    if (sources.has(path)) available.set(path, { url: new URL(sources.get(path), base).href });
+  }
+  return { next, available };
+}
 const SHARED_ID = /^[a-f0-9]{64}$/;
 const stillFrames = new Map();
 const silence = Array(25).fill(0);
 let project;
 let files = new Map();
 let controls;
+let controlsReady;
+let renderJob;
+let renderedFilm;
 let analyser;
 let context;
 let spectrum;
@@ -141,6 +179,7 @@ async function readControls() {
     renderWave();
     draw();
   }
+  return controls;
 }
 
 function spectrumAt(time) {
@@ -236,6 +275,7 @@ function renderTimeline() {
     ' · ' + (project.frame === 'portrait' ? '9∶16' : '16∶9') + (project.bpm ? ' · ' + project.bpm + ' BPM' : '') +
     (project.audio ? ' · ' + (project.assets.find(asset => asset.path === project.audio)?.name || mediaName(project.audio)) : '');
   $('play').disabled = duration === 0;
+  updateRenderButtons();
   const step = Math.max(5, Math.ceil(58 / pixelsPerSecond / 5) * 5);
   for (let time = 0; time < duration; time += step) {
     const tick = document.createElement('span');
@@ -421,7 +461,7 @@ function applyAudio() {
     else audio.removeAttribute('src');
     audio.load();
   }
-  void readControls();
+  controlsReady = readControls();
 }
 
 function setProject(next, available) {
@@ -472,13 +512,17 @@ async function openShared(slug = DEFAULT_PROJECT) {
   const version = ++loadVersion;
   try {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw Error('The shared project name is invalid.');
-    const base = new URL('projects/' + slug + '/', location.href);
-    const response = await fetch(new URL('project.json', base));
-    if (!response.ok) throw Error('The shared project could not load.');
-    const next = normalize(await response.json());
-    const maps = new Map(assetLocations(next).map(path => [path, { url: new URL(path, base).href }]));
+    let next;
+    let available;
+    if (Object.hasOwn(PHONE_SEEDS, slug)) {
+      ({ next, available } = await loadPhoneSeed(slug));
+    } else {
+      const base = new URL('projects/' + slug + '/', location.href);
+      next = normalize(await readJSON(new URL('project.json', base)));
+      available = new Map(assetLocations(next).map(path => [path, { url: new URL(path, base).href }]));
+    }
     if (version === loadVersion) {
-      setProject(next, maps);
+      setProject(next, available);
       history.replaceState(null, '', projectLink('project', slug));
     }
   } catch (error) {
@@ -545,16 +589,20 @@ async function openLibrary() {
   list.replaceChildren();
   status.textContent = 'Loading projects…';
   dialog.showModal();
-  const read = async url => {
-    const response = await fetch(url);
-    if (!response.ok) throw Error('Project list unavailable.');
-    return response.json();
-  };
-  const [featured, shared] = await Promise.allSettled([read('projects/catalog.json'), read('/api/studio/projects')]);
+  const [featured, shared] = await Promise.allSettled([
+    LOCAL ? readJSON('projects/catalog.json') : [],
+    LOCAL ? readJSON('/api/studio/projects') : { projects: [] },
+  ]);
   if (!dialog.open) return;
   const entries = (featured.status === 'fulfilled' ? featured.value : []).map(item => ({
     title: item.title, detail: item.detail, open: () => openShared(item.slug),
   }));
+  for (const [id, title] of Object.entries(PHONE_SEEDS)) {
+    const draft = phoneDraft(id);
+    if (id !== 'blank' || draft?.scenes?.length) {
+      entries.push({ title, detail: draft ? 'Saved phone draft in this browser' : 'Window project', open: () => openShared(id) });
+    }
+  }
   if (shared.status === 'fulfilled') {
     for (const item of shared.value.projects) {
       entries.push({
@@ -674,6 +722,67 @@ async function savePackage(share = false) {
     shareControl.disabled = false;
   }
 }
+
+function updateRenderButtons() {
+  $('render-landscape').disabled = !duration || !!renderJob;
+  $('render-portrait').disabled = !duration || !!renderJob;
+}
+
+async function exportFilm(orientation) {
+  if (!project || !duration || renderJob) return;
+  const job = new AbortController();
+  renderJob = job;
+  updateRenderButtons();
+  const snapshot = structuredClone(project);
+  const frozenFiles = new Map();
+  const urls = new Map();
+  for (const path of assetLocations(snapshot)) {
+    const file = files.get(path);
+    if (file?.blob) {
+      addFile(frozenFiles, path, file.blob);
+      urls.set(path, frozenFiles.get(path).url);
+    } else if (file) urls.set(path, file.url);
+  }
+  const analysis = controlsReady;
+  const status = $('render-status');
+  const meter = $('render-progress');
+  const link = $('render-download');
+  $('render-cancel').hidden = false;
+  meter.hidden = false;
+  meter.removeAttribute('value');
+  status.textContent = 'Preparing film…';
+  try {
+    const { renderFilm } = await import('./render.js');
+    const { blob, extension } = await renderFilm({
+      project: snapshot, urls, controls: await analysis, orientation, signal: job.signal,
+      progress(fraction, format) {
+        meter.value = fraction;
+        status.textContent = fraction === 1 ? 'Finishing ' + format.toUpperCase() + '…'
+          : 'Rendering ' + format.toUpperCase() + ' · ' + Math.floor(fraction * 100) + '%';
+      },
+    });
+    if (renderedFilm) URL.revokeObjectURL(renderedFilm);
+    renderedFilm = URL.createObjectURL(blob);
+    link.href = renderedFilm;
+    const name = snapshot.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'window-film';
+    link.download = name + (orientation === 'portrait' ? '-portrait.' : '-widescreen.') + extension;
+    link.textContent = 'Download ' + extension.toUpperCase();
+    link.hidden = false;
+    status.textContent = 'Film ready.';
+  } catch (error) {
+    status.textContent = job.signal.aborted ? 'Render canceled.' : error.message;
+  } finally {
+    releaseFiles(frozenFiles);
+    renderJob = undefined;
+    meter.hidden = true;
+    $('render-cancel').hidden = true;
+    updateRenderButtons();
+  }
+}
+
+$('render-landscape').onclick = () => void exportFilm('landscape');
+$('render-portrait').onclick = () => void exportFilm('portrait');
+$('render-cancel').onclick = () => renderJob?.abort();
 
 $('new').onclick = () => {
   if (!mayReplace()) return;
@@ -832,7 +941,7 @@ $('delete').onclick = () => {
   setPosition(offsets[selected] || 0);
 };
 window.addEventListener('beforeunload', event => {
-  if (!dirty) return;
+  if (!dirty && !renderJob) return;
   event.preventDefault();
   event.returnValue = '';
 });
@@ -900,13 +1009,7 @@ function installSplitter(id, panelId, containerId, property, vertical, initial, 
 
 installSplitter('media-divider', 'media-panel', 'workspace', '--media-width', true, 28, 20, 58);
 installSplitter('timeline-divider', 'timeline-panel', 'desk', '--timeline-height', false, 39, 28, 62);
+$('share').hidden = !LOCAL;
 const startup = new URLSearchParams(location.search);
 if (startup.has('shared')) void openSharedPackage(startup.get('shared'));
-else if (startup.has('project') || ['127.0.0.1', 'localhost'].includes(location.hostname)) {
-  void openShared(startup.get('project') || undefined);
-} else {
-  $('share').hidden = true;
-  $('open').hidden = true;
-  $('new').click();
-  report('Open Cut Room on your Chromebook for local projects and shared revisions.');
-}
+else void openShared(startup.get('project') || undefined);

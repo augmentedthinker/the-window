@@ -76,32 +76,35 @@ fieldset{display:grid;gap:.55rem;border:0;margin:.65rem 0 0;padding:0;min-width:
 #wave canvas{display:block;width:100%;height:100%}
 #cursor{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);pointer-events:none}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-@media (min-width: 761px) {
-  body{display:grid;grid-template-rows:auto minmax(0,1fr);height:100dvh;min-height:650px}
-  main{display:flex;flex-direction:column;min-height:0}
-  .heading{flex:none}
-  .desk{flex:1;gap:0;grid-template-rows:minmax(180px,1fr) 14px minmax(195px,var(--timeline-height,39%))}
-  .workspace{gap:0;grid-template-columns:minmax(174px,var(--media-width,28%)) 14px minmax(0,1fr)}
-  .sidebar{display:flex;flex-direction:column}
-  .sidebar > :not(ul){flex:none}
-  .stage{flex:1;min-height:0;aspect-ratio:auto}
-  .splitter{display:grid;place-items:center;border-radius:.25rem;touch-action:none;user-select:none}
-  .splitter::before{content:"";border-radius:2px;background:#786587}
-  .splitter:is(:hover,:focus-visible,[data-dragging]){background:var(--raised);outline:1px solid var(--accent);outline-offset:-2px}
-  .splitter[aria-orientation=vertical]{cursor:col-resize}
-  .splitter[aria-orientation=vertical]::before{width:3px;height:34px}
-  .splitter[aria-orientation=horizontal]{cursor:row-resize}
-  .splitter[aria-orientation=horizontal]::before{height:3px;width:34px}
-  .edit-body:has(#inspect:not([hidden])){grid-template-columns:minmax(0,1fr) minmax(210px,29%);gap:.65rem}
-  #inspect{overflow:auto;border-top:0;border-left:1px solid var(--border)}
-  .timeline-scroll{container-type:size;min-height:0}
-  #timeline{--track-height:clamp(56px, calc(100cqh - 56px), 235px)}
-}
-@media (max-width: 760px) {
-  .workspace{grid-template-columns:minmax(0,1fr)}
-  .sidebar{order:1}
-  #media{max-height:210px}
-  .timeline-scroll{min-height:130px}
+body[data-editor-view=desktop]{display:grid;grid-template-rows:auto minmax(0,1fr);height:100dvh;min-height:650px}
+body[data-editor-view=desktop] main{display:flex;flex-direction:column;min-height:0}
+body[data-editor-view=desktop] .heading{flex:none}
+body[data-editor-view=desktop] .desk{flex:1;gap:0;grid-template-rows:minmax(180px,1fr) 14px minmax(195px,var(--timeline-height,39%))}
+body[data-editor-view=desktop] .workspace{gap:0;grid-template-columns:minmax(clamp(100px,25vw,174px),var(--media-width,28%)) 14px minmax(0,1fr)}
+body[data-editor-view=desktop] .sidebar{display:flex;flex-direction:column}
+body[data-editor-view=desktop] .sidebar > :not(ul){flex:none}
+body[data-editor-view=desktop] .stage{flex:1;min-height:0;aspect-ratio:auto}
+body[data-editor-view=desktop] .splitter{display:grid;place-items:center;border-radius:.25rem;touch-action:none;user-select:none}
+body[data-editor-view=desktop] .splitter::before{content:"";border-radius:2px;background:#786587}
+body[data-editor-view=desktop] .splitter:is(:hover,:focus-visible,[data-dragging]){background:var(--raised);outline:1px solid var(--accent);outline-offset:-2px}
+body[data-editor-view=desktop] .splitter[aria-orientation=vertical]{cursor:col-resize}
+body[data-editor-view=desktop] .splitter[aria-orientation=vertical]::before{width:3px;height:34px}
+body[data-editor-view=desktop] .splitter[aria-orientation=horizontal]{cursor:row-resize}
+body[data-editor-view=desktop] .splitter[aria-orientation=horizontal]::before{height:3px;width:34px}
+body[data-editor-view=desktop] .edit-body:has(#inspect:not([hidden])){grid-template-columns:minmax(0,1fr) minmax(210px,29%);gap:.65rem}
+body[data-editor-view=desktop] #inspect{overflow:auto;border-top:0;border-left:1px solid var(--border)}
+body[data-editor-view=desktop] .timeline-scroll{container-type:size;min-height:0}
+body[data-editor-view=desktop] #timeline{--track-height:clamp(56px, calc(100cqh - 56px), 235px)}
+body[data-editor-view=phone] .workspace{grid-template-columns:minmax(0,1fr)}
+body[data-editor-view=phone] .sidebar{order:1}
+body[data-editor-view=phone] #media{max-height:210px}
+body[data-editor-view=phone] .timeline-scroll{min-height:130px}
+
+body[data-editor-view=phone] main{max-width:680px;margin:auto}
+@media (max-width: 580px) {
+  body[data-editor-view=desktop] .edit-body:has(#inspect:not([hidden])){grid-template-columns:minmax(0,1fr);overflow:auto}
+  body[data-editor-view=desktop] .timeline-scroll{min-height:120px}
+  .transport{flex-wrap:wrap}
 }
 @media(max-width:440px){.actions{gap:.28rem}.actions button{font-size:.77rem;padding-inline:.47rem}.transport{gap:.36rem}#fullscreen{font-size:.76rem;padding-inline:.45rem}}
 #instrument-panel summary{cursor:pointer;color:var(--muted);font-size:.82rem}
@@ -121,3 +124,8 @@ fieldset{display:grid;gap:.55rem;border:0;margin:.65rem 0 0;padding:0;min-width:
 #shared-link{font-size:.85rem}
 
 #summary{overflow-wrap:anywhere}
+
+.render-actions{display:flex;flex:none;gap:.45rem;align-items:center;flex-wrap:wrap;margin-bottom:.55rem}
+.render-actions progress{width:8rem;accent-color:var(--accent)}
+#render-status{color:var(--muted);font-size:.85rem}
+#render-download{color:var(--accent)}

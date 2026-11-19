@@ -2,6 +2,12 @@
 
 [Open Cut Room](http://127.0.0.1:8860/studio/) on the Chromebook. **Open project** lists the local sample projects and revisions shared to The Window. **New** starts a blank cut. Use **Media** to import files or add a picture to the timeline after the selected scene. Select a clip and open **Scene settings** to edit its length, source, motion, effects or fades. Drag either divider or use its arrow keys to resize the media tray, preview and timeline. Cut Room remembers the pane sizes in this browser. Use **Zoom** to change the timeline scale. Play, scrub, or click a musical cue to jump directly to that point. Source video plays muted beneath the separate soundtrack.
 
+## Render a film
+
+**Render 16:9** exports 1280 × 720 and **Render 9:16** exports 720 × 1280. Each runs the entire timeline at 24 fps and uses its soundtrack. The render runs in the browser and offers a download when it finishes. It uses MP4 with H.264/AAC when the browser supports those encoders and WebM with VP9 or VP8 and Opus otherwise. Use **Cancel render** to stop an export. Phone and Desktop layouts offer the same controls.
+
+The browser encoder and container writer use [Mediabunny 1.66.1](https://www.npmjs.com/package/mediabunny/v/1.66.1), distributed with its MPL 2.0 license in `vendor/`.
+
 ## Share a revision
 
 Click **Share project** to upload a self-contained Cut Room ZIP to The Window’s local project library. Send the revision URL or tell the next editor its title in **Open project**. A later save creates a separate revision. Identical package bytes resolve to the same revision. The local ZIP limit is 128 MB for sharing. Use **Save package** for a portable download that can travel as a file or for a package above that limit.
