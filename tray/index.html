@@ -74,14 +74,43 @@
     .how ol { margin: 0; padding-left: 1.2rem; } .how li { margin: .35rem 0; word-break: break-word; }
     .empty { color: #9aa9a5; font: .95rem system-ui, sans-serif; margin-top: 2rem; }
     footer { color: #9aa9a5; font: .78rem/1.5 system-ui, sans-serif; margin-top: 2.5rem; text-align: center; }
+    #editor-prep fieldset { border: 0; padding: 0; margin: 1rem 0; min-width: 0; }
+    #editor-prep legend { font: 600 1rem system-ui, sans-serif; margin-bottom: .25rem; }
+    .prep-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: .6rem; }
+    .prep-options .option { margin: 0; align-content: start; }
+    .prep-options .concept { width: 100%; aspect-ratio: 1; object-fit: cover; }
   </style>
 </head>
 <body><script src="../nav.js"></script>
 <main>
   <p class="eyebrow">Shared by the homes</p>
   <h1>Music Tray</h1>
-  <section aria-labelledby="active-heading">
-    <h2 id="active-heading" class="project-section">Active project</h2>
+  <section id="editor-prep" aria-labelledby="prep-heading">
+    <h2 id="prep-heading" class="project-section">Current project</h2>
+    <div class="card">
+      <h2>Video editor prep template</h2>
+      <p class="prompt">Choose one example music style and one concept image for the video brief.</p>
+      <fieldset disabled>
+        <legend>Music style</legend>
+        <div class="prep-options">
+          <button class="option" type="button" data-card="prep_music" data-key="folk" aria-pressed="false"><b>Indie folk</b><span>Fingerpicked guitar, soft harmonies, and a gentle waltz.</span></button>
+          <button class="option" type="button" data-card="prep_music" data-key="syn" aria-pressed="false"><b>Synthwave</b><span>Pulsing analog bass, drum machines, and bright arpeggios.</span></button>
+          <button class="option" type="button" data-card="prep_music" data-key="jazz" aria-pressed="false"><b>Ambient jazz</b><span>Brushed drums, spacious piano, and a slow upright bass.</span></button>
+        </div>
+      </fieldset>
+      <fieldset disabled>
+        <legend>Concept image</legend>
+        <div class="prep-options">
+          <button class="option" type="button" data-card="prep_image" data-key="ppr" aria-pressed="false"><b>Paper Fjord</b><img class="concept" src="images/003-paper-fjord.webp" alt="" width="1000" height="1000"></button>
+          <button class="option" type="button" data-card="prep_image" data-key="ice" aria-pressed="false"><b>Cathedral of Ice</b><img class="concept" src="images/003-cathedral-of-ice.webp" alt="" width="1000" height="1000"></button>
+          <button class="option" type="button" data-card="prep_image" data-key="wood" aria-pressed="false"><b>Aurora Woodcut</b><img class="concept" src="images/003-aurora-woodcut.webp" alt="" width="1000" height="1000"></button>
+        </div>
+      </fieldset>
+      <p class="status" role="status">Loading saved choices…</p>
+    </div>
+  </section>
+  <details>
+    <summary id="active-heading">Project workflow and previous cards</summary>
     <p id="project-status" role="status"></p>
     <div id="active-project">
       <details id="current-project" class="project-card" open>
@@ -119,7 +148,7 @@
       </div>
     </details>
     <div id="cards"></div>
-  </section>
+  </details>
   <section id="completed" aria-labelledby="completed-heading">
     <h2 id="completed-heading" class="project-section">Completed projects</h2>
     <div id="completed-workflows"></div>
@@ -156,6 +185,58 @@
 const API = (['127.0.0.1','localhost'].includes(location.hostname) ? location.origin : 'http://127.0.0.1:8860') + '/api/tray/choices';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cards = window.TRAY_CARDS || [];
+
+const prep = document.getElementById('editor-prep');
+const prepStatus = prep.querySelector('[role="status"]');
+const prepGroups = [...prep.querySelectorAll('fieldset')];
+const prepOptions = [...prep.querySelectorAll('button')];
+
+function renderPrep(choices) {
+  const selected = [];
+  for (const option of prepOptions) {
+    const chosen = choices[option.dataset.card]?.key === option.dataset.key;
+    option.classList.toggle('chosen', chosen);
+    option.setAttribute('aria-pressed', chosen);
+    if (chosen) selected.push(option.querySelector('b').textContent);
+  }
+  prepStatus.textContent = selected.length
+    ? `Saved · ${selected.join(' · ')}`
+    : 'Your choices save to The Window.';
+}
+
+async function loadPrep() {
+  try {
+    const response = await fetch(API);
+    if (!response.ok) throw new Error();
+    renderPrep(await response.json());
+  } catch {
+    prepStatus.textContent = 'Could not load saved choices. Open The Window on the Chromebook to save.';
+  } finally {
+    prepGroups.forEach(group => { group.disabled = false; });
+  }
+}
+
+prep.addEventListener('click', async event => {
+  const option = event.target.closest('button[data-card]');
+  if (!option || prepGroups.some(group => group.disabled)) return;
+  prepGroups.forEach(group => { group.disabled = true; });
+  prepStatus.textContent = 'Saving…';
+  try {
+    const response = await fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ card: option.dataset.card, key: option.dataset.key })
+    });
+    if (!response.ok) throw new Error();
+    renderPrep(await response.json());
+  } catch {
+    prepStatus.textContent = 'Could not save your choice. Tap an option to try again.';
+  } finally {
+    prepGroups.forEach(group => { group.disabled = false; });
+    option.focus();
+  }
+});
+loadPrep();
 let picked = {}, reachable = true;
 const openCards = new Set();   // cards start folded; remember which ones Christopher opened
 function visual(o) {
