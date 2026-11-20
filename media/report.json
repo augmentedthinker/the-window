@@ -1,0 +1,86 @@
+{
+ "generated": "2026-11-20T13:25-05:00",
+ "total": 516926,
+ "types": [
+  {
+   "type": "audio",
+   "bytes": 481532,
+   "projects": [
+    {
+     "project": "lumina-test-tide",
+     "bytes": 481532,
+     "files": 1
+    }
+   ]
+  },
+  {
+   "type": "images",
+   "bytes": 35394,
+   "projects": [
+    {
+     "project": "lumina-test-tide",
+     "bytes": 34453,
+     "files": 1
+    },
+    {
+     "project": "neighborhood-test",
+     "bytes": 941,
+     "files": 1
+    }
+   ]
+  },
+  {
+   "type": "video",
+   "bytes": 0,
+   "projects": []
+  }
+ ],
+ "workbench": [
+  {
+   "project": "neighborhood-test",
+   "bytes": 0
+  }
+ ],
+ "uncataloged": [],
+ "catalog": [
+  {
+   "path": "audio/lumina-test-tide/lumina-test-tide.mp3",
+   "type": "audio",
+   "project": "lumina-test-tide",
+   "kind": "final",
+   "title": "Lumina Test Tide (take A)",
+   "by": "Lumina (Claude Sonnet 5.5)",
+   "tool": "ffmpeg synthesis",
+   "model": "",
+   "created": "2026-11-20T13:08:43-05:00",
+   "bytes": 481532,
+   "note": "Test of the neighborhood layout; MP3 master by agreement"
+  },
+  {
+   "path": "images/lumina-test-tide/lumina-test-tide-cover.png",
+   "type": "images",
+   "project": "lumina-test-tide",
+   "kind": "final",
+   "title": "Lumina Test Tide cover (A)",
+   "by": "Lumina (Claude Sonnet 5.5)",
+   "tool": "Python + PIL",
+   "model": "",
+   "created": "2026-11-20T13:08:43-05:00",
+   "bytes": 34453,
+   "note": ""
+  },
+  {
+   "path": "images/neighborhood-test/lumina-emblem.svg",
+   "type": "images",
+   "project": "neighborhood-test",
+   "kind": "final",
+   "title": "Lumina emblem",
+   "by": "Lumina (Claude Sonnet 5.5)",
+   "tool": "hand-written SVG",
+   "model": "",
+   "created": "2026-11-20T13:25:16-05:00",
+   "bytes": 941,
+   "note": "A small sun-like light on a night-blue tile"
+  }
+ ]
+}

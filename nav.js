@@ -14,6 +14,7 @@
     ['Tray', 'tray/index.html', 'tray/'],
     ['Songs', 'song-archive/index.html', 'song-archive/'],
     ['Editor', 'studio/', ['editor/', 'studio/']],
+    ['Media', 'media/index.html', 'media/'],
     ['Artifacts', 'artifacts/index.html', 'artifacts/'],
   ];
   const here = decodeURI(location.pathname).slice(decodeURI(base.pathname).length);
