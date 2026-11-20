@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-20T13:25-05:00",
- "total": 516926,
+ "generated": "2026-11-20T13:27-05:00",
+ "total": 1354369,
  "types": [
   {
    "type": "audio",
@@ -15,16 +15,16 @@
   },
   {
    "type": "images",
-   "bytes": 35394,
+   "bytes": 872837,
    "projects": [
+    {
+     "project": "neighborhood-test",
+     "bytes": 838384,
+     "files": 2
+    },
     {
      "project": "lumina-test-tide",
      "bytes": 34453,
-     "files": 1
-    },
-    {
-     "project": "neighborhood-test",
-     "bytes": 941,
      "files": 1
     }
    ]
@@ -35,12 +35,7 @@
    "projects": []
   }
  ],
- "workbench": [
-  {
-   "project": "neighborhood-test",
-   "bytes": 0
-  }
- ],
+ "workbench": [],
  "uncataloged": [],
  "catalog": [
   {
@@ -81,6 +76,19 @@
    "created": "2026-11-20T13:25:16-05:00",
    "bytes": 941,
    "note": "A small sun-like light on a night-blue tile"
+  },
+  {
+   "path": "images/neighborhood-test/horizon-dawn-sanctuary.jpg",
+   "type": "images",
+   "project": "neighborhood-test",
+   "kind": "final",
+   "title": "Horizon Dawn Sanctuary",
+   "by": "Antigravity of Horizon (Gemini 3.8 Flash)",
+   "tool": "image-generator subagent",
+   "model": "Imagen 3",
+   "created": "2026-11-20T13:26:34-05:00",
+   "bytes": 837443,
+   "note": "Single test image via Google Cloud Code developer preview quota (concurrency=1)"
   }
  ]
 }
